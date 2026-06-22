@@ -1,0 +1,19 @@
+{
+  "name": "lam-bien-quang-cao-bong-sen-trang",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Website tinh SEO local cho dich vu lam bien quang cao tai Ha Noi.",
+  "scripts": {
+    "build": "node scripts/generate-seo-pages.js && node scripts/generate-price-page.js && node scripts/generate-competitor-pages.js && node scripts/generate-capability-page.js && node scripts/generate-gallery-hub.js && node scripts/generate-repair-page.js && node scripts/generate-hanoi-hub.js && node scripts/generate-local-district-pages.js && node scripts/generate-dongda-page.js && node scripts/generate-street-ward-pages.js && node scripts/generate-industry-niche-pages.js && node scripts/generate-extra-industry-pages.js && node scripts/generate-neighborhood-pages.js && node scripts/generate-service-index.js && node scripts/generate-image-sitemap.js && node scripts/build-dist.js",
+    "preview": "node local-server.js",
+    "tunnel:cloudflare": "npx -y cloudflared tunnel --url http://localhost:4173",
+    "cf:oauth:start": "node scripts/cloudflare-oauth.js start",
+    "cf:oauth:finish": "node scripts/cloudflare-oauth.js finish",
+    "predeploy:cloudflare": "npm run build",
+    "login:cloudflare": "npx -y wrangler login",
+    "deploy:cloudflare": "npx -y wrangler pages deploy dist --project-name=lam-bien-quang-cao-bong-sen-trang --branch=main",
+    "check:jsonld": "node scripts/check-jsonld.js",
+    "check:seo": "node scripts/check-seo.js",
+    "submit:indexnow": "node scripts/submit-indexnow.js"
+  }
+}

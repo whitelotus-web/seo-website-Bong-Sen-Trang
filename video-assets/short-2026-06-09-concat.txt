@@ -1,0 +1,13 @@
+file 'F:/Dự Án/SEO Website Bong Sen Trang/video-assets/short-2026-06-09-slides/slide-01.png'
+duration 2.8
+file 'F:/Dự Án/SEO Website Bong Sen Trang/video-assets/short-2026-06-09-slides/slide-02.png'
+duration 2.8
+file 'F:/Dự Án/SEO Website Bong Sen Trang/video-assets/short-2026-06-09-slides/slide-03.png'
+duration 2.8
+file 'F:/Dự Án/SEO Website Bong Sen Trang/video-assets/short-2026-06-09-slides/slide-04.png'
+duration 2.8
+file 'F:/Dự Án/SEO Website Bong Sen Trang/video-assets/short-2026-06-09-slides/slide-05.png'
+duration 2.8
+file 'F:/Dự Án/SEO Website Bong Sen Trang/video-assets/short-2026-06-09-slides/slide-06.png'
+duration 2.8
+file 'F:/Dự Án/SEO Website Bong Sen Trang/video-assets/short-2026-06-09-slides/slide-06.png'

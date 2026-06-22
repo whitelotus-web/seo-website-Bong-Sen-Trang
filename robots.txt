@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://lam-bien-quang-cao-bong-sen-trang.pages.dev/sitemap.xml
+Sitemap: https://lam-bien-quang-cao-bong-sen-trang.pages.dev/sitemap-google.xml
+Sitemap: https://lam-bien-quang-cao-bong-sen-trang.pages.dev/image-sitemap.xml
