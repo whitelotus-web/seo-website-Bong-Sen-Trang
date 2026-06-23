@@ -102,6 +102,186 @@ const locations = [
     nearby: ["Xã Đàn", "Chùa Bộc", "Đào Duy Anh", "Đông Tác"],
     image: "du-an-sct-clinic-chu-noi-led.jpg",
     note: "phù hợp clinic, spa, salon, cửa hàng dịch vụ và biển chữ nổi LED"
+  },
+  {
+    name: "Duy Tân",
+    slug: "lam-bien-quang-cao-duy-tan",
+    area: "Cầu Giấy",
+    wardTerms: ["Dịch Vọng Hậu", "Yên Hòa", "Cầu Giấy"],
+    nearby: ["Trần Thái Tông", "Tôn Thất Thuyết", "Thành Thái", "Trung Kính"],
+    image: "du-an-logo-van-phong-fxce.jpg",
+    note: "tập trung văn phòng, showroom, cafe và dịch vụ cần biển công ty gọn, sáng, chuyên nghiệp"
+  },
+  {
+    name: "Trần Thái Tông",
+    slug: "lam-bien-quang-cao-tran-thai-tong",
+    area: "Cầu Giấy",
+    wardTerms: ["Dịch Vọng", "Dịch Vọng Hậu", "Yên Hòa"],
+    nearby: ["Duy Tân", "Cầu Giấy", "Xuân Thủy", "Nguyễn Phong Sắc"],
+    image: "du-an-bien-tien-coffee.jpg",
+    note: "nhiều nhà hàng, cafe, văn phòng và cửa hàng cần biển dễ nhìn từ mặt phố"
+  },
+  {
+    name: "Trung Kính",
+    slug: "lam-bien-quang-cao-trung-kinh",
+    area: "Cầu Giấy",
+    wardTerms: ["Yên Hòa", "Trung Hòa", "Cầu Giấy"],
+    nearby: ["Mạc Thái Tổ", "Trần Duy Hưng", "Vũ Phạm Hàm", "Dương Đình Nghệ"],
+    image: "mau-bien-sieu-thi-mini-ha-noi.jpg",
+    note: "phù hợp cửa hàng bán lẻ, quán ăn, văn phòng và biển hộp đèn mặt tiền"
+  },
+  {
+    name: "Kim Mã",
+    slug: "lam-bien-quang-cao-kim-ma",
+    area: "Ba Đình",
+    wardTerms: ["Kim Mã", "Ngọc Khánh", "Đội Cấn"],
+    nearby: ["Liễu Giai", "Giảng Võ", "Nguyễn Thái Học", "Vạn Phúc"],
+    image: "du-an-olive-vino-chu-noi-hat-sang.jpg",
+    note: "tuyến phố trung tâm, hợp biển nhà hàng, cafe, showroom và cửa hàng dịch vụ"
+  },
+  {
+    name: "Đội Cấn",
+    slug: "lam-bien-quang-cao-doi-can",
+    area: "Ba Đình",
+    wardTerms: ["Đội Cấn", "Liễu Giai", "Cống Vị"],
+    nearby: ["Kim Mã", "Hoàng Hoa Thám", "Vạn Bảo", "Ngọc Hà"],
+    image: "bien-vay-tron-cua-hang-o-hui-ha-noi.jpg",
+    note: "nhiều cửa hàng nhỏ và dịch vụ cần biển vẫy, hộp đèn và sửa biển cũ"
+  },
+  {
+    name: "Nguyễn Trãi",
+    slug: "lam-bien-quang-cao-nguyen-trai",
+    area: "Thanh Xuân - Hà Đông",
+    wardTerms: ["Thượng Đình", "Thanh Xuân Trung", "Mỗ Lao", "Văn Quán"],
+    nearby: ["Ngã Tư Sở", "Khuất Duy Tiến", "Trần Phú", "Vũ Trọng Phụng"],
+    image: "mau-bien-shop-quan-ao-ha-noi.jpg",
+    note: "tuyến lớn nhiều shop, showroom, siêu thị mini và cửa hàng cần biển nổi bật"
+  },
+  {
+    name: "Lê Văn Lương",
+    slug: "lam-bien-quang-cao-le-van-luong",
+    area: "Thanh Xuân - Cầu Giấy",
+    wardTerms: ["Nhân Chính", "Trung Hòa", "Thanh Xuân"],
+    nearby: ["Hoàng Đạo Thúy", "Nguyễn Tuân", "Tố Hữu", "Khuất Duy Tiến"],
+    image: "du-an-sb-invest-backdrop-le-tan.jpg",
+    note: "phù hợp văn phòng, spa, phòng khám, showroom và biển nhận diện công ty"
+  },
+  {
+    name: "Nguyễn Tuân",
+    slug: "lam-bien-quang-cao-nguyen-tuan",
+    area: "Thanh Xuân",
+    wardTerms: ["Thanh Xuân Trung", "Nhân Chính", "Thượng Đình"],
+    nearby: ["Vũ Trọng Phụng", "Nguyễn Trãi", "Lê Văn Lương", "Khuất Duy Tiến"],
+    image: "du-an-may-skin-bien-chu-noi-sang.jpg",
+    note: "phù hợp spa, clinic, văn phòng, cửa hàng và biển chữ nổi có ánh sáng"
+  },
+  {
+    name: "Bạch Mai",
+    slug: "lam-bien-quang-cao-bach-mai",
+    area: "Hai Bà Trưng",
+    wardTerms: ["Bạch Mai", "Trương Định", "Quỳnh Mai"],
+    nearby: ["Đại Cồ Việt", "Minh Khai", "Phố Huế", "Lê Thanh Nghị"],
+    image: "du-an-gao-viet-bien-mat-tien-do.jpg",
+    note: "nhiều quán ăn, cửa hàng, nhà thuốc và dịch vụ cần biển rõ, bền, dễ đọc"
+  },
+  {
+    name: "Phố Huế",
+    slug: "lam-bien-quang-cao-pho-hue",
+    area: "Hai Bà Trưng",
+    wardTerms: ["Phố Huế", "Ngô Thì Nhậm", "Bùi Thị Xuân"],
+    nearby: ["Bà Triệu", "Mai Hắc Đế", "Hàng Bài", "Trần Xuân Soạn"],
+    image: "mau-bien-shop-thoi-trang-mat-tien-ha-noi.jpg",
+    note: "tuyến mua sắm trung tâm, hợp biển shop thời trang, showroom và cửa hàng dịch vụ"
+  },
+  {
+    name: "Quang Trung Hà Đông",
+    slug: "lam-bien-quang-cao-quang-trung-ha-dong",
+    area: "Hà Đông",
+    wardTerms: ["Quang Trung", "La Khê", "Yết Kiêu"],
+    nearby: ["Trần Phú", "Văn Quán", "Mỗ Lao", "Ngô Thì Nhậm"],
+    image: "mau-bien-quan-do-uong-linh-dam-ha-noi.jpg",
+    note: "phù hợp shop, quán ăn, trà sữa, siêu thị mini và biển hộp đèn mặt tiền"
+  },
+  {
+    name: "Tố Hữu",
+    slug: "lam-bien-quang-cao-to-huu",
+    area: "Hà Đông - Nam Từ Liêm",
+    wardTerms: ["Vạn Phúc", "La Khê", "Trung Văn", "Mỗ Lao"],
+    nearby: ["Lê Văn Lương", "Văn Khê", "Mễ Trì", "Nguyễn Thanh Bình"],
+    image: "mau-bien-sieu-thi-mini-ha-noi.jpg",
+    note: "khu chung cư và dịch vụ mới, hợp biển cửa hàng, cafe, spa, trung tâm học"
+  },
+  {
+    name: "Mỹ Đình",
+    slug: "lam-bien-quang-cao-my-dinh",
+    area: "Nam Từ Liêm",
+    wardTerms: ["Mỹ Đình 1", "Mỹ Đình 2", "Mễ Trì"],
+    nearby: ["Lê Đức Thọ", "Hàm Nghi", "Nguyễn Hoàng", "Phạm Hùng"],
+    image: "du-an-bien-kong-billiards.jpg",
+    note: "nhiều nhà hàng, quán cafe, phòng tập, showroom và văn phòng cần biển nổi bật"
+  },
+  {
+    name: "Phạm Hùng",
+    slug: "lam-bien-quang-cao-pham-hung",
+    area: "Nam Từ Liêm - Cầu Giấy",
+    wardTerms: ["Mễ Trì", "Mỹ Đình", "Dịch Vọng Hậu"],
+    nearby: ["Dương Đình Nghệ", "Tôn Thất Thuyết", "Đỗ Đức Dục", "Trần Duy Hưng"],
+    image: "du-an-sb-invest-backdrop-le-tan.jpg",
+    note: "phù hợp biển công ty, showroom, văn phòng, tòa nhà và backdrop lễ tân"
+  },
+  {
+    name: "Xuân Diệu",
+    slug: "lam-bien-quang-cao-xuan-dieu",
+    area: "Tây Hồ",
+    wardTerms: ["Quảng An", "Tứ Liên", "Tây Hồ"],
+    nearby: ["Tô Ngọc Vân", "Đặng Thai Mai", "Nghi Tàm", "Âu Cơ"],
+    image: "du-an-olive-vino-chu-noi-hat-sang.jpg",
+    note: "phù hợp nhà hàng, cafe, boutique và dịch vụ cần biển thẩm mỹ cao"
+  },
+  {
+    name: "Tô Ngọc Vân",
+    slug: "lam-bien-quang-cao-to-ngoc-van",
+    area: "Tây Hồ",
+    wardTerms: ["Quảng An", "Tây Hồ", "Nhật Tân"],
+    nearby: ["Xuân Diệu", "Đặng Thai Mai", "Quảng Khánh", "Nghi Tàm"],
+    image: "bien-vay-cafe-hop-den-tron-ha-noi.jpg",
+    note: "hợp quán cafe, nhà hàng, spa, studio và biển vẫy phong cách"
+  },
+  {
+    name: "Nguyễn Văn Cừ",
+    slug: "lam-bien-quang-cao-nguyen-van-cu",
+    area: "Long Biên",
+    wardTerms: ["Ngọc Lâm", "Bồ Đề", "Gia Thụy"],
+    nearby: ["Ngô Gia Tự", "Ái Mộ", "Ngọc Thụy", "Cầu Chương Dương"],
+    image: "du-an-xe-dien-viet-thanh-bien-mat-tien-led.jpg",
+    note: "tuyến lớn, hợp biển showroom, gara, cửa hàng xe và biển mặt tiền rộng"
+  },
+  {
+    name: "Cổ Linh",
+    slug: "lam-bien-quang-cao-co-linh",
+    area: "Long Biên",
+    wardTerms: ["Long Biên", "Thạch Bàn", "Bồ Đề"],
+    nearby: ["Aeon Mall Long Biên", "Sài Đồng", "Nguyễn Văn Cừ", "Đàm Quang Trung"],
+    image: "bien-pano-ha-noi.jpg",
+    note: "phù hợp showroom, nhà hàng, gara, kho xưởng và biển tấm lớn"
+  },
+  {
+    name: "Giải Phóng",
+    slug: "lam-bien-quang-cao-giai-phong",
+    area: "Hoàng Mai - Đống Đa",
+    wardTerms: ["Phương Liệt", "Định Công", "Giáp Bát", "Tương Mai"],
+    nearby: ["Trường Chinh", "Kim Đồng", "Linh Đàm", "Đại Cồ Việt"],
+    image: "mau-bien-nha-hang-linh-dam-ha-noi.jpg",
+    note: "tuyến đông phương tiện, cần biển rõ từ xa, ánh sáng ổn và bố cục dễ đọc"
+  },
+  {
+    name: "Tam Trinh",
+    slug: "lam-bien-quang-cao-tam-trinh",
+    area: "Hoàng Mai",
+    wardTerms: ["Mai Động", "Hoàng Văn Thụ", "Yên Sở"],
+    nearby: ["Minh Khai", "Lĩnh Nam", "Vĩnh Hưng", "Đền Lừ"],
+    image: "bien-tam-lon-ha-noi.jpg",
+    note: "phù hợp biển kho xưởng, cửa hàng, showroom, gara và dịch vụ sửa biển"
   }
 ];
 
@@ -251,7 +431,7 @@ ${JSON.stringify(jsonLd, null, 2)}
               <span>/</span>
               <span>${escapeHtml(location.name)}</span>
             </nav>
-            <p class="section-kicker">Làm biển quảng cáo theo tuyến đường/phường</p>
+            <p class="section-kicker">Khảo sát và thi công tại khu vực của bạn</p>
             <h1>Làm biển quảng cáo ${escapeHtml(location.name)}</h1>
             <p>Bông Sen Trắng nhận làm biển quảng cáo quanh ${escapeHtml(location.name)}, ${escapeHtml(location.area)}, Hà Nội: biển alu chữ nổi, hộp đèn LED, bạt Hiflex, chữ nổi mica/inox và sửa biển cũ. Khu vực này ${escapeHtml(location.note)}. Gửi ảnh mặt tiền qua Zalo để tư vấn nhanh.</p>
             <div class="hero-actions">
@@ -268,7 +448,7 @@ ${JSON.stringify(jsonLd, null, 2)}
           <article class="content-main">
             <section class="content-block price-note">
               <h2>Báo giá theo đúng mặt bằng trên tuyến ${escapeHtml(location.name)}</h2>
-              <p>Khách tìm “làm biển quảng cáo ${escapeHtml(location.name)}” thường cần đơn vị hiểu mặt tiền thực tế: biển trong ngõ hay mặt phố, tầng 1 hay tầng cao, có cần sáng buổi tối không, có khung cũ hay phải làm mới toàn bộ. Có ảnh rõ thì báo giá nhanh và sát hơn.</p>
+              <p>Mỗi mặt bằng có điều kiện khác nhau: biển trong ngõ hay mặt phố, tầng 1 hay tầng cao, có cần sáng buổi tối không, có khung cũ hay phải làm mới toàn bộ. Gửi ảnh rõ mặt tiền để Bông Sen Trắng tư vấn phương án và báo giá sát hơn.</p>
             </section>
             <section class="content-block">
               <h2>Phường/khu vực và tuyến gần ${escapeHtml(location.name)}</h2>
@@ -393,11 +573,11 @@ ${JSON.stringify(jsonLd, null, 2)}
               <span>/</span>
               <a href="../lam-bien-quang-cao-ha-noi/">Hà Nội</a>
               <span>/</span>
-              <span>Tuyến đường, phường</span>
+              <span>Khu vực lắp đặt</span>
             </nav>
-            <p class="section-kicker">SEO theo tên đường, phường</p>
-            <h1>Làm biển quảng cáo theo tuyến đường, phường tại Hà Nội</h1>
-            <p>Trang này gom các tuyến đường và phường/khu vực có nhu cầu làm biển quảng cáo quanh Đống Đa và Hà Nội. Nếu không thấy đúng đường của mình, anh/chị vẫn có thể gửi địa chỉ qua Zalo để được tư vấn phương án thi công.</p>
+            <p class="section-kicker">Khảo sát mặt tiền tại Hà Nội</p>
+            <h1>Làm biển quảng cáo theo khu vực tại Hà Nội</h1>
+            <p>Chọn khu vực gần vị trí lắp đặt để xem phương án phù hợp cho mặt tiền cửa hàng, quán ăn, cafe, spa, văn phòng hoặc showroom. Nếu không thấy đúng tuyến đường của mình, anh/chị gửi địa chỉ qua Zalo để được tư vấn nhanh.</p>
             <div class="hero-actions">
               <a class="btn btn-primary" href="tel:${business.phoneHref}">Gọi ${business.phone}</a>
               <a class="btn btn-secondary" href="https://zalo.me/${business.phoneHref}" target="_blank" rel="noopener">Gửi ảnh qua Zalo</a>
@@ -409,14 +589,14 @@ ${JSON.stringify(jsonLd, null, 2)}
       <section class="section page-content">
         <div class="container content-main sitemap-main">
           <section class="content-block">
-            <h2>Chọn tuyến đường/phường</h2>
+            <h2>Chọn khu vực gần vị trí lắp biển</h2>
             <div class="sitemap-grid local-grid">
 ${cards}
             </div>
           </section>
           <section class="content-block price-note">
-            <h2>Cách dùng trang này</h2>
-            <p>Khách thường tìm theo công thức “làm biển quảng cáo + tên đường/phường”. Các trang dưới đây giúp Google hiểu rõ phạm vi local, đồng thời giúp khách đi thẳng tới nội dung gần vị trí lắp biển hơn.</p>
+            <h2>Tư vấn theo mặt bằng thực tế</h2>
+            <p>Mỗi tuyến phố có mặt tiền, khoảng nhìn và điều kiện treo lắp khác nhau. Gửi ảnh vị trí lắp biển, kích thước dự kiến và thời gian cần hoàn thiện để Bông Sen Trắng tư vấn vật liệu, ánh sáng và chi phí phù hợp.</p>
           </section>
         </div>
       </section>

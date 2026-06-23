@@ -156,6 +156,102 @@ const pages = [
     streets: ["Linh Đàm", "Giải Phóng", "Tân Mai", "Kim Đồng", "Nguyễn Hữu Thọ", "Định Công"],
     needs: ["biển đọc nhanh món chính", "hộp đèn sáng buổi tối", "menu ngoài cửa", "biển vẫy cho khách đi đường"],
     note: "Quán ăn tại Hoàng Mai cần biển dễ đọc, rõ món bán chính và chi phí thi công hợp lý."
+  },
+  {
+    slug: "bien-quan-pho-bun-dong-da-ha-noi",
+    title: "Biển quán phở, bún Đống Đa Hà Nội",
+    district: "Đống Đa",
+    industry: "quán phở, bún, đồ ăn sáng",
+    parentArea: "lam-bien-quang-cao-dong-da",
+    parentIndustry: "bien-quan-an-uong-ha-noi",
+    image: "du-an-gao-viet-bien-mat-tien-do.jpg",
+    streets: ["Ô Chợ Dừa", "Xã Đàn", "Khâm Thiên", "Tôn Đức Thắng", "Nguyễn Lương Bằng", "Chùa Bộc"],
+    needs: ["tên quán và món chính đọc nhanh", "hộp đèn sáng sớm và buổi tối", "biển vẫy cho khách đi đường", "menu/biển phụ ngoài cửa"],
+    note: "Quán phở, bún cần biển rõ món bán chính, dễ nhìn khi khách đi ngang và chi phí thi công hợp lý."
+  },
+  {
+    slug: "bien-tiem-banh-cafe-cau-giay-ha-noi",
+    title: "Biển tiệm bánh cafe Cầu Giấy Hà Nội",
+    district: "Cầu Giấy",
+    industry: "tiệm bánh, cafe, đồ uống",
+    parentArea: "lam-bien-quang-cao-cau-giay",
+    parentIndustry: "bien-quan-cafe-ha-noi",
+    image: "bien-vay-cafe-hop-den-tron-ha-noi.jpg",
+    streets: ["Trần Thái Tông", "Duy Tân", "Trung Kính", "Xuân Thủy", "Nguyễn Phong Sắc", "Yên Hòa"],
+    needs: ["biển nhẹ, sáng và sạch", "chữ nổi mica hoặc hộp đèn", "biển vẫy tròn/oval", "neon sign trong quán"],
+    note: "Tiệm bánh và cafe cần biển tạo cảm giác sạch, dễ thương hiệu hóa và lên ảnh tốt."
+  },
+  {
+    slug: "bien-cua-hang-dien-thoai-ha-noi",
+    title: "Biển cửa hàng điện thoại Hà Nội",
+    district: "Hà Nội",
+    industry: "cửa hàng điện thoại, phụ kiện, sửa chữa",
+    parentArea: "lam-bien-quang-cao-ha-noi",
+    parentIndustry: "thi-cong-bien-quang-cao-ha-noi",
+    image: "du-an-oppo-samsung.jpg",
+    streets: ["Cầu Giấy", "Chùa Bộc", "Xã Đàn", "Nguyễn Trãi", "Kim Mã", "Quang Trung"],
+    needs: ["logo thương hiệu rõ", "hộp đèn hoặc alu chữ nổi", "biển phụ dịch vụ sửa chữa", "ánh sáng dễ nhận diện buổi tối"],
+    note: "Cửa hàng điện thoại cần biển sáng, rõ thương hiệu và dễ phân biệt với các cửa hàng cạnh tranh."
+  },
+  {
+    slug: "bien-showroom-noi-that-ha-noi",
+    title: "Biển showroom nội thất Hà Nội",
+    district: "Hà Nội",
+    industry: "showroom nội thất, vật liệu, trưng bày",
+    parentArea: "lam-bien-quang-cao-ha-noi",
+    parentIndustry: "bien-van-phong-cong-ty-ha-noi",
+    image: "du-an-logo-m-led-noi-that.jpg",
+    streets: ["Nguyễn Trãi", "Cổ Linh", "Phạm Hùng", "Lê Văn Lương", "Võ Chí Công", "Long Biên"],
+    needs: ["biển mặt tiền lớn", "logo chữ nổi hoặc LED hắt sáng", "biển chỉ dẫn khu trưng bày", "vật liệu bền ngoài trời"],
+    note: "Showroom nội thất cần biển sang, rõ nhận diện và phù hợp mặt tiền rộng."
+  },
+  {
+    slug: "bien-phong-gym-fitness-ha-noi",
+    title: "Biển phòng gym fitness Hà Nội",
+    district: "Hà Nội",
+    industry: "phòng gym, fitness, yoga",
+    parentArea: "lam-bien-quang-cao-ha-noi",
+    parentIndustry: "bien-quang-cao-theo-nganh-ha-noi",
+    image: "du-an-bien-the-fox-fitness.jpg",
+    streets: ["Tây Sơn", "Mỹ Đình", "Cầu Giấy", "Lê Văn Lương", "Hoàng Mai", "Hà Đông"],
+    needs: ["biển lớn tạo lực nhận diện", "chữ nổi có ánh sáng", "biển chỉ dẫn tầng/phòng tập", "backdrop logo quầy check-in"],
+    note: "Phòng gym và fitness cần biển mạnh, dễ nhìn từ xa và có cảm giác năng động."
+  },
+  {
+    slug: "bien-khach-san-nha-nghi-ha-noi",
+    title: "Biển khách sạn, nhà nghỉ Hà Nội",
+    district: "Hà Nội",
+    industry: "khách sạn, nhà nghỉ, căn hộ dịch vụ",
+    parentArea: "lam-bien-quang-cao-ha-noi",
+    parentIndustry: "thi-cong-bien-quang-cao-ha-noi",
+    image: "bien-pano-ha-noi.jpg",
+    streets: ["Hoàn Kiếm", "Tây Hồ", "Ba Đình", "Cầu Giấy", "Mỹ Đình", "Hà Đông"],
+    needs: ["biển đứng hoặc biển dọc dễ thấy", "chữ nổi LED", "hộp đèn sáng đều", "biển chỉ dẫn lễ tân và phòng"],
+    note: "Khách sạn, nhà nghỉ cần biển rõ vào ban đêm, nhìn được từ xa và đúng phong cách dịch vụ."
+  },
+  {
+    slug: "bien-cua-hang-me-va-be-ha-noi",
+    title: "Biển cửa hàng mẹ và bé Hà Nội",
+    district: "Hà Nội",
+    industry: "cửa hàng mẹ và bé",
+    parentArea: "lam-bien-quang-cao-ha-noi",
+    parentIndustry: "bien-sieu-thi-mini-me-va-be-ha-noi",
+    image: "mau-bien-cua-hang-me-va-be-ha-noi.jpg",
+    streets: ["Văn Quán", "Hà Đông", "Cầu Giấy", "Hoàng Mai", "Long Biên", "Nam Từ Liêm"],
+    needs: ["màu sắc thân thiện", "hộp đèn hoặc alu chữ nổi", "biển vẫy cho khách nhận diện", "biển phụ nhóm hàng"],
+    note: "Cửa hàng mẹ và bé cần biển sáng, dễ thương hiệu hóa và tạo cảm giác tin cậy."
+  },
+  {
+    slug: "bien-cua-hang-vat-lieu-xay-dung-ha-noi",
+    title: "Biển cửa hàng vật liệu xây dựng Hà Nội",
+    district: "Hà Nội",
+    industry: "vật liệu xây dựng, sơn, thiết bị",
+    parentArea: "lam-bien-quang-cao-ha-noi",
+    parentIndustry: "thi-cong-bien-quang-cao-ha-noi",
+    image: "du-an-jotun.jpg",
+    streets: ["Long Biên", "Hà Đông", "Hoàng Mai", "Gia Lâm", "Cầu Giấy", "Thanh Xuân"],
+    needs: ["biển lớn đọc từ xa", "khung chắc ngoài trời", "bạt Hiflex hoặc alu", "logo hãng và thông tin đại lý rõ"],
+    note: "Cửa hàng vật liệu xây dựng cần biển bền, chữ lớn và bố cục rõ để khách nhận diện nhanh."
   }
 ];
 

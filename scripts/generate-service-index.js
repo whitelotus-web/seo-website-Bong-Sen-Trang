@@ -55,7 +55,7 @@ function categoryFor(page) {
 function groupIntro(name) {
   return {
     "Dịch vụ chính": "Các trang dịch vụ có nhu cầu tìm kiếm trực tiếp, phù hợp khách đang cần làm biển hoặc báo giá.",
-    "Khu vực Hà Nội": "Các trang theo quận/huyện giúp khách hàng và công cụ tìm kiếm hiểu rõ phạm vi phục vụ tại Hà Nội.",
+    "Khu vực Hà Nội": "Các trang theo quận/huyện giúp khách hàng chọn đúng khu vực cần khảo sát và thi công tại Hà Nội.",
     "Tư vấn trước khi làm biển": "Các bài hướng dẫn giúp khách chuẩn bị thông tin báo giá, chọn vật liệu và quyết định sửa hay thay biển.",
     "Hình ảnh và công trình thực tế": "Các trang hình ảnh, mẫu biển và dự án tham khảo để khách xem chất liệu, ánh sáng và cách hoàn thiện."
   }[name];
@@ -182,7 +182,7 @@ ${JSON.stringify(itemListJson, null, 2)}
             </nav>
             <p class="section-kicker">Sơ đồ dịch vụ</p>
             <h1>Tất cả dịch vụ làm biển quảng cáo tại Hà Nội</h1>
-            <p>Trang này gom các dịch vụ, khu vực phục vụ, bài tư vấn và hình ảnh công trình để khách hàng và công cụ tìm kiếm đi tới đúng nội dung nhanh hơn.</p>
+            <p>Chọn nhanh dịch vụ, khu vực phục vụ, bài tư vấn hoặc hình ảnh công trình phù hợp với nhu cầu làm biển quảng cáo của anh/chị.</p>
             <div class="hero-actions">
               <a class="btn btn-primary" href="tel:0989521881">Gọi 0989 521 881</a>
               <a class="btn btn-secondary" href="https://zalo.me/0989521881" target="_blank" rel="noopener">Nhắn Zalo</a>

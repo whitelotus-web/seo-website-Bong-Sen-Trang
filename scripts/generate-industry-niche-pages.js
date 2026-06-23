@@ -398,7 +398,7 @@ ${JSON.stringify(jsonLd, null, 2)}
               <span>/</span>
               <span>Theo ngành hàng</span>
             </nav>
-            <p class="section-kicker">SEO theo ngách ngành hàng</p>
+            <p class="section-kicker">Chọn biển theo ngành kinh doanh</p>
             <h1>Biển quảng cáo theo ngành hàng tại Hà Nội</h1>
             <p>Mỗi ngành có cách làm biển khác nhau. Chọn đúng ngành giúp tư vấn vật liệu, ánh sáng, kích thước chữ và ngân sách sát hơn, đồng thời giúp khách tìm kiếm đúng nhu cầu hơn.</p>
             <div class="hero-actions">
