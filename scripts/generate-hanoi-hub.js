@@ -260,7 +260,7 @@ ${cardGrid(serviceLinks)}
 
             <section class="content-block">
               <h2>Khu vực nhận làm biển quảng cáo tại Hà Nội</h2>
-              <p>Danh sách dưới đây giúp khách đi thẳng tới trang khu vực phù hợp. Nội dung theo quận hỗ trợ SEO local và cũng giúp tư vấn sát hơn theo mặt bằng thực tế.</p>
+              <p>Danh sách dưới đây giúp anh/chị chọn đúng khu vực cần khảo sát, tư vấn vật liệu và báo giá sát hơn theo mặt bằng thực tế.</p>
               <div class="sitemap-grid local-grid">
 ${districtHtml}
               </div>

@@ -5,7 +5,7 @@ const root = process.cwd();
 const baseUrl = "https://lam-bien-quang-cao-bong-sen-trang.pages.dev";
 const slug = "tat-ca-dich-vu-bien-quang-cao-ha-noi";
 const pageUrl = `${baseUrl}/${slug}/`;
-const lastmod = "2026-06-22";
+const lastmod = new Date().toISOString().slice(0, 10);
 
 const ignoredDirs = new Set([
   ".git",
