@@ -7,3 +7,6 @@ dist/
 .DS_Store
 tmp-screen-*.png
 downloaded-images-contact-sheet.jpg
+
+# Local Netlify folder
+.netlify

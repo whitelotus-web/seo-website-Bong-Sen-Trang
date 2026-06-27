@@ -3,6 +3,8 @@ const path = require("path");
 
 const root = process.cwd();
 const dist = path.join(root, "dist");
+const defaultBaseUrl = "https://lam-bien-quang-cao-bong-sen-trang.pages.dev";
+const baseUrl = process.env.SITE_URL || defaultBaseUrl;
 
 const ignoredDirs = new Set([".git", ".wrangler", "assets", "dist", "node_modules", "scripts"]);
 
@@ -27,13 +29,53 @@ function copyDir(src, dest) {
 fs.rmSync(dist, { recursive: true, force: true });
 
 copyDir(path.join(root, "assets"), path.join(dist, "assets"));
-copyFile(path.join(root, "robots.txt"), path.join(dist, "robots.txt"));
 copyFile(path.join(root, "sitemap.xml"), path.join(dist, "sitemap.xml"));
-copyFile(path.join(root, "sitemap-priority.xml"), path.join(dist, "sitemap-priority.xml"));
 copyFile(path.join(root, "sitemap-google.xml"), path.join(dist, "sitemap-google.xml"));
 copyFile(path.join(root, "sitemap.txt"), path.join(dist, "sitemap.txt"));
 copyFile(path.join(root, "image-sitemap.xml"), path.join(dist, "image-sitemap.xml"));
 copyFile(path.join(root, "_headers"), path.join(dist, "_headers"));
+
+const robots = `User-agent: *
+Allow: /
+
+Sitemap: ${baseUrl}/sitemap.xml
+Sitemap: ${baseUrl}/sitemap-priority.xml
+Sitemap: ${baseUrl}/sitemap-google.xml
+Sitemap: ${baseUrl}/image-sitemap.xml
+`;
+fs.writeFileSync(path.join(dist, "robots.txt"), robots, "utf8");
+
+const prioritySlugs = [
+  "",
+  "bao-gia-bien-quang-cao-ha-noi",
+  "thi-cong-bien-quang-cao-ha-noi",
+  "lam-bien-quang-cao-ha-noi",
+  "tat-ca-dich-vu-bien-quang-cao-ha-noi",
+  "bien-hieu-cua-hang-ha-noi",
+  "lam-bien-mat-tien-cua-hang-ha-noi",
+  "bao-gia-lam-bang-hieu-cua-hang-ha-noi",
+  "lam-bien-quang-cao-co-den-led-ha-noi",
+  "lam-bien-quang-cao-dong-da",
+  "lam-bien-quang-cao-o-cho-dua",
+  "lam-bien-quang-cao-gan-day-ha-noi"
+];
+const prioritySitemap = `<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+${prioritySlugs
+  .map((slug, index) => {
+    const loc = slug ? `${baseUrl}/${slug}/` : `${baseUrl}/`;
+    const priority = index === 0 ? "1.0" : index <= 3 ? "0.9" : "0.8";
+    return `  <url>
+    <loc>${loc}</loc>
+    <lastmod>${new Date().toISOString().slice(0, 10)}</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>${priority}</priority>
+  </url>`;
+  })
+  .join("\n")}
+</urlset>
+`;
+fs.writeFileSync(path.join(dist, "sitemap-priority.xml"), prioritySitemap, "utf8");
 
 for (const entry of fs.readdirSync(root, { withFileTypes: true })) {
   if (entry.isFile() && /^google[a-z0-9]+\.html$/i.test(entry.name)) {
@@ -54,5 +96,25 @@ for (const entry of fs.readdirSync(root, { withFileTypes: true })) {
 }
 
 copyFile(path.join(root, "index.html"), path.join(dist, "index.html"));
+
+function rewriteBaseUrl(dir) {
+  if (baseUrl === defaultBaseUrl) return;
+
+  for (const entry of fs.readdirSync(dir, { withFileTypes: true })) {
+    const filePath = path.join(dir, entry.name);
+    if (entry.isDirectory()) {
+      rewriteBaseUrl(filePath);
+      continue;
+    }
+
+    if (!/\.(html|xml|txt|json|js|css)$/i.test(entry.name)) continue;
+
+    const text = fs.readFileSync(filePath, "utf8");
+    if (!text.includes(defaultBaseUrl)) continue;
+    fs.writeFileSync(filePath, text.replaceAll(defaultBaseUrl, baseUrl), "utf8");
+  }
+}
+
+rewriteBaseUrl(dist);
 
 console.log(`Built deploy output: ${dist}`);
