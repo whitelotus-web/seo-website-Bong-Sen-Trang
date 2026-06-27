@@ -168,6 +168,28 @@ function renderRelated(links) {
     .join("\n              ");
 }
 
+function renderCommercialCluster(currentSlug) {
+  const links = [
+    ["Báo giá làm biển quảng cáo Hà Nội", "bao-gia-bien-quang-cao-ha-noi", "Xem khung giá theo vật liệu, kích thước, đèn LED và điều kiện lắp đặt."],
+    ["Biển hiệu cửa hàng Hà Nội", "bien-hieu-cua-hang-ha-noi", "Phương án biển cho shop, quán ăn, cafe, spa, nhà thuốc và showroom."],
+    ["Làm biển mặt tiền cửa hàng", "lam-bien-mat-tien-cua-hang-ha-noi", "Chọn bố cục, vật liệu và ánh sáng theo mặt tiền thực tế."],
+    ["Làm biển quảng cáo có đèn LED", "lam-bien-quang-cao-co-den-led-ha-noi", "Hộp đèn, chữ nổi sáng mặt, chữ hắt sáng và biển vẫy LED."],
+    ["Làm biển quảng cáo Đống Đa", "lam-bien-quang-cao-dong-da", "Khảo sát quanh Ô Chợ Dừa, Xã Đàn, Thái Hà, Chùa Bộc, Tây Sơn."],
+    ["Làm biển quảng cáo Ô Chợ Dừa", "lam-bien-quang-cao-o-cho-dua", "Phù hợp cửa hàng gần 92E Ô Chợ Dừa và các tuyến phố lân cận."]
+  ].filter(([, slug]) => slug !== currentSlug);
+
+  return links
+    .slice(0, 4)
+    .map(
+      ([label, slug, text]) => `
+                <a href="../${slug}/">
+                  <strong>${escapeHtml(label)}</strong>
+                  <span>${escapeHtml(text)}</span>
+                </a>`
+    )
+    .join("\n");
+}
+
 function renderFaq(page) {
   const faqs = [
     [`Muốn báo giá ${page.title.toLowerCase()} cần gửi gì?`, "Gửi ảnh mặt tiền, kích thước dự kiến, địa chỉ lắp đặt, thời gian cần hoàn thiện và mẫu biển thích nếu có."],
@@ -317,6 +339,12 @@ ${JSON.stringify(jsonLd, null, 2)}
             <section class="content-block price-note">
               <h2>Gửi ảnh để báo giá sát hơn</h2>
               <p>Ảnh mặt tiền, kích thước ngang x cao, địa chỉ lắp đặt và thời gian cần hoàn thiện là các thông tin quan trọng nhất. Nếu có mẫu biển thích hoặc file logo, gửi kèm để tư vấn vật liệu và bố cục nhanh hơn.</p>
+            </section>
+            <section class="content-block">
+              <h2>Nhu cầu liên quan thường gặp</h2>
+              <div class="price-link-grid compact">
+${renderCommercialCluster(page.slug)}
+              </div>
             </section>
             <section class="content-block">
               <h2>Câu hỏi thường gặp</h2>
