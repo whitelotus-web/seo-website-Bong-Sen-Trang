@@ -77,6 +77,17 @@ ${prioritySlugs
 `;
 fs.writeFileSync(path.join(dist, "sitemap-priority.xml"), prioritySitemap, "utf8");
 
+const testSitemap = `<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>${baseUrl}/</loc>
+    <lastmod>${new Date().toISOString().slice(0, 10)}</lastmod>
+  </url>
+</urlset>
+`;
+fs.writeFileSync(path.join(dist, "sitemap-test.xml"), testSitemap, "utf8");
+fs.writeFileSync(path.join(dist, "sitemap-test.txt"), `${baseUrl}/\n`, "utf8");
+
 for (const entry of fs.readdirSync(root, { withFileTypes: true })) {
   if (entry.isFile() && /^google[a-z0-9]+\.html$/i.test(entry.name)) {
     copyFile(path.join(root, entry.name), path.join(dist, entry.name));
