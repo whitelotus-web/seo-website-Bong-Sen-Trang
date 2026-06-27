@@ -29,6 +29,7 @@ fs.rmSync(dist, { recursive: true, force: true });
 copyDir(path.join(root, "assets"), path.join(dist, "assets"));
 copyFile(path.join(root, "robots.txt"), path.join(dist, "robots.txt"));
 copyFile(path.join(root, "sitemap.xml"), path.join(dist, "sitemap.xml"));
+copyFile(path.join(root, "sitemap-priority.xml"), path.join(dist, "sitemap-priority.xml"));
 copyFile(path.join(root, "sitemap-google.xml"), path.join(dist, "sitemap-google.xml"));
 copyFile(path.join(root, "sitemap.txt"), path.join(dist, "sitemap.txt"));
 copyFile(path.join(root, "image-sitemap.xml"), path.join(dist, "image-sitemap.xml"));
