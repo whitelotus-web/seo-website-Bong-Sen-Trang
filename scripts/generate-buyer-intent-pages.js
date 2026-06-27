@@ -102,6 +102,51 @@ const pages = [
     intro: "Biển quảng cáo hiệu quả cần rõ tên, ngành hàng, màu nhận diện và ánh sáng. Bố cục càng gọn, khách càng dễ nhớ khi đi ngang.",
     items: ["Tư vấn bố cục chữ và logo", "Chọn màu, vật liệu, kiểu sáng", "Ước lượng kích thước theo mặt tiền", "Gợi ý phương án tiết kiệm chi phí"],
     related: [["Cần chuẩn bị gì để báo giá", "can-chuan-bi-gi-de-bao-gia-bien-quang-cao"], ["Báo giá biển quảng cáo", "bao-gia-bien-quang-cao-ha-noi"], ["Mẫu biển thực tế", "hinh-anh-bien-quang-cao-thuc-te-ha-noi"]]
+  },
+  {
+    slug: "bien-hieu-cua-hang-ha-noi",
+    title: "Biển hiệu cửa hàng Hà Nội",
+    kicker: "Biển mặt tiền cho shop, quán và showroom",
+    image: "du-an-gao-viet-bien-mat-tien-do.jpg",
+    intro: "Cửa hàng cần một biển hiệu rõ tên, rõ ngành hàng và dễ nhận ra từ phía đường. Bông Sen Trắng nhận tư vấn, sản xuất và lắp đặt biển hiệu cửa hàng tại Hà Nội theo mặt tiền thực tế.",
+    items: ["Biển hiệu alu chữ nổi cho cửa hàng", "Biển hộp đèn LED cho mặt tiền cần sáng buổi tối", "Biển bạt Hiflex khi cần tiết kiệm chi phí", "Biển vẫy phù hợp tuyến phố đông người qua lại"],
+    related: [["Làm bảng hiệu cửa hàng", "lam-bang-hieu-cua-hang-ha-noi"], ["Báo giá biển quảng cáo", "bao-gia-bien-quang-cao-ha-noi"], ["Biển vẫy cửa hàng", "bien-vay-cua-hang-ha-noi"]]
+  },
+  {
+    slug: "lam-bien-mat-tien-cua-hang-ha-noi",
+    title: "Làm biển mặt tiền cửa hàng Hà Nội",
+    kicker: "Tư vấn theo kích thước mặt tiền thực tế",
+    image: "du-an-pink-fruit-flower-bien-mat-tien.jpg",
+    intro: "Biển mặt tiền quyết định khách có nhìn thấy cửa hàng hay không. Khi làm biển, cần chọn kích thước, chữ, màu, đèn và vật liệu theo đúng mặt bằng, không chỉ theo mẫu có sẵn.",
+    items: ["Khảo sát mặt tiền hoặc tư vấn qua ảnh Zalo", "Chọn phương án alu chữ nổi, hộp đèn, bạt Hiflex hoặc chữ mica/inox", "Tính độ sáng cho cửa hàng mở buổi tối", "Thi công gọn, hạn chế ảnh hưởng kinh doanh"],
+    related: [["Biển hiệu cửa hàng", "bien-hieu-cua-hang-ha-noi"], ["Làm biển nhanh", "lam-bien-quang-cao-nhanh-ha-noi"], ["Năng lực thi công", "nang-luc-thi-cong-bien-quang-cao-ha-noi"]]
+  },
+  {
+    slug: "bao-gia-lam-bang-hieu-cua-hang-ha-noi",
+    title: "Báo giá làm bảng hiệu cửa hàng Hà Nội",
+    kicker: "Dự toán chi phí theo vật liệu và mặt bằng",
+    image: "mau-bien-shop-quan-ao-ha-noi.jpg",
+    intro: "Giá làm bảng hiệu cửa hàng phụ thuộc vào kích thước, chất liệu, kiểu chữ, đèn LED, vị trí lắp đặt và việc có tận dụng được khung cũ hay không.",
+    items: ["Gửi ảnh mặt tiền để ước lượng kích thước", "Chọn vật liệu theo ngân sách: Hiflex, alu, chữ nổi, hộp đèn", "Tách riêng chi phí sản xuất và lắp đặt khi cần", "Tư vấn phương án tiết kiệm nếu cửa hàng mới mở"],
+    related: [["Báo giá biển quảng cáo 2026", "bao-gia-bien-quang-cao-ha-noi"], ["Làm bảng hiệu quảng cáo", "lam-bang-hieu-quang-cao-ha-noi"], ["Cần chuẩn bị gì để báo giá", "can-chuan-bi-gi-de-bao-gia-bien-quang-cao"]]
+  },
+  {
+    slug: "lam-bien-quang-cao-co-den-led-ha-noi",
+    title: "Làm biển quảng cáo có đèn LED Hà Nội",
+    kicker: "Biển sáng buổi tối cho cửa hàng",
+    image: "du-an-may-skin-bien-chu-noi-sang.jpg",
+    intro: "Biển có đèn LED phù hợp shop, spa, cafe, quán ăn, nhà thuốc và showroom cần nổi bật sau 18h. Có thể làm hộp đèn, chữ nổi sáng mặt, chữ hắt sáng hoặc kết hợp biển vẫy LED.",
+    items: ["Tư vấn độ sáng phù hợp với tuyến phố", "Chọn LED, nguồn và vật liệu mặt biển", "Tính bố cục chữ để dễ đọc buổi tối", "Hỗ trợ sửa hoặc thay LED cho biển cũ"],
+    related: [["Biển hộp đèn LED", "bien-hop-den-led-ha-noi"], ["Lắp đèn LED biển quảng cáo", "lap-den-led-bien-quang-cao-ha-noi"], ["Sửa biển cháy đèn", "sua-bien-quang-cao-chay-den-ha-noi"]]
+  },
+  {
+    slug: "lam-bien-quang-cao-theo-yeu-cau-ha-noi",
+    title: "Làm biển quảng cáo theo yêu cầu Hà Nội",
+    kicker: "Tư vấn theo ngành hàng, mặt tiền và ngân sách",
+    image: "hero-bien-quang-cao-ha-noi.jpg",
+    intro: "Mỗi cửa hàng có mặt tiền, ngân sách và nhóm khách khác nhau. Bông Sen Trắng nhận làm biển quảng cáo theo yêu cầu cho cửa hàng, văn phòng, quán ăn, cafe, spa và showroom tại Hà Nội.",
+    items: ["Tư vấn vật liệu theo mục tiêu sử dụng", "Sản xuất theo kích thước và bố cục đã chốt", "Lắp đặt tại Hà Nội", "Bảo hành theo hạng mục và chất liệu"],
+    related: [["Thi công trọn gói", "thi-cong-bang-hieu-quang-cao-tron-goi-ha-noi"], ["Tư vấn thiết kế biển", "tu-van-thiet-ke-bien-quang-cao-ha-noi"], ["Theo ngành hàng", "bien-quang-cao-theo-nganh-ha-noi"]]
   }
 ];
 
