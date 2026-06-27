@@ -738,6 +738,47 @@ address {
   background: #fff;
 }
 
+.priority-links-section {
+  background: #fff;
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+}
+
+.priority-link-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.priority-link-grid a {
+  display: grid;
+  gap: 8px;
+  min-height: 132px;
+  padding: 20px;
+  border: 1px solid rgba(29, 141, 204, 0.22);
+  border-radius: 8px;
+  background: linear-gradient(180deg, rgba(29, 141, 204, 0.07), #fff);
+  color: var(--ink);
+  text-decoration: none;
+}
+
+.priority-link-grid a:hover,
+.priority-link-grid a:focus {
+  border-color: rgba(29, 141, 204, 0.6);
+  box-shadow: 0 12px 24px rgba(17, 29, 42, 0.08);
+}
+
+.priority-link-grid strong {
+  color: var(--blue-deep);
+  line-height: 1.25;
+}
+
+.priority-link-grid span {
+  color: var(--muted);
+  font-size: 0.95rem;
+  line-height: 1.45;
+}
+
 .price-link-grid {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -1042,6 +1083,7 @@ address {
   }
 
   .price-link-grid,
+  .priority-link-grid,
   .price-link-grid.compact {
     grid-template-columns: 1fr;
   }
