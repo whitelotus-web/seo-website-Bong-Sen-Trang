@@ -318,6 +318,99 @@ pages.push(
   }
 );
 
+pages.push(
+  {
+    slug: "bang-hieu-quan-an-dong-da-ha-noi",
+    title: "Bảng hiệu quán ăn Đống Đa Hà Nội",
+    kicker: "Biển quán ăn rõ món, sáng buổi tối tại Đống Đa",
+    image: "du-an-bep-ba-son-hoi-an-bien-menu.jpg",
+    intro: "Quán ăn tại Đống Đa thường cần biển đọc nhanh, rõ món chính và đủ sáng vào giờ tối. Bông Sen Trắng nhận tư vấn bảng hiệu quán ăn Đống Đa cho mặt phố, ngõ đông dân cư, cửa hàng mới mở hoặc quán cần thay biển cũ.",
+    items: ["Biển mặt tiền cho phở, bún, cơm, đồ ăn nhanh", "Biển hộp đèn LED, bạt Hiflex, alu chữ nổi", "Bảng menu phụ, biển vẫy và biển chỉ dẫn", "Tư vấn bố cục dễ đọc khi khách đi xe qua"],
+    related: [["Biển quán ăn uống Hà Nội", "bien-quan-an-uong-ha-noi"], ["Bảng hiệu cửa hàng Đống Đa", "bang-hieu-cua-hang-dong-da-ha-noi"], ["Làm biển quảng cáo Ô Chợ Dừa", "lam-bien-quang-cao-o-cho-dua"]]
+  },
+  {
+    slug: "bang-hieu-quan-cafe-cau-giay-ha-noi",
+    title: "Bảng hiệu quán cafe Cầu Giấy Hà Nội",
+    kicker: "Biển cafe, đồ uống, trà sữa khu Cầu Giấy",
+    image: "du-an-bien-tien-coffee.jpg",
+    intro: "Quán cafe tại Cầu Giấy cần biển có gu, nhìn rõ từ xa và đẹp khi lên đèn. Bông Sen Trắng tư vấn bảng hiệu quán cafe Cầu Giấy cho mặt tiền nhỏ, quán trong khu văn phòng, cửa hàng đồ uống và mô hình take away.",
+    items: ["Biển chữ nổi, hộp đèn LED, biển vẫy tròn", "Tư vấn ánh sáng phù hợp buổi tối", "Biển menu và bảng phụ trước cửa", "Báo giá theo ảnh mặt tiền và phong cách thương hiệu"],
+    related: [["Biển quán cafe Cầu Giấy", "bien-quan-cafe-cau-giay-ha-noi"], ["Bảng hiệu cửa hàng Cầu Giấy", "bang-hieu-cua-hang-cau-giay-ha-noi"], ["Bảng hiệu cửa hàng Trần Thái Tông", "bang-hieu-cua-hang-tran-thai-tong-ha-noi"]]
+  },
+  {
+    slug: "bang-hieu-spa-cau-giay-ha-noi",
+    title: "Bảng hiệu spa Cầu Giấy Hà Nội",
+    kicker: "Biển spa, salon, thẩm mỹ viện khu Cầu Giấy",
+    image: "du-an-may-skin-bien-chu-noi-sang.jpg",
+    intro: "Spa và salon tại Cầu Giấy cần bảng hiệu sạch, sáng, tạo cảm giác tin cậy ngay từ mặt tiền. Bông Sen Trắng nhận làm bảng hiệu spa Cầu Giấy với chữ nổi, LED hắt sáng, hộp đèn hoặc phối vật liệu theo nhận diện thương hiệu.",
+    items: ["Biển spa, nail, salon tóc, thẩm mỹ viện", "Chữ nổi mica, inox, LED hắt sáng", "Biển vẫy phụ cho mặt tiền khuất góc", "Tư vấn màu sắc mềm, sáng và dễ nhận diện"],
+    related: [["Biển spa salon Cầu Giấy", "bien-spa-salon-cau-giay-ha-noi"], ["Bảng hiệu cửa hàng Cầu Giấy", "bang-hieu-cua-hang-cau-giay-ha-noi"], ["Làm biển quảng cáo có đèn LED", "lam-bien-quang-cao-co-den-led-ha-noi"]]
+  },
+  {
+    slug: "bang-hieu-nha-thuoc-dong-da-ha-noi",
+    title: "Bảng hiệu nhà thuốc Đống Đa Hà Nội",
+    kicker: "Biển nhà thuốc rõ thông tin, sáng và tin cậy",
+    image: "mau-bien-nha-thuoc-linh-dam-ha-noi.jpg",
+    intro: "Nhà thuốc tại Đống Đa cần biển rõ tên, dễ đọc, sáng đều và tạo cảm giác uy tín. Bông Sen Trắng nhận làm bảng hiệu nhà thuốc Đống Đa, gồm biển hộp đèn, alu chữ nổi, chữ mica và biển phụ theo mặt tiền thực tế.",
+    items: ["Biển nhà thuốc, phòng khám, quầy dược", "Hộp đèn LED và chữ nổi sáng mặt", "Bố cục rõ tên, ngành hàng, thông tin liên hệ", "Sửa biển cũ bạc màu hoặc tối đèn"],
+    related: [["Biển nhà thuốc Đống Đa", "bien-nha-thuoc-dong-da-ha-noi"], ["Bảng hiệu cửa hàng Đống Đa", "bang-hieu-cua-hang-dong-da-ha-noi"], ["Sửa biển hộp đèn LED", "sua-bien-hop-den-led-ha-noi"]]
+  },
+  {
+    slug: "bang-hieu-shop-quan-ao-chua-boc-ha-noi",
+    title: "Bảng hiệu shop quần áo Chùa Bộc Hà Nội",
+    kicker: "Biển shop thời trang nổi bật trên phố đông cửa hàng",
+    image: "mau-bien-shop-quan-ao-ha-noi.jpg",
+    intro: "Shop quần áo trên Chùa Bộc cần bảng hiệu dễ nhớ, rõ tên thương hiệu và đủ nổi bật giữa nhiều mặt tiền cạnh tranh. Bông Sen Trắng nhận làm bảng hiệu shop quần áo Chùa Bộc theo phong cách trẻ, gọn và sáng.",
+    items: ["Biển shop thời trang, giày dép, phụ kiện", "Alu chữ nổi, mica, inox, LED hắt sáng", "Tư vấn màu sắc theo nhận diện thương hiệu", "Biển chính, biển vẫy và decal phụ nếu cần"],
+    related: [["Biển shop quần áo Hà Nội", "bien-shop-quan-ao-ha-noi"], ["Bảng hiệu cửa hàng Chùa Bộc", "bang-hieu-cua-hang-chua-boc-ha-noi"], ["Làm biển quảng cáo Chùa Bộc", "lam-bien-quang-cao-chua-boc"]]
+  },
+  {
+    slug: "bang-hieu-tra-sua-ha-dong-ha-noi",
+    title: "Bảng hiệu trà sữa Hà Đông Hà Nội",
+    kicker: "Biển trà sữa, đồ uống, take away tại Hà Đông",
+    image: "du-an-pink-fruit-flower-bien-mat-tien.jpg",
+    intro: "Quán trà sữa và đồ uống tại Hà Đông cần biển màu sắc trẻ, dễ lên ảnh và đủ sáng buổi tối. Bông Sen Trắng tư vấn bảng hiệu trà sữa Hà Đông cho cửa hàng mới mở, quán cần thay nhận diện hoặc nâng cấp biển cũ.",
+    items: ["Biển mặt tiền trà sữa, nước ép, đồ uống", "Hộp đèn LED, chữ nổi và biển vẫy", "Bảng menu phụ và biển khai trương", "Tư vấn phương án tiết kiệm cho cửa hàng mới"],
+    related: [["Biển trà sữa Hà Đông", "bien-tra-sua-ha-dong-ha-noi"], ["Bảng hiệu cửa hàng Hà Đông", "bang-hieu-cua-hang-ha-dong-ha-noi"], ["Bảng hiệu cửa hàng Quang Trung Hà Đông", "bang-hieu-cua-hang-quang-trung-ha-dong-ha-noi"]]
+  },
+  {
+    slug: "bang-hieu-salon-toc-ba-dinh-ha-noi",
+    title: "Bảng hiệu salon tóc Ba Đình Hà Nội",
+    kicker: "Biển salon, barber, làm đẹp khu Ba Đình",
+    image: "du-an-bien-chu-noi-mo-nguyen.jpg",
+    intro: "Salon tóc và barber tại Ba Đình cần bảng hiệu gọn, sáng, thể hiện phong cách dịch vụ. Bông Sen Trắng nhận làm bảng hiệu salon tóc Ba Đình bằng chữ nổi, alu, mica, inox, LED hoặc hộp đèn tùy mặt tiền.",
+    items: ["Biển salon tóc, barber, nail, spa", "Chữ nổi sáng mặt hoặc hắt sáng", "Biển vẫy phụ để khách dễ tìm", "Sửa hoặc thay mới biển cũ xuống cấp"],
+    related: [["Biển salon tóc Ba Đình", "bien-salon-toc-ba-dinh-ha-noi"], ["Bảng hiệu cửa hàng Ba Đình", "bang-hieu-cua-hang-ba-dinh-ha-noi"], ["Làm biển quảng cáo Kim Mã", "lam-bien-quang-cao-kim-ma"]]
+  },
+  {
+    slug: "bang-hieu-showroom-noi-that-nam-tu-liem-ha-noi",
+    title: "Bảng hiệu showroom nội thất Nam Từ Liêm Hà Nội",
+    kicker: "Biển showroom, văn phòng, cửa hàng nội thất",
+    image: "du-an-logo-van-phong-fxce.jpg",
+    intro: "Showroom nội thất tại Nam Từ Liêm cần bảng hiệu sang, rõ tên thương hiệu và đồng bộ với không gian trưng bày. Bông Sen Trắng nhận làm bảng hiệu showroom nội thất Nam Từ Liêm theo kích thước mặt tiền và phong cách nhận diện.",
+    items: ["Biển showroom nội thất, vật liệu, thiết bị", "Alu chữ nổi, mica, inox, LED hắt sáng", "Biển chỉ dẫn phụ cho showroom trong tòa nhà", "Tư vấn bố cục sang và dễ đọc từ xa"],
+    related: [["Biển showroom nội thất Hà Nội", "bien-showroom-noi-that-ha-noi"], ["Bảng hiệu cửa hàng Nam Từ Liêm", "bang-hieu-cua-hang-nam-tu-liem-ha-noi"], ["Biển văn phòng Nam Từ Liêm", "bien-van-phong-nam-tu-liem-ha-noi"]]
+  },
+  {
+    slug: "bang-hieu-sieu-thi-mini-hoang-mai-ha-noi",
+    title: "Bảng hiệu siêu thị mini Hoàng Mai Hà Nội",
+    kicker: "Biển siêu thị mini, cửa hàng mẹ và bé, tạp hóa",
+    image: "mau-bien-cua-hang-me-va-be-ha-noi.jpg",
+    intro: "Siêu thị mini và cửa hàng tạp hóa tại Hoàng Mai cần bảng hiệu rõ ngành hàng, dễ nhìn từ xa và bền khi đặt ngoài trời. Bông Sen Trắng nhận làm bảng hiệu siêu thị mini Hoàng Mai với phương án chi phí phù hợp.",
+    items: ["Biển siêu thị mini, tạp hóa, mẹ và bé", "Biển bạt Hiflex, alu chữ nổi, hộp đèn", "Tư vấn bố cục nhiều thông tin nhưng vẫn dễ đọc", "Thay mặt biển hoặc làm mới toàn bộ"],
+    related: [["Biển siêu thị mini mẹ và bé", "bien-sieu-thi-mini-me-va-be-ha-noi"], ["Bảng hiệu cửa hàng Hoàng Mai", "bang-hieu-cua-hang-hoang-mai-ha-noi"], ["Làm biển quảng cáo Hoàng Mai", "lam-bien-quang-cao-hoang-mai"]]
+  },
+  {
+    slug: "bang-hieu-phong-kham-thanh-xuan-ha-noi",
+    title: "Bảng hiệu phòng khám Thanh Xuân Hà Nội",
+    kicker: "Biển phòng khám, nha khoa, cơ sở y tế tại Thanh Xuân",
+    image: "mau-bien-phong-kham-nha-khoa-linh-dam-ha-noi.jpg",
+    intro: "Phòng khám tại Thanh Xuân cần bảng hiệu rõ thông tin, chuyên nghiệp và dễ nhận diện. Bông Sen Trắng nhận làm bảng hiệu phòng khám Thanh Xuân với chữ nổi, hộp đèn, mica, alu và bố cục phù hợp ngành y tế.",
+    items: ["Biển phòng khám, nha khoa, nhà thuốc", "Hộp đèn LED, chữ nổi mica/inox", "Bố cục rõ tên cơ sở, chuyên khoa, thông tin liên hệ", "Tư vấn vật liệu bền và dễ vệ sinh"],
+    related: [["Biển phòng khám Thanh Xuân", "bien-phong-kham-thanh-xuan-ha-noi"], ["Bảng hiệu cửa hàng Thanh Xuân", "bang-hieu-cua-hang-thanh-xuan-ha-noi"], ["Biển phòng khám nhà thuốc Hà Nội", "bien-phong-kham-nha-thuoc-ha-noi"]]
+  }
+);
+
 function escapeHtml(value) {
   return String(value)
     .replace(/&/g, "&amp;")
