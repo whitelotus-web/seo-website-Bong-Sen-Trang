@@ -225,6 +225,99 @@ pages.push(
   }
 );
 
+pages.push(
+  {
+    slug: "bang-hieu-cua-hang-o-cho-dua-ha-noi",
+    title: "Bảng hiệu cửa hàng Ô Chợ Dừa Hà Nội",
+    kicker: "Biển cửa hàng gần 92E Ô Chợ Dừa",
+    image: "du-an-gao-viet-bien-mat-tien-do.jpg",
+    intro: "Ô Chợ Dừa là tuyến phố nhiều cửa hàng, quán ăn và dịch vụ tại Đống Đa. Bông Sen Trắng nhận làm bảng hiệu cửa hàng Ô Chợ Dừa với lợi thế ở gần khu vực, thuận tiện tư vấn nhanh theo ảnh mặt tiền hoặc khảo sát khi cần.",
+    items: ["Bảng hiệu alu chữ nổi cho cửa hàng mặt phố", "Biển hộp đèn LED cho cửa hàng mở buổi tối", "Biển vẫy phụ để khách nhìn từ hai chiều đường", "Sửa hoặc thay mặt biển cũ quanh Ô Chợ Dừa"],
+    related: [["Làm biển quảng cáo Ô Chợ Dừa", "lam-bien-quang-cao-o-cho-dua"], ["Bảng hiệu cửa hàng Đống Đa", "bang-hieu-cua-hang-dong-da-ha-noi"], ["Báo giá bảng hiệu cửa hàng", "bao-gia-lam-bang-hieu-cua-hang-ha-noi"]]
+  },
+  {
+    slug: "bang-hieu-cua-hang-xa-dan-ha-noi",
+    title: "Bảng hiệu cửa hàng Xã Đàn Hà Nội",
+    kicker: "Biển mặt tiền cho shop, quán ăn, spa trên Xã Đàn",
+    image: "du-an-pink-fruit-flower-bien-mat-tien.jpg",
+    intro: "Xã Đàn có mật độ cửa hàng cao, nhiều mặt tiền cần biển rõ chữ, sáng đều và dễ nhận diện khi khách đi xe qua. Bông Sen Trắng tư vấn bảng hiệu cửa hàng Xã Đàn theo kích thước, ngân sách và ngành hàng.",
+    items: ["Biển chính mặt tiền cho cửa hàng mới mở", "Chữ nổi mica/inox, alu, hộp đèn LED", "Tư vấn bố cục ít rối, đọc nhanh từ xa", "Thay mặt bạt, thay LED cho biển cũ"],
+    related: [["Làm biển quảng cáo Xã Đàn", "lam-bien-quang-cao-xa-dan"], ["Bảng hiệu cửa hàng Đống Đa", "bang-hieu-cua-hang-dong-da-ha-noi"], ["Làm biển quảng cáo có đèn LED", "lam-bien-quang-cao-co-den-led-ha-noi"]]
+  },
+  {
+    slug: "bang-hieu-cua-hang-thai-ha-ha-noi",
+    title: "Bảng hiệu cửa hàng Thái Hà Hà Nội",
+    kicker: "Biển cửa hàng nổi bật cho tuyến phố kinh doanh Thái Hà",
+    image: "mau-bien-shop-thoi-trang-mat-tien-ha-noi.jpg",
+    intro: "Thái Hà có nhiều shop thời trang, spa, đồ uống, showroom và cửa hàng dịch vụ. Bảng hiệu trên tuyến này cần nổi bật nhưng không rối, có ánh sáng tốt nếu cửa hàng bán sau giờ hành chính.",
+    items: ["Bảng hiệu alu chữ nổi, mica, inox", "Hộp đèn LED và chữ nổi phát sáng", "Biển vẫy phụ cho mặt tiền dễ bị khuất", "Báo giá nhanh khi có ảnh mặt tiền"],
+    related: [["Làm biển quảng cáo Thái Hà", "lam-bien-quang-cao-thai-ha"], ["Biển hiệu cửa hàng Hà Nội", "bien-hieu-cua-hang-ha-noi"], ["Làm biển mặt tiền cửa hàng", "lam-bien-mat-tien-cua-hang-ha-noi"]]
+  },
+  {
+    slug: "bang-hieu-cua-hang-chua-boc-ha-noi",
+    title: "Bảng hiệu cửa hàng Chùa Bộc Hà Nội",
+    kicker: "Biển shop, quán và cửa hàng dịch vụ khu Chùa Bộc",
+    image: "mau-bien-shop-quan-ao-ha-noi.jpg",
+    intro: "Chùa Bộc có nhiều shop quần áo, giày dép, đồ ăn nhanh và dịch vụ phục vụ sinh viên. Bảng hiệu cửa hàng Chùa Bộc nên rõ tên, đúng ngành hàng và có điểm nhận diện đủ mạnh giữa dãy mặt tiền đông biển.",
+    items: ["Biển shop thời trang, đồ uống, quán ăn", "Biển alu chữ nổi, bạt Hiflex, hộp đèn", "Tư vấn màu sắc dễ nhận ra trên phố đông", "Thi công mới hoặc sửa biển cũ"],
+    related: [["Làm biển quảng cáo Chùa Bộc", "lam-bien-quang-cao-chua-boc"], ["Biển shop quần áo Hà Nội", "bien-shop-quan-ao-ha-noi"], ["Báo giá biển quảng cáo Hà Nội", "bao-gia-bien-quang-cao-ha-noi"]]
+  },
+  {
+    slug: "bang-hieu-cua-hang-nguyen-trai-ha-noi",
+    title: "Bảng hiệu cửa hàng Nguyễn Trãi Hà Nội",
+    kicker: "Bảng hiệu mặt tiền cho tuyến Nguyễn Trãi",
+    image: "du-an-bien-gia-long.jpg",
+    intro: "Nguyễn Trãi là tuyến dài qua Thanh Xuân và Hà Đông, nhiều cửa hàng cần biển đủ lớn, rõ chữ và bền ngoài trời. Bông Sen Trắng nhận làm bảng hiệu cửa hàng Nguyễn Trãi theo từng mặt bằng thực tế.",
+    items: ["Biển cửa hàng mặt phố và trong khu dân cư", "Alu chữ nổi, hộp đèn LED, bạt Hiflex", "Tư vấn phương án tiết kiệm khi có khung cũ", "Gửi ảnh qua Zalo để báo giá sơ bộ"],
+    related: [["Làm biển quảng cáo Nguyễn Trãi", "lam-bien-quang-cao-nguyen-trai"], ["Bảng hiệu cửa hàng Thanh Xuân", "bang-hieu-cua-hang-thanh-xuan-ha-noi"], ["Bảng hiệu cửa hàng Hà Đông", "bang-hieu-cua-hang-ha-dong-ha-noi"]]
+  },
+  {
+    slug: "bang-hieu-cua-hang-duy-tan-ha-noi",
+    title: "Bảng hiệu cửa hàng Duy Tân Hà Nội",
+    kicker: "Biển cửa hàng, văn phòng, showroom khu Duy Tân",
+    image: "du-an-logo-van-phong-fxce.jpg",
+    intro: "Duy Tân là khu văn phòng và dịch vụ đông khách tại Cầu Giấy. Bảng hiệu cửa hàng Duy Tân cần gọn, chuyên nghiệp, dễ đọc và đồng bộ với nhận diện thương hiệu.",
+    items: ["Bảng hiệu showroom, văn phòng, cửa hàng dịch vụ", "Chữ nổi mica/inox, alu, LED hắt sáng", "Biển chỉ dẫn phụ nếu mặt bằng trong tòa nhà", "Báo giá theo kích thước và vị trí lắp đặt"],
+    related: [["Làm biển quảng cáo Duy Tân", "lam-bien-quang-cao-duy-tan"], ["Bảng hiệu cửa hàng Cầu Giấy", "bang-hieu-cua-hang-cau-giay-ha-noi"], ["Biển văn phòng công ty", "bien-van-phong-cong-ty-ha-noi"]]
+  },
+  {
+    slug: "bang-hieu-cua-hang-tran-thai-tong-ha-noi",
+    title: "Bảng hiệu cửa hàng Trần Thái Tông Hà Nội",
+    kicker: "Biển cửa hàng khu văn phòng, cafe, dịch vụ Cầu Giấy",
+    image: "du-an-bien-tien-coffee.jpg",
+    intro: "Trần Thái Tông có nhiều quán cafe, nhà hàng, spa, văn phòng và cửa hàng dịch vụ. Bảng hiệu cần nhìn rõ từ mặt đường, đủ sáng buổi tối và phù hợp nhóm khách văn phòng.",
+    items: ["Biển cafe, nhà hàng, cửa hàng dịch vụ", "Chữ nổi sáng mặt, hắt sáng, hộp đèn LED", "Biển vẫy phụ để tăng nhận diện từ hai chiều", "Tư vấn phương án theo ngân sách"],
+    related: [["Làm biển quảng cáo Trần Thái Tông", "lam-bien-quang-cao-tran-thai-tong"], ["Bảng hiệu cửa hàng Cầu Giấy", "bang-hieu-cua-hang-cau-giay-ha-noi"], ["Biển quán cafe Hà Nội", "bien-quan-cafe-ha-noi"]]
+  },
+  {
+    slug: "bang-hieu-cua-hang-kim-ma-ha-noi",
+    title: "Bảng hiệu cửa hàng Kim Mã Hà Nội",
+    kicker: "Biển cửa hàng, showroom, văn phòng khu Kim Mã",
+    image: "du-an-bien-chu-noi-mo-nguyen.jpg",
+    intro: "Kim Mã có nhiều showroom, văn phòng và cửa hàng dịch vụ cần biển hiệu gọn, sáng và chuyên nghiệp. Bông Sen Trắng nhận làm bảng hiệu cửa hàng Kim Mã theo phong cách thương hiệu và mặt tiền thực tế.",
+    items: ["Bảng hiệu cửa hàng, showroom, văn phòng", "Chữ nổi mica, inox, alu và LED", "Tư vấn bố cục sang, dễ đọc, không rối", "Thi công mới hoặc nâng cấp biển cũ"],
+    related: [["Làm biển quảng cáo Kim Mã", "lam-bien-quang-cao-kim-ma"], ["Bảng hiệu cửa hàng Ba Đình", "bang-hieu-cua-hang-ba-dinh-ha-noi"], ["Tư vấn thiết kế biển quảng cáo", "tu-van-thiet-ke-bien-quang-cao-ha-noi"]]
+  },
+  {
+    slug: "bang-hieu-cua-hang-xuan-dieu-ha-noi",
+    title: "Bảng hiệu cửa hàng Xuân Diệu Hà Nội",
+    kicker: "Biển cafe, nhà hàng, spa khu Xuân Diệu Tây Hồ",
+    image: "du-an-may-skin-bien-chu-noi-sang.jpg",
+    intro: "Xuân Diệu có nhiều cafe, nhà hàng, spa và cửa hàng phong cách cao cấp. Bảng hiệu cửa hàng Xuân Diệu nên chú trọng thẩm mỹ, ánh sáng và chất liệu để hợp không gian kinh doanh.",
+    items: ["Biển cafe, nhà hàng, spa, salon", "Chữ nổi sáng mặt, hắt sáng, hộp đèn LED", "Tư vấn chất liệu theo phong cách thương hiệu", "Báo giá khi có ảnh mặt tiền và kích thước"],
+    related: [["Làm biển quảng cáo Xuân Diệu", "lam-bien-quang-cao-xuan-dieu"], ["Bảng hiệu cửa hàng Tây Hồ", "bang-hieu-cua-hang-tay-ho-ha-noi"], ["Làm biển quảng cáo có đèn LED", "lam-bien-quang-cao-co-den-led-ha-noi"]]
+  },
+  {
+    slug: "bang-hieu-cua-hang-quang-trung-ha-dong-ha-noi",
+    title: "Bảng hiệu cửa hàng Quang Trung Hà Đông",
+    kicker: "Biển mặt tiền cho cửa hàng tuyến Quang Trung",
+    image: "mau-bien-cua-hang-me-va-be-ha-noi.jpg",
+    intro: "Quang Trung Hà Đông là tuyến phố kinh doanh đông cửa hàng, cần biển hiệu dễ nhìn từ xa và bền ngoài trời. Bông Sen Trắng nhận tư vấn bảng hiệu cửa hàng Quang Trung theo ngành hàng và ngân sách.",
+    items: ["Biển cửa hàng, quán ăn, shop, siêu thị mini", "Alu chữ nổi, hộp đèn LED, bạt Hiflex", "Sửa biển bạc màu, tối đèn hoặc xuống cấp", "Tư vấn báo giá qua ảnh Zalo"],
+    related: [["Làm biển quảng cáo Quang Trung Hà Đông", "lam-bien-quang-cao-quang-trung-ha-dong"], ["Bảng hiệu cửa hàng Hà Đông", "bang-hieu-cua-hang-ha-dong-ha-noi"], ["Sửa biển hộp đèn LED", "sua-bien-hop-den-led-ha-noi"]]
+  }
+);
+
 function escapeHtml(value) {
   return String(value)
     .replace(/&/g, "&amp;")
