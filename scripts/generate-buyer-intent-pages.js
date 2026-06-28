@@ -150,6 +150,81 @@ const pages = [
   }
 ];
 
+pages.push(
+  {
+    slug: "bang-hieu-cua-hang-dong-da-ha-noi",
+    title: "Bảng hiệu cửa hàng Đống Đa Hà Nội",
+    kicker: "Bảng hiệu mặt tiền cho cửa hàng tại Đống Đa",
+    image: "du-an-gao-viet-bien-mat-tien-do.jpg",
+    intro: "Đống Đa có nhiều tuyến phố kinh doanh dày như Ô Chợ Dừa, Xã Đàn, Chùa Bộc, Thái Hà, Tây Sơn. Bông Sen Trắng nhận tư vấn và thi công bảng hiệu cửa hàng tại Đống Đa theo mặt tiền thực tế, ưu tiên chữ rõ, biển sáng và chi phí phù hợp.",
+    items: ["Bảng hiệu alu chữ nổi cho shop, quán ăn, spa", "Biển hộp đèn LED cho cửa hàng mở buổi tối", "Biển bạt Hiflex khi cần tiết kiệm chi phí", "Sửa, thay mặt biển hoặc nâng cấp đèn cho biển cũ"],
+    related: [["Làm biển quảng cáo Đống Đa", "lam-bien-quang-cao-dong-da"], ["Biển hiệu cửa hàng Hà Nội", "bien-hieu-cua-hang-ha-noi"], ["Báo giá bảng hiệu cửa hàng", "bao-gia-lam-bang-hieu-cua-hang-ha-noi"]]
+  },
+  {
+    slug: "bang-hieu-cua-hang-cau-giay-ha-noi",
+    title: "Bảng hiệu cửa hàng Cầu Giấy Hà Nội",
+    kicker: "Biển cửa hàng cho khu văn phòng, shop và quán dịch vụ",
+    image: "mau-bien-shop-thoi-trang-mat-tien-ha-noi.jpg",
+    intro: "Cầu Giấy có nhiều cửa hàng trên Duy Tân, Trần Thái Tông, Trung Kính, Xuân Thủy, Cầu Giấy. Với khu vực đông văn phòng và sinh viên, bảng hiệu cần dễ nhận diện từ xa, đủ sáng buổi tối và gọn thông tin.",
+    items: ["Tư vấn bảng hiệu mặt tiền theo tuyến phố", "Biển alu chữ nổi, mica, inox, hộp đèn LED", "Biển vẫy phụ giúp khách nhìn từ hai chiều đường", "Báo giá theo ảnh mặt tiền gửi qua Zalo"],
+    related: [["Làm biển quảng cáo Cầu Giấy", "lam-bien-quang-cao-cau-giay"], ["Làm biển mặt tiền cửa hàng", "lam-bien-mat-tien-cua-hang-ha-noi"], ["Làm biển quảng cáo có đèn LED", "lam-bien-quang-cao-co-den-led-ha-noi"]]
+  },
+  {
+    slug: "bang-hieu-cua-hang-thanh-xuan-ha-noi",
+    title: "Bảng hiệu cửa hàng Thanh Xuân Hà Nội",
+    kicker: "Biển mặt tiền cho shop, quán ăn, salon tại Thanh Xuân",
+    image: "du-an-pink-fruit-flower-bien-mat-tien.jpg",
+    intro: "Thanh Xuân có nhiều mặt bằng kinh doanh trên Nguyễn Trãi, Khuất Duy Tiến, Nguyễn Tuân, Lê Văn Lương. Bảng hiệu cửa hàng tại khu vực này nên rõ tên, rõ ngành hàng và có phương án chiếu sáng tốt nếu bán buổi tối.",
+    items: ["Thi công biển chính mặt tiền cửa hàng", "Bảng hiệu chữ nổi, hộp đèn, bạt Hiflex", "Tư vấn màu sắc theo ngành hàng", "Hỗ trợ sửa biển cũ khi còn tận dụng được khung"],
+    related: [["Làm biển quảng cáo Thanh Xuân", "lam-bien-quang-cao-thanh-xuan"], ["Báo giá biển quảng cáo Hà Nội", "bao-gia-bien-quang-cao-ha-noi"], ["Làm biển quảng cáo theo yêu cầu", "lam-bien-quang-cao-theo-yeu-cau-ha-noi"]]
+  },
+  {
+    slug: "bang-hieu-cua-hang-ha-dong-ha-noi",
+    title: "Bảng hiệu cửa hàng Hà Đông Hà Nội",
+    kicker: "Biển cửa hàng cho phố kinh doanh và khu dân cư Hà Đông",
+    image: "du-an-bien-gia-long.jpg",
+    intro: "Hà Đông có nhiều shop, quán ăn, spa và cửa hàng dịch vụ trên Nguyễn Trãi, Quang Trung, Tố Hữu, Văn Quán. Bông Sen Trắng nhận làm bảng hiệu cửa hàng Hà Đông với phương án phù hợp ngân sách và mặt tiền.",
+    items: ["Bảng hiệu alu chữ nổi cho cửa hàng", "Biển hộp đèn LED, biển vẫy, biển bạt", "Tư vấn bố cục dễ đọc từ đường chính", "Thi công mới hoặc thay mặt biển cũ"],
+    related: [["Làm biển quảng cáo Hà Đông", "lam-bien-quang-cao-ha-dong"], ["Biển hiệu cửa hàng Hà Nội", "bien-hieu-cua-hang-ha-noi"], ["Thay mặt bạt biển quảng cáo", "thay-mat-bat-bien-quang-cao-ha-noi"]]
+  },
+  {
+    slug: "bang-hieu-cua-hang-hoang-mai-ha-noi",
+    title: "Bảng hiệu cửa hàng Hoàng Mai Hà Nội",
+    kicker: "Bảng hiệu cho cửa hàng, quán ăn, siêu thị mini Hoàng Mai",
+    image: "mau-bien-cua-hang-me-va-be-ha-noi.jpg",
+    intro: "Hoàng Mai có nhiều cửa hàng trong khu dân cư, mặt phố và các trục như Giải Phóng, Tam Trinh, Linh Đàm. Bảng hiệu nên ưu tiên độ rõ, độ bền ngoài trời và mức chi phí hợp lý cho cửa hàng đang vận hành.",
+    items: ["Biển mặt tiền cho cửa hàng mới mở", "Biển bạt, alu chữ nổi, hộp đèn LED", "Sửa biển bạc màu, tối đèn, xuống cấp", "Báo giá theo ảnh mặt tiền và kích thước"],
+    related: [["Làm biển quảng cáo Hoàng Mai", "lam-bien-quang-cao-hoang-mai"], ["Cửa hàng mới mở", "lam-bien-quang-cao-cua-hang-moi-mo-ha-noi"], ["Sửa biển hộp đèn LED", "sua-bien-hop-den-led-ha-noi"]]
+  },
+  {
+    slug: "bang-hieu-cua-hang-ba-dinh-ha-noi",
+    title: "Bảng hiệu cửa hàng Ba Đình Hà Nội",
+    kicker: "Biển cửa hàng gọn, rõ và phù hợp mặt phố Ba Đình",
+    image: "du-an-bien-chu-noi-mo-nguyen.jpg",
+    intro: "Ba Đình có nhiều cửa hàng, văn phòng, showroom trên Kim Mã, Đội Cấn, Giảng Võ, Liễu Giai. Bảng hiệu tại khu vực này cần nhìn chuyên nghiệp, vừa đủ nổi bật nhưng không rối thông tin.",
+    items: ["Bảng hiệu shop, showroom, văn phòng", "Chữ nổi mica, inox, alu và hộp đèn", "Tư vấn kích thước theo mặt tiền thực tế", "Thi công gọn, hạn chế ảnh hưởng kinh doanh"],
+    related: [["Làm biển quảng cáo Ba Đình", "lam-bien-quang-cao-ba-dinh"], ["Biển văn phòng công ty", "bien-van-phong-cong-ty-ha-noi"], ["Tư vấn thiết kế biển quảng cáo", "tu-van-thiet-ke-bien-quang-cao-ha-noi"]]
+  },
+  {
+    slug: "bang-hieu-cua-hang-tay-ho-ha-noi",
+    title: "Bảng hiệu cửa hàng Tây Hồ Hà Nội",
+    kicker: "Biển cửa hàng cho cafe, nhà hàng, spa khu Tây Hồ",
+    image: "du-an-bien-tien-coffee.jpg",
+    intro: "Tây Hồ có nhiều quán cafe, nhà hàng, spa và cửa hàng dịch vụ trên Xuân Diệu, Tô Ngọc Vân, Lạc Long Quân. Bảng hiệu cần có thẩm mỹ tốt, ánh sáng đẹp và dễ nhận diện vào buổi tối.",
+    items: ["Biển cafe, nhà hàng, spa, salon", "Chữ nổi sáng mặt, hắt sáng, hộp đèn LED", "Biển vẫy phụ cho mặt tiền khuất góc nhìn", "Tư vấn chất liệu theo phong cách thương hiệu"],
+    related: [["Làm biển quảng cáo Tây Hồ", "lam-bien-quang-cao-tay-ho"], ["Làm biển quảng cáo có đèn LED", "lam-bien-quang-cao-co-den-led-ha-noi"], ["Biển nhà hàng cafe Hà Nội", "bien-nha-hang-cafe-ha-noi"]]
+  },
+  {
+    slug: "bang-hieu-cua-hang-nam-tu-liem-ha-noi",
+    title: "Bảng hiệu cửa hàng Nam Từ Liêm Hà Nội",
+    kicker: "Biển mặt tiền cho shop, văn phòng, showroom Nam Từ Liêm",
+    image: "du-an-logo-van-phong-fxce.jpg",
+    intro: "Nam Từ Liêm có nhiều cửa hàng và văn phòng tại Mỹ Đình, Phạm Hùng, Mễ Trì, Tố Hữu. Với nhóm mặt bằng hiện đại, bảng hiệu cần gọn, dễ đọc và đồng bộ với nhận diện thương hiệu.",
+    items: ["Bảng hiệu cửa hàng, showroom, văn phòng", "Alu chữ nổi, mica, inox, LED hắt sáng", "Tư vấn phương án theo ngân sách", "Thi công mới hoặc nâng cấp biển cũ"],
+    related: [["Làm biển quảng cáo Nam Từ Liêm", "lam-bien-quang-cao-nam-tu-liem"], ["Biển hiệu cửa hàng Hà Nội", "bien-hieu-cua-hang-ha-noi"], ["Làm biển quảng cáo theo yêu cầu", "lam-bien-quang-cao-theo-yeu-cau-ha-noi"]]
+  }
+);
+
 function escapeHtml(value) {
   return String(value)
     .replace(/&/g, "&amp;")
