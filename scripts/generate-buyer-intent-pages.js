@@ -411,6 +411,99 @@ pages.push(
   }
 );
 
+pages.push(
+  {
+    slug: "bao-gia-bang-hieu-quan-an-ha-noi",
+    title: "Báo giá bảng hiệu quán ăn Hà Nội",
+    kicker: "Dự toán biển quán ăn theo mặt tiền và món chính",
+    image: "du-an-bep-ba-son-hoi-an-bien-menu.jpg",
+    intro: "Giá làm bảng hiệu quán ăn phụ thuộc kích thước mặt tiền, loại biển, đèn LED, bảng menu phụ và vị trí lắp đặt. Bông Sen Trắng nhận tư vấn báo giá bảng hiệu quán ăn Hà Nội theo ảnh thực tế để hạn chế phát sinh.",
+    items: ["Biển bạt Hiflex tiết kiệm cho quán mới mở", "Biển hộp đèn LED cho quán bán buổi tối", "Alu chữ nổi khi cần mặt tiền bền và nổi bật", "Bảng menu phụ, biển vẫy, biển chỉ dẫn nếu cần"],
+    related: [["Bảng hiệu quán ăn Đống Đa", "bang-hieu-quan-an-dong-da-ha-noi"], ["Biển quán ăn uống Hà Nội", "bien-quan-an-uong-ha-noi"], ["Báo giá biển quảng cáo Hà Nội", "bao-gia-bien-quang-cao-ha-noi"]]
+  },
+  {
+    slug: "bao-gia-bang-hieu-quan-cafe-ha-noi",
+    title: "Báo giá bảng hiệu quán cafe Hà Nội",
+    kicker: "Báo giá biển cafe, trà sữa, đồ uống",
+    image: "du-an-bien-tien-coffee.jpg",
+    intro: "Bảng hiệu quán cafe cần vừa đẹp hình ảnh vừa dễ nhận diện buổi tối. Chi phí phụ thuộc phong cách biển, chữ nổi, đèn LED, biển vẫy và bảng menu. Gửi ảnh mặt tiền qua Zalo để Bông Sen Trắng tư vấn phương án sát hơn.",
+    items: ["Biển chữ nổi mica/inox cho cafe mặt phố", "Hộp đèn LED và biển vẫy tròn cho quán dễ tìm", "Bảng menu phụ, bảng đứng trước cửa", "Tư vấn ánh sáng để biển đẹp khi chụp ảnh"],
+    related: [["Bảng hiệu quán cafe Cầu Giấy", "bang-hieu-quan-cafe-cau-giay-ha-noi"], ["Biển quán cafe Hà Nội", "bien-quan-cafe-ha-noi"], ["Biển cafe trà sữa Hà Nội", "bien-quang-cao-cafe-tra-sua-ha-noi"]]
+  },
+  {
+    slug: "bao-gia-bang-hieu-spa-salon-ha-noi",
+    title: "Báo giá bảng hiệu spa salon Hà Nội",
+    kicker: "Bảng hiệu spa, nail, salon, thẩm mỹ viện",
+    image: "du-an-may-skin-bien-chu-noi-sang.jpg",
+    intro: "Bảng hiệu spa salon thường cần chất liệu sạch, sáng và tạo cảm giác tin cậy. Giá phụ thuộc kiểu chữ nổi, nền alu, mica, inox, LED hắt sáng và mức hoàn thiện mặt tiền. Bông Sen Trắng tư vấn theo phong cách thương hiệu và ngân sách.",
+    items: ["Biển spa chữ nổi mica hoặc inox", "LED hắt sáng, sáng mặt hoặc hộp đèn", "Biển vẫy phụ cho mặt tiền nhỏ", "Tư vấn màu sắc mềm, sang và dễ đọc"],
+    related: [["Bảng hiệu spa Cầu Giấy", "bang-hieu-spa-cau-giay-ha-noi"], ["Biển quảng cáo spa salon Hà Nội", "bien-quang-cao-spa-salon-ha-noi"], ["Làm biển quảng cáo có đèn LED", "lam-bien-quang-cao-co-den-led-ha-noi"]]
+  },
+  {
+    slug: "bao-gia-bang-hieu-nha-thuoc-ha-noi",
+    title: "Báo giá bảng hiệu nhà thuốc Hà Nội",
+    kicker: "Bảng hiệu nhà thuốc, quầy dược, phòng khám",
+    image: "mau-bien-nha-thuoc-linh-dam-ha-noi.jpg",
+    intro: "Nhà thuốc cần bảng hiệu rõ, sáng đều, dễ đọc và tạo cảm giác uy tín. Báo giá phụ thuộc kích thước biển, hộp đèn, chữ nổi, vật liệu nền và điều kiện lắp đặt. Có thể gửi ảnh mặt tiền để nhận tư vấn nhanh.",
+    items: ["Biển hộp đèn LED cho nhà thuốc", "Alu chữ nổi hoặc mica sáng mặt", "Biển phụ, bảng giờ mở cửa, decal kính nếu cần", "Sửa biển nhà thuốc cũ bị bạc màu hoặc tối đèn"],
+    related: [["Bảng hiệu nhà thuốc Đống Đa", "bang-hieu-nha-thuoc-dong-da-ha-noi"], ["Biển nhà thuốc Hà Nội", "bien-nha-thuoc-ha-noi"], ["Biển phòng khám nhà thuốc Hà Nội", "bien-phong-kham-nha-thuoc-ha-noi"]]
+  },
+  {
+    slug: "bao-gia-bang-hieu-shop-quan-ao-ha-noi",
+    title: "Báo giá bảng hiệu shop quần áo Hà Nội",
+    kicker: "Biển shop thời trang, phụ kiện, giày dép",
+    image: "mau-bien-shop-quan-ao-ha-noi.jpg",
+    intro: "Shop quần áo cần bảng hiệu dễ nhớ, hợp phong cách và nổi bật giữa nhiều cửa hàng. Giá làm biển shop phụ thuộc chất liệu nền, chữ nổi, đèn LED, biển vẫy và mức hoàn thiện nhận diện thương hiệu.",
+    items: ["Biển alu chữ nổi cho shop thời trang", "Chữ mica, inox, LED hắt sáng", "Biển vẫy, decal kính, bảng sale phụ", "Tư vấn phương án phù hợp shop mới mở"],
+    related: [["Bảng hiệu shop quần áo Chùa Bộc", "bang-hieu-shop-quan-ao-chua-boc-ha-noi"], ["Biển shop quần áo Hà Nội", "bien-shop-quan-ao-ha-noi"], ["Làm biển mặt tiền cửa hàng", "lam-bien-mat-tien-cua-hang-ha-noi"]]
+  },
+  {
+    slug: "bao-gia-bang-hieu-tra-sua-ha-noi",
+    title: "Báo giá bảng hiệu trà sữa Hà Nội",
+    kicker: "Biển trà sữa, nước ép, đồ uống take away",
+    image: "du-an-pink-fruit-flower-bien-mat-tien.jpg",
+    intro: "Quán trà sữa cần biển màu sắc trẻ, đủ sáng buổi tối và dễ lên ảnh. Chi phí làm bảng hiệu trà sữa phụ thuộc kích thước, chữ nổi, hộp đèn, biển vẫy, menu phụ và mức hoàn thiện theo nhận diện thương hiệu.",
+    items: ["Biển mặt tiền trà sữa, nước ép, đồ uống", "Hộp đèn LED, chữ nổi, biển vẫy", "Bảng menu, bảng khai trương, bảng đứng", "Tư vấn tiết kiệm cho cửa hàng mới mở"],
+    related: [["Bảng hiệu trà sữa Hà Đông", "bang-hieu-tra-sua-ha-dong-ha-noi"], ["Biển trà sữa Hà Nội", "bien-tra-sua-ha-noi"], ["Biển cafe trà sữa Hà Nội", "bien-quang-cao-cafe-tra-sua-ha-noi"]]
+  },
+  {
+    slug: "bao-gia-bang-hieu-phong-kham-ha-noi",
+    title: "Báo giá bảng hiệu phòng khám Hà Nội",
+    kicker: "Biển phòng khám, nha khoa, cơ sở y tế",
+    image: "mau-bien-phong-kham-nha-khoa-linh-dam-ha-noi.jpg",
+    intro: "Phòng khám và nha khoa cần bảng hiệu chuyên nghiệp, dễ đọc, đủ sáng và rõ thông tin chuyên khoa. Bông Sen Trắng báo giá theo kích thước, kiểu chữ, vật liệu, đèn LED và yêu cầu lắp đặt thực tế.",
+    items: ["Biển phòng khám, nha khoa, cơ sở y tế", "Chữ nổi mica/inox, hộp đèn LED", "Bố cục rõ tên, chuyên khoa, thông tin liên hệ", "Tư vấn vật liệu bền, dễ vệ sinh"],
+    related: [["Bảng hiệu phòng khám Thanh Xuân", "bang-hieu-phong-kham-thanh-xuan-ha-noi"], ["Biển phòng khám nha khoa Hà Nội", "bien-phong-kham-nha-khoa-ha-noi"], ["Biển phòng khám nhà thuốc Hà Nội", "bien-phong-kham-nha-thuoc-ha-noi"]]
+  },
+  {
+    slug: "bao-gia-bang-hieu-sieu-thi-mini-ha-noi",
+    title: "Báo giá bảng hiệu siêu thị mini Hà Nội",
+    kicker: "Biển siêu thị mini, tạp hóa, mẹ và bé",
+    image: "mau-bien-cua-hang-me-va-be-ha-noi.jpg",
+    intro: "Siêu thị mini thường cần bảng hiệu rõ ngành hàng, nhiều thông tin nhưng vẫn dễ đọc. Giá làm biển phụ thuộc vật liệu, kích thước, đèn LED, biển phụ và việc có tận dụng khung cũ hay không.",
+    items: ["Biển bạt Hiflex tiết kiệm chi phí", "Alu chữ nổi hoặc hộp đèn LED", "Bố cục rõ sản phẩm chính, tên cửa hàng, hotline", "Thay mặt biển cũ hoặc làm mới toàn bộ"],
+    related: [["Bảng hiệu siêu thị mini Hoàng Mai", "bang-hieu-sieu-thi-mini-hoang-mai-ha-noi"], ["Biển siêu thị mini mẹ và bé", "bien-sieu-thi-mini-me-va-be-ha-noi"], ["Bảng hiệu cửa hàng Hoàng Mai", "bang-hieu-cua-hang-hoang-mai-ha-noi"]]
+  },
+  {
+    slug: "bao-gia-bang-hieu-showroom-ha-noi",
+    title: "Báo giá bảng hiệu showroom Hà Nội",
+    kicker: "Biển showroom, văn phòng, cửa hàng cao cấp",
+    image: "du-an-logo-van-phong-fxce.jpg",
+    intro: "Showroom cần bảng hiệu sang, rõ thương hiệu và đồng bộ với không gian trưng bày. Giá phụ thuộc vật liệu nền, chữ nổi, LED, kích thước mặt tiền và tiêu chuẩn hoàn thiện.",
+    items: ["Biển showroom nội thất, thiết bị, xe, vật liệu", "Alu chữ nổi, mica, inox, LED hắt sáng", "Biển chỉ dẫn phụ, backdrop, bảng logo", "Tư vấn bố cục gọn và chuyên nghiệp"],
+    related: [["Bảng hiệu showroom nội thất Nam Từ Liêm", "bang-hieu-showroom-noi-that-nam-tu-liem-ha-noi"], ["Biển showroom nội thất Hà Nội", "bien-showroom-noi-that-ha-noi"], ["Biển văn phòng công ty Hà Nội", "bien-van-phong-cong-ty-ha-noi"]]
+  },
+  {
+    slug: "bao-gia-bang-hieu-salon-toc-ha-noi",
+    title: "Báo giá bảng hiệu salon tóc Hà Nội",
+    kicker: "Biển salon tóc, barber, nail, làm đẹp",
+    image: "du-an-bien-chu-noi-mo-nguyen.jpg",
+    intro: "Salon tóc và barber cần bảng hiệu thể hiện phong cách, dễ tìm và nổi bật buổi tối. Bông Sen Trắng báo giá theo kiểu chữ nổi, nền biển, đèn LED, biển vẫy và yêu cầu thi công thực tế.",
+    items: ["Biển salon tóc, barber, nail, spa", "Chữ nổi sáng mặt hoặc hắt sáng", "Biển vẫy phụ và bảng dịch vụ", "Sửa hoặc thay mới biển cũ xuống cấp"],
+    related: [["Bảng hiệu salon tóc Ba Đình", "bang-hieu-salon-toc-ba-dinh-ha-noi"], ["Biển salon tóc barber Hà Nội", "bien-salon-toc-barber-ha-noi"], ["Biển nail mi spa Hà Nội", "bien-nail-mi-spa-ha-noi"]]
+  }
+);
+
 function escapeHtml(value) {
   return String(value)
     .replace(/&/g, "&amp;")
