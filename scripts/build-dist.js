@@ -48,6 +48,12 @@ fs.writeFileSync(path.join(dist, "robots.txt"), robots, "utf8");
 const prioritySlugs = [
   "",
   "bao-gia-bien-quang-cao-ha-noi",
+  "bao-gia-bang-hieu-quan-an-ha-noi",
+  "bao-gia-bang-hieu-quan-cafe-ha-noi",
+  "bao-gia-bang-hieu-spa-salon-ha-noi",
+  "bao-gia-bang-hieu-nha-thuoc-ha-noi",
+  "bao-gia-bang-hieu-shop-quan-ao-ha-noi",
+  "bao-gia-bang-hieu-phong-kham-ha-noi",
   "thi-cong-bien-quang-cao-ha-noi",
   "lam-bien-quang-cao-ha-noi",
   "tat-ca-dich-vu-bien-quang-cao-ha-noi",
@@ -55,8 +61,19 @@ const prioritySlugs = [
   "lam-bien-mat-tien-cua-hang-ha-noi",
   "bao-gia-lam-bang-hieu-cua-hang-ha-noi",
   "lam-bien-quang-cao-co-den-led-ha-noi",
+  "lam-bang-hieu-cua-hang-ha-noi",
+  "bang-hieu-cua-hang-dong-da-ha-noi",
+  "bang-hieu-quan-an-dong-da-ha-noi",
+  "bang-hieu-quan-cafe-cau-giay-ha-noi",
+  "bang-hieu-spa-cau-giay-ha-noi",
+  "bang-hieu-nha-thuoc-dong-da-ha-noi",
+  "bang-hieu-shop-quan-ao-chua-boc-ha-noi",
+  "bang-hieu-phong-kham-thanh-xuan-ha-noi",
   "lam-bien-quang-cao-dong-da",
   "lam-bien-quang-cao-o-cho-dua",
+  "lam-bien-quang-cao-xa-dan",
+  "lam-bien-quang-cao-thai-ha",
+  "lam-bien-quang-cao-chua-boc",
   "lam-bien-quang-cao-gan-day-ha-noi"
 ];
 const prioritySitemap = `<?xml version="1.0" encoding="UTF-8"?>
