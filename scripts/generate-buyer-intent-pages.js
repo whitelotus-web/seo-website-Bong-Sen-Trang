@@ -504,6 +504,121 @@ pages.push(
   }
 );
 
+const localPriceAreas = [
+  {
+    name: "Đống Đa",
+    slug: "bao-gia-bien-quang-cao-dong-da",
+    localSlug: "lam-bien-quang-cao-dong-da",
+    storefrontSlug: "bang-hieu-cua-hang-dong-da-ha-noi",
+    image: "du-an-gao-viet-bien-mat-tien-do.jpg",
+    routes: "Ô Chợ Dừa, Xã Đàn, Chùa Bộc, Thái Hà, Tây Sơn",
+    fit: "phù hợp shop, quán ăn, nhà thuốc, spa và cửa hàng mặt phố cần khảo sát nhanh gần 92E Ô Chợ Dừa"
+  },
+  {
+    name: "Cầu Giấy",
+    slug: "bao-gia-bien-quang-cao-cau-giay",
+    localSlug: "lam-bien-quang-cao-cau-giay",
+    storefrontSlug: "bang-hieu-cua-hang-cau-giay-ha-noi",
+    image: "mau-bien-shop-thoi-trang-mat-tien-ha-noi.jpg",
+    routes: "Duy Tân, Trần Thái Tông, Trung Kính, Cầu Giấy, Xuân Thủy",
+    fit: "phù hợp văn phòng, showroom, cafe, shop và cửa hàng dịch vụ cần biển sáng rõ buổi tối"
+  },
+  {
+    name: "Thanh Xuân",
+    slug: "bao-gia-bien-quang-cao-thanh-xuan",
+    localSlug: "lam-bien-quang-cao-thanh-xuan",
+    storefrontSlug: "bang-hieu-cua-hang-thanh-xuan-ha-noi",
+    image: "du-an-pink-fruit-flower-bien-mat-tien.jpg",
+    routes: "Nguyễn Trãi, Khuất Duy Tiến, Nguyễn Tuân, Lê Văn Lương",
+    fit: "phù hợp cửa hàng mới mở, quán ăn, salon, phòng khám và shop cần tối ưu chi phí"
+  },
+  {
+    name: "Hà Đông",
+    slug: "bao-gia-bien-quang-cao-ha-dong",
+    localSlug: "lam-bien-quang-cao-ha-dong",
+    storefrontSlug: "bang-hieu-cua-hang-ha-dong-ha-noi",
+    image: "du-an-bien-gia-long.jpg",
+    routes: "Quang Trung, Nguyễn Trãi, Tố Hữu, Văn Quán, Mỗ Lao",
+    fit: "phù hợp shop, spa, quán ăn, siêu thị mini và cửa hàng trong khu dân cư"
+  },
+  {
+    name: "Hoàng Mai",
+    slug: "bao-gia-bien-quang-cao-hoang-mai",
+    localSlug: "lam-bien-quang-cao-hoang-mai",
+    storefrontSlug: "bang-hieu-cua-hang-hoang-mai-ha-noi",
+    image: "mau-bien-cua-hang-me-va-be-ha-noi.jpg",
+    routes: "Giải Phóng, Tam Trinh, Linh Đàm, Tân Mai, Lĩnh Nam",
+    fit: "phù hợp cửa hàng bán lẻ, quán ăn, nhà thuốc, siêu thị mini và sửa/thay biển cũ"
+  },
+  {
+    name: "Ba Đình",
+    slug: "bao-gia-bien-quang-cao-ba-dinh",
+    localSlug: "lam-bien-quang-cao-ba-dinh",
+    storefrontSlug: "bang-hieu-cua-hang-ba-dinh-ha-noi",
+    image: "du-an-bien-chu-noi-mo-nguyen.jpg",
+    routes: "Kim Mã, Đội Cấn, Giảng Võ, Liễu Giai, Nguyễn Thái Học",
+    fit: "phù hợp showroom, văn phòng, shop, spa và cửa hàng cần biển gọn, chuyên nghiệp"
+  },
+  {
+    name: "Tây Hồ",
+    slug: "bao-gia-bien-quang-cao-tay-ho",
+    localSlug: "lam-bien-quang-cao-tay-ho",
+    storefrontSlug: "bang-hieu-cua-hang-tay-ho-ha-noi",
+    image: "du-an-bien-tien-coffee.jpg",
+    routes: "Xuân Diệu, Tô Ngọc Vân, Lạc Long Quân, Âu Cơ",
+    fit: "phù hợp cafe, nhà hàng, spa, salon và cửa hàng dịch vụ cần biển có thẩm mỹ tốt"
+  },
+  {
+    name: "Nam Từ Liêm",
+    slug: "bao-gia-bien-quang-cao-nam-tu-liem",
+    localSlug: "lam-bien-quang-cao-nam-tu-liem",
+    storefrontSlug: "bang-hieu-cua-hang-nam-tu-liem-ha-noi",
+    image: "du-an-logo-van-phong-fxce.jpg",
+    routes: "Mỹ Đình, Phạm Hùng, Mễ Trì, Tố Hữu, Lê Đức Thọ",
+    fit: "phù hợp showroom, văn phòng, cửa hàng dịch vụ, phòng tập và mặt bằng khu đô thị"
+  },
+  {
+    name: "Long Biên",
+    slug: "bao-gia-bien-quang-cao-long-bien",
+    localSlug: "lam-bien-quang-cao-long-bien",
+    storefrontSlug: "bien-hieu-cua-hang-ha-noi",
+    image: "du-an-xe-dien-viet-thanh-bien-mat-tien-led.jpg",
+    routes: "Nguyễn Văn Cừ, Cổ Linh, Ngọc Lâm, Việt Hưng, Sài Đồng",
+    fit: "phù hợp gara, showroom, cửa hàng điện máy, quán ăn và biển mặt tiền kích thước lớn"
+  },
+  {
+    name: "Hai Bà Trưng",
+    slug: "bao-gia-bien-quang-cao-hai-ba-trung",
+    localSlug: "lam-bien-quang-cao-hai-ba-trung",
+    storefrontSlug: "bien-hieu-cua-hang-ha-noi",
+    image: "du-an-oppo-samsung.jpg",
+    routes: "Phố Huế, Bạch Mai, Minh Khai, Trương Định, Đại Cồ Việt",
+    fit: "phù hợp shop, nhà hàng, cafe, phòng khám, đại lý và cửa hàng điện thoại"
+  }
+];
+
+pages.push(
+  ...localPriceAreas.map((area) => ({
+    slug: area.slug,
+    title: `Báo giá biển quảng cáo ${area.name} Hà Nội`,
+    kicker: `Báo giá theo mặt bằng tại ${area.name}`,
+    image: area.image,
+    intro: `Khách tìm "báo giá biển quảng cáo ${area.name}" thường cần ước lượng nhanh trước khi quyết định khảo sát hoặc gửi ảnh mặt tiền. Bông Sen Trắng nhận tư vấn biển alu chữ nổi, hộp đèn LED, bạt Hiflex, chữ nổi mica/inox, biển vẫy và sửa biển cũ tại ${area.name}, Hà Nội. Khu vực này có các tuyến như ${area.routes}, ${area.fit}.`,
+    items: [
+      "Gửi ảnh mặt tiền, kích thước ngang x cao và địa chỉ lắp đặt để báo giá sát hơn",
+      "Tư vấn vật liệu theo ngân sách: Hiflex, alu chữ nổi, hộp đèn LED, mica, inox",
+      "Tách rõ chi phí sản xuất, vật tư phụ, vận chuyển và lắp đặt khi cần",
+      "Có phương án tiết kiệm nếu khung cũ còn dùng được hoặc chỉ cần thay mặt biển",
+      "Ưu tiên phương án thi công nhanh cho cửa hàng cần khai trương hoặc thay biển gấp"
+    ],
+    related: [
+      [`Làm biển quảng cáo ${area.name}`, area.localSlug],
+      [`Bảng hiệu cửa hàng ${area.name}`, area.storefrontSlug],
+      ["Báo giá biển quảng cáo Hà Nội", "bao-gia-bien-quang-cao-ha-noi"]
+    ]
+  }))
+);
+
 function escapeHtml(value) {
   return String(value)
     .replace(/&/g, "&amp;")
@@ -524,6 +639,10 @@ function renderRelated(links) {
 
 function renderCommercialCluster(currentSlug) {
   const links = [
+    ["Báo giá biển quảng cáo Đống Đa", "bao-gia-bien-quang-cao-dong-da", "Ước lượng chi phí cho mặt tiền quanh Ô Chợ Dừa, Xã Đàn, Thái Hà, Chùa Bộc."],
+    ["Báo giá biển quảng cáo Cầu Giấy", "bao-gia-bien-quang-cao-cau-giay", "Báo giá biển shop, cafe, showroom và văn phòng quanh Duy Tân, Trần Thái Tông, Trung Kính."],
+    ["Báo giá biển quảng cáo Thanh Xuân", "bao-gia-bien-quang-cao-thanh-xuan", "Tư vấn biển cửa hàng quanh Nguyễn Trãi, Khuất Duy Tiến, Nguyễn Tuân, Lê Văn Lương."],
+    ["Báo giá biển quảng cáo Hà Đông", "bao-gia-bien-quang-cao-ha-dong", "Dự toán biển mặt tiền tại Quang Trung, Nguyễn Trãi, Tố Hữu, Văn Quán."],
     ["Báo giá làm biển quảng cáo Hà Nội", "bao-gia-bien-quang-cao-ha-noi", "Xem khung giá theo vật liệu, kích thước, đèn LED và điều kiện lắp đặt."],
     ["Biển hiệu cửa hàng Hà Nội", "bien-hieu-cua-hang-ha-noi", "Phương án biển cho shop, quán ăn, cafe, spa, nhà thuốc và showroom."],
     ["Làm biển mặt tiền cửa hàng", "lam-bien-mat-tien-cua-hang-ha-noi", "Chọn bố cục, vật liệu và ánh sáng theo mặt tiền thực tế."],
