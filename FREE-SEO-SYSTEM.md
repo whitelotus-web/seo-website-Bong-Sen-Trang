@@ -3,7 +3,7 @@
 ## Đã làm
 
 - Website tĩnh không cần hosting trả phí.
-- Đã deploy Cloudflare Pages miễn phí: `https://lam-bien-quang-cao-bong-sen-trang.pages.dev/`.
+- Đã deploy Cloudflare Pages miễn phí: `https://lam-bien-quang-cao-bong-sen-trang.netlify.app/`.
 - Trang chủ SEO local cho từ khóa `làm biển quảng cáo tại Hà Nội`.
 - 32 trang dịch vụ/khu vực/ngành:
   - `thi-cong-bien-quang-cao-ha-noi`

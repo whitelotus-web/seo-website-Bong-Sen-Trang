@@ -2,7 +2,7 @@ const fs = require("fs");
 const path = require("path");
 
 const root = process.cwd();
-const baseUrl = "https://lam-bien-quang-cao-bong-sen-trang.pages.dev";
+const baseUrl = "https://lam-bien-quang-cao-bong-sen-trang.netlify.app";
 const phone = "0989 521 881";
 const phoneHref = "0989521881";
 const address = "Số 92E Ô Chợ Dừa, Đống Đa, Hà Nội";

@@ -2,7 +2,7 @@ const fs = require("fs");
 const path = require("path");
 
 const root = process.cwd();
-const baseUrl = "https://lam-bien-quang-cao-bong-sen-trang.pages.dev";
+const baseUrl = "https://lam-bien-quang-cao-bong-sen-trang.netlify.app";
 
 const business = {
   name: "Công ty TNHH Truyền thông Bông Sen Trắng",

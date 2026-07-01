@@ -2,8 +2,8 @@
 
 ## Tom tat
 
-- Website live: `https://lam-bien-quang-cao-bong-sen-trang.pages.dev/`
-- Google da thay ro trang chu qua truy van `site:lam-bien-quang-cao-bong-sen-trang.pages.dev`.
+- Website live: `https://lam-bien-quang-cao-bong-sen-trang.netlify.app/`
+- Google da thay ro trang chu qua truy van `site:lam-bien-quang-cao-bong-sen-trang.netlify.app`.
 - Google cung thay Fanpage Facebook co gan website moi.
 - Voi nhom tu khoa chung nhu `lam bien quang cao tai Ha Noi`, ket qua cong khai mau van chu yeu la cac doi thu/website lau nam. Chua thay website Bông Sen Trắng xuat hien on dinh trong nhom ket qua dau.
 - Cac trang con chua co bang chung index rong qua truy van cong khai. Day la binh thuong voi site moi, nhung can tiep tuc theo doi trong Google Search Console.

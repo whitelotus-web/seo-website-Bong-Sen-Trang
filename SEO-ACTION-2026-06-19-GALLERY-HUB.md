@@ -39,6 +39,6 @@
 
 ## URL quan trong
 
-- https://lam-bien-quang-cao-bong-sen-trang.pages.dev/hinh-anh-bien-quang-cao-thuc-te-ha-noi/
-- https://lam-bien-quang-cao-bong-sen-trang.pages.dev/sitemap.xml
-- https://lam-bien-quang-cao-bong-sen-trang.pages.dev/image-sitemap.xml
+- https://lam-bien-quang-cao-bong-sen-trang.netlify.app/hinh-anh-bien-quang-cao-thuc-te-ha-noi/
+- https://lam-bien-quang-cao-bong-sen-trang.netlify.app/sitemap.xml
+- https://lam-bien-quang-cao-bong-sen-trang.netlify.app/image-sitemap.xml

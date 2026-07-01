@@ -2,7 +2,7 @@ const fs = require("fs");
 const path = require("path");
 
 const root = process.cwd();
-const baseUrl = "https://lam-bien-quang-cao-bong-sen-trang.pages.dev";
+const baseUrl = "https://lam-bien-quang-cao-bong-sen-trang.netlify.app";
 const slug = "lam-bien-quang-cao-dong-da";
 const pageUrl = `${baseUrl}/${slug}/`;
 

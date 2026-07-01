@@ -27,11 +27,11 @@ Kiem tra:
 - `node scripts/check-seo.js`: SEO OK, 80 pages checked, 0 warnings.
 - `node scripts/check-jsonld.js`: JSON-LD OK, 81 blocks in 80 pages.
 - Live 200:
-  - `https://lam-bien-quang-cao-bong-sen-trang.pages.dev/bien-quang-cao-theo-nganh-ha-noi/`
-  - `https://lam-bien-quang-cao-bong-sen-trang.pages.dev/bien-shop-quan-ao-ha-noi/`
-  - `https://lam-bien-quang-cao-bong-sen-trang.pages.dev/bien-quan-cafe-ha-noi/`
-  - `https://lam-bien-quang-cao-bong-sen-trang.pages.dev/bien-quan-an-uong-ha-noi/`
-  - `https://lam-bien-quang-cao-bong-sen-trang.pages.dev/bien-nail-mi-spa-ha-noi/`
+  - `https://lam-bien-quang-cao-bong-sen-trang.netlify.app/bien-quang-cao-theo-nganh-ha-noi/`
+  - `https://lam-bien-quang-cao-bong-sen-trang.netlify.app/bien-shop-quan-ao-ha-noi/`
+  - `https://lam-bien-quang-cao-bong-sen-trang.netlify.app/bien-quan-cafe-ha-noi/`
+  - `https://lam-bien-quang-cao-bong-sen-trang.netlify.app/bien-quan-an-uong-ha-noi/`
+  - `https://lam-bien-quang-cao-bong-sen-trang.netlify.app/bien-nail-mi-spa-ha-noi/`
 
 Ghi chu theo doi:
 

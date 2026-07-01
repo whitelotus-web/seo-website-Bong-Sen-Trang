@@ -2,7 +2,7 @@ const fs = require("fs");
 const path = require("path");
 
 const root = process.cwd();
-const baseUrl = "https://lam-bien-quang-cao-bong-sen-trang.pages.dev";
+const baseUrl = "https://lam-bien-quang-cao-bong-sen-trang.netlify.app";
 const slug = "nang-luc-thi-cong-bien-quang-cao-ha-noi";
 const pageUrl = `${baseUrl}/${slug}/`;
 const phone = "0989 521 881";

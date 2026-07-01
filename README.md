@@ -12,7 +12,7 @@ Website tĩnh cho dịch vụ sản xuất, thi công lắp đặt biển quản
 
 ## Việc cần làm trước khi public
 
-1. URL miễn phí đang chạy: `https://lam-bien-quang-cao-bong-sen-trang.pages.dev/`.
+1. URL miễn phí đang chạy: `https://lam-bien-quang-cao-bong-sen-trang.netlify.app/`.
 2. Deploy lại Cloudflare Pages khi sửa nội dung bằng lệnh trong `DEPLOY-MIEN-PHI.md`.
 3. Xác minh website trong Google Search Console.
 4. Tạo hoặc cập nhật Google Business Profile với đúng tên, địa chỉ, số điện thoại.

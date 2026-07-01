@@ -2,11 +2,11 @@
 
 Website đang chạy:
 
-`https://lam-bien-quang-cao-bong-sen-trang.pages.dev/`
+`https://lam-bien-quang-cao-bong-sen-trang.netlify.app/`
 
 Sitemap:
 
-`https://lam-bien-quang-cao-bong-sen-trang.pages.dev/sitemap.xml`
+`https://lam-bien-quang-cao-bong-sen-trang.netlify.app/sitemap.xml`
 
 ## Cách thêm website
 
@@ -16,7 +16,7 @@ Sitemap:
 4. Nhập đúng URL:
 
 ```text
-https://lam-bien-quang-cao-bong-sen-trang.pages.dev/
+https://lam-bien-quang-cao-bong-sen-trang.netlify.app/
 ```
 
 5. Nếu Google đưa mã xác minh, ưu tiên chọn một trong hai cách:
@@ -36,20 +36,20 @@ sitemap.xml
 4. Kiểm tra URL trang chủ:
 
 ```text
-https://lam-bien-quang-cao-bong-sen-trang.pages.dev/
+https://lam-bien-quang-cao-bong-sen-trang.netlify.app/
 ```
 
 5. Bấm `Request indexing` nếu nút này khả dụng.
 
 ## URL ưu tiên request indexing
 
-- `https://lam-bien-quang-cao-bong-sen-trang.pages.dev/`
-- `https://lam-bien-quang-cao-bong-sen-trang.pages.dev/hinh-anh-bien-quang-cao-thuc-te-ha-noi/`
-- `https://lam-bien-quang-cao-bong-sen-trang.pages.dev/bien-quang-cao-nha-hang-ha-noi/`
-- `https://lam-bien-quang-cao-bong-sen-trang.pages.dev/bao-gia-bien-quang-cao-ha-noi/`
-- `https://lam-bien-quang-cao-bong-sen-trang.pages.dev/thi-cong-bien-quang-cao-ha-noi/`
-- `https://lam-bien-quang-cao-bong-sen-trang.pages.dev/bien-alu-chu-noi-ha-noi/`
-- `https://lam-bien-quang-cao-bong-sen-trang.pages.dev/lam-bien-quang-cao-dong-da/`
+- `https://lam-bien-quang-cao-bong-sen-trang.netlify.app/`
+- `https://lam-bien-quang-cao-bong-sen-trang.netlify.app/hinh-anh-bien-quang-cao-thuc-te-ha-noi/`
+- `https://lam-bien-quang-cao-bong-sen-trang.netlify.app/bien-quang-cao-nha-hang-ha-noi/`
+- `https://lam-bien-quang-cao-bong-sen-trang.netlify.app/bao-gia-bien-quang-cao-ha-noi/`
+- `https://lam-bien-quang-cao-bong-sen-trang.netlify.app/thi-cong-bien-quang-cao-ha-noi/`
+- `https://lam-bien-quang-cao-bong-sen-trang.netlify.app/bien-alu-chu-noi-ha-noi/`
+- `https://lam-bien-quang-cao-bong-sen-trang.netlify.app/lam-bien-quang-cao-dong-da/`
 
 ## Lưu ý
 
@@ -60,7 +60,7 @@ Google có thể mất vài ngày đến vài tuần để index và hiển th�
 File đã deploy:
 
 ```text
-https://lam-bien-quang-cao-bong-sen-trang.pages.dev/google8635286053880141.html
+https://lam-bien-quang-cao-bong-sen-trang.netlify.app/google8635286053880141.html
 ```
 
 Nội dung:

@@ -3,7 +3,7 @@ const https = require("https");
 const path = require("path");
 
 const root = process.cwd();
-const baseUrl = "https://lam-bien-quang-cao-bong-sen-trang.pages.dev";
+const baseUrl = "https://lam-bien-quang-cao-bong-sen-trang.netlify.app";
 const host = new URL(baseUrl).host;
 
 const keyFile = fs

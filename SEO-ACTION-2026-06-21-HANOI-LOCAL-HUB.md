@@ -47,5 +47,5 @@
 
 ## URL
 
-- https://lam-bien-quang-cao-bong-sen-trang.pages.dev/lam-bien-quang-cao-ha-noi/
-- https://lam-bien-quang-cao-bong-sen-trang.pages.dev/sitemap.xml
+- https://lam-bien-quang-cao-bong-sen-trang.netlify.app/lam-bien-quang-cao-ha-noi/
+- https://lam-bien-quang-cao-bong-sen-trang.netlify.app/sitemap.xml

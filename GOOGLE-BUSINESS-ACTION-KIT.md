@@ -3,7 +3,7 @@
 Website:
 
 ```text
-https://lam-bien-quang-cao-bong-sen-trang.pages.dev/
+https://lam-bien-quang-cao-bong-sen-trang.netlify.app/
 ```
 
 ## Danh muc va dich vu nen them

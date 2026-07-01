@@ -121,7 +121,7 @@ def make_slide(index: int, photo: str, kicker: str, title: str, body: str, cta: 
     else:
         draw.rounded_rectangle((72, 1704, 1008, 1792), radius=24, fill=(255, 211, 81))
         draw.text((118, 1724), "Zalo/Gọi 0989 521 881", font=FONT_BODY_BOLD, fill=(10, 34, 60))
-        draw.text((118, 1816), "lam-bien-quang-cao-bong-sen-trang.pages.dev", font=FONT_SMALL, fill=(218, 233, 244))
+        draw.text((118, 1816), "lam-bien-quang-cao-bong-sen-trang.netlify.app", font=FONT_SMALL, fill=(218, 233, 244))
 
     out = SLIDES / f"slide-{index:02d}.png"
     base.convert("RGB").save(out, quality=95)

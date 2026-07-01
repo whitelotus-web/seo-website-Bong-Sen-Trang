@@ -5,10 +5,10 @@
 - Build local: đạt.
 - JSON-LD: hợp lệ, `51 blocks / 50 pages`.
 - Live URL kiểm tra được:
-  - `https://lam-bien-quang-cao-bong-sen-trang.pages.dev/`
-  - `https://lam-bien-quang-cao-bong-sen-trang.pages.dev/robots.txt`
-  - `https://lam-bien-quang-cao-bong-sen-trang.pages.dev/sitemap.xml`
-  - `https://lam-bien-quang-cao-bong-sen-trang.pages.dev/lam-bien-quang-cao-nhanh-ha-noi/`
+  - `https://lam-bien-quang-cao-bong-sen-trang.netlify.app/`
+  - `https://lam-bien-quang-cao-bong-sen-trang.netlify.app/robots.txt`
+  - `https://lam-bien-quang-cao-bong-sen-trang.netlify.app/sitemap.xml`
+  - `https://lam-bien-quang-cao-bong-sen-trang.netlify.app/lam-bien-quang-cao-nhanh-ha-noi/`
 - Sitemap live đã có trang `lam-bien-quang-cao-nhanh-ha-noi` và `hinh-anh-bien-quang-cao-thuc-te-ha-noi`.
 
 ## Việc đã làm hôm nay
@@ -25,8 +25,8 @@
 ## Việc nên làm thủ công
 
 1. Nếu Google Search Console hết giới hạn ngày hôm qua, thử yêu cầu lập chỉ mục 1-2 URL ưu tiên:
-   - `https://lam-bien-quang-cao-bong-sen-trang.pages.dev/`
-   - `https://lam-bien-quang-cao-bong-sen-trang.pages.dev/lam-bien-quang-cao-nhanh-ha-noi/`
+   - `https://lam-bien-quang-cao-bong-sen-trang.netlify.app/`
+   - `https://lam-bien-quang-cao-bong-sen-trang.netlify.app/lam-bien-quang-cao-nhanh-ha-noi/`
 2. Đăng/lên lịch fanpage theo các bài đã chuẩn bị.
 3. Khi bài Facebook đã lên, kiểm tra link trong bài trỏ đúng về trang dịch vụ tương ứng.
 

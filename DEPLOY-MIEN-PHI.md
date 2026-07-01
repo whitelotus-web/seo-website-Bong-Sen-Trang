@@ -4,7 +4,7 @@ Tên site/slug đã chọn: `lam-bien-quang-cao-bong-sen-trang`
 
 URL miễn phí đang chạy trên Cloudflare Pages:
 
-`https://lam-bien-quang-cao-bong-sen-trang.pages.dev/`
+`https://lam-bien-quang-cao-bong-sen-trang.netlify.app/`
 
 ## Cách deploy lại
 
@@ -32,7 +32,7 @@ Nếu Cloudflare báo tên project đã tồn tại, đổi `SITE_URL` trong `in
 
 ## Sau khi deploy
 
-1. Mở URL public để kiểm tra giao diện: `https://lam-bien-quang-cao-bong-sen-trang.pages.dev/`.
+1. Mở URL public để kiểm tra giao diện: `https://lam-bien-quang-cao-bong-sen-trang.netlify.app/`.
 2. Vào Google Search Console, thêm property URL prefix.
 3. Gửi sitemap: `/sitemap.xml`.
 4. Cập nhật website này trong Google Business Profile.

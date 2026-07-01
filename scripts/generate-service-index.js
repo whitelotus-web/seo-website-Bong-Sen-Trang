@@ -2,7 +2,7 @@ const fs = require("fs");
 const path = require("path");
 
 const root = process.cwd();
-const baseUrl = "https://lam-bien-quang-cao-bong-sen-trang.pages.dev";
+const baseUrl = "https://lam-bien-quang-cao-bong-sen-trang.netlify.app";
 const slug = "tat-ca-dich-vu-bien-quang-cao-ha-noi";
 const pageUrl = `${baseUrl}/${slug}/`;
 const lastmod = new Date().toISOString().slice(0, 10);

@@ -3,7 +3,7 @@ const path = require("path");
 
 const root = process.cwd();
 const dist = path.join(root, "dist");
-const defaultBaseUrl = "https://lam-bien-quang-cao-bong-sen-trang.pages.dev";
+const defaultBaseUrl = "https://lam-bien-quang-cao-bong-sen-trang.netlify.app";
 const baseUrl = process.env.SITE_URL || defaultBaseUrl;
 
 const ignoredDirs = new Set([".git", ".wrangler", "assets", "dist", "node_modules", "scripts"]);

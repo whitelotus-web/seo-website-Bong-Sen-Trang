@@ -22,7 +22,7 @@ Bông Sen Trắng nhận làm biển hộp đèn LED, chữ nổi phát sáng, b
 
 Gửi ảnh mặt tiền qua Zalo 0989 521 881 để được tư vấn loại biển phù hợp.
 
-Xem thêm: https://lam-bien-quang-cao-bong-sen-trang.pages.dev/bien-hop-den-led-ha-noi/
+Xem thêm: https://lam-bien-quang-cao-bong-sen-trang.netlify.app/bien-hop-den-led-ha-noi/
 "@
   },
   @{
@@ -53,7 +53,7 @@ Bông Sen Trắng nhận làm biển chữ nổi, hộp đèn LED, logo mica/ino
 
 Gửi ảnh mặt tiền hoặc khu vực lễ tân qua Zalo 0989 521 881 để được tư vấn phương án phù hợp.
 
-Xem thêm: https://lam-bien-quang-cao-bong-sen-trang.pages.dev/bien-quang-cao-spa-salon-ha-noi/
+Xem thêm: https://lam-bien-quang-cao-bong-sen-trang.netlify.app/bien-quang-cao-spa-salon-ha-noi/
 "@
   },
   @{
@@ -66,7 +66,7 @@ Bông Sen Trắng nhận kiểm tra, sửa chữa, thay mặt biển, thay LED, 
 
 Gửi ảnh hiện trạng qua Zalo 0989 521 881 để được tư vấn phương án xử lý phù hợp.
 
-Xem thêm: https://lam-bien-quang-cao-bong-sen-trang.pages.dev/sua-chua-bien-quang-cao-ha-noi/
+Xem thêm: https://lam-bien-quang-cao-bong-sen-trang.netlify.app/sua-chua-bien-quang-cao-ha-noi/
 "@
   }
 )

@@ -45,6 +45,6 @@
 
 ## URL
 
-- https://lam-bien-quang-cao-bong-sen-trang.pages.dev/sua-chua-bien-quang-cao-ha-noi/
-- https://lam-bien-quang-cao-bong-sen-trang.pages.dev/sitemap.xml
-- https://lam-bien-quang-cao-bong-sen-trang.pages.dev/image-sitemap.xml
+- https://lam-bien-quang-cao-bong-sen-trang.netlify.app/sua-chua-bien-quang-cao-ha-noi/
+- https://lam-bien-quang-cao-bong-sen-trang.netlify.app/sitemap.xml
+- https://lam-bien-quang-cao-bong-sen-trang.netlify.app/image-sitemap.xml

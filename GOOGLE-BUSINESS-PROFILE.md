@@ -7,7 +7,7 @@
 - Tên doanh nghiệp: Công ty TNHH Truyền thông Bông Sen Trắng
 - Địa chỉ: Số 92E Ô Chợ Dừa, Đống Đa, Hà Nội
 - Số điện thoại: 0989521881
-- Website: `https://lam-bien-quang-cao-bong-sen-trang.pages.dev/`
+- Website: `https://lam-bien-quang-cao-bong-sen-trang.netlify.app/`
 - Khu vực phục vụ: Hà Nội
 - Mô tả ngắn: Sản xuất, thi công lắp đặt biển quảng cáo tại Hà Nội: biển alu chữ nổi, hộp đèn LED, bảng hiệu cửa hàng, chữ nổi mica inox, pano và sửa chữa biển cũ.
 

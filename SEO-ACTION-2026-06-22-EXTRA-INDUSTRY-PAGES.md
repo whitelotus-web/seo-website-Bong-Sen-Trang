@@ -31,8 +31,8 @@ Kiem tra:
 - `node scripts/check-seo.js`: SEO OK, 83 pages checked, 0 warnings.
 - `node scripts/check-jsonld.js`: JSON-LD OK, 84 blocks in 83 pages.
 - Live 200:
-  - `https://lam-bien-quang-cao-bong-sen-trang.pages.dev/bien-phong-kham-nha-khoa-ha-noi/`
-  - `https://lam-bien-quang-cao-bong-sen-trang.pages.dev/bien-sieu-thi-mini-me-va-be-ha-noi/`
+  - `https://lam-bien-quang-cao-bong-sen-trang.netlify.app/bien-phong-kham-nha-khoa-ha-noi/`
+  - `https://lam-bien-quang-cao-bong-sen-trang.netlify.app/bien-sieu-thi-mini-me-va-be-ha-noi/`
 
 Ghi chu:
 

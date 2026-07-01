@@ -17,7 +17,7 @@ Bông Sen Trắng đã cập nhật bảng giá tham khảo cho biển bạt Hif
 Gửi ảnh mặt tiền + kích thước dự kiến qua Zalo để được tư vấn phương án phù hợp ngân sách.
 
 Gọi/Zalo: 0989 521 881
-Xem bảng giá: https://lam-bien-quang-cao-bong-sen-trang.pages.dev/bao-gia-bien-quang-cao-ha-noi/
+Xem bảng giá: https://lam-bien-quang-cao-bong-sen-trang.netlify.app/bao-gia-bien-quang-cao-ha-noi/
 ```
 
 ## 20/06/2026 - Alu chu noi
@@ -36,7 +36,7 @@ Biển alu chữ nổi phù hợp cửa hàng, showroom, văn phòng và mặt t
 
 Bông Sen Trắng nhận tư vấn, sản xuất và lắp đặt tại Hà Nội.
 Gọi/Zalo: 0989 521 881
-Tham khảo giá: https://lam-bien-quang-cao-bong-sen-trang.pages.dev/bao-gia-bien-alu-chu-noi-ha-noi/
+Tham khảo giá: https://lam-bien-quang-cao-bong-sen-trang.netlify.app/bao-gia-bien-alu-chu-noi-ha-noi/
 ```
 
 ## 21/06/2026 - Hop den LED
@@ -55,7 +55,7 @@ Phù hợp cho:
 
 Gửi ảnh mặt tiền qua Zalo, Bông Sen Trắng sẽ tư vấn loại hộp đèn phù hợp ngân sách.
 Gọi/Zalo: 0989 521 881
-Xem giá hộp đèn: https://lam-bien-quang-cao-bong-sen-trang.pages.dev/bao-gia-bien-hop-den-led-ha-noi/
+Xem giá hộp đèn: https://lam-bien-quang-cao-bong-sen-trang.netlify.app/bao-gia-bien-hop-den-led-ha-noi/
 ```
 
 ## 22/06/2026 - Hiflex tiet kiem
@@ -74,7 +74,7 @@ Khi nào nên chọn Hiflex?
 
 Bông Sen Trắng nhận làm biển Hiflex khung sắt, Hiflex lót tôn và thay mặt bạt trên khung cũ.
 Gọi/Zalo: 0989 521 881
-Xem giá: https://lam-bien-quang-cao-bong-sen-trang.pages.dev/bao-gia-bien-bat-hiflex-ha-noi/
+Xem giá: https://lam-bien-quang-cao-bong-sen-trang.netlify.app/bao-gia-bien-bat-hiflex-ha-noi/
 ```
 
 ## 23/06/2026 - Lam bien gia re dung cach
@@ -185,5 +185,5 @@ Muốn báo giá biển quảng cáo nhanh và sát hơn, anh/chị chỉ cần 
 
 Bông Sen Trắng tư vấn phương án phù hợp trước khi sản xuất thi công.
 Gọi/Zalo: 0989 521 881
-Website: https://lam-bien-quang-cao-bong-sen-trang.pages.dev/
+Website: https://lam-bien-quang-cao-bong-sen-trang.netlify.app/
 ```

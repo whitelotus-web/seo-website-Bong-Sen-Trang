@@ -6,7 +6,7 @@ Xay dung va SEO website cho Cong ty TNHH Truyen thong Bong Sen Trang, dich vu sa
 
 ## Thong tin chinh
 
-- Website live: https://lam-bien-quang-cao-bong-sen-trang.pages.dev/
+- Website live: https://lam-bien-quang-cao-bong-sen-trang.netlify.app/
 - Cong ty: Cong ty TNHH Truyen thong Bong Sen Trang
 - Dia chi: So 92E O Cho Dua, Dong Da, Ha Noi
 - Dien thoai/Zalo: 0989 521 881
