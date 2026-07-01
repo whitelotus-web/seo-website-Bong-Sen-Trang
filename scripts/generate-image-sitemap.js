@@ -3,7 +3,7 @@ const path = require("path");
 
 const root = process.cwd();
 const baseUrl = "https://lam-bien-quang-cao-bong-sen-trang.netlify.app";
-const lastmod = "2026-06-22";
+const lastmod = new Date().toISOString().slice(0, 10);
 
 const ignoredDirs = new Set([
   ".git",
