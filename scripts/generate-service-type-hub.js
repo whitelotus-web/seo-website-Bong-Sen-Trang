@@ -36,6 +36,20 @@ const groups = [
       ["Làm biển shop mỹ phẩm Hà Nội", "lam-bien-shop-my-pham-ha-noi", "Biển sạch, sáng, hợp shop mỹ phẩm, skincare, cửa hàng làm đẹp."],
       ["Làm biển quảng cáo khai trương gấp Hà Nội", "lam-bien-quang-cao-khai-truong-gap-ha-noi", "Phương án nhanh cho cửa hàng cần kịp ngày mở bán."]
     ]
+  },
+  {
+    title: "Hạng mục theo khu vực có nhu cầu cao",
+    intro: "Các trang này ghép đúng hạng mục với quận/khu vực thường có nhu cầu thực tế, giúp khách đi thẳng tới phương án gần mặt bằng của họ.",
+    links: [
+      ["Làm biển vẫy LED Đống Đa", "lam-bien-vay-led-dong-da-ha-noi", "Biển vẫy LED cho Ô Chợ Dừa, Xã Đàn, Thái Hà, Chùa Bộc."],
+      ["Làm biển vẫy LED Cầu Giấy", "lam-bien-vay-led-cau-giay-ha-noi", "Biển vẫy cho shop, cafe, salon, nhà thuốc tại Cầu Giấy."],
+      ["Làm hộp đèn LED Hà Đông", "lam-bien-hop-den-led-ha-dong-ha-noi", "Hộp đèn LED cho Quang Trung, Văn Quán, Mỗ Lao, Tố Hữu."],
+      ["Làm hộp đèn LED Thanh Xuân", "lam-bien-hop-den-led-thanh-xuan-ha-noi", "Hộp đèn cho Nguyễn Trãi, Khuất Duy Tiến, Nguyễn Tuân."],
+      ["Backdrop logo văn phòng Nam Từ Liêm", "lam-backdrop-logo-van-phong-nam-tu-liem-ha-noi", "Logo lễ tân cho văn phòng, showroom, tòa nhà tại Mỹ Đình."],
+      ["Decal kính showroom Cầu Giấy", "lam-decal-kinh-showroom-cau-giay-ha-noi", "Decal kính cho showroom, văn phòng, spa, clinic tại Cầu Giấy."],
+      ["Biển menu quán ăn Đống Đa", "lam-bien-menu-quan-an-dong-da-ha-noi", "Bảng menu, bảng món, bảng giá cho quán ăn tại Đống Đa."],
+      ["Biển quán nhậu Hoàng Mai", "lam-bien-quan-nhau-hoang-mai-ha-noi", "Biển sáng, chữ lớn, dễ nhìn cho quán ăn tối tại Hoàng Mai."]
+    ]
   }
 ];
 
