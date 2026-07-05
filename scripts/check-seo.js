@@ -105,6 +105,10 @@ for (const file of files) {
   if (!ogImage) pushError(file, "missing og:image");
   if (!twitterCard) pushWarning(file, "missing twitter:card");
   if (!jsonBlocks.length) pushError(file, "missing JSON-LD");
+  if (!/<html\s+lang="vi"/i.test(html)) pushError(file, "html lang should be vi");
+  if (!html.includes('hreflang="vi-VN"')) pushError(file, "missing hreflang vi-VN");
+  if (!html.includes('hreflang="x-default"')) pushError(file, "missing hreflang x-default");
+  if (!html.includes('name="geo.region" content="VN-HN"')) pushError(file, "missing geo.region VN-HN");
 
   if (canonical && !canonical.startsWith(baseUrl)) {
     pushError(file, `canonical is outside expected domain: ${canonical}`);
