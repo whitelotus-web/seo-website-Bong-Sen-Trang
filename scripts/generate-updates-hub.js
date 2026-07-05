@@ -8,6 +8,10 @@ const pageUrl = `${baseUrl}/${slug}/`;
 const lastmod = new Date().toISOString().slice(0, 10);
 
 const updates = [
+  ["Làm biển quảng cáo theo mặt bằng Hà Nội", "lam-bien-quang-cao-theo-mat-bang-ha-noi", "Hub chọn phương án theo mặt bằng: mặt tiền hẹp, trong ngõ, tầng 2, mặt tiền rộng, nhà lô góc và đổi thương hiệu."],
+  ["Làm biển quảng cáo mặt tiền hẹp Hà Nội", "lam-bien-quang-cao-mat-tien-hep-ha-noi", "Phương án biển gọn, rõ tên, dễ nhìn từ hai chiều đường cho shop nhỏ và cửa hàng mặt tiền hẹp."],
+  ["Làm biển quảng cáo trong ngõ Hà Nội", "lam-bien-quang-cao-trong-ngo-ha-noi", "Biển chỉ dẫn, biển vẫy, hộp đèn nhỏ giúp khách tìm đúng địa chỉ trong ngõ."],
+  ["Làm biển quảng cáo tầng 2 Hà Nội", "lam-bien-quang-cao-tang-2-ha-noi", "Tư vấn cỡ chữ, điểm nhìn, khung treo, LED và an toàn thi công cho biển tầng 2."],
   ["Làm biển vẫy LED Đống Đa Hà Nội", "lam-bien-vay-led-dong-da-ha-noi", "Biển vẫy LED cho Ô Chợ Dừa, Xã Đàn, Thái Hà, Chùa Bộc, shop nhỏ và quán dịch vụ."],
   ["Làm biển vẫy LED Cầu Giấy Hà Nội", "lam-bien-vay-led-cau-giay-ha-noi", "Biển vẫy cho cafe, trà sữa, salon, nhà thuốc và cửa hàng trên phố đông."],
   ["Làm biển hộp đèn LED Hà Đông Hà Nội", "lam-bien-hop-den-led-ha-dong-ha-noi", "Hộp đèn LED cho Quang Trung, Văn Quán, Mỗ Lao, Tố Hữu và cửa hàng mở buổi tối."],
