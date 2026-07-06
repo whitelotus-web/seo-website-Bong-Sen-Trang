@@ -231,7 +231,7 @@ ${groupsHtml}
 `;
 
 fs.mkdirSync(path.join(root, slug), { recursive: true });
-fs.writeFileSync(path.join(root, slug, "index.html"), html, "utf8");
+fs.writeFileSync(path.join(root, slug, "index.html"), html.replace(/^[ \t]+$/gm, ""), "utf8");
 
 function linkServiceIndexFromFooter(filePath, relativeHref) {
   let pageHtml = fs.readFileSync(filePath, "utf8");
