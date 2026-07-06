@@ -1,5 +1,11 @@
 # Website Bông Sen Trắng
 
+## Hướng SEO
+
+- Kênh chính: Google Search.
+- Đo lường chính: Google Search Console của website Bông Sen Trắng.
+- Không dùng Bing Webmaster Tools để đánh giá tiến độ SEO của dự án này.
+
 Website tĩnh cho dịch vụ sản xuất, thi công lắp đặt biển quảng cáo tại Hà Nội.
 
 ## File chính

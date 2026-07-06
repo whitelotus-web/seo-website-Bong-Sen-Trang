@@ -4,6 +4,13 @@
 
 Xay dung va SEO website cho Cong ty TNHH Truyen thong Bong Sen Trang, dich vu san xuat va thi cong bien quang cao tai Ha Noi.
 
+## Kenh SEO uu tien
+
+- Uu tien chinh: Google Search cho website Bong Sen Trang.
+- Do luong chinh: Google Search Console cua property `https://lam-bien-quang-cao-bong-sen-trang.netlify.app/`.
+- Thi truong muc tieu: khach hang tai Ha Noi, Viet Nam.
+- Khong uu tien Bing/Webmaster Tools cho du an nay. Neu co script IndexNow thi chi xem la cong cu phu, khong dua vao ke hoach SEO chinh va khong dung so lieu Bing de danh gia tien do.
+
 ## Thong tin chinh
 
 - Website live: https://lam-bien-quang-cao-bong-sen-trang.netlify.app/
@@ -19,8 +26,7 @@ Xay dung va SEO website cho Cong ty TNHH Truyen thong Bong Sen Trang, dich vu sa
 npm run build
 node scripts/check-seo.js
 node scripts/check-jsonld.js
-npm run deploy:cloudflare
-npm run submit:indexnow
+npx -y netlify-cli deploy --prod --dir=dist
 ```
 
 ## Quy trinh lam viec tren nhieu may
@@ -44,13 +50,13 @@ Neu lam bang Codex, hay yeu cau Codex pull truoc khi sua va push sau khi xong.
 
 ## Da trien khai
 
-- Site tinh tren Cloudflare Pages.
+- Site tinh tren Netlify.
 - Cac trang dich vu chinh: thi cong, bao gia, sua chua, alu chu noi, hop den LED, Hiflex, chu noi mica/inox, bien vay.
 - SEO local Ha Noi: hub Ha Noi, cac quan, trang gan day, cac tuyen duong/phuong quanh Dong Da.
 - SEO nganh hang: shop quan ao, cafe, quan an, tra sua, nail/spa, salon, nha thuoc, gara, trung tam day hoc, van phong, phong kham nha khoa, sieu thi mini/me va be.
 - SEO khu vuc nho: Linh Dam, Hoang Mai.
 - Sitemap, sitemap Google, sitemap text, image sitemap.
-- IndexNow key file va script submit.
+- IndexNow key file va script submit ton tai trong repo, nhung khong phai kenh SEO uu tien cua du an nay.
 - Lich/caption fanpage va cac file ghi chu SEO theo ngay.
 
 ## Luu y bao mat
@@ -68,7 +74,7 @@ Moi may can dang nhap Cloudflare rieng neu muon deploy bang Wrangler.
 
 ## Viec nen lam tiep
 
-- Theo doi Google Search Console: impressions, queries, pages.
+- Theo doi Google Search Console: impressions, queries, pages; loc quoc gia Viet Nam khi danh gia tien do.
 - Khi co anh cong trinh that moi, toi uu ten file + alt + dua vao dung trang nganh/khu vuc.
 - Khi mua ten mien rieng, cau hinh redirect 301 tu Pages domain sang domain moi de giu SEO.
 - Duy tri dang fanpage, Google Business Profile va bo sung anh that theo tung nhom dich vu.

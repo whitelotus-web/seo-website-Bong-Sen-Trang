@@ -1,5 +1,7 @@
 # SEO action 2026-07-06: Bing IndexNow submission
 
+Status update: this is an archived side note only. The active SEO plan for Bong Sen Trang is Google Search / Google Search Console, not Bing Webmaster Tools. The Bing check happened during a site-selection confusion and should not be used to evaluate progress for this project.
+
 Mục tiêu: báo cho Bing/Yandex biết toàn bộ URL hiện tại của website đã được cập nhật trên domain Netlify chính.
 
 Đã kiểm tra:
