@@ -79,14 +79,14 @@ const grouped = groupOrder
   .map((name) => ({ name, items: pages.filter((page) => categoryFor(page) === name) }))
   .filter((group) => group.items.length);
 
-const title = "Tất cả dịch vụ làm biển quảng cáo Hà Nội | Bông Sen Trắng";
-const description = "Danh sách đầy đủ dịch vụ, khu vực phục vụ, bài tư vấn và hình ảnh công trình biển quảng cáo của Bông Sen Trắng tại Hà Nội.";
+const title = "Danh mục dịch vụ làm biển quảng cáo Hà Nội | Bông Sen Trắng";
+const description = "Danh mục dịch vụ làm biển quảng cáo, khu vực phục vụ, bài tư vấn và hình ảnh công trình của Bông Sen Trắng tại Hà Nội.";
 const heroImage = `${baseUrl}/assets/images/hero-bien-quang-cao-ha-noi.jpg`;
 
 const itemListJson = {
   "@context": "https://schema.org",
   "@type": "ItemList",
-  name: "Tất cả dịch vụ làm biển quảng cáo Hà Nội",
+  name: "Danh mục dịch vụ làm biển quảng cáo Hà Nội",
   description,
   url: pageUrl,
   itemListElement: pages.map((page, index) => ({
@@ -138,7 +138,7 @@ const html = `<!doctype html>
     <meta property="og:description" content="${escapeHtml(description)}">
     <meta property="og:url" content="${pageUrl}">
     <meta property="og:image" content="${heroImage}">
-    <meta property="og:image:alt" content="Tất cả dịch vụ làm biển quảng cáo tại Hà Nội của Bông Sen Trắng">
+    <meta property="og:image:alt" content="Danh mục dịch vụ làm biển quảng cáo tại Hà Nội của Bông Sen Trắng">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="${escapeHtml(title)}">
     <meta name="twitter:description" content="${escapeHtml(description)}">
@@ -178,17 +178,17 @@ ${JSON.stringify(itemListJson, null, 2)}
             <nav class="breadcrumb" aria-label="Breadcrumb">
               <a href="../">Trang chủ</a>
               <span>/</span>
-              <span>Tất cả dịch vụ</span>
+              <span>Danh mục dịch vụ</span>
             </nav>
-            <p class="section-kicker">Sơ đồ dịch vụ</p>
-            <h1>Tất cả dịch vụ làm biển quảng cáo tại Hà Nội</h1>
-            <p>Chọn nhanh dịch vụ, khu vực phục vụ, bài tư vấn hoặc hình ảnh công trình phù hợp với nhu cầu làm biển quảng cáo của anh/chị.</p>
+            <p class="section-kicker">Danh mục dịch vụ</p>
+            <h1>Dịch vụ làm biển quảng cáo tại Hà Nội</h1>
+            <p>Chọn nhanh đúng nhu cầu: báo giá, làm biển theo ngành, làm biển theo khu vực, sửa biển cũ, xem mẫu biển hoặc chuẩn bị thông tin trước khi gửi ảnh mặt tiền qua Zalo.</p>
             <div class="hero-actions">
               <a class="btn btn-primary" href="tel:0989521881">Gọi 0989 521 881</a>
               <a class="btn btn-secondary" href="https://zalo.me/0989521881" target="_blank" rel="noopener">Nhắn Zalo</a>
             </div>
           </div>
-          <img src="../assets/images/hero-bien-quang-cao-ha-noi.jpg" alt="Tất cả dịch vụ làm biển quảng cáo tại Hà Nội" loading="eager" fetchpriority="high" decoding="async" width="960" height="720">
+          <img src="../assets/images/hero-bien-quang-cao-ha-noi.jpg" alt="Danh mục dịch vụ làm biển quảng cáo tại Hà Nội" loading="eager" fetchpriority="high" decoding="async" width="960" height="720">
         </div>
       </section>
 

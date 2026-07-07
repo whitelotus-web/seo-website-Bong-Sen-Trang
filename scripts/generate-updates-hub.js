@@ -8,6 +8,13 @@ const pageUrl = `${baseUrl}/${slug}/`;
 const lastmod = new Date().toISOString().slice(0, 10);
 
 const updates = [
+  ["Báo giá biển quảng cáo theo m2 Hà Nội", "bao-gia-lam-bien-quang-cao-theo-m2-ha-noi", "Ước lượng chi phí theo diện tích, vật liệu nền, chữ nổi, LED và điều kiện lắp đặt thực tế."],
+  ["Biển quảng cáo 1m2 giá bao nhiêu tại Hà Nội", "bien-quang-cao-1m2-gia-bao-nhieu-ha-noi", "Giải thích vì sao giá theo m2 chỉ là giá nền, cần tính thêm khung, chữ, LED và vị trí thi công."],
+  ["Chi phí làm biển cửa hàng mới tại Hà Nội", "chi-phi-lam-bien-cua-hang-moi-ha-noi", "Gợi ý cách phân bổ ngân sách cho biển chính, biển vẫy, decal kính và hạng mục khai trương."],
+  ["Gửi ảnh báo giá biển quảng cáo Hà Nội", "gui-anh-bao-gia-bien-quang-cao-ha-noi", "Hướng dẫn khách gửi ảnh mặt tiền, kích thước, địa chỉ và mẫu mong muốn để báo giá sát hơn."],
+  ["Khảo sát làm biển quảng cáo Hà Nội", "khao-sat-lam-bien-quang-cao-ha-noi", "Phù hợp biển lớn, biển cao, mặt tiền khó đo hoặc trường hợp muốn tận dụng khung cũ."],
+  ["Sửa chữa biển quảng cáo Hà Nội", "sua-chua-bien-quang-cao-ha-noi", "Thay LED, thay mặt bạt, sửa hộp đèn, gia cố khung và tư vấn sửa hay làm mới biển cũ."],
+  ["Làm biển quảng cáo cần gấp Hà Nội", "lam-bien-quang-cao-can-gap-ha-noi", "Phương án cho cửa hàng sắp khai trương, cần thay biển nhanh hoặc cần hoàn thiện mặt tiền trong thời gian ngắn."],
   ["Làm biển quảng cáo theo mặt bằng Hà Nội", "lam-bien-quang-cao-theo-mat-bang-ha-noi", "Hub chọn phương án theo mặt bằng: mặt tiền hẹp, trong ngõ, tầng 2, mặt tiền rộng, nhà lô góc và đổi thương hiệu."],
   ["Làm biển quảng cáo mặt tiền hẹp Hà Nội", "lam-bien-quang-cao-mat-tien-hep-ha-noi", "Phương án biển gọn, rõ tên, dễ nhìn từ hai chiều đường cho shop nhỏ và cửa hàng mặt tiền hẹp."],
   ["Làm biển quảng cáo trong ngõ Hà Nội", "lam-bien-quang-cao-trong-ngo-ha-noi", "Biển chỉ dẫn, biển vẫy, hộp đèn nhỏ giúp khách tìm đúng địa chỉ trong ngõ."],
@@ -21,9 +28,9 @@ const updates = [
   ["Biển menu quán ăn Đống Đa Hà Nội", "lam-bien-menu-quan-an-dong-da-ha-noi", "Bảng menu, bảng món, bảng giá cho quán ăn quanh Ô Chợ Dừa, Xã Đàn, Khâm Thiên."],
   ["Biển quán nhậu Hoàng Mai Hà Nội", "lam-bien-quan-nhau-hoang-mai-ha-noi", "Biển sáng, chữ lớn, dễ nhìn cho quán ăn tối, lẩu nướng, bia hơi tại Hoàng Mai."],
   ["Biển quảng cáo theo hạng mục tại Hà Nội", "bien-quang-cao-theo-hang-muc-ha-noi", "Hub chọn hạng mục: biển vẫy LED, hộp đèn, LED ma trận, backdrop, decal kính, menu quán ăn."],
-  ["Báo giá biển quảng cáo Hà Nội 2026", "bao-gia-bien-quang-cao-ha-noi", "Trang giá chính để khách gửi ảnh mặt tiền, kích thước và nhận tư vấn chi phí."],
+  ["Báo giá biển quảng cáo Hà Nội 2026", "bao-gia-bien-quang-cao-ha-noi", "Trang giá chính để khách xem khung giá, gửi ảnh mặt tiền, kích thước và nhận tư vấn chi phí."],
   ["Làm biển quảng cáo gần đây Hà Nội", "lam-bien-quang-cao-gan-day-ha-noi", "Trang local intent cho khách tìm đơn vị làm biển gần khu vực lắp đặt."],
-  ["Tất cả dịch vụ biển quảng cáo Hà Nội", "tat-ca-dich-vu-bien-quang-cao-ha-noi", "Sơ đồ toàn bộ dịch vụ, khu vực, ngành hàng và bài tư vấn trên website."]
+  ["Tất cả dịch vụ biển quảng cáo Hà Nội", "tat-ca-dich-vu-bien-quang-cao-ha-noi", "Danh mục đầy đủ dịch vụ, khu vực, ngành hàng và bài tư vấn trên website."]
 ];
 
 function escapeHtml(value) {
@@ -37,8 +44,8 @@ function escapeHtml(value) {
 const itemListJson = {
   "@context": "https://schema.org",
   "@type": "ItemList",
-  name: "Cập nhật dịch vụ biển quảng cáo Hà Nội",
-  description: "Danh sách các trang dịch vụ mới và trang ưu tiên của Bông Sen Trắng cho nhu cầu làm biển quảng cáo tại Hà Nội.",
+  name: "Dịch vụ làm biển quảng cáo được hỏi nhiều tại Hà Nội",
+  description: "Danh sách các dịch vụ, nhóm báo giá và nhu cầu phổ biến của khách cần làm biển quảng cáo tại Hà Nội.",
   url: pageUrl,
   dateModified: lastmod,
   itemListElement: updates.map(([name, itemSlug], index) => ({
@@ -59,8 +66,8 @@ const cards = updates
   )
   .join("\n");
 
-const title = "Cập nhật dịch vụ biển quảng cáo Hà Nội | Bông Sen Trắng";
-const description = "Các trang dịch vụ mới và trang ưu tiên về làm biển quảng cáo tại Hà Nội: biển vẫy LED, hộp đèn, backdrop, decal kính, menu quán ăn, báo giá.";
+const title = "Dịch vụ làm biển quảng cáo được hỏi nhiều tại Hà Nội | Bông Sen Trắng";
+const description = "Các nhu cầu phổ biến khi làm biển quảng cáo tại Hà Nội: báo giá, gửi ảnh mặt tiền, khảo sát, sửa biển cũ, biển vẫy LED, hộp đèn, backdrop, decal kính, menu quán ăn.";
 
 const html = `<!doctype html>
 <html lang="vi">
@@ -82,7 +89,7 @@ const html = `<!doctype html>
     <meta property="og:description" content="${escapeHtml(description)}">
     <meta property="og:url" content="${pageUrl}">
     <meta property="og:image" content="${baseUrl}/assets/images/hero-bien-quang-cao-ha-noi.jpg">
-    <meta property="og:image:alt" content="Cập nhật dịch vụ biển quảng cáo Hà Nội">
+    <meta property="og:image:alt" content="Dịch vụ làm biển quảng cáo được hỏi nhiều tại Hà Nội">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="${escapeHtml(title)}">
     <meta name="twitter:description" content="${escapeHtml(description)}">
@@ -119,25 +126,25 @@ ${JSON.stringify(itemListJson, null, 2)}
             <nav class="breadcrumb" aria-label="Breadcrumb">
               <a href="../">Trang chủ</a>
               <span>/</span>
-              <span>Cập nhật dịch vụ</span>
+              <span>Dịch vụ được hỏi nhiều</span>
             </nav>
-            <p class="section-kicker">Cập nhật ${escapeHtml(lastmod)}</p>
-            <h1>Cập nhật dịch vụ biển quảng cáo tại Hà Nội</h1>
-            <p>Danh sách các trang mới và trang ưu tiên cần Google đọc thường xuyên hơn. Nếu anh/chị đang cần làm biển, hãy chọn đúng hạng mục hoặc khu vực rồi gửi ảnh mặt tiền qua Zalo để được báo giá nhanh.</p>
+            <p class="section-kicker">Nhu cầu phổ biến</p>
+            <h1>Dịch vụ làm biển quảng cáo được hỏi nhiều tại Hà Nội</h1>
+            <p>Chọn nhanh đúng nhu cầu: xem báo giá, gửi ảnh mặt tiền, khảo sát, sửa biển cũ, làm biển gấp hoặc chọn theo hạng mục. Nếu anh/chị đang cần làm biển, hãy gửi ảnh mặt tiền qua Zalo để được tư vấn phương án sát hơn.</p>
             <div class="hero-actions">
               <a class="btn btn-primary" href="tel:0989521881">Gọi 0989 521 881</a>
               <a class="btn btn-secondary" href="https://zalo.me/0989521881" target="_blank" rel="noopener">Gửi ảnh qua Zalo</a>
             </div>
           </div>
-          <img src="../assets/images/hero-bien-quang-cao-ha-noi.jpg" alt="Cập nhật dịch vụ làm biển quảng cáo Hà Nội" loading="eager" fetchpriority="high" decoding="async" width="960" height="720">
+          <img src="../assets/images/hero-bien-quang-cao-ha-noi.jpg" alt="Dịch vụ làm biển quảng cáo được hỏi nhiều tại Hà Nội" loading="eager" fetchpriority="high" decoding="async" width="960" height="720">
         </div>
       </section>
 
       <section class="section page-content">
         <div class="container content-main sitemap-main">
           <section class="content-block sitemap-group">
-            <h2>Trang mới và trang cần ưu tiên</h2>
-            <p>Nhóm này tập trung vào truy vấn có khả năng ra khách: báo giá, làm biển gần khu vực, biển vẫy LED, hộp đèn, backdrop, decal kính và biển menu.</p>
+            <h2>Nhu cầu khách thường hỏi trước khi làm biển</h2>
+            <p>Nhóm này tập trung vào các tình huống dễ phát sinh liên hệ: hỏi giá, gửi ảnh để báo giá, cần khảo sát, sửa biển cũ, làm gấp, làm biển phát sáng hoặc chọn biển theo ngành hàng.</p>
             <div class="sitemap-grid">
 ${cards}
             </div>

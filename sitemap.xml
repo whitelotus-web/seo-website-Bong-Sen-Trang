@@ -745,12 +745,6 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://lam-bien-quang-cao-bong-sen-trang.netlify.app/cap-nhat-dich-vu-bien-quang-cao-ha-noi/</loc>
-    <lastmod>2026-07-07</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
     <loc>https://lam-bien-quang-cao-bong-sen-trang.netlify.app/chi-phi-lam-bien-cua-hang-moi-ha-noi/</loc>
     <lastmod>2026-07-07</lastmod>
     <changefreq>weekly</changefreq>
@@ -764,6 +758,12 @@
   </url>
   <url>
     <loc>https://lam-bien-quang-cao-bong-sen-trang.netlify.app/dau-hieu-can-sua-chua-thay-moi-bien-quang-cao/</loc>
+    <lastmod>2026-07-07</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://lam-bien-quang-cao-bong-sen-trang.netlify.app/cap-nhat-dich-vu-bien-quang-cao-ha-noi/</loc>
     <lastmod>2026-07-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
