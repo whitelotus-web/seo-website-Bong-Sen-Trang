@@ -48,6 +48,12 @@ fs.writeFileSync(path.join(dist, "robots.txt"), robots, "utf8");
 const prioritySlugs = [
   "",
   "bao-gia-bien-quang-cao-ha-noi",
+  "bien-quang-cao-1m2-gia-bao-nhieu-ha-noi",
+  "bao-gia-lam-bien-quang-cao-theo-m2-ha-noi",
+  "chi-phi-lam-bien-cua-hang-moi-ha-noi",
+  "bang-gia-hiflex-alu-hop-den-ha-noi",
+  "bao-gia-bien-theo-kich-thuoc-ha-noi",
+  "du-toan-chi-phi-bien-mat-tien-ha-noi",
   "bao-gia-bien-vay-led-ha-noi",
   "bao-gia-bien-hop-den-hai-mat-ha-noi",
   "bao-gia-bien-led-ma-tran-ha-noi",
