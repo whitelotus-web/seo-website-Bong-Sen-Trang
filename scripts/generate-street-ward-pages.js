@@ -282,6 +282,114 @@ const locations = [
     nearby: ["Minh Khai", "Lĩnh Nam", "Vĩnh Hưng", "Đền Lừ"],
     image: "bien-tam-lon-ha-noi.jpg",
     note: "phù hợp biển kho xưởng, cửa hàng, showroom, gara và dịch vụ sửa biển"
+  },
+  {
+    name: "Trường Chinh",
+    slug: "lam-bien-quang-cao-truong-chinh",
+    area: "Đống Đa - Thanh Xuân",
+    wardTerms: ["Khương Thượng", "Khương Mai", "Phương Liệt", "Ngã Tư Sở"],
+    nearby: ["Tây Sơn", "Giải Phóng", "Nguyễn Trãi", "Định Công"],
+    image: "du-an-xe-dien-viet-thanh-bien-mat-tien-led.jpg",
+    note: "tuyến lớn nhiều showroom, cửa hàng xe, gara, quán ăn và điểm dịch vụ cần biển sáng rõ từ xa"
+  },
+  {
+    name: "Minh Khai",
+    slug: "lam-bien-quang-cao-minh-khai",
+    area: "Hai Bà Trưng - Hoàng Mai",
+    wardTerms: ["Minh Khai", "Vĩnh Tuy", "Mai Động", "Bạch Mai"],
+    nearby: ["Tam Trinh", "Đại La", "Bạch Mai", "Times City"],
+    image: "mau-bien-sieu-thi-mini-ha-noi.jpg",
+    note: "phù hợp siêu thị mini, cửa hàng tiện ích, quán ăn, showroom và biển mặt tiền có đèn"
+  },
+  {
+    name: "Hoàng Quốc Việt",
+    slug: "lam-bien-quang-cao-hoang-quoc-viet",
+    area: "Cầu Giấy - Bắc Từ Liêm",
+    wardTerms: ["Nghĩa Đô", "Cổ Nhuế", "Dịch Vọng", "Xuân Tảo"],
+    nearby: ["Nguyễn Văn Huyên", "Phạm Văn Đồng", "Cầu Giấy", "Trần Cung"],
+    image: "du-an-sb-invest-backdrop-le-tan.jpg",
+    note: "nhiều văn phòng, showroom, trung tâm học và cửa hàng dịch vụ cần biển gọn, rõ, chuyên nghiệp"
+  },
+  {
+    name: "Xuân Thủy",
+    slug: "lam-bien-quang-cao-xuan-thuy",
+    area: "Cầu Giấy",
+    wardTerms: ["Dịch Vọng Hậu", "Mai Dịch", "Cầu Giấy", "Quan Hoa"],
+    nearby: ["Cầu Giấy", "Trần Thái Tông", "Duy Tân", "Hồ Tùng Mậu"],
+    image: "mau-bien-shop-quan-ao-ha-noi.jpg",
+    note: "tuyến đông sinh viên và cửa hàng bán lẻ, phù hợp biển shop, đồ uống, quán ăn và biển vẫy"
+  },
+  {
+    name: "Cầu Giấy",
+    slug: "lam-bien-quang-cao-duong-cau-giay",
+    area: "Cầu Giấy",
+    wardTerms: ["Quan Hoa", "Dịch Vọng", "Nghĩa Đô", "Yên Hòa"],
+    nearby: ["Xuân Thủy", "Nguyễn Văn Huyên", "Trần Đăng Ninh", "Kim Mã"],
+    image: "du-an-bien-tien-coffee.jpg",
+    note: "tuyến thương mại nhiều cửa hàng, cafe, quán ăn, dịch vụ cần biển dễ đọc và nổi bật buổi tối"
+  },
+  {
+    name: "Nguyễn Chí Thanh",
+    slug: "lam-bien-quang-cao-nguyen-chi-thanh",
+    area: "Đống Đa - Ba Đình",
+    wardTerms: ["Láng Thượng", "Ngọc Khánh", "Thành Công", "Giảng Võ"],
+    nearby: ["Láng Hạ", "Kim Mã", "Huỳnh Thúc Kháng", "Đê La Thành"],
+    image: "du-an-olive-vino-chu-noi-hat-sang.jpg",
+    note: "phù hợp showroom, nhà hàng, cafe, spa, văn phòng và biển chữ nổi thẩm mỹ"
+  },
+  {
+    name: "Giảng Võ",
+    slug: "lam-bien-quang-cao-giang-vo",
+    area: "Ba Đình - Đống Đa",
+    wardTerms: ["Giảng Võ", "Cát Linh", "Kim Mã", "Thành Công"],
+    nearby: ["Láng Hạ", "Nguyễn Chí Thanh", "Kim Mã", "Đê La Thành"],
+    image: "du-an-jotun.jpg",
+    note: "nhiều cửa hàng vật liệu, showroom, dịch vụ và văn phòng cần biển bền, rõ, đúng nhận diện"
+  },
+  {
+    name: "Liễu Giai",
+    slug: "lam-bien-quang-cao-lieu-giai",
+    area: "Ba Đình",
+    wardTerms: ["Liễu Giai", "Cống Vị", "Ngọc Khánh", "Kim Mã"],
+    nearby: ["Đội Cấn", "Vạn Phúc", "Kim Mã", "Đào Tấn"],
+    image: "du-an-olive-vino-chu-noi-hat-sang.jpg",
+    note: "phù hợp nhà hàng, boutique, spa, khách sạn nhỏ và biển mặt tiền cần hoàn thiện đẹp"
+  },
+  {
+    name: "Bà Triệu",
+    slug: "lam-bien-quang-cao-ba-trieu",
+    area: "Hoàn Kiếm - Hai Bà Trưng",
+    wardTerms: ["Bà Triệu", "Trần Hưng Đạo", "Nguyễn Du", "Lê Đại Hành"],
+    nearby: ["Phố Huế", "Hàng Bài", "Mai Hắc Đế", "Đại Cồ Việt"],
+    image: "mau-bien-shop-thoi-trang-mat-tien-ha-noi.jpg",
+    note: "tuyến mua sắm trung tâm, hợp biển shop thời trang, showroom, spa và cửa hàng dịch vụ"
+  },
+  {
+    name: "Hoàng Hoa Thám",
+    slug: "lam-bien-quang-cao-hoang-hoa-tham",
+    area: "Ba Đình - Tây Hồ",
+    wardTerms: ["Vĩnh Phúc", "Ngọc Hà", "Bưởi", "Thụy Khuê"],
+    nearby: ["Đội Cấn", "Lạc Long Quân", "Văn Cao", "Thụy Khuê"],
+    image: "bien-vay-cafe-hop-den-tron-ha-noi.jpg",
+    note: "phù hợp cửa hàng cây cảnh, cafe, dịch vụ, showroom nhỏ và biển vẫy dễ nhìn từ hai chiều"
+  },
+  {
+    name: "Lạc Long Quân",
+    slug: "lam-bien-quang-cao-lac-long-quan",
+    area: "Tây Hồ - Cầu Giấy",
+    wardTerms: ["Bưởi", "Nghĩa Đô", "Xuân La", "Phú Thượng"],
+    nearby: ["Hoàng Hoa Thám", "Võ Chí Công", "Thụy Khuê", "Âu Cơ"],
+    image: "mau-bien-nha-hang-linh-dam-ha-noi.jpg",
+    note: "tuyến dài nhiều nhà hàng, cafe, gara, cửa hàng vật liệu và điểm dịch vụ cần biển bền ngoài trời"
+  },
+  {
+    name: "Lê Đức Thọ",
+    slug: "lam-bien-quang-cao-le-duc-tho",
+    area: "Nam Từ Liêm",
+    wardTerms: ["Mỹ Đình 1", "Mỹ Đình 2", "Mai Dịch", "Cầu Diễn"],
+    nearby: ["Mỹ Đình", "Hàm Nghi", "Nguyễn Hoàng", "Hồ Tùng Mậu"],
+    image: "du-an-bien-kong-billiards.jpg",
+    note: "nhiều nhà hàng, phòng tập, showroom, cửa hàng dịch vụ và điểm kinh doanh hoạt động buổi tối"
   }
 ];
 

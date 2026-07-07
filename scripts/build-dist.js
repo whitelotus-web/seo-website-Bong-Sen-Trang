@@ -143,6 +143,16 @@ const prioritySlugs = [
   "lam-bien-quang-cao-xa-dan",
   "lam-bien-quang-cao-thai-ha",
   "lam-bien-quang-cao-chua-boc",
+  "lam-bien-quang-cao-truong-chinh",
+  "lam-bien-quang-cao-minh-khai",
+  "lam-bien-quang-cao-xuan-thuy",
+  "lam-bien-quang-cao-duong-cau-giay",
+  "lam-bien-quang-cao-nguyen-chi-thanh",
+  "lam-bien-quang-cao-giang-vo",
+  "lam-bien-quang-cao-lieu-giai",
+  "lam-bien-quang-cao-ba-trieu",
+  "lam-bien-quang-cao-lac-long-quan",
+  "lam-bien-quang-cao-le-duc-tho",
   "lam-bien-quang-cao-gan-day-ha-noi"
 ];
 const prioritySitemap = `<?xml version="1.0" encoding="UTF-8"?>
