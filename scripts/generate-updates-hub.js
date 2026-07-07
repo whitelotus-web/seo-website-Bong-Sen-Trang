@@ -8,6 +8,11 @@ const pageUrl = `${baseUrl}/${slug}/`;
 const lastmod = new Date().toISOString().slice(0, 10);
 
 const updates = [
+  ["Làm biển quảng cáo mất bao lâu tại Hà Nội", "lam-bien-quang-cao-mat-bao-lau-ha-noi", "Mốc thời gian theo loại biển, vật liệu, mặt bằng và cách chuẩn bị để kịp ngày khai trương."],
+  ["Kích thước biển quảng cáo mặt tiền tại Hà Nội", "kich-thuoc-bien-quang-cao-mat-tien-ha-noi", "Gợi ý chọn cỡ biển theo chiều ngang, chiều cao, tầng lắp, khoảng cách nhìn và loại hình cửa hàng."],
+  ["Chọn chất liệu biển quảng cáo tại Hà Nội", "chon-chat-lieu-bien-quang-cao-ha-noi", "So sánh Hiflex, alu, mica, inox, hộp đèn LED theo ngân sách, độ bền và nhu cầu phát sáng."],
+  ["Cách tiết kiệm chi phí làm biển quảng cáo tại Hà Nội", "cach-tiet-kiem-chi-phi-lam-bien-quang-cao-ha-noi", "Cách ưu tiên hạng mục chính, tận dụng khung cũ nếu còn tốt và tránh phát sinh khi làm biển."],
+  ["Biển quảng cáo ngoài trời bền bao lâu tại Hà Nội", "bien-quang-cao-ngoai-troi-ben-bao-lau-ha-noi", "Các yếu tố ảnh hưởng độ bền của biển ngoài trời: vật liệu, khung, LED, nguồn điện và chống nước."],
   ["Báo giá biển quảng cáo theo m2 Hà Nội", "bao-gia-lam-bien-quang-cao-theo-m2-ha-noi", "Ước lượng chi phí theo diện tích, vật liệu nền, chữ nổi, LED và điều kiện lắp đặt thực tế."],
   ["Biển quảng cáo 1m2 giá bao nhiêu tại Hà Nội", "bien-quang-cao-1m2-gia-bao-nhieu-ha-noi", "Giải thích vì sao giá theo m2 chỉ là giá nền, cần tính thêm khung, chữ, LED và vị trí thi công."],
   ["Chi phí làm biển cửa hàng mới tại Hà Nội", "chi-phi-lam-bien-cua-hang-moi-ha-noi", "Gợi ý cách phân bổ ngân sách cho biển chính, biển vẫy, decal kính và hạng mục khai trương."],
