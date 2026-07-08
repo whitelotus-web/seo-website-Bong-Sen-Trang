@@ -37,6 +37,20 @@ copyFile(path.join(root, "_headers"), path.join(dist, "_headers"));
 if (fs.existsSync(path.join(root, "_redirects"))) {
   copyFile(path.join(root, "_redirects"), path.join(dist, "_redirects"));
 }
+for (const iconFile of [
+  "favicon.ico",
+  "favicon-16x16.png",
+  "favicon-32x32.png",
+  "favicon-48x48.png",
+  "apple-touch-icon.png",
+  "android-chrome-192x192.png",
+  "android-chrome-512x512.png",
+  "site.webmanifest"
+]) {
+  if (fs.existsSync(path.join(root, iconFile))) {
+    copyFile(path.join(root, iconFile), path.join(dist, iconFile));
+  }
+}
 fs.writeFileSync(path.join(dist, ".nojekyll"), "", "utf8");
 
 const robots = `User-agent: *
