@@ -66,6 +66,15 @@ fs.writeFileSync(path.join(dist, "robots.txt"), robots, "utf8");
 const prioritySlugs = [
   "",
   "bao-gia-bien-quang-cao-ha-noi",
+  "lam-bien-quang-cao-theo-nhu-cau-khach-hang-ha-noi",
+  "bien-quang-cao-cho-cua-hang-sap-khai-truong-ha-noi",
+  "bien-quang-cao-cho-cua-hang-mat-tien-nho-ha-noi",
+  "bien-quang-cao-cho-cua-hang-trong-ngo-ha-noi",
+  "bien-quang-cao-cho-quan-an-ban-toi-ha-noi",
+  "bien-quang-cao-cho-spa-salon-can-sang-trong-ha-noi",
+  "bien-quang-cao-cho-shop-can-nhan-dien-thuong-hieu-ha-noi",
+  "bien-quang-cao-cho-cua-hang-can-tiet-kiem-chi-phi-ha-noi",
+  "bien-quang-cao-cho-cua-hang-can-sua-bien-cu-ha-noi",
   "bien-quang-cao-1m2-gia-bao-nhieu-ha-noi",
   "bao-gia-lam-bien-quang-cao-theo-m2-ha-noi",
   "chi-phi-lam-bien-cua-hang-moi-ha-noi",
@@ -173,6 +182,7 @@ const prioritySlugs = [
   "lam-bien-quang-cao-le-duc-tho",
   "lam-bien-quang-cao-gan-day-ha-noi"
 ];
+const priorityLastmod = new Date().toISOString().slice(0, 10);
 const prioritySitemap = `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 ${prioritySlugs
@@ -181,7 +191,7 @@ ${prioritySlugs
     const priority = index === 0 ? "1.0" : index <= 3 ? "0.9" : "0.8";
     return `  <url>
     <loc>${loc}</loc>
-    <lastmod>${new Date().toISOString().slice(0, 10)}</lastmod>
+    <lastmod>${priorityLastmod}</lastmod>
     <changefreq>weekly</changefreq>
     <priority>${priority}</priority>
   </url>`;
@@ -190,6 +200,7 @@ ${prioritySlugs
 </urlset>
 `;
 fs.writeFileSync(path.join(dist, "sitemap-priority.xml"), prioritySitemap, "utf8");
+fs.writeFileSync(path.join(root, "sitemap-priority.xml"), prioritySitemap, "utf8");
 
 const testSitemap = `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
