@@ -41,6 +41,21 @@ function readPageInfo(dirName) {
 function categoryFor(page) {
   if (
     [
+      "lam-bien-quang-cao-theo-nhu-cau-khach-hang-ha-noi",
+      "bien-quang-cao-cho-cua-hang-sap-khai-truong-ha-noi",
+      "bien-quang-cao-cho-cua-hang-mat-tien-nho-ha-noi",
+      "bien-quang-cao-cho-cua-hang-trong-ngo-ha-noi",
+      "bien-quang-cao-cho-quan-an-ban-toi-ha-noi",
+      "bien-quang-cao-cho-spa-salon-can-sang-trong-ha-noi",
+      "bien-quang-cao-cho-shop-can-nhan-dien-thuong-hieu-ha-noi",
+      "bien-quang-cao-cho-cua-hang-can-tiet-kiem-chi-phi-ha-noi",
+      "bien-quang-cao-cho-cua-hang-can-sua-bien-cu-ha-noi"
+    ].includes(page.slug)
+  ) {
+    return "Tư vấn trước khi làm biển";
+  }
+  if (
+    [
       "lam-bien-quang-cao-mat-bao-lau-ha-noi",
       "kich-thuoc-bien-quang-cao-mat-tien-ha-noi",
       "bien-quang-cao-ngoai-troi-ben-bao-lau-ha-noi",
