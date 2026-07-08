@@ -239,6 +239,37 @@ ${JSON.stringify(jsonLd, null, 2)}
             </section>
 
             <section class="content-block">
+              <h2>Chưa chắc nên chọn loại biển nào?</h2>
+              <p>Nếu anh/chị chưa biết nên chọn Hiflex, alu chữ nổi, hộp đèn hay biển vẫy, hãy chọn theo tình huống mặt bằng trước. Cách này thường giúp báo giá sát hơn so với chỉ hỏi đơn giá theo m2.</p>
+              <div class="price-link-grid compact">
+                <a href="../lam-bien-quang-cao-theo-nhu-cau-khach-hang-ha-noi/">
+                  <strong>Làm biển theo nhu cầu khách hàng</strong>
+                  <span>Hub chọn nhanh theo tình huống: khai trương, mặt tiền nhỏ, trong ngõ, bán tối, tiết kiệm hoặc sửa biển cũ.</span>
+                </a>
+                <a href="../bien-quang-cao-cho-cua-hang-sap-khai-truong-ha-noi/">
+                  <strong>Cửa hàng sắp khai trương</strong>
+                  <span>Ưu tiên phương án làm nhanh, đủ rõ thương hiệu và hạn chế thay đổi sát ngày lắp.</span>
+                </a>
+                <a href="../bien-quang-cao-cho-cua-hang-mat-tien-nho-ha-noi/">
+                  <strong>Cửa hàng mặt tiền nhỏ</strong>
+                  <span>Chọn bố cục ít chữ, biển vẫy, hộp đèn hoặc decal kính để tăng nhận diện.</span>
+                </a>
+                <a href="../bien-quang-cao-cho-quan-an-ban-toi-ha-noi/">
+                  <strong>Quán ăn bán tối</strong>
+                  <span>Ưu tiên biển sáng, rõ món chính, hộp đèn LED, biển vẫy và bảng menu ngoài cửa.</span>
+                </a>
+                <a href="../bien-quang-cao-cho-cua-hang-can-tiet-kiem-chi-phi-ha-noi/">
+                  <strong>Cần tiết kiệm chi phí</strong>
+                  <span>Tập trung phần biển chính, tận dụng phần cũ nếu còn tốt và tách hạng mục phụ sang sau.</span>
+                </a>
+                <a href="../bien-quang-cao-cho-cua-hang-can-sua-bien-cu-ha-noi/">
+                  <strong>Cần sửa biển cũ</strong>
+                  <span>Kiểm tra LED, mặt biển, chữ nổi, khung xương trước khi quyết định sửa hay thay mới.</span>
+                </a>
+              </div>
+            </section>
+
+            <section class="content-block">
               <h2>Bảng giá thi công biển quảng cáo tham khảo 2026</h2>
               <div class="price-table-wrap">
                 <table class="price-table">

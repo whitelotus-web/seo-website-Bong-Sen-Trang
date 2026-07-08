@@ -17,6 +17,8 @@ Mục tiêu: mở rộng nhóm truy vấn có ý định mua cao cho domain chí
 - Mỗi trang có canonical domain mới, hreflang vi-VN/x-default, tín hiệu geo Hà Nội, Service schema, FAQ schema, ảnh thực tế và CTA gọi/Zalo.
 - Trang `/tat-ca-dich-vu-bien-quang-cao-ha-noi/` tự nhận thêm nhóm link nội bộ mới.
 - Sitemap XML, sitemap text và image sitemap đã cập nhật.
+- Bổ sung link nội bộ từ trang chủ tới hub và các trang chuyển đổi cao: khai trương, quán ăn bán tối, sửa biển cũ.
+- Bổ sung block điều hướng từ trang báo giá sang nhóm trang theo tình huống để khách chọn đúng nhu cầu trước khi xem giá.
 
 Kiểm tra:
 
@@ -24,6 +26,7 @@ Kiểm tra:
 - `npm run check:seo`: 295 trang, 0 warning.
 - `npm run check:jsonld`: 296 JSON-LD block hợp lệ.
 - Đã deploy Cloudflare Pages production.
+- Đã deploy bản cập nhật internal links từ trang chủ và trang báo giá.
 
 Việc nên làm tiếp:
 
