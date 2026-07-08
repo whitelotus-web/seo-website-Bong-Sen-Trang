@@ -1,9 +1,9 @@
-[build]
+﻿[build]
   command = "npm run build"
   publish = "dist"
 
 [build.environment]
-  SITE_URL = "https://lam-bien-quang-cao-bong-sen-trang.netlify.app"
+  SITE_URL = "https://lambienquangcaohanoi.io.vn"
 
 [[headers]]
   for = "/*"

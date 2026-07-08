@@ -1,4 +1,4 @@
-# SEO action 2026-06-22: tang manh trang local Dong Da
+﻿# SEO action 2026-06-22: tang manh trang local Dong Da
 
 ## Muc tieu
 
@@ -47,5 +47,5 @@
 
 ## URL
 
-- https://lam-bien-quang-cao-bong-sen-trang.netlify.app/lam-bien-quang-cao-dong-da/
-- https://lam-bien-quang-cao-bong-sen-trang.netlify.app/sitemap.xml
+- https://lambienquangcaohanoi.io.vn/lam-bien-quang-cao-dong-da/
+- https://lambienquangcaohanoi.io.vn/sitemap.xml

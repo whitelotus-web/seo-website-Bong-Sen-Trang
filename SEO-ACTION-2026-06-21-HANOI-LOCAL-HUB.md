@@ -1,4 +1,4 @@
-# SEO action 2026-06-21: tang tin hieu local Ha Noi
+﻿# SEO action 2026-06-21: tang tin hieu local Ha Noi
 
 ## Muc tieu
 
@@ -47,5 +47,5 @@
 
 ## URL
 
-- https://lam-bien-quang-cao-bong-sen-trang.netlify.app/lam-bien-quang-cao-ha-noi/
-- https://lam-bien-quang-cao-bong-sen-trang.netlify.app/sitemap.xml
+- https://lambienquangcaohanoi.io.vn/lam-bien-quang-cao-ha-noi/
+- https://lambienquangcaohanoi.io.vn/sitemap.xml

@@ -1,4 +1,4 @@
-# SEO action 2026-06-22 - Nhom nganh hang Ha Noi
+﻿# SEO action 2026-06-22 - Nhom nganh hang Ha Noi
 
 Muc tieu: bat them truy van dai theo nganh hang tai Ha Noi, vi du "bien shop quan ao Ha Noi", "bien quan cafe Ha Noi", "bien quan an Ha Noi", "bien nail spa Ha Noi".
 
@@ -27,11 +27,11 @@ Kiem tra:
 - `node scripts/check-seo.js`: SEO OK, 80 pages checked, 0 warnings.
 - `node scripts/check-jsonld.js`: JSON-LD OK, 81 blocks in 80 pages.
 - Live 200:
-  - `https://lam-bien-quang-cao-bong-sen-trang.netlify.app/bien-quang-cao-theo-nganh-ha-noi/`
-  - `https://lam-bien-quang-cao-bong-sen-trang.netlify.app/bien-shop-quan-ao-ha-noi/`
-  - `https://lam-bien-quang-cao-bong-sen-trang.netlify.app/bien-quan-cafe-ha-noi/`
-  - `https://lam-bien-quang-cao-bong-sen-trang.netlify.app/bien-quan-an-uong-ha-noi/`
-  - `https://lam-bien-quang-cao-bong-sen-trang.netlify.app/bien-nail-mi-spa-ha-noi/`
+  - `https://lambienquangcaohanoi.io.vn/bien-quang-cao-theo-nganh-ha-noi/`
+  - `https://lambienquangcaohanoi.io.vn/bien-shop-quan-ao-ha-noi/`
+  - `https://lambienquangcaohanoi.io.vn/bien-quan-cafe-ha-noi/`
+  - `https://lambienquangcaohanoi.io.vn/bien-quan-an-uong-ha-noi/`
+  - `https://lambienquangcaohanoi.io.vn/bien-nail-mi-spa-ha-noi/`
 
 Ghi chu theo doi:
 

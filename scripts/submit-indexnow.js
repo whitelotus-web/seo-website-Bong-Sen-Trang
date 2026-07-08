@@ -1,9 +1,9 @@
-const fs = require("fs");
+﻿const fs = require("fs");
 const https = require("https");
 const path = require("path");
 
 const root = process.cwd();
-const baseUrl = "https://lam-bien-quang-cao-bong-sen-trang.netlify.app";
+const baseUrl = "https://lambienquangcaohanoi.io.vn";
 const host = new URL(baseUrl).host;
 
 const keyFile = fs

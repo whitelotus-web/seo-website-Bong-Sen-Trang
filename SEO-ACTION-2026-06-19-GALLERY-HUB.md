@@ -1,4 +1,4 @@
-# SEO action 2026-06-19: nang cap trang mau bien / hinh anh thuc te
+﻿# SEO action 2026-06-19: nang cap trang mau bien / hinh anh thuc te
 
 ## Muc tieu
 
@@ -39,6 +39,6 @@
 
 ## URL quan trong
 
-- https://lam-bien-quang-cao-bong-sen-trang.netlify.app/hinh-anh-bien-quang-cao-thuc-te-ha-noi/
-- https://lam-bien-quang-cao-bong-sen-trang.netlify.app/sitemap.xml
-- https://lam-bien-quang-cao-bong-sen-trang.netlify.app/image-sitemap.xml
+- https://lambienquangcaohanoi.io.vn/hinh-anh-bien-quang-cao-thuc-te-ha-noi/
+- https://lambienquangcaohanoi.io.vn/sitemap.xml
+- https://lambienquangcaohanoi.io.vn/image-sitemap.xml

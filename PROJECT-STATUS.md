@@ -1,4 +1,4 @@
-# Project Status - SEO Website Bong Sen Trang
+﻿# Project Status - SEO Website Bong Sen Trang
 
 ## Muc tieu
 
@@ -7,13 +7,13 @@ Xay dung va SEO website cho Cong ty TNHH Truyen thong Bong Sen Trang, dich vu sa
 ## Kenh SEO uu tien
 
 - Uu tien chinh: Google Search cho website Bong Sen Trang.
-- Do luong chinh: Google Search Console cua property `https://lam-bien-quang-cao-bong-sen-trang.netlify.app/`.
+- Do luong chinh: Google Search Console cua property `https://lambienquangcaohanoi.io.vn/`.
 - Thi truong muc tieu: khach hang tai Ha Noi, Viet Nam.
 - Khong uu tien Bing/Webmaster Tools cho du an nay. Neu co script IndexNow thi chi xem la cong cu phu, khong dua vao ke hoach SEO chinh va khong dung so lieu Bing de danh gia tien do.
 
 ## Thong tin chinh
 
-- Website live: https://lam-bien-quang-cao-bong-sen-trang.netlify.app/
+- Website live: https://lambienquangcaohanoi.io.vn/
 - Cong ty: Cong ty TNHH Truyen thong Bong Sen Trang
 - Dia chi: So 92E O Cho Dua, Dong Da, Ha Noi
 - Dien thoai/Zalo: 0989 521 881

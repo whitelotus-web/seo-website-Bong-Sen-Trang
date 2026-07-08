@@ -1,7 +1,7 @@
-User-agent: *
+﻿User-agent: *
 Allow: /
 
-Sitemap: https://lam-bien-quang-cao-bong-sen-trang.netlify.app/sitemap.xml
-Sitemap: https://lam-bien-quang-cao-bong-sen-trang.netlify.app/sitemap-priority.xml
-Sitemap: https://lam-bien-quang-cao-bong-sen-trang.netlify.app/sitemap-google.xml
-Sitemap: https://lam-bien-quang-cao-bong-sen-trang.netlify.app/image-sitemap.xml
+Sitemap: https://lambienquangcaohanoi.io.vn/sitemap.xml
+Sitemap: https://lambienquangcaohanoi.io.vn/sitemap-priority.xml
+Sitemap: https://lambienquangcaohanoi.io.vn/sitemap-google.xml
+Sitemap: https://lambienquangcaohanoi.io.vn/image-sitemap.xml

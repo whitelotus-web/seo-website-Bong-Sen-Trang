@@ -1,4 +1,4 @@
-# SEO action 2026-06-21: toi uu trang sua chua bien quang cao
+﻿# SEO action 2026-06-21: toi uu trang sua chua bien quang cao
 
 ## Muc tieu
 
@@ -45,6 +45,6 @@
 
 ## URL
 
-- https://lam-bien-quang-cao-bong-sen-trang.netlify.app/sua-chua-bien-quang-cao-ha-noi/
-- https://lam-bien-quang-cao-bong-sen-trang.netlify.app/sitemap.xml
-- https://lam-bien-quang-cao-bong-sen-trang.netlify.app/image-sitemap.xml
+- https://lambienquangcaohanoi.io.vn/sua-chua-bien-quang-cao-ha-noi/
+- https://lambienquangcaohanoi.io.vn/sitemap.xml
+- https://lambienquangcaohanoi.io.vn/image-sitemap.xml

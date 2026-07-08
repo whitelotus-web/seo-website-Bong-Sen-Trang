@@ -1,8 +1,8 @@
-const fs = require("fs");
+﻿const fs = require("fs");
 const path = require("path");
 
 const root = process.cwd();
-const baseUrl = "https://lam-bien-quang-cao-bong-sen-trang.netlify.app";
+const baseUrl = "https://lambienquangcaohanoi.io.vn";
 const ignoredDirs = new Set([
   ".git",
   ".wrangler",

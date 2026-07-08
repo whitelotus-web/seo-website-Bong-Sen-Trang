@@ -36,7 +36,7 @@ jobs:
       - name: Build static site
         run: npm run build
         env:
-          SITE_URL: https://whitelotus-web.github.io/seo-website-Bong-Sen-Trang
+          SITE_URL: https://lambienquangcaohanoi.io.vn
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3

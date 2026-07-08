@@ -1,9 +1,9 @@
-const fs = require("fs");
+﻿const fs = require("fs");
 const path = require("path");
 
 const root = process.cwd();
 const dist = path.join(root, "dist");
-const defaultBaseUrl = "https://lam-bien-quang-cao-bong-sen-trang.netlify.app";
+const defaultBaseUrl = "https://lambienquangcaohanoi.io.vn";
 const baseUrl = process.env.SITE_URL || defaultBaseUrl;
 
 const ignoredDirs = new Set([".git", ".wrangler", "assets", "dist", "node_modules", "scripts"]);
@@ -34,6 +34,9 @@ copyFile(path.join(root, "sitemap-google.xml"), path.join(dist, "sitemap-google.
 copyFile(path.join(root, "sitemap.txt"), path.join(dist, "sitemap.txt"));
 copyFile(path.join(root, "image-sitemap.xml"), path.join(dist, "image-sitemap.xml"));
 copyFile(path.join(root, "_headers"), path.join(dist, "_headers"));
+if (fs.existsSync(path.join(root, "_redirects"))) {
+  copyFile(path.join(root, "_redirects"), path.join(dist, "_redirects"));
+}
 fs.writeFileSync(path.join(dist, ".nojekyll"), "", "utf8");
 
 const robots = `User-agent: *

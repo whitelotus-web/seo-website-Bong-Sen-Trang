@@ -1,8 +1,8 @@
-const fs = require("fs");
+﻿const fs = require("fs");
 const path = require("path");
 
 const root = process.cwd();
-const baseUrl = "https://lam-bien-quang-cao-bong-sen-trang.netlify.app";
+const baseUrl = "https://lambienquangcaohanoi.io.vn";
 const hubSlug = "bien-quang-cao-theo-nganh-va-quan-ha-noi";
 
 const business = {

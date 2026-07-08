@@ -1,8 +1,8 @@
-# SEO measurement 2026-06-18
+﻿# SEO measurement 2026-06-18
 
 ## Tom tat
 
-- Website live: `https://lam-bien-quang-cao-bong-sen-trang.netlify.app/`
+- Website live: `https://lambienquangcaohanoi.io.vn/`
 - Google da thay ro trang chu qua truy van `site:lam-bien-quang-cao-bong-sen-trang.netlify.app`.
 - Google cung thay Fanpage Facebook co gan website moi.
 - Voi nhom tu khoa chung nhu `lam bien quang cao tai Ha Noi`, ket qua cong khai mau van chu yeu la cac doi thu/website lau nam. Chua thay website Bông Sen Trắng xuat hien on dinh trong nhom ket qua dau.
