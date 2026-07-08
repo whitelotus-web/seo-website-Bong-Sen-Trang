@@ -34,6 +34,7 @@ copyFile(path.join(root, "sitemap-google.xml"), path.join(dist, "sitemap-google.
 copyFile(path.join(root, "sitemap.txt"), path.join(dist, "sitemap.txt"));
 copyFile(path.join(root, "image-sitemap.xml"), path.join(dist, "image-sitemap.xml"));
 copyFile(path.join(root, "_headers"), path.join(dist, "_headers"));
+fs.writeFileSync(path.join(dist, ".nojekyll"), "", "utf8");
 
 const robots = `User-agent: *
 Allow: /
