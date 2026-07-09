@@ -369,10 +369,11 @@ function renderNearbyPage() {
   const slug = "lam-bien-quang-cao-gan-day-ha-noi";
   const pageUrl = `${baseUrl}/${slug}/`;
   const faqs = [
-    ["Tìm làm biển quảng cáo gần đây thì Bông Sen Trắng phục vụ khu nào?", "Bông Sen Trắng ở Đống Đa và nhận tư vấn, thi công, sửa chữa biển quảng cáo tại nhiều quận Hà Nội. Gửi vị trí lắp đặt qua Zalo để kiểm tra khả năng xử lý nhanh."],
+    ["Tìm làm biển quảng cáo gần đây hoặc gần tôi thì Bông Sen Trắng phục vụ khu nào?", "Bông Sen Trắng ở 92E Ô Chợ Dừa, Đống Đa và nhận tư vấn, thi công, sửa chữa biển quảng cáo tại nhiều quận Hà Nội. Gửi vị trí lắp đặt qua Zalo để kiểm tra tuyến gần nhất và khả năng xử lý nhanh."],
     ["Có cần đến tận nơi để báo giá không?", "Với hạng mục nhỏ có thể báo giá sơ bộ qua ảnh. Với biển lớn, biển cao hoặc cần kiểm tra khung/điện, nên khảo sát trước khi chốt giá."],
     ["Làm biển gần đây có nhanh hơn không?", "Nếu vị trí thuận tiện, vật tư sẵn và thiết kế chốt nhanh, thời gian xử lý có thể nhanh hơn. Hạng mục gấp cần gửi ảnh và yêu cầu cụ thể trước."],
-    ["Có sửa biển quảng cáo gần đây không?", "Có. Nhận thay LED, thay nguồn, thay mặt bạt, sửa hộp đèn, thay chữ nổi và gia cố khung biển cũ."]
+    ["Có sửa biển quảng cáo gần đây không?", "Có. Nhận thay LED, thay nguồn, thay mặt bạt, sửa hộp đèn, thay chữ nổi và gia cố khung biển cũ."],
+    ["Khách tìm quanh đây cần gửi gì trước?", "Nên gửi ảnh chụp thẳng mặt tiền, địa chỉ hoặc tên tuyến phố/phường, kích thước dự kiến, thời gian cần hoàn thiện và mẫu biển thích nếu có. Có đủ thông tin thì tư vấn nhanh hơn."]
   ];
   const districtCards = districts
     .map((district) => `
@@ -411,7 +412,7 @@ function renderNearbyPage() {
       {
         "@type": "Service",
         name: "Làm biển quảng cáo gần đây tại Hà Nội",
-        description: "Tư vấn, thi công, sửa chữa biển quảng cáo gần đây tại Hà Nội theo ảnh mặt tiền và vị trí lắp đặt.",
+        description: "Tư vấn, thi công, sửa chữa biển quảng cáo gần tôi, gần đây, quanh Đống Đa và các quận Hà Nội theo ảnh mặt tiền và vị trí lắp đặt.",
         provider: { "@id": `${baseUrl}/#localbusiness` },
         areaServed: "Hà Nội",
         serviceType: "Làm biển quảng cáo"
@@ -432,8 +433,8 @@ function renderNearbyPage() {
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Làm biển quảng cáo gần đây tại Hà Nội | Gọi/Zalo 0989 521 881</title>
-    <meta name="description" content="Tìm làm biển quảng cáo gần đây tại Hà Nội? Gửi ảnh mặt tiền qua Zalo 0989 521 881 để báo giá biển alu, hộp đèn LED, Hiflex, sửa biển cũ.">
+    <title>Làm biển quảng cáo gần đây Hà Nội | Gọi 0989 521 881</title>
+    <meta name="description" content="Tìm làm biển quảng cáo gần tôi, gần đây, quanh Đống Đa Hà Nội? Gửi ảnh mặt tiền qua Zalo 0989 521 881 để báo giá nhanh.">
     <meta name="robots" content="index,follow">
     <meta name="theme-color" content="#1d8dcc">
     <link rel="canonical" href="${pageUrl}">
@@ -448,13 +449,13 @@ function renderNearbyPage() {
     <meta property="og:locale" content="vi_VN">
     <meta property="og:site_name" content="Bông Sen Trắng">
     <meta property="og:title" content="Làm biển quảng cáo gần đây tại Hà Nội">
-    <meta property="og:description" content="Gửi ảnh mặt tiền qua Zalo để nhận tư vấn làm biển quảng cáo gần đây tại Hà Nội.">
+    <meta property="og:description" content="Gửi ảnh mặt tiền qua Zalo để nhận tư vấn làm biển quảng cáo gần tôi, gần đây, quanh Đống Đa và các quận Hà Nội.">
     <meta property="og:url" content="${pageUrl}">
     <meta property="og:image" content="${baseUrl}/assets/images/hero-bien-quang-cao-ha-noi.jpg">
     <meta property="og:image:alt" content="Làm biển quảng cáo gần đây tại Hà Nội">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Làm biển quảng cáo gần đây tại Hà Nội">
-    <meta name="twitter:description" content="Gửi ảnh mặt tiền qua Zalo để báo giá biển quảng cáo gần đây.">
+    <meta name="twitter:description" content="Gửi ảnh mặt tiền qua Zalo để báo giá biển quảng cáo gần tôi, gần đây tại Hà Nội.">
     <meta name="twitter:image" content="${baseUrl}/assets/images/hero-bien-quang-cao-ha-noi.jpg">
     <script type="application/ld+json">
 ${JSON.stringify(jsonLd, null, 2)}
@@ -486,9 +487,9 @@ ${JSON.stringify(jsonLd, null, 2)}
               <span>/</span>
               <span>Gần đây</span>
             </nav>
-            <p class="section-kicker">Tìm đơn vị làm biển quảng cáo gần đây</p>
+            <p class="section-kicker">Tìm đơn vị làm biển quảng cáo gần tôi, gần đây</p>
             <h1>Làm biển quảng cáo gần đây tại Hà Nội</h1>
-            <p>Nếu anh/chị đang tìm “làm biển quảng cáo gần đây”, hãy gửi ảnh mặt tiền, địa chỉ lắp đặt và kích thước dự kiến qua Zalo. Bông Sen Trắng ở Đống Đa, nhận tư vấn thi công biển alu chữ nổi, hộp đèn LED, Hiflex, chữ nổi, sửa biển cũ và thay LED tại nhiều quận Hà Nội.</p>
+            <p>Nếu anh/chị đang tìm “làm biển quảng cáo gần tôi”, “làm biển quảng cáo gần đây” hoặc “làm biển quảng cáo quanh đây”, hãy gửi ảnh mặt tiền, địa chỉ lắp đặt và kích thước dự kiến qua Zalo. Bông Sen Trắng ở 92E Ô Chợ Dừa, Đống Đa, nhận tư vấn thi công biển alu chữ nổi, hộp đèn LED, Hiflex, chữ nổi, sửa biển cũ và thay LED tại nhiều quận Hà Nội.</p>
             <div class="hero-actions">
               <a class="btn btn-primary" href="tel:${business.phoneHref}">Gọi ${business.phone}</a>
               <a class="btn btn-secondary" href="https://zalo.me/${business.phoneHref}" target="_blank" rel="noopener">Gửi ảnh qua Zalo</a>
@@ -502,7 +503,32 @@ ${JSON.stringify(jsonLd, null, 2)}
         <div class="container content-main sitemap-main">
           <section class="content-block price-note">
             <h2>Cách báo giá nhanh khi tìm gần đây</h2>
-            <p>Ảnh mặt tiền và vị trí lắp đặt quan trọng hơn việc hỏi giá chung. Một biển cùng kích thước nhưng khác độ cao, khung cũ, hệ điện LED, hướng nắng mưa và vật liệu sẽ có chi phí khác nhau.</p>
+            <p>Ảnh mặt tiền và vị trí lắp đặt quan trọng hơn việc hỏi giá chung. Một biển cùng kích thước nhưng khác độ cao, khung cũ, hệ điện LED, hướng nắng mưa và vật liệu sẽ có chi phí khác nhau. Nếu địa chỉ gần Đống Đa, Ô Chợ Dừa hoặc các quận nội thành, hãy gửi tên đường/phường để kiểm tra phương án xử lý nhanh.</p>
+          </section>
+          <section class="content-block">
+            <h2>Khi nào nên chọn đơn vị gần khu vực lắp đặt?</h2>
+            <div class="price-link-grid compact">
+              <div>
+                <strong>Cần khai trương gấp</strong>
+                <span>Ưu tiên phương án dễ chốt, vật liệu sẵn và lịch lắp phù hợp ngày mở cửa.</span>
+              </div>
+              <div>
+                <strong>Cần sửa biển cũ</strong>
+                <span>Ảnh cận lỗi LED, nguồn, mặt bạt hoặc chữ nổi giúp kiểm tra có sửa nhanh được không.</span>
+              </div>
+              <div>
+                <strong>Mặt tiền trong ngõ hoặc phố hẹp</strong>
+                <span>Cần tính góc nhìn, độ cao, biển vẫy và ánh sáng để khách tới gần vẫn nhận ra.</span>
+              </div>
+              <div>
+                <strong>Muốn báo giá sát</strong>
+                <span>Địa chỉ, kích thước và ảnh mặt tiền giúp giảm báo giá chung chung, tránh phát sinh.</span>
+              </div>
+            </div>
+          </section>
+          <section class="content-block">
+            <h2>Khách thường tìm theo cụm nào?</h2>
+            <p>Nhóm tìm kiếm local thường không chỉ gõ tên quận. Họ có thể tìm “làm biển quảng cáo gần tôi”, “làm biển quảng cáo gần đây”, “làm bảng hiệu quanh đây”, “sửa biển quảng cáo gần tôi”, hoặc thêm tên đường/phường như Ô Chợ Dừa, Xã Đàn, Thái Hà, Chùa Bộc, Cầu Giấy, Nguyễn Trãi. Trang này gom các khu vực chính để khách chọn nhanh đúng vị trí lắp biển.</p>
           </section>
           <section class="content-block">
             <h2>Chọn khu vực gần bạn</h2>
@@ -528,6 +554,7 @@ ${faqHtml}
     <footer class="site-footer">
       <div class="container footer-bottom">
         <p>© <span data-year></span> Bông Sen Trắng. ${business.address}. <a href="tel:${business.phoneHref}">${business.phone}</a></p>
+        <p><a href="../lien-he-lam-bien-quang-cao-ha-noi/">Liên hệ làm biển quảng cáo</a> · <a href="${business.facebookUrl}" target="_blank" rel="noopener">Fanpage Bông Sen Trắng</a></p>
       </div>
     </footer>
     <div class="mobile-cta" aria-label="Liên hệ nhanh trên di động">

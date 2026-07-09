@@ -81,11 +81,21 @@ function prefixToRoot(file) {
 function addFooterContactLink(html, file) {
   const prefix = prefixToRoot(file);
   const contactHref = `${prefix}lien-he-lam-bien-quang-cao-ha-noi/`;
-  if (html.includes(contactHref)) return html;
+  const nearbyHref = `${prefix}lam-bien-quang-cao-gan-day-ha-noi/`;
+  const links = [
+    [nearbyHref, "Làm biển quảng cáo gần đây"],
+    [contactHref, "Liên hệ làm biển quảng cáo"]
+  ].filter(([href]) => !html.includes(href));
+
+  if (!links.length) return html;
+
+  const linkHtml = links
+    .map(([href, label]) => `<br>\n            <a href="${href}">${label}</a>`)
+    .join("");
 
   return html.replace(
     /(<a href="https:\/\/www\.facebook\.com\/whitelotus\.vn\/?"[^>]*>[^<]*Fanpage[^<]*<\/a>)/,
-    `$1<br>\n            <a href="${contactHref}">Liên hệ làm biển quảng cáo</a>`
+    `$1${linkHtml}`
   );
 }
 
