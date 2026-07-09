@@ -72,12 +72,29 @@ function addSignals(html) {
   );
 }
 
+function prefixToRoot(file) {
+  const relative = path.relative(path.dirname(file), root).replace(/\\/g, "/");
+  if (!relative || relative === ".") return "";
+  return `${relative}/`;
+}
+
+function addFooterContactLink(html, file) {
+  const prefix = prefixToRoot(file);
+  const contactHref = `${prefix}lien-he-lam-bien-quang-cao-ha-noi/`;
+  if (html.includes(contactHref)) return html;
+
+  return html.replace(
+    /(<a href="https:\/\/www\.facebook\.com\/whitelotus\.vn\/?"[^>]*>[^<]*Fanpage[^<]*<\/a>)/,
+    `$1<br>\n            <a href="${contactHref}">Liên hệ làm biển quảng cáo</a>`
+  );
+}
+
 walk(root);
 
 let changed = 0;
 for (const file of files) {
   const before = fs.readFileSync(file, "utf8");
-  const after = addSignals(before);
+  const after = addFooterContactLink(addSignals(before), file);
   if (after !== before) {
     fs.writeFileSync(file, after, "utf8");
     changed += 1;
