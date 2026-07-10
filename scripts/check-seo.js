@@ -57,6 +57,27 @@ if (!sitemap) {
   errors.push("Missing sitemap.xml");
 }
 
+const prioritySitemapPath = path.join(root, "sitemap-priority.xml");
+const prioritySitemap = fs.existsSync(prioritySitemapPath)
+  ? fs.readFileSync(prioritySitemapPath, "utf8")
+  : "";
+if (!prioritySitemap) {
+  errors.push("Missing sitemap-priority.xml");
+} else {
+  const priorityUrls = [...prioritySitemap.matchAll(/<loc>([^<]+)<\/loc>/g)].map((match) => match[1]);
+  if (priorityUrls.length !== 12) {
+    errors.push(`sitemap-priority.xml should contain 12 focus URLs, found ${priorityUrls.length}`);
+  }
+  if (new Set(priorityUrls).size !== priorityUrls.length) {
+    errors.push("sitemap-priority.xml contains duplicate URLs");
+  }
+  for (const loc of priorityUrls) {
+    if (!loc.startsWith(`${baseUrl}/`)) {
+      errors.push(`priority sitemap URL outside expected domain: ${loc}`);
+    }
+  }
+}
+
 const imageSitemapPath = path.join(root, "image-sitemap.xml");
 const imageSitemap = fs.existsSync(imageSitemapPath) ? fs.readFileSync(imageSitemapPath, "utf8") : "";
 if (!imageSitemap) {

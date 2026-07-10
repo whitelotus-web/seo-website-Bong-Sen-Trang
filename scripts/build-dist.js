@@ -63,9 +63,10 @@ Sitemap: ${baseUrl}/image-sitemap.xml
 `;
 fs.writeFileSync(path.join(dist, "robots.txt"), robots, "utf8");
 
-const prioritySlugs = [
+const priorityCandidateSlugs = [
   "",
   "bao-gia-bien-quang-cao-ha-noi",
+  "bao-gia-bien-alu-chu-noi-ha-noi",
   "lien-he-lam-bien-quang-cao-ha-noi",
   "lam-bien-quang-cao-theo-nhu-cau-khach-hang-ha-noi",
   "bien-quang-cao-cho-cua-hang-sap-khai-truong-ha-noi",
@@ -124,6 +125,7 @@ const prioritySlugs = [
   "lam-bien-quang-cao-mat-pho-ha-noi",
   "lam-bien-quang-cao-mat-tien-nho-ha-noi",
   "thay-bien-cu-cua-hang-ha-noi",
+  "sua-chua-bien-quang-cao-ha-noi",
   "lam-bien-quang-cao-shop-moi-mo-ha-noi",
   "lam-bien-quang-cao-can-gap-ha-noi",
   "lam-bien-quang-cao-theo-mat-bang-ha-noi",
@@ -183,6 +185,27 @@ const prioritySlugs = [
   "lam-bien-quang-cao-le-duc-tho",
   "lam-bien-quang-cao-gan-day-ha-noi"
 ];
+
+const prioritySlugs = [
+  "",
+  "lam-bien-quang-cao-ha-noi",
+  "thi-cong-bien-quang-cao-ha-noi",
+  "bao-gia-bien-quang-cao-ha-noi",
+  "lien-he-lam-bien-quang-cao-ha-noi",
+  "gui-anh-bao-gia-bien-quang-cao-ha-noi",
+  "lam-bien-quang-cao-gan-day-ha-noi",
+  "sua-chua-bien-quang-cao-ha-noi",
+  "lam-bien-quang-cao-can-gap-ha-noi",
+  "lam-bien-mat-tien-cua-hang-ha-noi",
+  "lam-bien-quang-cao-dong-da",
+  "bao-gia-bien-alu-chu-noi-ha-noi"
+];
+
+for (const slug of prioritySlugs) {
+  if (!priorityCandidateSlugs.includes(slug)) {
+    throw new Error(`Priority slug is missing from the candidate map: ${slug || "/"}`);
+  }
+}
 const prioritySitemap = `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 ${prioritySlugs
