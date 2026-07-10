@@ -1,2 +1,5 @@
-https://lam-bien-quang-cao-bong-sen-trang.pages.dev/* https://lambienquangcaohanoi.io.vn/:splat 301
-http://lam-bien-quang-cao-bong-sen-trang.pages.dev/* https://lambienquangcaohanoi.io.vn/:splat 301
+# Cloudflare Pages only applies this file to path-based redirects.
+# Redirecting the project.pages.dev hostname to the custom domain must be
+# configured as an account-level Cloudflare Bulk Redirect:
+# https://lam-bien-quang-cao-bong-sen-trang.pages.dev/*
+# -> https://lambienquangcaohanoi.io.vn/:splat (301, preserve path and query)

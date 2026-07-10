@@ -5,7 +5,8 @@ const root = process.cwd();
 const baseUrl = "https://lambienquangcaohanoi.io.vn";
 const slug = "cap-nhat-dich-vu-bien-quang-cao-ha-noi";
 const pageUrl = `${baseUrl}/${slug}/`;
-const lastmod = new Date().toISOString().slice(0, 10);
+// Update this only when the hub's own main content or structured data changes.
+const lastmod = "2026-07-09";
 
 const updates = [
   ["Làm biển quảng cáo mất bao lâu tại Hà Nội", "lam-bien-quang-cao-mat-bao-lau-ha-noi", "Mốc thời gian theo loại biển, vật liệu, mặt bằng và cách chuẩn bị để kịp ngày khai trương."],

@@ -183,7 +183,6 @@ const prioritySlugs = [
   "lam-bien-quang-cao-le-duc-tho",
   "lam-bien-quang-cao-gan-day-ha-noi"
 ];
-const priorityLastmod = new Date().toISOString().slice(0, 10);
 const prioritySitemap = `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 ${prioritySlugs
@@ -192,7 +191,6 @@ ${prioritySlugs
     const priority = index === 0 ? "1.0" : index <= 3 ? "0.9" : "0.8";
     return `  <url>
     <loc>${loc}</loc>
-    <lastmod>${priorityLastmod}</lastmod>
     <changefreq>weekly</changefreq>
     <priority>${priority}</priority>
   </url>`;

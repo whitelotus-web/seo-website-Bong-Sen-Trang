@@ -5,7 +5,6 @@ const root = process.cwd();
 const baseUrl = "https://lambienquangcaohanoi.io.vn";
 const slug = "tat-ca-dich-vu-bien-quang-cao-ha-noi";
 const pageUrl = `${baseUrl}/${slug}/`;
-const lastmod = new Date().toISOString().slice(0, 10);
 
 const ignoredDirs = new Set([
   ".git",
@@ -294,7 +293,6 @@ const sitemapXml = `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 ${uniqueSitemapUrls.map((url) => `  <url>
     <loc>${url.loc}</loc>
-    <lastmod>${lastmod}</lastmod>
     <changefreq>weekly</changefreq>
     <priority>${url.priority}</priority>
   </url>`).join("\n")}

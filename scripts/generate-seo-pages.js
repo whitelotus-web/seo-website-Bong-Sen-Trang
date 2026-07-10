@@ -2,7 +2,6 @@
 const path = require("path");
 
 const baseUrl = "https://lambienquangcaohanoi.io.vn";
-const lastmod = "2026-06-10";
 
 const business = {
   name: "Công ty TNHH Truyền thông Bông Sen Trắng",
@@ -1808,7 +1807,6 @@ const sitemap = `<?xml version="1.0" encoding="UTF-8"?>
 ${sitemapUrls
   .map((url) => `  <url>
     <loc>${url.loc}</loc>
-    <lastmod>${lastmod}</lastmod>
     <changefreq>weekly</changefreq>
     <priority>${url.priority}</priority>
   </url>`)

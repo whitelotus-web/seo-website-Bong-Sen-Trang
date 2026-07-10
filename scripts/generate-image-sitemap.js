@@ -3,7 +3,6 @@ const path = require("path");
 
 const root = process.cwd();
 const baseUrl = "https://lambienquangcaohanoi.io.vn";
-const lastmod = new Date().toISOString().slice(0, 10);
 
 const ignoredDirs = new Set([
   ".git",
@@ -78,7 +77,6 @@ const xml = `<?xml version="1.0" encoding="UTF-8"?>
 ${urlEntries
   .map((entry) => `  <url>
     <loc>${escapeXml(entry.loc)}</loc>
-    <lastmod>${lastmod}</lastmod>
 ${entry.images
   .map((image) => `    <image:image>
       <image:loc>${escapeXml(image.loc)}</image:loc>${image.title ? `
