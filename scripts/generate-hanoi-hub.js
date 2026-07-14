@@ -32,22 +32,23 @@ const districts = [
 
 const serviceLinks = [
   ["Thi công biển quảng cáo", "../thi-cong-bien-quang-cao-ha-noi/", "Dịch vụ chính cho khách cần làm biển mới tại Hà Nội."],
-  ["Làm biển quảng cáo gần đây", "../lam-bien-quang-cao-gan-day-ha-noi/", "Trang cho khách tìm đơn vị làm biển gần vị trí của mình tại Hà Nội."],
-  ["Theo tuyến đường, phường", "../lam-bien-quang-cao-theo-tuyen-duong-phuong-ha-noi/", "Gom các tuyến/phường như Ô Chợ Dừa, Xã Đàn, Thái Hà, Chùa Bộc, Tây Sơn."],
-  ["Làm biển quảng cáo Linh Đàm", "../lam-bien-quang-cao-linh-dam-ha-noi/", "Trang local cho cafe, nhà hàng, shop, nhà thuốc, phòng khám quanh Linh Đàm - Hoàng Mai."],
-  ["Làm biển quảng cáo Duy Tân", "../lam-bien-quang-cao-duy-tan-cau-giay-ha-noi/", "Cụm Duy Tân - Cầu Giấy cho văn phòng, showroom, cafe, nhà hàng và dịch vụ."],
-  ["Làm biển quảng cáo Mỹ Đình", "../lam-bien-quang-cao-my-dinh-nam-tu-liem-ha-noi/", "Cụm Mỹ Đình - Nam Từ Liêm cho showroom, cửa hàng, văn phòng, nhà hàng và phòng tập."],
-  ["Làm biển quảng cáo Trung Hòa", "../lam-bien-quang-cao-trung-hoa-nhan-chinh-ha-noi/", "Cụm Trung Hòa - Nhân Chính cho spa, phòng khám, văn phòng, cafe và nhà hàng."],
-  ["Làm biển quảng cáo Văn Quán", "../lam-bien-quang-cao-van-quan-ha-dong-ha-noi/", "Cụm Văn Quán - Hà Đông cho cửa hàng, nhà thuốc, cafe, shop và dịch vụ bán lẻ."],
-  ["Làm biển quảng cáo Hồ Tây", "../lam-bien-quang-cao-ho-tay-tay-ho-ha-noi/", "Cụm Hồ Tây - Tây Hồ cho cafe, nhà hàng, spa, boutique và dịch vụ cao cấp."],
-  ["Biển theo ngành hàng", "../bien-quang-cao-theo-nganh-ha-noi/", "Shop quần áo, cafe, quán ăn, trà sữa, nail spa, salon tóc, nhà thuốc, gara."],
-  ["Biển phòng khám nha khoa", "../bien-phong-kham-nha-khoa-ha-noi/", "Trang cho khách tìm bảng hiệu phòng khám, nha khoa, clinic, trung tâm chăm sóc sức khỏe."],
-  ["Biển siêu thị mini, mẹ và bé", "../bien-sieu-thi-mini-me-va-be-ha-noi/", "Trang cho cửa hàng mẹ bé, siêu thị mini, cửa hàng tiện ích và bán lẻ theo chuỗi."],
   ["Báo giá biển quảng cáo 2026", "../bao-gia-bien-quang-cao-ha-noi/", "Khung giá tham khảo theo vật liệu và hạng mục thi công."],
+  ["Gửi ảnh mặt tiền để báo giá", "../gui-anh-bao-gia-bien-quang-cao-ha-noi/", "Bốn thông tin nên gửi qua Zalo để được tư vấn sát nhu cầu hơn."],
+  ["Làm biển mặt tiền cửa hàng", "../lam-bien-mat-tien-cua-hang-ha-noi/", "Chọn bố cục, vật liệu và ánh sáng theo vị trí lắp đặt thực tế."],
+  ["Làm biển quảng cáo cần gấp", "../lam-bien-quang-cao-can-gap-ha-noi/", "Kiểm tra khả năng đáp ứng theo ngày khai trương và độ khó công trình."],
   ["Sửa chữa biển quảng cáo", "../sua-chua-bien-quang-cao-ha-noi/", "Thay LED, thay nguồn, thay mặt bạt, sửa hộp đèn, gia cố khung."],
-  ["Làm biển quảng cáo nhanh", "../lam-bien-quang-cao-nhanh-ha-noi/", "Phù hợp cửa hàng cần kịp khai trương hoặc thay biển gấp."],
+  ["Làm biển quảng cáo gần đây", "../lam-bien-quang-cao-gan-day-ha-noi/", "Tìm khu vực phục vụ gần địa chỉ lắp đặt tại Hà Nội."],
+  ["Biển theo ngành hàng", "../bien-quang-cao-theo-nganh-ha-noi/", "Shop quần áo, cafe, quán ăn, trà sữa, nail spa, salon tóc, nhà thuốc, gara."],
+  ["Theo tuyến đường, phường", "../lam-bien-quang-cao-theo-tuyen-duong-phuong-ha-noi/", "Các tuyến và phường như Ô Chợ Dừa, Xã Đàn, Thái Hà, Chùa Bộc, Tây Sơn."],
   ["Mẫu biển thực tế", "../hinh-anh-bien-quang-cao-thuc-te-ha-noi/", "Xem ảnh công trình theo ngành trước khi chọn vật liệu và báo giá."],
   ["Năng lực thi công", "../nang-luc-thi-cong-bien-quang-cao-ha-noi/", "Quy trình, vật liệu, ảnh thực tế và cách Bông Sen Trắng triển khai."]
+];
+
+const projectImages = [
+  ["du-an-may-skin-bien-chu-noi-sang.jpg", "Biển chữ nổi phát sáng cho mặt tiền cửa hàng làm đẹp", "Chữ nổi phát sáng trên nền sáng, phù hợp cửa hàng cần mặt tiền gọn và dễ nhận diện."],
+  ["du-an-gao-viet-bien-mat-tien-do.jpg", "Biển mặt tiền màu đỏ kết hợp chữ nổi", "Biển chính kết hợp biển dọc giúp khách nhìn thương hiệu từ nhiều hướng tiếp cận."],
+  ["du-an-xe-dien-viet-thanh-bien-mat-tien-led.jpg", "Biển showroom chữ nổi phát sáng buổi tối", "Chữ phát sáng rõ trên nền tối, phù hợp showroom và cửa hàng hoạt động buổi tối."],
+  ["du-an-sb-invest-backdrop-le-tan.jpg", "Logo chữ nổi và backdrop khu lễ tân", "Hạng mục nhận diện trong nhà cần đúng tỉ lệ, màu sắc và bề mặt hoàn thiện."]
 ];
 
 const materialLinks = [
@@ -102,6 +103,16 @@ const districtHtml = districts
 const materialHtml = materialLinks
   .map(([label, href]) => `<li><a href="${href}">${escapeHtml(label)}</a></li>`)
   .join("\n                ");
+
+const projectHtml = projectImages
+  .map(
+    ([image, alt, caption]) => `
+                <figure>
+                  <img src="../assets/images/${image}" alt="${escapeHtml(alt)}" loading="lazy" decoding="async" width="1200" height="900">
+                  <figcaption>${escapeHtml(caption)}</figcaption>
+                </figure>`
+  )
+  .join("\n");
 
 const faqHtml = faqs
   .map(
@@ -174,8 +185,8 @@ const html = `<!doctype html>
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Làm biển quảng cáo Hà Nội | Thi công bảng hiệu Bông Sen Trắng</title>
-    <meta name="description" content="Làm biển quảng cáo tại Hà Nội: biển alu chữ nổi, hộp đèn LED, Hiflex, chữ nổi, sửa biển cũ. Địa chỉ 92E Ô Chợ Dừa, Đống Đa. Zalo 0989 521 881.">
+    <title>Làm biển quảng cáo Hà Nội | Thi công, sửa chữa</title>
+    <meta name="description" content="Làm biển quảng cáo Hà Nội: alu chữ nổi, hộp đèn LED, Hiflex, sửa biển cũ. Bông Sen Trắng tại 92E Ô Chợ Dừa. Gửi ảnh qua Zalo 0989 521 881.">
     <meta name="robots" content="index,follow">
     <meta name="theme-color" content="#1d8dcc">
     <link rel="canonical" href="${pageUrl}">
@@ -189,14 +200,14 @@ const html = `<!doctype html>
     <meta property="og:type" content="website">
     <meta property="og:locale" content="vi_VN">
     <meta property="og:site_name" content="Bông Sen Trắng">
-    <meta property="og:title" content="Làm biển quảng cáo Hà Nội">
-    <meta property="og:description" content="Sản xuất, thi công, sửa chữa biển quảng cáo tại Hà Nội. Gửi ảnh mặt tiền qua Zalo để báo giá nhanh.">
+    <meta property="og:title" content="Làm biển quảng cáo Hà Nội | Bông Sen Trắng">
+    <meta property="og:description" content="Thi công, sửa chữa biển quảng cáo tại Hà Nội. Xem phương án theo mặt bằng và gửi ảnh qua Zalo để nhận tư vấn.">
     <meta property="og:url" content="${pageUrl}">
     <meta property="og:image" content="${baseUrl}/assets/images/hero-bien-quang-cao-ha-noi.jpg">
     <meta property="og:image:alt" content="Làm biển quảng cáo tại Hà Nội">
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Làm biển quảng cáo Hà Nội">
-    <meta name="twitter:description" content="Thi công bảng hiệu, biển alu, hộp đèn LED, Hiflex, chữ nổi tại Hà Nội.">
+    <meta name="twitter:title" content="Làm biển quảng cáo Hà Nội | Bông Sen Trắng">
+    <meta name="twitter:description" content="Thi công bảng hiệu, alu chữ nổi, hộp đèn LED, Hiflex và sửa biển cũ tại Hà Nội.">
     <meta name="twitter:image" content="${baseUrl}/assets/images/hero-bien-quang-cao-ha-noi.jpg">
     <script type="application/ld+json">
 ${JSON.stringify(jsonLd, null, 2)}
@@ -256,7 +267,51 @@ ${JSON.stringify(jsonLd, null, 2)}
             </section>
 
             <section class="content-block">
-              <h2>Dịch vụ làm biển quảng cáo Hà Nội cần ưu tiên</h2>
+              <h2>Chọn biển theo mặt bằng và thời điểm khách nhìn thấy</h2>
+              <p>Không có một cấu hình phù hợp cho mọi cửa hàng. Biển nên được chọn theo khoảng cách nhìn, giờ hoạt động, diện tích mặt tiền, màu nhận diện và thời gian dự kiến sử dụng.</p>
+              <div class="price-table-wrap">
+                <table class="price-table">
+                  <thead>
+                    <tr>
+                      <th>Tình huống</th>
+                      <th>Phương án nên cân nhắc</th>
+                      <th>Điểm cần kiểm tra</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td><strong>Cửa hàng mặt phố</strong></td>
+                      <td>Alu kết hợp chữ nổi mica hoặc inox</td>
+                      <td>Tỉ lệ chữ, độ tương phản và hướng khách tiếp cận</td>
+                    </tr>
+                    <tr>
+                      <td><strong>Quán ăn, cafe bán tối</strong></td>
+                      <td>Hộp đèn, chữ nổi LED hoặc biển vẫy</td>
+                      <td>Độ sáng, khả năng đọc khi đi ngang và vị trí cấp điện</td>
+                    </tr>
+                    <tr>
+                      <td><strong>Cửa hàng trong ngõ</strong></td>
+                      <td>Biển vẫy hoặc hộp đèn hai mặt kết hợp biển chính</td>
+                      <td>Góc nhìn từ đầu ngõ và khoảng nhô ra an toàn</td>
+                    </tr>
+                    <tr>
+                      <td><strong>Showroom, văn phòng</strong></td>
+                      <td>Chữ nổi, logo và backdrop nhận diện</td>
+                      <td>Màu thương hiệu, kích thước logo và bề mặt hoàn thiện</td>
+                    </tr>
+                    <tr>
+                      <td><strong>Biển cũ xuống màu, mất sáng</strong></td>
+                      <td>Kiểm tra trước khi sửa hoặc thay mới</td>
+                      <td>Khung, mặt biển, chữ, LED, nguồn và đường điện</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </section>
+
+            <section class="content-block">
+              <h2>Chọn đúng nhu cầu làm biển quảng cáo tại Hà Nội</h2>
+              <p>Các trang dưới đây đi thẳng vào những việc khách thường cần: làm mới, hỏi giá, gửi ảnh mặt tiền, sửa biển cũ hoặc cần hoàn thiện trước ngày khai trương.</p>
               <div class="price-link-grid compact">
 ${cardGrid(serviceLinks)}
               </div>
@@ -275,6 +330,20 @@ ${districtHtml}
               <ul class="area-list material-list" aria-label="Loại biển quảng cáo tại Hà Nội">
                 ${materialHtml}
               </ul>
+            </section>
+
+            <section class="content-block">
+              <h2>Ảnh hạng mục Bông Sen Trắng đã thực hiện</h2>
+              <p>Ảnh thực tế giúp đối chiếu cách dùng chữ nổi, ánh sáng, biển dọc và logo trong nhà trước khi chọn phương án cho mặt bằng mới.</p>
+              <div class="case-gallery">
+${projectHtml}
+              </div>
+            </section>
+
+            <section class="content-block">
+              <h2>Gửi gì để nhận báo giá sát hơn?</h2>
+              <p>Chỉ cần bắt đầu bằng bốn thông tin: ảnh chụp thẳng mặt tiền, kích thước ngang x cao nếu đã có, địa chỉ lắp đặt và mẫu biển mong muốn. Nếu có ngày khai trương, hãy gửi kèm để kiểm tra tiến độ trước khi chốt.</p>
+              <p>Báo giá cuối cùng nên làm rõ vật liệu nền, chữ hoặc logo, hệ khung, LED và nguồn, phần tháo dỡ nếu có, chi phí lắp đặt và phạm vi bảo hành. <a href="../gui-anh-bao-gia-bien-quang-cao-ha-noi/">Xem hướng dẫn gửi ảnh báo giá</a> hoặc <a href="../bao-gia-bien-quang-cao-ha-noi/">xem khung giá tham khảo</a>.</p>
             </section>
 
             <section class="content-block">

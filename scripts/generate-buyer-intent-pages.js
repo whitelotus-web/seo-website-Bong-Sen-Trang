@@ -212,7 +212,7 @@ pages.push(
     image: "du-an-bien-tien-coffee.jpg",
     intro: "Tây Hồ có nhiều quán cafe, nhà hàng, spa và cửa hàng dịch vụ trên Xuân Diệu, Tô Ngọc Vân, Lạc Long Quân. Bảng hiệu cần có thẩm mỹ tốt, ánh sáng đẹp và dễ nhận diện vào buổi tối.",
     items: ["Biển cafe, nhà hàng, spa, salon", "Chữ nổi sáng mặt, hắt sáng, hộp đèn LED", "Biển vẫy phụ cho mặt tiền khuất góc nhìn", "Tư vấn chất liệu theo phong cách thương hiệu"],
-    related: [["Làm biển quảng cáo Tây Hồ", "lam-bien-quang-cao-tay-ho"], ["Làm biển quảng cáo có đèn LED", "lam-bien-quang-cao-co-den-led-ha-noi"], ["Biển nhà hàng cafe Hà Nội", "bien-nha-hang-cafe-ha-noi"]]
+    related: [["Làm biển quảng cáo Tây Hồ", "lam-bien-quang-cao-tay-ho"], ["Làm biển quảng cáo có đèn LED", "lam-bien-quang-cao-co-den-led-ha-noi"], ["Biển nhà hàng Hà Nội", "bien-quang-cao-nha-hang-ha-noi"]]
   },
   {
     slug: "bang-hieu-cua-hang-nam-tu-liem-ha-noi",

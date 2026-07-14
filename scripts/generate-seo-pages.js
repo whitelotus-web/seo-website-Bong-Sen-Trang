@@ -111,32 +111,75 @@ const realProjectGallery = [
 const pages = [
   {
     slug: "thi-cong-bien-quang-cao-ha-noi",
-    title: "Thi công biển quảng cáo Hà Nội | Bông Sen Trắng",
-    description: "Nhận thi công biển quảng cáo tại Hà Nội: khảo sát, sản xuất, lắp đặt bảng hiệu, biển alu, hộp đèn LED, chữ nổi. Gọi/Zalo 0989 521 881.",
-    kicker: "Dịch vụ tại Hà Nội",
+    title: "Thi công biển quảng cáo Hà Nội | Khảo sát, lắp đặt",
+    description: "Thi công biển quảng cáo Hà Nội: khảo sát, sản xuất, lắp đặt alu chữ nổi, hộp đèn LED, Hiflex và sửa biển cũ. Gửi ảnh mặt tiền qua Zalo 0989 521 881.",
+    kicker: "Khảo sát, sản xuất và lắp đặt",
     h1: "Thi công biển quảng cáo Hà Nội",
-    lead: "Bông Sen Trắng nhận khảo sát, sản xuất và lắp đặt biển quảng cáo cho cửa hàng, showroom, văn phòng, đại lý và công trình tại Hà Nội.",
+    lead: "Bông Sen Trắng nhận thi công biển quảng cáo tại Hà Nội cho cửa hàng, nhà hàng, cafe, spa, showroom và văn phòng. Phương án được tư vấn theo ảnh mặt tiền, vị trí lắp đặt, thời gian sử dụng và ngân sách thực tế.",
     image: "hero-bien-quang-cao-ha-noi.jpg",
-    imageAlt: "Thi công chữ nổi biển quảng cáo tại Hà Nội",
+    imageAlt: "Thi công biển quảng cáo chữ nổi tại Hà Nội",
     serviceName: "Thi công biển quảng cáo Hà Nội",
     sections: [
-      ["Khi nào nên làm biển mới?", [
-        "Khi biển cũ xuống màu, nhận diện thương hiệu thay đổi, cửa hàng chuyển địa điểm hoặc cần tăng độ nổi bật mặt tiền.",
-        "Đội thi công tư vấn vật liệu theo vị trí lắp đặt, hướng nắng mưa, độ cao, ngân sách và yêu cầu thẩm mỹ."
+      ["Thi công theo đúng nhu cầu của mặt bằng", [
+        "Biển mặt phố cần dễ đọc khi khách di chuyển, cửa hàng bán tối cần ánh sáng rõ, mặt tiền trong ngõ thường cần thêm biển vẫy, còn showroom và văn phòng chú trọng tỉ lệ logo cùng độ hoàn thiện. Vì vậy cùng một kích thước nhưng phương án vật liệu và kết cấu có thể khác nhau.",
+        "Bông Sen Trắng tiếp nhận ảnh mặt tiền, địa chỉ và mẫu nhận diện trước; trường hợp biển lớn, vị trí cao, cần tận dụng khung cũ hoặc khó đo kích thước sẽ được đề xuất khảo sát trực tiếp tại Hà Nội."
       ]],
-      ["Hạng mục nhận thi công", [
-        "Biển alu chữ nổi, biển bạt Hiflex, hộp đèn LED, chữ nổi mica inox, pano tấm lớn, biển công ty và bảng hiệu cửa hàng.",
-        "Có thể thi công mới hoặc thay mặt biển, thay LED, gia cố khung, làm mới bố cục nhận diện."
+      ["Hạng mục có thể triển khai", [
+        "Các hạng mục phổ biến gồm mặt dựng alu, chữ nổi mica hoặc inox, hộp đèn LED, biển bạt Hiflex, biển vẫy, biển công ty, logo và backdrop lễ tân. Có thể làm mới trọn bộ hoặc thay mặt biển, thay chữ, thay LED và gia cố phần khung còn sử dụng được.",
+        "Với cửa hàng mới, nên xác định đồng thời biển chính, biển vẫy, decal kính và vị trí cấp điện để tránh làm từng phần thiếu đồng bộ. Với biển cũ, cần kiểm tra kết cấu trước khi quyết định tận dụng hay thay mới."
       ]],
-      ["Cần gửi gì để báo giá nhanh?", [
-        "Ảnh mặt tiền, kích thước dự kiến, địa chỉ lắp đặt, file thiết kế nếu có và yêu cầu vật liệu mong muốn.",
-        "Nếu mặt bằng phức tạp, Bông Sen Trắng có thể khảo sát để báo giá sát hơn."
+      ["Một báo giá thi công cần làm rõ những gì?", [
+        "Báo giá nên thể hiện kích thước, vật liệu nền, chất liệu và độ dày chữ, loại LED hoặc nguồn sáng, hệ khung, số lượng hạng mục và phần lắp đặt. Độ cao, đường vận chuyển, nguồn điện và thời gian thi công cũng có thể ảnh hưởng chi phí.",
+        "Nếu mới có ảnh mà chưa có kích thước, anh/chị vẫn có thể gửi Zalo để nhận hướng tư vấn ban đầu. Khoảng giá chỉ chính xác hơn sau khi đã chốt kích thước, cấu tạo và điều kiện mặt bằng."
+      ]],
+      ["Kiểm tra trước khi bàn giao", [
+        "Sau lắp đặt cần kiểm tra độ chắc của khung và điểm bắt, độ thẳng của mặt biển, khoảng cách chữ, màu sắc nhận diện, độ sáng và tình trạng nguồn điện. Các phần có thể quan sát nên được đối chiếu với phương án đã chốt trước khi bàn giao.",
+        "Phạm vi bảo hành phụ thuộc hạng mục và vật liệu sử dụng. Nội dung này được trao đổi cùng báo giá để khách biết phần nào được bảo hành và cách liên hệ khi cần kiểm tra."
       ]]
     ],
+    choiceHeading: "Chọn phương án theo vị trí và cách cửa hàng hoạt động",
+    choiceIntro: "Bảng dưới đây là hướng chọn ban đầu. Vật liệu cuối cùng vẫn cần đối chiếu với kích thước, nhận diện và điều kiện lắp đặt.",
+    choiceRows: [
+      ["Mặt phố, cần nhận diện bền", "Mặt alu kết hợp chữ nổi mica hoặc inox", "Mặt nền phẳng, chữ rõ và có thể bổ sung sáng mặt hoặc hắt chân"],
+      ["Quán ăn, cafe bán buổi tối", "Hộp đèn, chữ nổi LED hoặc biển vẫy", "Tăng khả năng nhìn thấy tên quán khi trời tối và từ hướng đi ngang"],
+      ["Khai trương, ngân sách cần kiểm soát", "Biển bạt Hiflex hoặc cấu hình tối giản", "Thi công gọn và dễ thay nội dung khi nhận diện còn thay đổi"],
+      ["Showroom, văn phòng, quầy lễ tân", "Chữ nổi, logo và backdrop", "Ưu tiên tỉ lệ, màu nhận diện và bề mặt hoàn thiện"],
+      ["Biển cũ xuống màu hoặc mất sáng", "Kiểm tra khung, mặt biển, LED và nguồn", "Chỉ thay phần hỏng khi kết cấu cũ vẫn phù hợp và an toàn"]
+    ],
+    stepsHeading: "Quy trình thi công từ ảnh mặt tiền đến bàn giao",
+    steps: [
+      "Tiếp nhận ảnh mặt tiền, địa chỉ, kích thước dự kiến, mẫu thiết kế và thời điểm cần hoàn thành.",
+      "Tư vấn cấu tạo, vật liệu, cách chiếu sáng và các hạng mục cần làm theo mục tiêu sử dụng.",
+      "Báo giá sơ bộ; khảo sát trực tiếp khi vị trí cao, biển lớn, cần đo chính xác hoặc kiểm tra khung cũ.",
+      "Chốt thiết kế, kích thước, vật liệu, màu sắc, phạm vi lắp đặt và nội dung bảo hành.",
+      "Sản xuất, thử sáng hoặc kiểm tra cấu kiện trước khi đưa tới công trình.",
+      "Lắp đặt, vệ sinh, kiểm tra hoàn thiện và bàn giao theo phương án đã thống nhất."
+    ],
+    focusHeading: "Đi tiếp theo đúng tình huống của anh/chị",
+    focusLinks: [
+      ["Xem khung giá tham khảo", "../bao-gia-bien-quang-cao-ha-noi/", "So sánh các hạng mục phổ biến và những yếu tố làm thay đổi giá."],
+      ["Gửi ảnh mặt tiền để báo giá", "../gui-anh-bao-gia-bien-quang-cao-ha-noi/", "Xem bốn thông tin nên gửi qua Zalo để được tư vấn nhanh hơn."],
+      ["Làm biển mặt tiền cửa hàng", "../lam-bien-mat-tien-cua-hang-ha-noi/", "Chọn bố cục, vật liệu và ánh sáng theo mặt tiền thực tế."],
+      ["Cần hoàn thiện gấp", "../lam-bien-quang-cao-can-gap-ha-noi/", "Kiểm tra khả năng đáp ứng theo thiết kế, vật liệu và ngày khai trương."]
+    ],
+    gallery: realProjectGallery.slice(0, 6),
+    galleryHeading: "Hình ảnh hạng mục Bông Sen Trắng đã thực hiện",
+    related: [
+      ["Làm biển quảng cáo tại Hà Nội", "../lam-bien-quang-cao-ha-noi/"],
+      ["Báo giá biển quảng cáo Hà Nội", "../bao-gia-bien-quang-cao-ha-noi/"],
+      ["Gửi ảnh báo giá qua Zalo", "../gui-anh-bao-gia-bien-quang-cao-ha-noi/"],
+      ["Làm biển mặt tiền cửa hàng", "../lam-bien-mat-tien-cua-hang-ha-noi/"],
+      ["Sửa chữa biển quảng cáo", "../sua-chua-bien-quang-cao-ha-noi/"],
+      ["Làm biển quảng cáo Đống Đa", "../lam-bien-quang-cao-dong-da/"],
+      ["Báo giá biển alu chữ nổi", "../bao-gia-bien-alu-chu-noi-ha-noi/"],
+      ["Xem hình ảnh biển thực tế", "../hinh-anh-bien-quang-cao-thuc-te-ha-noi/"]
+    ],
     faq: [
-      ["Thi công biển quảng cáo tại Hà Nội mất bao lâu?", "Tùy kích thước và vật liệu. Hạng mục đơn giản có thể triển khai nhanh sau khi chốt thiết kế, kết cấu và chi phí."],
-      ["Có nhận sửa biển cũ không?", "Có. Có thể kiểm tra biển cũ, thay mặt biển, thay LED, gia cố khung hoặc làm lại theo nhận diện mới."],
-      ["Có bảo hành sau lắp đặt không?", "Có bảo hành theo từng hạng mục và vật liệu sử dụng, trao đổi rõ trước khi thi công."]
+      ["Thi công biển quảng cáo tại Hà Nội mất bao lâu?", "Thời gian phụ thuộc thiết kế, kích thước, vật liệu, số lượng hạng mục và điều kiện lắp đặt. Tiến độ chỉ nên chốt sau khi đã thống nhất đầy đủ cấu tạo và mặt bằng."],
+      ["Chưa có kích thước thì có báo giá được không?", "Có thể gửi ảnh mặt tiền để được tư vấn cấu hình và khoảng giá ban đầu. Báo giá chính xác hơn cần kích thước và điều kiện thi công cụ thể."],
+      ["Có nhận sửa và tận dụng biển cũ không?", "Có. Cần kiểm tra khung, mặt biển, chữ, LED và nguồn trước; phần còn phù hợp có thể được đề xuất giữ lại để tránh thay mới không cần thiết."],
+      ["Có nhận hạng mục cần hoàn thiện gấp không?", "Có thể kiểm tra khả năng đáp ứng theo ngày cần hoàn thành, nhưng còn phụ thuộc thiết kế đã chốt, vật liệu có sẵn và độ khó của vị trí lắp đặt."],
+      ["Biển sau lắp đặt có bảo hành không?", "Có bảo hành theo từng hạng mục và vật liệu sử dụng. Phạm vi và thời gian bảo hành được trao đổi rõ trong quá trình báo giá."]
     ]
   },
   {
@@ -1614,7 +1657,61 @@ function renderPage(page) {
             </section>`)
     .join("\n");
 
-  const galleryHtml = page.gallery ? `
+  const choiceHtml = Array.isArray(page.choiceRows) ? `
+            <section class="content-block">
+              <h2>${escapeHtml(page.choiceHeading)}</h2>
+              ${page.choiceIntro ? `<p>${escapeHtml(page.choiceIntro)}</p>` : ""}
+              <div class="price-table-wrap">
+                <table class="price-table">
+                  <thead>
+                    <tr>
+                      <th>Nhu cầu thực tế</th>
+                      <th>Phương án nên cân nhắc</th>
+                      <th>Lý do</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+${page.choiceRows.map(([need, option, reason]) => `
+                    <tr>
+                      <td><strong>${escapeHtml(need)}</strong></td>
+                      <td>${escapeHtml(option)}</td>
+                      <td>${escapeHtml(reason)}</td>
+                    </tr>`).join("\n")}
+                  </tbody>
+                </table>
+              </div>
+            </section>` : "";
+
+  const stepsHtml = Array.isArray(page.steps) ? `
+            <section class="content-block">
+              <h2>${escapeHtml(page.stepsHeading)}</h2>
+              <ol class="step-list">
+                ${page.steps.map((step) => `<li>${escapeHtml(step)}</li>`).join("\n                ")}
+              </ol>
+            </section>` : "";
+
+  const focusLinksHtml = Array.isArray(page.focusLinks) ? `
+            <section class="content-block">
+              <h2>${escapeHtml(page.focusHeading)}</h2>
+              <div class="price-link-grid compact">
+${page.focusLinks.map(([label, href, text]) => `
+                <a href="${href}">
+                  <strong>${escapeHtml(label)}</strong>
+                  <span>${escapeHtml(text)}</span>
+                </a>`).join("\n")}
+              </div>
+            </section>` : "";
+
+  const galleryHtml = !page.gallery ? "" : page.slug === "thi-cong-bien-quang-cao-ha-noi" ? `
+            <section class="content-block">
+              <h2>${escapeHtml(page.galleryHeading || "Thêm hình ảnh công trình")}</h2>
+              <div class="case-gallery">
+${page.gallery.map((item) => `                <figure>
+                  <img src="../assets/images/${item.image}" alt="${escapeHtml(item.alt)}" loading="lazy" decoding="async" width="1200" height="900">
+                  <figcaption>${escapeHtml(item.caption)}</figcaption>
+                </figure>`).join("\n")}
+              </div>
+            </section>` : `
             <section class="content-block">
               <h2>${escapeHtml(page.galleryHeading || "Thêm hình ảnh công trình")}</h2>
               <div class="case-gallery">
@@ -1624,7 +1721,7 @@ function renderPage(page) {
                   <figcaption>${escapeHtml(item.caption)}</figcaption>
                 </figure>`).join("\n                ")}
               </div>
-            </section>` : "";
+            </section>`;
 
   const faqHtml = page.faq
     .map(([question, answer]) => `
@@ -1634,7 +1731,7 @@ function renderPage(page) {
               </details>`)
     .join("\n");
 
-  const relatedHtml = relatedDefault
+  const relatedHtml = (page.related || relatedDefault)
     .filter(([, href]) => !href.includes(page.slug))
     .map(([label, href]) => `<a href="${href}">${escapeHtml(label)}</a>`)
     .join("\n              ");
@@ -1722,7 +1819,7 @@ ${jsonLd(page)}
         <div class="container content-layout">
           <article class="content-main">
 ${sectionHtml}
-${galleryHtml}
+${choiceHtml}${stepsHtml}${focusLinksHtml}${galleryHtml}
             <section class="content-block">
               <h2>Câu hỏi thường gặp</h2>
               <div class="faq-list compact">

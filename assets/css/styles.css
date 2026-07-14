@@ -646,10 +646,16 @@ address {
 .content-main {
   display: grid;
   gap: 18px;
+  min-width: 0;
+}
+
+.content-sidebar {
+  min-width: 0;
 }
 
 .content-block,
 .sidebar-card {
+  min-width: 0;
   border: 1px solid var(--line);
   border-radius: 8px;
   background: #fff;
@@ -702,9 +708,12 @@ address {
 }
 
 .price-table-wrap {
+  width: 100%;
+  max-width: 100%;
   overflow-x: auto;
   border: 1px solid var(--line);
   border-radius: 8px;
+  -webkit-overflow-scrolling: touch;
 }
 
 .price-table {

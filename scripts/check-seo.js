@@ -106,6 +106,49 @@ if (!imageSitemap) {
   }
 }
 
+const knownPages = new Map(files.map((file) => [pageLabel(file), file]));
+const inboundLinks = new Map([...knownPages.keys()].map((url) => [url, 0]));
+
+for (const file of files) {
+  const html = fs.readFileSync(file, "utf8");
+  const sourceUrl = `${baseUrl}${pageLabel(file)}`;
+
+  for (const match of html.matchAll(/<a\b[^>]*\bhref="([^"]+)"/gi)) {
+    const href = match[1].trim();
+    if (!href || href.startsWith("#")) continue;
+
+    let target;
+    try {
+      target = new URL(href, sourceUrl);
+    } catch {
+      pushError(file, `invalid internal link: ${href}`);
+      continue;
+    }
+
+    if (target.origin !== baseUrl) continue;
+
+    let targetPath = decodeURIComponent(target.pathname);
+    if (!targetPath.endsWith("/") && !path.posix.extname(targetPath)) {
+      targetPath += "/";
+    }
+
+    if (knownPages.has(targetPath)) {
+      inboundLinks.set(targetPath, inboundLinks.get(targetPath) + 1);
+      continue;
+    }
+
+    if (!path.posix.extname(targetPath)) {
+      pushError(file, `broken internal link: ${href} -> ${targetPath}`);
+    }
+  }
+}
+
+for (const [url, count] of inboundLinks) {
+  if (url !== "/" && count === 0) {
+    errors.push(`${url} has no internal links pointing to it`);
+  }
+}
+
 for (const file of files) {
   const html = fs.readFileSync(file, "utf8");
   const title = textMatch(html, /<title>([\s\S]*?)<\/title>/i);
