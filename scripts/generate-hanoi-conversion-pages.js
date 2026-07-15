@@ -40,6 +40,8 @@ const pages = [
   {
     slug: "gui-anh-bao-gia-bien-quang-cao-ha-noi",
     title: "Gửi ảnh báo giá biển quảng cáo Hà Nội",
+    metaTitle: "Gửi ảnh nhận báo giá biển quảng cáo Hà Nội | Bông Sen Trắng",
+    description: "Gửi ảnh mặt tiền để nhận báo giá biển quảng cáo Hà Nội. Xem 4 góc ảnh cần chụp, thông tin cần gửi và mẫu tin nhắn Zalo 0989 521 881.",
     kicker: "Báo giá nhanh qua ảnh mặt tiền",
     image: "du-an-gao-viet-bien-mat-tien-do.jpg",
     intro:
@@ -260,9 +262,53 @@ function renderFaq(page) {
   };
 }
 
+function renderQuoteGuide(page) {
+  if (page.slug !== "gui-anh-bao-gia-bien-quang-cao-ha-noi") return "";
+
+  const photos = [
+    ["du-an-gao-viet-bien-mat-tien-do.jpg", "Ảnh chụp toàn bộ mặt tiền giúp xác định vị trí và tỷ lệ biển"],
+    ["du-an-xe-dien-viet-thanh-bien-mat-tien-led.jpg", "Ảnh buổi tối giúp xác định nhu cầu chiếu sáng và góc nhìn"],
+    ["du-an-wet-brush-bien-mat-tien.jpg", "Ảnh chính diện giúp kiểm tra chiều ngang và bố cục mặt dựng"],
+    ["du-an-bien-chu-noi-mo-nguyen.jpg", "Ảnh gần giúp nhìn rõ chữ nổi, mép biển và hiện trạng vật liệu"]
+  ];
+
+  return `
+            <section class="content-block">
+              <h2>Bốn góc ảnh nên chụp trước khi hỏi giá</h2>
+              <ol class="step-list">
+                <li>Ảnh chính diện, đứng đủ xa để lấy trọn chiều ngang và chiều cao mặt tiền.</li>
+                <li>Ảnh toàn cảnh từ phía bên kia đường để thấy hướng khách thường nhìn tới.</li>
+                <li>Ảnh gần khung cũ, mái che, nguồn điện và điểm dự kiến treo biển vẫy.</li>
+                <li>Ảnh buổi tối nếu cửa hàng bán tối hoặc khu vực có nhiều ánh sáng cạnh tranh.</li>
+              </ol>
+              <div class="case-gallery">
+                ${photos.map(([image, alt]) => `
+                <figure>
+                  <img src="../assets/images/${image}" alt="${escapeHtml(alt)}" loading="lazy" decoding="async" width="1200" height="900">
+                  <figcaption>${escapeHtml(alt)}</figcaption>
+                </figure>`).join("")}
+              </div>
+            </section>
+            <section class="content-block price-note">
+              <h2>Mẫu tin nhắn gửi Zalo để báo giá</h2>
+              <p><strong>Địa chỉ lắp đặt:</strong> ...<br>
+              <strong>Kích thước dự kiến:</strong> ngang ... m x cao ... m<br>
+              <strong>Loại biển mong muốn:</strong> alu chữ nổi / hộp đèn / Hiflex / biển vẫy / chưa rõ<br>
+              <strong>Có cần sáng buổi tối:</strong> có / không<br>
+              <strong>Thời gian cần hoàn thiện:</strong> ...<br>
+              <strong>Ngân sách dự kiến:</strong> ... (nếu có)</p>
+              <p>Đính kèm ảnh mặt tiền, logo hoặc mẫu biển thích rồi gửi tới Zalo <a href="https://zalo.me/${business.phoneHref}" target="_blank" rel="noopener">${business.phone}</a>.</p>
+            </section>
+            <section class="content-block">
+              <h2>Khi nào ảnh đủ để báo khoảng giá, khi nào cần khảo sát?</h2>
+              <p>Ảnh rõ và có kích thước thường đủ để tư vấn vật liệu, bố cục và khoảng chi phí cho biển nhỏ hoặc mặt bằng dễ thi công. Để chốt giá, vẫn cần xác nhận kích thước thật, cấu tạo chữ, hệ LED và phần lắp đặt.</p>
+              <p>Nên khảo sát khi biển ở tầng cao, mặt dựng cũ, cần tận dụng khung, có mái che hoặc dây điện vướng, cần xe nâng, hoặc chưa xác định được điểm bắt chắc chắn. Việc khảo sát giúp báo giá đúng phần việc và hạn chế phát sinh sau khi sản xuất.</p>
+            </section>`;
+}
+
 function renderPage(page) {
   const pageUrl = `${baseUrl}/${page.slug}/`;
-  const description = `${page.title}: tư vấn phương án, vật liệu, khảo sát và báo giá nhanh tại Hà Nội. Gọi/Zalo ${business.phone}.`;
+  const description = page.description || `${page.title}: tư vấn phương án, vật liệu, khảo sát và báo giá nhanh tại Hà Nội. Gọi/Zalo ${business.phone}.`;
   const imageUrl = `${baseUrl}/assets/images/${page.image}`;
   const { faqs, html: faqHtml } = renderFaq(page);
   const jsonLd = {
@@ -322,7 +368,7 @@ function renderPage(page) {
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>${escapeHtml(page.title)} | Bông Sen Trắng</title>
+    <title>${escapeHtml(page.metaTitle || `${page.title} | Bông Sen Trắng`)}</title>
     <meta name="description" content="${escapeHtml(description)}">
     <meta name="robots" content="index,follow">
     <meta name="theme-color" content="#1d8dcc">
@@ -407,7 +453,7 @@ ${JSON.stringify(jsonLd, null, 2)}
             <section class="content-block price-note">
               <h2>Cách xử lý nhanh</h2>
               <p>${escapeHtml(page.cta)}</p>
-            </section>
+            </section>${renderQuoteGuide(page)}
             <section class="content-block">
               <h2>Nhu cầu liên quan tại Hà Nội</h2>
               <div class="price-link-grid compact">

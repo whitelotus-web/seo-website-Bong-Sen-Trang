@@ -45,10 +45,28 @@ const pages = [
         "Biển alu chữ nổi phù hợp cửa hàng, showroom, văn phòng, đại lý và mặt tiền cần nhận diện bền, sạch, dễ nhìn.",
         "Nếu cần nổi bật buổi tối, có thể kết hợp chữ mica hút nổi, LED âm chữ hoặc LED hắt chân chữ."
       ]],
+      ["Một bộ biển alu chữ nổi thường gồm những gì?", [
+        "Phần nền gồm tấm alu và hệ khung xương phía sau. Trên nền là chữ hoặc logo bằng mica, inox, formex hay vật liệu kết hợp; phương án phát sáng có thêm LED, bộ nguồn và đường dây điện.",
+        "Báo giá cần tách rõ nền, chữ, hệ sáng, khung gia cố, tháo dỡ biển cũ và lắp đặt. Nếu chỉ so đơn giá m2 của nền alu, anh/chị chưa thể biết tổng chi phí hoàn thiện."
+      ]],
+      ["Chọn chữ mica hay chữ inox trên nền alu?", [
+        "Chữ mica phù hợp khi cần màu sắc linh hoạt và có thể làm mặt phát sáng. Chữ inox tạo bề mặt kim loại chắc, gọn, hợp cửa hàng hoặc văn phòng cần cảm giác bền và trang trọng.",
+        "Kiểu chữ, độ cao chữ và khoảng cách nhìn quan trọng hơn việc cố thêm nhiều nội dung. Với mặt tiền nhỏ, nên ưu tiên tên thương hiệu và ngành hàng chính để khách đi đường đọc nhanh."
+      ]],
       ["Thông tin cần gửi để báo giá sát", [
         "Gửi ảnh mặt tiền, kích thước ngang x cao, file logo, yêu cầu có đèn hay không, địa chỉ lắp đặt và thời gian mong muốn.",
         "Với biển cao hoặc mặt dựng cũ, nên khảo sát trước để kiểm tra điểm bắt, khung xương và phương án chống nước."
+      ]],
+      ["Nghiệm thu và bảo hành nên ghi rõ", [
+        "Trước khi bàn giao nên kiểm tra độ phẳng của nền, mép alu, độ chắc của chữ, ánh sáng LED, bộ nguồn và đường dây. Ban đêm cần nhìn lại độ đều sáng và khả năng đọc từ hướng khách thường đi tới.",
+        "Phạm vi bảo hành phụ thuộc vật liệu, hệ LED, nguồn điện và điều kiện ngoài trời. Nội dung này nên được ghi trong báo giá thay vì chỉ trao đổi miệng."
       ]]
+    ],
+    gallery: [
+      ["du-an-oppo-samsung.jpg", "Biển nền alu kết hợp chữ nổi cho cửa hàng điện thoại"],
+      ["mau-bien-alu-chu-noi-shop-ha-noi.jpg", "Mẫu biển alu chữ nổi cho mặt tiền shop tại Hà Nội"],
+      ["du-an-may-skin-bien-chu-noi-sang.jpg", "Chữ nổi phát sáng trên nền mặt dựng cửa hàng"],
+      ["du-an-olive-vino-chu-noi-hat-sang.jpg", "Biển chữ nổi hắt sáng quan sát vào buổi tối"]
     ]
   },
   {
@@ -160,6 +178,7 @@ function renderPage(page) {
     "@graph": [
       {
         "@type": "LocalBusiness",
+        "@id": `${baseUrl}/#localbusiness`,
         name: "Công ty TNHH Truyền thông Bông Sen Trắng",
         url: `${baseUrl}/`,
         image: `${baseUrl}/assets/images/logo-whitelotus.png`,
@@ -179,11 +198,7 @@ function renderPage(page) {
         name: page.h1,
         description: page.description,
         areaServed: "Hà Nội",
-        provider: {
-          "@type": "LocalBusiness",
-          name: "Công ty TNHH Truyền thông Bông Sen Trắng",
-          telephone: "+84989521881"
-        }
+        provider: { "@id": `${baseUrl}/#localbusiness` }
       }
     ]
   };
@@ -279,9 +294,19 @@ ${priceTable(page.rows)}
               <h2>${escapeHtml(heading)}</h2>
               ${paragraphs.map((text) => `<p>${escapeHtml(text)}</p>`).join("\n              ")}
             </section>`).join("\n")}
+${page.gallery ? `
+            <section class="content-block">
+              <h2>Ảnh biển alu và chữ nổi đã thực hiện</h2>
+              <div class="case-gallery">
+                ${page.gallery.map(([image, alt]) => `<figure>
+                  <img src="../assets/images/${image}" alt="${escapeHtml(alt)}" loading="lazy" decoding="async" width="1200" height="900">
+                  <figcaption>${escapeHtml(alt)}</figcaption>
+                </figure>`).join("\n                ")}
+              </div>
+            </section>` : ""}
             <section class="content-block">
               <h2>Nhận báo giá sát theo mặt tiền</h2>
-              <p>Gửi ảnh mặt tiền, kích thước dự kiến, địa chỉ lắp đặt và mẫu thiết kế nếu có qua Zalo ${phone}. Bông Sen Trắng sẽ tư vấn phương án phù hợp ngân sách trước khi chốt thi công.</p>
+              <p>Gửi ảnh mặt tiền, kích thước dự kiến, địa chỉ lắp đặt và mẫu thiết kế nếu có qua Zalo ${phone}. Xem thêm <a href="../gui-anh-bao-gia-bien-quang-cao-ha-noi/">mẫu thông tin cần gửi để báo giá</a>. Bông Sen Trắng sẽ tư vấn phương án phù hợp ngân sách trước khi chốt thi công.</p>
             </section>
           </article>
           <aside class="content-sidebar" aria-label="Thông tin liên hệ">
