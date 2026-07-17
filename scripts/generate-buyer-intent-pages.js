@@ -323,7 +323,8 @@ pages.push(
     slug: "bang-hieu-quan-an-dong-da-ha-noi",
     title: "Bảng hiệu quán ăn Đống Đa Hà Nội",
     kicker: "Biển quán ăn rõ món, sáng buổi tối tại Đống Đa",
-    image: "du-an-bep-ba-son-hoi-an-bien-menu.jpg",
+    image: "mau-bien-nha-hang-linh-dam-ha-noi.jpg",
+    imageAlt: "Mẫu biển nhà hàng, quán ăn có đèn LED vào buổi tối",
     intro: "Quán ăn tại Đống Đa thường cần biển đọc nhanh, rõ món chính và đủ sáng vào giờ tối. Bông Sen Trắng nhận tư vấn bảng hiệu quán ăn Đống Đa cho mặt phố, ngõ đông dân cư, cửa hàng mới mở hoặc quán cần thay biển cũ.",
     items: ["Biển mặt tiền cho phở, bún, cơm, đồ ăn nhanh", "Biển hộp đèn LED, bạt Hiflex, alu chữ nổi", "Bảng menu phụ, biển vẫy và biển chỉ dẫn", "Tư vấn bố cục dễ đọc khi khách đi xe qua"],
     related: [["Biển quán ăn uống Hà Nội", "bien-quan-an-uong-ha-noi"], ["Bảng hiệu cửa hàng Đống Đa", "bang-hieu-cua-hang-dong-da-ha-noi"], ["Làm biển quảng cáo Ô Chợ Dừa", "lam-bien-quang-cao-o-cho-dua"]]
@@ -416,7 +417,8 @@ pages.push(
     slug: "bao-gia-bang-hieu-quan-an-ha-noi",
     title: "Báo giá bảng hiệu quán ăn Hà Nội",
     kicker: "Dự toán biển quán ăn theo mặt tiền và món chính",
-    image: "du-an-bep-ba-son-hoi-an-bien-menu.jpg",
+    image: "mau-bien-nha-hang-linh-dam-ha-noi.jpg",
+    imageAlt: "Mẫu biển nhà hàng, quán ăn có đèn LED vào buổi tối",
     intro: "Giá làm bảng hiệu quán ăn phụ thuộc kích thước mặt tiền, loại biển, đèn LED, bảng menu phụ và vị trí lắp đặt. Bông Sen Trắng nhận tư vấn báo giá bảng hiệu quán ăn Hà Nội theo ảnh thực tế để hạn chế phát sinh.",
     items: ["Biển bạt Hiflex tiết kiệm cho quán mới mở", "Biển hộp đèn LED cho quán bán buổi tối", "Alu chữ nổi khi cần mặt tiền bền và nổi bật", "Bảng menu phụ, biển vẫy, biển chỉ dẫn nếu cần"],
     related: [["Bảng hiệu quán ăn Đống Đa", "bang-hieu-quan-an-dong-da-ha-noi"], ["Biển quán ăn uống Hà Nội", "bien-quan-an-uong-ha-noi"], ["Báo giá biển quảng cáo Hà Nội", "bao-gia-bien-quang-cao-ha-noi"]]
@@ -685,6 +687,7 @@ function renderFaq(page) {
 
 function renderPage(page) {
   const pageUrl = `${baseUrl}/${page.slug}/`;
+  const imageAlt = page.imageAlt || page.title;
   const description = `${page.title}: tư vấn phương án, vật liệu, chi phí và thi công tại Hà Nội. Gửi ảnh qua Zalo 0989 521 881 để báo giá nhanh.`;
   const { faqs, html: faqHtml } = renderFaq(page);
   const jsonLd = {
@@ -750,7 +753,7 @@ function renderPage(page) {
     <meta property="og:description" content="${escapeHtml(description)}">
     <meta property="og:url" content="${pageUrl}">
     <meta property="og:image" content="${baseUrl}/assets/images/${page.image}">
-    <meta property="og:image:alt" content="${escapeHtml(page.title)}">
+    <meta property="og:image:alt" content="${escapeHtml(imageAlt)}">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="${escapeHtml(page.title)}">
     <meta name="twitter:description" content="${escapeHtml(description)}">
@@ -800,7 +803,7 @@ ${JSON.stringify(jsonLd, null, 2)}
               <a class="btn btn-secondary" href="https://zalo.me/${business.phoneHref}" target="_blank" rel="noopener">Gửi ảnh qua Zalo</a>
             </div>
           </div>
-          <img src="../assets/images/${page.image}" alt="${escapeHtml(page.title)}" loading="eager" fetchpriority="high" decoding="async" width="960" height="720">
+          <img src="../assets/images/${page.image}" alt="${escapeHtml(imageAlt)}" loading="eager" fetchpriority="high" decoding="async" width="960" height="720">
         </div>
       </section>
 

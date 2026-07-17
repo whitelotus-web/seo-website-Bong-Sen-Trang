@@ -92,7 +92,8 @@ const pages = [
     type: "biển menu quán ăn",
     parentType: "lam-bien-menu-quan-an-ha-noi",
     parentArea: "lam-bien-quang-cao-dong-da",
-    image: "du-an-bep-ba-son-hoi-an-bien-menu.jpg",
+    image: "mau-bien-nha-hang-linh-dam-ha-noi.jpg",
+    imageAlt: "Mẫu biển nhà hàng, quán ăn có đèn LED vào buổi tối",
     streets: ["Ô Chợ Dừa", "Xã Đàn", "Tôn Đức Thắng", "Khâm Thiên", "Chùa Bộc", "Nguyễn Lương Bằng"],
     note:
       "Quán ăn tại Đống Đa thường cần bảng menu, bảng món, biển giá và biển phụ dễ đọc nhanh để khách quyết định khi đi ngang."
@@ -125,6 +126,7 @@ function listItems(items) {
 
 function renderPage(page) {
   const pageUrl = `${baseUrl}/${page.slug}/`;
+  const imageAlt = page.imageAlt || page.title;
   const description = `${page.title}: tư vấn vật liệu, kích thước, vị trí lắp và báo giá theo mặt bằng thực tế. Gửi ảnh qua Zalo 0989 521 881.`;
   const faqs = [
     [
@@ -203,7 +205,7 @@ function renderPage(page) {
     <meta property="og:description" content="${escapeHtml(description)}">
     <meta property="og:url" content="${pageUrl}">
     <meta property="og:image" content="${baseUrl}/assets/images/${page.image}">
-    <meta property="og:image:alt" content="${escapeHtml(page.title)}">
+    <meta property="og:image:alt" content="${escapeHtml(imageAlt)}">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="${escapeHtml(page.title)}">
     <meta name="twitter:description" content="${escapeHtml(description)}">
@@ -252,7 +254,7 @@ ${JSON.stringify(jsonLd, null, 2)}
               <a class="btn btn-secondary" href="https://zalo.me/${business.phoneHref}" target="_blank" rel="noopener">Gửi ảnh qua Zalo</a>
             </div>
           </div>
-          <img src="../assets/images/${page.image}" alt="${escapeHtml(page.title)}" loading="eager" fetchpriority="high" decoding="async" width="960" height="720">
+          <img src="../assets/images/${page.image}" alt="${escapeHtml(imageAlt)}" loading="eager" fetchpriority="high" decoding="async" width="960" height="720">
         </div>
       </section>
 

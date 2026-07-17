@@ -183,7 +183,8 @@ const pages = [
     title: "Báo giá biển menu quán ăn Hà Nội",
     kicker: "Bảng giá bảng menu",
     serviceType: "Báo giá biển menu quán ăn",
-    image: "du-an-bep-ba-son-hoi-an-bien-menu.jpg",
+    image: "mau-bien-nha-hang-linh-dam-ha-noi.jpg",
+    imageAlt: "Mẫu biển nhà hàng, quán ăn có đèn LED vào buổi tối",
     description:
       "Báo giá biển menu quán ăn Hà Nội: bảng menu treo tường, menu hộp đèn, bạt in, mica, bảng món và bảng giá cho quán ăn.",
     lead:
@@ -244,6 +245,7 @@ function priceRows(rows) {
 
 function renderPage(page) {
   const pageUrl = `${baseUrl}/${page.slug}/`;
+  const imageAlt = page.imageAlt || page.title;
   const faqs = [
     [
       `Báo giá ${page.serviceType.toLowerCase()} có phải giá chốt không?`,
@@ -352,7 +354,7 @@ function renderPage(page) {
     <meta property="og:description" content="${escapeHtml(page.description)}">
     <meta property="og:url" content="${pageUrl}">
     <meta property="og:image" content="${baseUrl}/assets/images/${page.image}">
-    <meta property="og:image:alt" content="${escapeHtml(page.title)}">
+    <meta property="og:image:alt" content="${escapeHtml(imageAlt)}">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="${escapeHtml(page.title)}">
     <meta name="twitter:description" content="${escapeHtml(page.description)}">
@@ -402,7 +404,7 @@ ${JSON.stringify(jsonLd, null, 2)}
               <a class="btn btn-secondary" href="https://zalo.me/${business.phoneHref}" target="_blank" rel="noopener">Gửi ảnh qua Zalo</a>
             </div>
           </div>
-          <img src="../assets/images/${page.image}" alt="${escapeHtml(page.title)}" loading="eager" fetchpriority="high" decoding="async" width="960" height="720">
+          <img src="../assets/images/${page.image}" alt="${escapeHtml(imageAlt)}" loading="eager" fetchpriority="high" decoding="async" width="960" height="720">
         </div>
       </section>
 

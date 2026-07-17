@@ -32,8 +32,8 @@ const categories = [
       ["Biển cafe, trà sữa", "../bien-quang-cao-cafe-tra-sua-ha-noi/"]
     ],
     images: [
-      ["du-an-bien-bep-ba-son-hoi-an.jpg", "Biển nhà hàng chữ nổi phát sáng, phù hợp mặt tiền cần nhận diện mạnh buổi tối"],
-      ["du-an-bep-ba-son-hoi-an-ban-ngay.jpg", "Mẫu biển nhà hàng ban ngày, bố cục chữ rõ và dễ nhận diện từ mặt phố"],
+      ["du-an-bien-bep-ba-son-hoi-an.jpg", "Dự án biển nhà hàng Bếp Bà Sơn Hội An với chữ nổi phát sáng"],
+      ["du-an-bep-ba-son-hoi-an-ban-ngay.jpg", "Dự án biển nhà hàng Bếp Bà Sơn Hội An chụp ban ngày, bố cục chữ rõ"],
       ["du-an-bien-tien-coffee.jpg", "Biển cafe tông sáng, chữ lớn, hợp cửa hàng cần mặt tiền gọn và dễ nhìn"]
     ]
   },
@@ -149,7 +149,11 @@ const jsonLd = {
         "@type": "ListItem",
         position: index + 1,
         name: image.alt,
-        url: `${baseUrl}/assets/images/${image.file}`
+        item: {
+          "@type": "ImageObject",
+          contentUrl: `${baseUrl}/assets/images/${image.file}`,
+          caption: image.alt
+        }
       }))
     },
     {
@@ -214,8 +218,8 @@ const html = `<!doctype html>
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Mẫu biển quảng cáo đẹp tại Hà Nội | Hình ảnh thi công thực tế</title>
-    <meta name="description" content="Tổng hợp mẫu biển quảng cáo thực tế theo ngành: nhà hàng, cafe, shop, showroom, spa, clinic, chữ nổi, backdrop, hộp đèn LED. Gửi mẫu qua Zalo 0989 521 881 để báo giá.">
+    <title>Mẫu biển quảng cáo thực tế tại Hà Nội | Bông Sen Trắng</title>
+    <meta name="description" content="Xem ảnh thi công biển quảng cáo thực tế: nhà hàng, cafe, shop, showroom, spa, clinic, chữ nổi, backdrop, hộp đèn LED. Gửi ảnh mặt tiền qua Zalo 0989 521 881.">
     <meta name="robots" content="index,follow">
     <meta name="theme-color" content="#1d8dcc">
     <link rel="canonical" href="${pageUrl}">
@@ -224,20 +228,20 @@ const html = `<!doctype html>
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <link rel="manifest" href="/site.webmanifest">
-    <link rel="preload" as="image" href="../assets/images/du-an-bien-bep-ba-son-hoi-an.jpg" fetchpriority="high">
+    <link rel="preload" as="image" href="../assets/images/du-an-gao-viet-bien-mat-tien-do.jpg" fetchpriority="high">
     <link rel="stylesheet" href="../assets/css/styles.css">
     <meta property="og:type" content="website">
     <meta property="og:locale" content="vi_VN">
     <meta property="og:site_name" content="Bông Sen Trắng">
-    <meta property="og:title" content="Mẫu biển quảng cáo đẹp tại Hà Nội theo từng ngành">
-    <meta property="og:description" content="Xem mẫu biển thực tế cho nhà hàng, cafe, shop, showroom, spa, clinic, chữ nổi, backdrop và hộp đèn LED.">
+    <meta property="og:title" content="Mẫu biển quảng cáo thực tế tại Hà Nội">
+    <meta property="og:description" content="Xem ảnh thi công thật cho nhà hàng, cafe, shop, showroom, spa, clinic, chữ nổi, backdrop và hộp đèn LED.">
     <meta property="og:url" content="${pageUrl}">
-    <meta property="og:image" content="${baseUrl}/assets/images/du-an-bien-bep-ba-son-hoi-an.jpg">
-    <meta property="og:image:alt" content="Mẫu biển quảng cáo thực tế tại Hà Nội">
+    <meta property="og:image" content="${baseUrl}/assets/images/du-an-gao-viet-bien-mat-tien-do.jpg">
+    <meta property="og:image:alt" content="Biển mặt tiền cửa hàng thi công thực tế">
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Mẫu biển quảng cáo đẹp tại Hà Nội">
+    <meta name="twitter:title" content="Mẫu biển quảng cáo thực tế tại Hà Nội">
     <meta name="twitter:description" content="Xem ảnh biển thực tế và gửi mẫu qua Zalo để nhận báo giá thi công.">
-    <meta name="twitter:image" content="${baseUrl}/assets/images/du-an-bien-bep-ba-son-hoi-an.jpg">
+    <meta name="twitter:image" content="${baseUrl}/assets/images/du-an-gao-viet-bien-mat-tien-do.jpg">
     <script type="application/ld+json">
 ${JSON.stringify(jsonLd, null, 2)}
     </script>
@@ -276,14 +280,14 @@ ${JSON.stringify(jsonLd, null, 2)}
               <span>Mẫu biển quảng cáo</span>
             </nav>
             <p class="section-kicker">Hình ảnh thi công thực tế</p>
-            <h1>Mẫu biển quảng cáo đẹp tại Hà Nội theo từng ngành</h1>
-            <p>Xem nhanh các mẫu biển đã thi công và nhóm ý tưởng phù hợp cho nhà hàng, cafe, shop, showroom, spa, clinic, văn phòng, hộp đèn LED. Nếu thấy mẫu gần giống nhu cầu, chụp lại và gửi qua Zalo để nhận tư vấn vật liệu, kích thước và báo giá.</p>
+            <h1>Mẫu biển quảng cáo thực tế theo từng ngành tại Hà Nội</h1>
+            <p>Xem nhanh các hạng mục Bông Sen Trắng đã thực hiện và nhóm ý tưởng phù hợp cho nhà hàng, cafe, shop, showroom, spa, clinic, văn phòng, hộp đèn LED. Nếu thấy mẫu gần giống nhu cầu, chụp lại và gửi qua Zalo để nhận tư vấn vật liệu, kích thước và báo giá.</p>
             <div class="hero-actions">
               <a class="btn btn-primary" href="tel:${business.phoneHref}">Gọi ${business.phone}</a>
               <a class="btn btn-secondary" href="https://zalo.me/${business.phoneHref}" target="_blank" rel="noopener">Gửi mẫu qua Zalo</a>
             </div>
           </div>
-          <img src="../assets/images/du-an-bien-bep-ba-son-hoi-an.jpg" alt="Mẫu biển quảng cáo nhà hàng chữ nổi phát sáng tại Hà Nội" loading="eager" fetchpriority="high" decoding="async" width="960" height="720">
+          <img src="../assets/images/du-an-gao-viet-bien-mat-tien-do.jpg" alt="Biển mặt tiền cửa hàng thi công thực tế" loading="eager" fetchpriority="high" decoding="async" width="960" height="720">
         </div>
       </section>
 
@@ -291,8 +295,19 @@ ${JSON.stringify(jsonLd, null, 2)}
         <div class="container content-layout">
           <article class="content-main">
             <section class="content-block price-note">
-              <h2>Cách chọn mẫu biển để không tốn tiền sai hướng</h2>
+              <h2>Ảnh thật giúp chọn đúng phương án, không chỉ chọn mẫu đẹp</h2>
               <p>Đừng chỉ chọn mẫu vì đẹp trên ảnh. Biển cần hợp vị trí nhìn, chiều ngang mặt tiền, khoảng cách người đi đường, ánh sáng buổi tối, vật liệu nền và ngân sách. Bông Sen Trắng ưu tiên phương án dễ đọc, đúng nhận diện và thi công bền theo mặt bằng thực tế.</p>
+            </section>
+
+            <section class="content-block">
+              <h2>Cách xem ảnh thi công trong trang này</h2>
+              <p>Ảnh là hạng mục thực tế Bông Sen Trắng đã thi công, được sắp theo nhóm nhu cầu thay vì chỉ theo tên khách hàng. Một số ảnh có thể là dự án ngoài Hà Nội; chúng được dùng để thể hiện kiểu biển, vật liệu và cách hoàn thiện, không dùng để khẳng định địa chỉ công trình tại Hà Nội.</p>
+              <ul class="check-list">
+                <li>Nhìn bố cục tên thương hiệu, ngành hàng và số điện thoại từ khoảng cách xa.</li>
+                <li>So sánh cách dùng nền alu, chữ nổi, hộp đèn hoặc biển vẫy với mặt tiền của mình.</li>
+                <li>Xem ảnh ban đêm nếu cửa hàng có giờ hoạt động tối hoặc nằm trên phố nhiều ánh sáng.</li>
+                <li>Gửi ảnh mẫu kèm ảnh mặt tiền để nhận tư vấn theo kích thước và ngân sách thực tế.</li>
+              </ul>
             </section>
 
 ${categoriesHtml}
@@ -305,6 +320,7 @@ ${categoriesHtml}
                 <li>Mẫu biển thích trong trang này hoặc ảnh tham khảo khác.</li>
                 <li>Địa chỉ lắp đặt tại Hà Nội và thời gian cần hoàn thiện.</li>
               </ol>
+              <p>Xem thêm <a href="../gui-anh-bao-gia-bien-quang-cao-ha-noi/">cách chụp ảnh mặt tiền và mẫu tin nhắn Zalo để báo giá</a> nếu anh/chị chưa biết cần gửi thông tin nào trước.</p>
             </section>
 
             <section class="content-block">
