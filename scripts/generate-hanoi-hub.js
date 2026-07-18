@@ -5,6 +5,7 @@ const root = process.cwd();
 const baseUrl = "https://lambienquangcaohanoi.io.vn";
 const slug = "lam-bien-quang-cao-ha-noi";
 const pageUrl = `${baseUrl}/${slug}/`;
+const mapUrl = "https://www.google.com/maps/search/?api=1&query=92E%20%C3%94%20Ch%E1%BB%A3%20D%E1%BB%ABa%2C%20%C4%90%E1%BB%91ng%20%C4%90a%2C%20H%C3%A0%20N%E1%BB%99i";
 
 const business = {
   name: "Công ty TNHH Truyền thông Bông Sen Trắng",
@@ -135,6 +136,12 @@ const jsonLd = {
       image: `${baseUrl}/assets/images/logo-whitelotus.png`,
       telephone: "+84989521881",
       priceRange: "$$",
+      geo: {
+        "@type": "GeoCoordinates",
+        latitude: 21.0219,
+        longitude: 105.8257
+      },
+      hasMap: mapUrl,
       sameAs: [business.facebookUrl],
       address: {
         "@type": "PostalAddress",
@@ -146,7 +153,14 @@ const jsonLd = {
       areaServed: districts.map(([name]) => ({
         "@type": "AdministrativeArea",
         name: `${name}, Hà Nội`
-      }))
+      })),
+      contactPoint: {
+        "@type": "ContactPoint",
+        telephone: "+84989521881",
+        contactType: "customer service",
+        areaServed: "VN",
+        availableLanguage: ["vi"]
+      }
     },
     {
       "@type": "Service",
@@ -264,6 +278,7 @@ ${JSON.stringify(jsonLd, null, 2)}
             <section class="content-block price-note">
               <h2>Địa chỉ rõ tại Đống Đa, phục vụ khách hàng Hà Nội</h2>
               <p>Bông Sen Trắng có thông tin doanh nghiệp tại <strong>${business.address}</strong>. Khi báo giá biển quảng cáo, yếu tố địa phương rất quan trọng: vị trí mặt tiền, chiều cao lắp đặt, tuyến phố, quy mô biển, điện cấp cho LED và điều kiện vận chuyển/thi công.</p>
+              <p><a class="text-link" href="${mapUrl}" target="_blank" rel="noopener">Xem vị trí 92E Ô Chợ Dừa trên Google Maps</a> hoặc gọi <a href="tel:${business.phoneHref}">${business.phone}</a> để trao đổi nhanh về mặt bằng.</p>
             </section>
 
             <section class="content-block">

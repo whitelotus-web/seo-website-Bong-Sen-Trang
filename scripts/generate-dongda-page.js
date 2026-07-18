@@ -5,6 +5,7 @@ const root = process.cwd();
 const baseUrl = "https://lambienquangcaohanoi.io.vn";
 const slug = "lam-bien-quang-cao-dong-da";
 const pageUrl = `${baseUrl}/${slug}/`;
+const mapUrl = "https://www.google.com/maps/search/?api=1&query=92E%20%C3%94%20Ch%E1%BB%A3%20D%E1%BB%ABa%2C%20%C4%90%E1%BB%91ng%20%C4%90a%2C%20H%C3%A0%20N%E1%BB%99i";
 
 const business = {
   name: "Công ty TNHH Truyền thông Bông Sen Trắng",
@@ -105,6 +106,12 @@ const jsonLd = {
       image: `${baseUrl}/assets/images/logo-whitelotus.png`,
       telephone: "+84989521881",
       priceRange: "$$",
+      geo: {
+        "@type": "GeoCoordinates",
+        latitude: 21.0219,
+        longitude: 105.8257
+      },
+      hasMap: mapUrl,
       sameAs: [business.facebookUrl],
       address: {
         "@type": "PostalAddress",
@@ -116,6 +123,13 @@ const jsonLd = {
       areaServed: {
         "@type": "AdministrativeArea",
         name: "Đống Đa, Hà Nội"
+      },
+      contactPoint: {
+        "@type": "ContactPoint",
+        telephone: "+84989521881",
+        contactType: "customer service",
+        areaServed: "VN",
+        availableLanguage: ["vi"]
       }
     },
     {
@@ -226,6 +240,7 @@ ${JSON.stringify(jsonLd, null, 2)}
             <section class="content-block price-note">
               <h2>Ưu tiên khu vực gần Ô Chợ Dừa</h2>
               <p>Với khách ở Đống Đa, thông tin mặt bằng thường quyết định nhiều hơn mẫu biển: biển nằm ở tầng 1 hay tầng cao, phố đông hay ngõ nhỏ, có cần sáng buổi tối không, có sẵn khung cũ hay phải làm mới toàn bộ. Vì ở ngay Ô Chợ Dừa, Bông Sen Trắng có lợi thế tư vấn nhanh cho khu vực nội thành.</p>
+              <p><strong>Địa chỉ:</strong> ${business.address}. <a class="text-link" href="${mapUrl}" target="_blank" rel="noopener">Xem vị trí trên Google Maps</a> hoặc gửi ảnh mặt tiền qua Zalo để được tư vấn.</p>
             </section>
 
             <section class="content-block">
