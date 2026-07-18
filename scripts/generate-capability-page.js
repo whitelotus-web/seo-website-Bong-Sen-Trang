@@ -32,7 +32,21 @@ const gallery = [
   ["du-an-hisuhi-wet-brush-mat-dung-led.jpg", "Mặt dựng lớn kết hợp LED và hộp đèn"],
   ["du-an-may-skin-bien-chu-noi-sang.jpg", "Biển chữ nổi phát sáng cho spa, salon, clinic"],
   ["du-an-sb-invest-backdrop-le-tan.jpg", "Backdrop lễ tân chữ nổi trong nhà"],
-  ["du-an-bien-bep-ba-son-hoi-an.jpg", "Biển nhà hàng chữ nổi phát sáng"]
+  ["du-an-brendon-chu-noi-mai-nha.jpg", "Chữ nổi kích thước lớn lắp trên mặt dựng cao"]
+];
+
+const projectLinks = [
+  ["Biển chữ nổi mặt tiền", "du-an-bien-chu-noi-mo-nguyen", "Tham khảo hạng mục chữ nổi, ánh sáng và bố cục thương hiệu."],
+  ["Biển showroom, mặt dựng", "du-an-bien-the-fox-fitness", "Tham khảo kiểu biển cần quan sát ban ngày lẫn buổi tối."],
+  ["Backdrop logo lễ tân", "du-an-chu-noi-khoa-kinh-te", "Tham khảo hạng mục logo, chữ nổi và điểm nhận diện trong nhà."],
+  ["Biển hộp đèn, biển vẫy", "du-an-bien-gia-long", "Tham khảo phần khung, cách treo và độ sáng của biển phụ."]
+];
+
+const faqs = [
+  ["Năng lực thi công biển quảng cáo được thể hiện qua những gì?", "Khách có thể xem ảnh hạng mục thực tế, quy trình tiếp nhận thông tin, cách tư vấn vật liệu, phần cần kiểm tra trước khi lắp và thông tin liên hệ doanh nghiệp. Mỗi công trình vẫn cần đánh giá theo đúng mặt bằng và yêu cầu riêng."],
+  ["Có thể tư vấn qua ảnh mặt tiền trước không?", "Có. Gửi ảnh chụp thẳng mặt tiền, kích thước dự kiến, địa chỉ lắp đặt, logo hoặc nội dung cần làm qua Zalo để được gợi ý phương án ban đầu. Hạng mục treo cao, biển lớn hoặc tận dụng khung cũ có thể cần khảo sát thêm."],
+  ["Bảo hành biển quảng cáo được trao đổi như thế nào?", "Phạm vi bảo hành phụ thuộc vật liệu, hệ LED, nguồn điện, vị trí ngoài trời và điều kiện sử dụng. Nội dung phù hợp sẽ được trao đổi cùng phương án báo giá trước khi thi công."],
+  ["Bông Sen Trắng ở đâu?", "Thông tin liên hệ của Công ty TNHH Truyền thông Bông Sen Trắng là số 92E Ô Chợ Dừa, Đống Đa, Hà Nội; điện thoại và Zalo 0989 521 881."]
 ];
 
 const jsonLd = {
@@ -40,6 +54,7 @@ const jsonLd = {
   "@graph": [
     {
       "@type": "LocalBusiness",
+      "@id": `${baseUrl}/#localbusiness`,
       name: "Công ty TNHH Truyền thông Bông Sen Trắng",
       url: `${baseUrl}/`,
       image: `${baseUrl}/assets/images/logo-whitelotus.png`,
@@ -53,23 +68,50 @@ const jsonLd = {
         addressCountry: "VN"
       },
       areaServed: "Hà Nội",
-      sameAs: ["https://www.facebook.com/whitelotus.vn/"]
+      sameAs: ["https://www.facebook.com/whitelotus.vn/"],
+      contactPoint: {
+        "@type": "ContactPoint",
+        telephone: "+84989521881",
+        contactType: "customer service",
+        areaServed: "VN",
+        availableLanguage: ["vi"]
+      }
     },
     {
       "@type": "WebPage",
+      "@id": `${pageUrl}#webpage`,
       name: "Năng lực thi công biển quảng cáo Hà Nội",
       description: "Thông tin năng lực, quy trình, hạng mục thi công và hình ảnh thực tế của Bông Sen Trắng khi làm biển quảng cáo tại Hà Nội.",
       url: pageUrl,
+      about: { "@id": `${baseUrl}/#localbusiness` },
+      primaryImageOfPage: {
+        "@type": "ImageObject",
+        contentUrl: `${baseUrl}/assets/images/du-an-hisuhi-wet-brush-mat-dung-led.jpg`,
+        caption: "Mặt dựng lớn kết hợp LED và hộp đèn"
+      },
       mainEntity: {
         "@type": "Service",
         name: "Thi công biển quảng cáo tại Hà Nội",
         provider: {
-          "@type": "LocalBusiness",
-          name: "Công ty TNHH Truyền thông Bông Sen Trắng",
-          telephone: "+84989521881"
+          "@id": `${baseUrl}/#localbusiness`
         },
         areaServed: "Hà Nội"
       }
+    },
+    {
+      "@type": "BreadcrumbList",
+      itemListElement: [
+        { "@type": "ListItem", position: 1, name: "Trang chủ", item: `${baseUrl}/` },
+        { "@type": "ListItem", position: 2, name: "Năng lực thi công", item: pageUrl }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      mainEntity: faqs.map(([question, answer]) => ({
+        "@type": "Question",
+        name: question,
+        acceptedAnswer: { "@type": "Answer", text: answer }
+      }))
     }
   ]
 };
@@ -79,8 +121,8 @@ const html = `<!doctype html>
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Năng lực thi công biển quảng cáo Hà Nội | Bông Sen Trắng</title>
-    <meta name="description" content="Năng lực thi công biển quảng cáo tại Hà Nội của Bông Sen Trắng: tư vấn vật liệu, sản xuất, lắp đặt, bảo hành, hình ảnh công trình thực tế.">
+    <title>Năng lực thi công biển quảng cáo Hà Nội | Ảnh thực tế</title>
+    <meta name="description" content="Năng lực thi công biển quảng cáo Hà Nội: quy trình tư vấn, vật liệu, lắp đặt, bảo hành và ảnh hạng mục thực tế của Bông Sen Trắng tại 92E Ô Chợ Dừa.">
     <meta name="robots" content="index,follow">
     <meta name="theme-color" content="#1d8dcc">
     <link rel="canonical" href="${pageUrl}">
@@ -94,13 +136,13 @@ const html = `<!doctype html>
     <meta property="og:type" content="website">
     <meta property="og:locale" content="vi_VN">
     <meta property="og:site_name" content="Bông Sen Trắng">
-    <meta property="og:title" content="Năng lực thi công biển quảng cáo Hà Nội">
-    <meta property="og:description" content="Quy trình tư vấn, sản xuất, lắp đặt và hình ảnh công trình thực tế của Bông Sen Trắng.">
+    <meta property="og:title" content="Năng lực thi công biển quảng cáo Hà Nội | Ảnh thực tế">
+    <meta property="og:description" content="Quy trình tư vấn, sản xuất, lắp đặt, bảo hành và ảnh hạng mục thực tế của Bông Sen Trắng.">
     <meta property="og:url" content="${pageUrl}">
     <meta property="og:image" content="${baseUrl}/assets/images/du-an-hisuhi-wet-brush-mat-dung-led.jpg">
-    <meta property="og:image:alt" content="Năng lực thi công biển quảng cáo tại Hà Nội của Bông Sen Trắng">
+    <meta property="og:image:alt" content="Mặt dựng lớn kết hợp LED và hộp đèn">
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Năng lực thi công biển quảng cáo Hà Nội">
+    <meta name="twitter:title" content="Năng lực thi công biển quảng cáo Hà Nội | Ảnh thực tế">
     <meta name="twitter:description" content="Quy trình tư vấn, sản xuất, lắp đặt và hình ảnh công trình thực tế.">
     <meta name="twitter:image" content="${baseUrl}/assets/images/du-an-hisuhi-wet-brush-mat-dung-led.jpg">
     <script type="application/ld+json">
@@ -141,13 +183,13 @@ ${JSON.stringify(jsonLd, null, 2)}
             </nav>
             <p class="section-kicker">Năng lực và quy trình</p>
             <h1>Năng lực thi công biển quảng cáo tại Hà Nội</h1>
-            <p>Bông Sen Trắng tập trung vào các hạng mục biển quảng cáo thực tế: tư vấn vật liệu theo mặt bằng, sản xuất đúng thiết kế, lắp đặt gọn tại công trình và hỗ trợ bảo hành theo từng hạng mục.</p>
+            <p>Bông Sen Trắng nhận tư vấn, sản xuất và thi công các hạng mục biển quảng cáo theo điều kiện mặt bằng thực tế. Khách có thể gửi ảnh qua Zalo trước để trao đổi vật liệu, kích thước, ánh sáng, vị trí lắp và phương án phù hợp ngân sách.</p>
             <div class="hero-actions">
               <a class="btn btn-primary" href="tel:${phoneHref}">Gọi ${phone}</a>
               <a class="btn btn-secondary" href="https://zalo.me/${phoneHref}" target="_blank" rel="noopener">Nhắn Zalo</a>
             </div>
           </div>
-          <img src="../assets/images/du-an-hisuhi-wet-brush-mat-dung-led.jpg" alt="Năng lực thi công biển quảng cáo tại Hà Nội" loading="eager" fetchpriority="high" decoding="async" width="960" height="720">
+          <img src="../assets/images/du-an-hisuhi-wet-brush-mat-dung-led.jpg" alt="Mặt dựng lớn kết hợp LED và hộp đèn" loading="eager" fetchpriority="high" decoding="async" width="960" height="720">
         </div>
       </section>
 
@@ -166,6 +208,18 @@ ${JSON.stringify(jsonLd, null, 2)}
             </section>
 
             <section class="content-block">
+              <h2>Thông tin công ty và cách gửi yêu cầu</h2>
+              <p>Để khách kiểm tra và liên hệ thuận tiện, Bông Sen Trắng công khai thông tin nhất quán trên website: <strong>Công ty TNHH Truyền thông Bông Sen Trắng</strong>, địa chỉ <strong>${address}</strong>, điện thoại và Zalo <a href="tel:${phoneHref}">${phone}</a>.</p>
+              <ul class="check-list">
+                <li>Gửi ảnh chụp thẳng mặt tiền và một ảnh chụp rộng cả khu vực lắp biển.</li>
+                <li>Cho biết kích thước ngang x cao dự kiến, biển cũ còn dùng được hay không và thời điểm cần hoàn thiện.</li>
+                <li>Gửi logo, tên thương hiệu, ngành hàng hoặc mẫu tham khảo nếu đã có.</li>
+                <li>Với biển lớn, vị trí treo cao hoặc cần kiểm tra khung, trao đổi phương án khảo sát trước khi chốt.</li>
+              </ul>
+              <p><a href="../lien-he-lam-bien-quang-cao-ha-noi/">Xem đầy đủ thông tin liên hệ</a> hoặc <a href="../gui-anh-bao-gia-bien-quang-cao-ha-noi/">xem cách chụp ảnh mặt tiền để báo giá nhanh</a>.</p>
+            </section>
+
+            <section class="content-block">
               <h2>Quy trình kiểm soát trước khi thi công</h2>
               <ol class="step-list">
                 <li>Tiếp nhận ảnh mặt tiền, kích thước dự kiến, logo/thiết kế và địa chỉ lắp đặt.</li>
@@ -177,13 +231,36 @@ ${JSON.stringify(jsonLd, null, 2)}
             </section>
 
             <section class="content-block">
-              <h2>Hình ảnh công trình tham khảo</h2>
+              <h2>Ảnh hạng mục thi công thực tế</h2>
+              <p>Ảnh được dùng để thể hiện hạng mục, vật liệu và cách hoàn thiện. Không nên suy ra địa điểm lắp đặt của từng ảnh nếu trang không ghi rõ tên dự án hoặc địa điểm.</p>
               <div class="case-gallery">
                 ${gallery.map(([image, alt]) => `
                 <figure>
                   <img src="../assets/images/${image}" alt="${escapeHtml(alt)}" loading="lazy" decoding="async" width="1200" height="900">
                   <figcaption>${escapeHtml(alt)}</figcaption>
-                </figure>`).join("")}
+                </figure>`).join("").trim()}
+              </div>
+            </section>
+
+            <section class="content-block">
+              <h2>Xem thêm hạng mục đã thực hiện</h2>
+              <div class="sitemap-grid">
+                ${projectLinks.map(([title, link, text]) => `
+                <a href="../${link}/">
+                  <strong>${escapeHtml(title)}</strong>
+                  <span>${escapeHtml(text)}</span>
+                </a>`).join("").trim()}
+              </div>
+            </section>
+
+            <section class="content-block">
+              <h2>Câu hỏi thường gặp</h2>
+              <div class="faq-list compact">
+                ${faqs.map(([question, answer]) => `
+                <details>
+                  <summary>${escapeHtml(question)}</summary>
+                  <p>${escapeHtml(answer)}</p>
+                </details>`).join("").trim()}
               </div>
             </section>
           </article>
@@ -200,6 +277,7 @@ ${JSON.stringify(jsonLd, null, 2)}
               <a href="../bao-gia-bien-quang-cao-ha-noi/">Báo giá biển quảng cáo</a>
               <a href="../thi-cong-bien-quang-cao-ha-noi/">Thi công biển quảng cáo</a>
               <a href="../hinh-anh-bien-quang-cao-thuc-te-ha-noi/">Hình ảnh công trình</a>
+              <a href="../lien-he-lam-bien-quang-cao-ha-noi/">Thông tin liên hệ</a>
               <a href="../tat-ca-dich-vu-bien-quang-cao-ha-noi/">Tất cả dịch vụ</a>
             </div>
             <address class="sidebar-card">
