@@ -3,6 +3,7 @@ const path = require("path");
 
 const root = process.cwd();
 const baseUrl = "https://lambienquangcaohanoi.io.vn";
+const mapUrl = "https://www.google.com/maps/search/?api=1&query=92E%20%C3%94%20Ch%E1%BB%A3%20D%E1%BB%ABa%2C%20%C4%90%E1%BB%91ng%20%C4%90a%2C%20H%C3%A0%20N%E1%BB%99i";
 
 const business = {
   name: "Công ty TNHH Truyền thông Bông Sen Trắng",
@@ -322,6 +323,12 @@ function renderPage(page) {
         image: `${baseUrl}/assets/images/logo-whitelotus.png`,
         telephone: "+84989521881",
         priceRange: "$$",
+        geo: {
+          "@type": "GeoCoordinates",
+          latitude: 21.0219,
+          longitude: 105.8257
+        },
+        hasMap: mapUrl,
         sameAs: [business.facebookUrl],
         address: {
           "@type": "PostalAddress",
@@ -334,6 +341,13 @@ function renderPage(page) {
           "@type": "City",
           name: "Hà Nội",
           addressCountry: "VN"
+        },
+        contactPoint: {
+          "@type": "ContactPoint",
+          telephone: "+84989521881",
+          contactType: "customer service",
+          areaServed: "VN",
+          availableLanguage: ["vi"]
         }
       },
       {
@@ -481,6 +495,7 @@ ${faqHtml}
             <address class="sidebar-card">
               <strong>${business.name}</strong>
               <span>${business.address}</span>
+              <a href="${mapUrl}" target="_blank" rel="noopener">Xem vị trí trên Google Maps</a>
             </address>
           </aside>
         </div>

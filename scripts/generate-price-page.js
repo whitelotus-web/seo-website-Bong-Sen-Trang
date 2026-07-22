@@ -5,6 +5,7 @@ const root = process.cwd();
 const baseUrl = "https://lambienquangcaohanoi.io.vn";
 const slug = "bao-gia-bien-quang-cao-ha-noi";
 const pageUrl = `${baseUrl}/${slug}/`;
+const mapUrl = "https://www.google.com/maps/search/?api=1&query=92E%20%C3%94%20Ch%E1%BB%A3%20D%E1%BB%ABa%2C%20%C4%90%E1%BB%91ng%20%C4%90a%2C%20H%C3%A0%20N%E1%BB%99i";
 
 const business = {
   name: "Công ty TNHH Truyền thông Bông Sen Trắng",
@@ -66,6 +67,12 @@ const jsonLd = {
       image: `${baseUrl}/assets/images/logo-whitelotus.png`,
       telephone: "+84989521881",
       priceRange: "$$",
+      geo: {
+        "@type": "GeoCoordinates",
+        latitude: 21.0219,
+        longitude: 105.8257
+      },
+      hasMap: mapUrl,
       sameAs: [business.facebookUrl],
       address: {
         "@type": "PostalAddress",
@@ -77,6 +84,13 @@ const jsonLd = {
       areaServed: {
         "@type": "AdministrativeArea",
         name: "Hà Nội"
+      },
+      contactPoint: {
+        "@type": "ContactPoint",
+        telephone: "+84989521881",
+        contactType: "customer service",
+        areaServed: "VN",
+        availableLanguage: ["vi"]
       }
     },
     {
@@ -185,6 +199,7 @@ ${JSON.stringify(jsonLd, null, 2)}
             <section class="content-block price-note">
               <h2>Bảng giá dưới đây dùng để dự trù ngân sách</h2>
               <p><strong>Cập nhật ngày 15/07/2026.</strong> Giá biển quảng cáo thay đổi theo kích thước, vật liệu, độ cao thi công, hệ khung, đèn LED, mặt bằng lắp đặt và mức độ hoàn thiện theo thiết kế. Bảng này giúp anh/chị ước lượng nhanh trước khi gửi thông tin để báo giá chi tiết.</p>
+              <p>Đơn vị tại <strong>${business.address}</strong>. <a class="text-link" href="${mapUrl}" target="_blank" rel="noopener">Xem vị trí trên Google Maps</a> trước khi gửi địa chỉ mặt bằng cần thi công.</p>
             </section>
 
             <section class="content-block">
@@ -380,6 +395,7 @@ ${JSON.stringify(jsonLd, null, 2)}
             <address class="sidebar-card">
               <strong>${business.name}</strong>
               <span>${business.address}</span>
+              <a href="${mapUrl}" target="_blank" rel="noopener">Xem vị trí trên Google Maps</a>
             </address>
           </aside>
         </div>
