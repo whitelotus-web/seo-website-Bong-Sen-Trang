@@ -140,8 +140,8 @@ const html = `<!doctype html>
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Sửa chữa biển quảng cáo Hà Nội | Thay LED, thay bạt, sửa hộp đèn</title>
-    <meta name="description" content="Sửa chữa biển quảng cáo tại Hà Nội: thay LED, thay nguồn, thay mặt bạt, sửa hộp đèn, thay chữ nổi. Gửi ảnh qua Zalo 0989 521 881 để báo giá nhanh.">
+    <title>Sửa chữa biển quảng cáo Hà Nội | Thay LED, sửa hộp đèn</title>
+    <meta name="description" content="Sửa chữa biển quảng cáo Hà Nội: thay LED, nguồn, mặt bạt, sửa hộp đèn, gia cố khung. Gửi ảnh hiện trạng qua Zalo 0989 521 881 để báo nhanh.">
     <meta name="robots" content="index,follow">
     <meta name="theme-color" content="#1d8dcc">
     <link rel="canonical" href="${pageUrl}">
@@ -155,8 +155,8 @@ const html = `<!doctype html>
     <meta property="og:type" content="website">
     <meta property="og:locale" content="vi_VN">
     <meta property="og:site_name" content="Bông Sen Trắng">
-    <meta property="og:title" content="Sửa chữa biển quảng cáo tại Hà Nội">
-    <meta property="og:description" content="Thay LED, thay nguồn, thay mặt bạt, sửa hộp đèn, thay chữ nổi và gia cố khung biển quảng cáo tại Hà Nội.">
+    <meta property="og:title" content="Sửa chữa biển quảng cáo Hà Nội | Thay LED, sửa hộp đèn">
+    <meta property="og:description" content="Thay LED, thay nguồn, thay mặt bạt, sửa hộp đèn và gia cố khung biển quảng cáo tại Hà Nội.">
     <meta property="og:url" content="${pageUrl}">
     <meta property="og:image" content="${baseUrl}/assets/images/du-an-xe-dien-viet-thanh-bien-mat-tien-led.jpg">
     <meta property="og:image:alt" content="Sửa chữa biển quảng cáo có LED tại Hà Nội">

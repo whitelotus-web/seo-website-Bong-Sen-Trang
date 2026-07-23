@@ -334,8 +334,8 @@ const pages = [
   },
   {
     slug: "sua-chua-bien-quang-cao-ha-noi",
-    title: "Sửa chữa biển quảng cáo Hà Nội | Thay LED, thay mặt biển",
-    description: "Nhận sửa chữa biển quảng cáo tại Hà Nội: thay LED, thay bạt, thay mặt biển, gia cố khung, làm mới bảng hiệu cửa hàng.",
+    title: "Sửa chữa biển quảng cáo Hà Nội | Thay LED, sửa hộp đèn",
+    description: "Sửa chữa biển quảng cáo Hà Nội: thay LED, nguồn, mặt bạt, sửa hộp đèn, gia cố khung. Gửi ảnh hiện trạng qua Zalo 0989 521 881 để báo nhanh.",
     kicker: "Sửa chữa và làm mới",
     h1: "Sửa chữa biển quảng cáo tại Hà Nội",
     lead: "Biển cũ xuống màu, hỏng LED, bong mặt, lệch khung hoặc đổi nhận diện có thể sửa chữa, thay mới từng phần để tiết kiệm chi phí.",

@@ -187,6 +187,8 @@ const pages = [
   {
     slug: "lam-bien-quang-cao-can-gap-ha-noi",
     title: "Làm biển quảng cáo cần gấp Hà Nội",
+    metaTitle: "Làm biển quảng cáo cần gấp Hà Nội | Kiểm tra tiến độ",
+    description: "Cần làm biển gấp tại Hà Nội? Gửi ảnh mặt tiền, ngày cần xong và nội dung biển qua Zalo 0989 521 881 để kiểm tra phương án.",
     kicker: "Ưu tiên việc có thể chốt nhanh",
     image: "bien-tam-lon-ha-noi.jpg",
     intro:

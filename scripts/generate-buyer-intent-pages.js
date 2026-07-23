@@ -115,6 +115,8 @@ const pages = [
   {
     slug: "lam-bien-mat-tien-cua-hang-ha-noi",
     title: "Làm biển mặt tiền cửa hàng Hà Nội",
+    metaTitle: "Làm biển mặt tiền cửa hàng Hà Nội | Báo giá nhanh",
+    description: "Làm biển mặt tiền cửa hàng Hà Nội theo kích thước thực tế: alu chữ nổi, hộp đèn LED, Hiflex, mica/inox. Gửi ảnh qua Zalo 0989 521 881 để báo giá nhanh.",
     kicker: "Tư vấn theo kích thước mặt tiền thực tế",
     image: "du-an-pink-fruit-flower-bien-mat-tien.jpg",
     intro: "Biển mặt tiền quyết định khách có nhìn thấy cửa hàng hay không. Khi làm biển, cần chọn kích thước, chữ, màu, đèn và vật liệu theo đúng mặt bằng, không chỉ theo mẫu có sẵn.",
@@ -688,7 +690,8 @@ function renderFaq(page) {
 function renderPage(page) {
   const pageUrl = `${baseUrl}/${page.slug}/`;
   const imageAlt = page.imageAlt || page.title;
-  const description = `${page.title}: tư vấn phương án, vật liệu, chi phí và thi công tại Hà Nội. Gửi ảnh qua Zalo 0989 521 881 để báo giá nhanh.`;
+  const metaTitle = page.metaTitle || `${page.title} | Bông Sen Trắng`;
+  const description = page.description || `${page.title}: tư vấn phương án, vật liệu, chi phí và thi công tại Hà Nội. Gửi ảnh qua Zalo 0989 521 881 để báo giá nhanh.`;
   const { faqs, html: faqHtml } = renderFaq(page);
   const jsonLd = {
     "@context": "https://schema.org",
@@ -734,7 +737,7 @@ function renderPage(page) {
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>${escapeHtml(page.title)} | Bông Sen Trắng</title>
+    <title>${escapeHtml(metaTitle)}</title>
     <meta name="description" content="${escapeHtml(description)}">
     <meta name="robots" content="index,follow">
     <meta name="theme-color" content="#1d8dcc">
