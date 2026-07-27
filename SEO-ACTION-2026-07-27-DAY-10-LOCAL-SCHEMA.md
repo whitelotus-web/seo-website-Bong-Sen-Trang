@@ -27,7 +27,7 @@ Làm cho toàn bộ cụm nội dung của Bông Sen Trắng được Google nh�
 ## Triển khai
 
 - Domain chính: https://lambienquangcaohanoi.io.vn/
-- Cloudflare Pages preview: sẽ ghi nhận sau khi deploy production hoàn tất.
+- Cloudflare Pages preview: https://797ee434.lam-bien-quang-cao-bong-sen-trang.pages.dev
 
 ## Theo dõi
 
