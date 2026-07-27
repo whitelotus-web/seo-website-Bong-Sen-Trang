@@ -198,6 +198,10 @@ for (const file of files) {
     }
   }
 
+  if (!/"@type"\s*:\s*"LocalBusiness"/i.test(html)) {
+    pushError(file, "missing LocalBusiness JSON-LD");
+  }
+
   for (const block of jsonBlocks) {
     try {
       JSON.parse(block[1]);

@@ -2,6 +2,44 @@
 const path = require("path");
 
 const root = process.cwd();
+const baseUrl = "https://lambienquangcaohanoi.io.vn";
+const mapUrl = "https://www.google.com/maps/search/?api=1&query=92E%20%C3%94%20Ch%E1%BB%A3%20D%E1%BB%ABa%2C%20%C4%90%E1%BB%91ng%20%C4%90a%2C%20H%C3%A0%20N%E1%BB%99i";
+const localBusinessSchema = {
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "@id": `${baseUrl}/#localbusiness`,
+  name: "Công ty TNHH Truyền thông Bông Sen Trắng",
+  url: `${baseUrl}/`,
+  image: `${baseUrl}/assets/images/logo-whitelotus.png`,
+  telephone: "+84989521881",
+  priceRange: "$$",
+  address: {
+    "@type": "PostalAddress",
+    streetAddress: "Số 92E Ô Chợ Dừa",
+    addressLocality: "Đống Đa",
+    addressRegion: "Hà Nội",
+    addressCountry: "VN"
+  },
+  geo: {
+    "@type": "GeoCoordinates",
+    latitude: 21.0219,
+    longitude: 105.8257
+  },
+  hasMap: mapUrl,
+  areaServed: {
+    "@type": "City",
+    name: "Hà Nội",
+    addressCountry: "VN"
+  },
+  sameAs: ["https://www.facebook.com/whitelotus.vn/"],
+  contactPoint: {
+    "@type": "ContactPoint",
+    telephone: "+84989521881",
+    contactType: "customer service",
+    areaServed: "VN",
+    availableLanguage: ["vi"]
+  }
+};
 const ignoredDirs = new Set([
   ".git",
   ".wrangler",
@@ -64,12 +102,19 @@ function addSignals(html) {
     lines.push('    <meta name="ICBM" content="21.0219, 105.8257">');
   }
 
-  if (!lines.length) return html;
+  const withMetaSignals = lines.length
+    ? html.replace(
+        /(<link\s+rel="canonical"\s+href="[^"]+">\r?\n)/i,
+        `$1${lines.join("\n")}\n`
+      )
+    : html;
 
-  return html.replace(
-    /(<link\s+rel="canonical"\s+href="[^"]+">\r?\n)/i,
-    `$1${lines.join("\n")}\n`
-  );
+  if (/("@type"\s*:\s*"LocalBusiness")/i.test(withMetaSignals)) {
+    return withMetaSignals;
+  }
+
+  const schemaBlock = `    <script type="application/ld+json">\n${JSON.stringify(localBusinessSchema, null, 2)}\n    </script>\n`;
+  return withMetaSignals.replace(/(\s*<\/head>)/i, `\n${schemaBlock}$1`);
 }
 
 function prefixToRoot(file) {
