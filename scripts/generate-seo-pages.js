@@ -112,8 +112,8 @@ const realProjectGallery = [
 const pages = [
   {
     slug: "thi-cong-bien-quang-cao-ha-noi",
-    title: "Thi công biển quảng cáo Hà Nội | Khảo sát, lắp đặt",
-    description: "Thi công biển quảng cáo Hà Nội: khảo sát, sản xuất, lắp đặt alu chữ nổi, hộp đèn LED, Hiflex và sửa biển cũ. Gửi ảnh mặt tiền qua Zalo 0989 521 881.",
+    title: "Thi công biển quảng cáo Hà Nội | Lắp đặt trọn gói",
+    description: "Thi công biển quảng cáo Hà Nội trọn gói: khảo sát, sản xuất, lắp đặt alu, hộp đèn LED, Hiflex và sửa biển cũ. Gửi ảnh để báo giá nhanh.",
     kicker: "Khảo sát, sản xuất và lắp đặt",
     h1: "Thi công biển quảng cáo Hà Nội",
     lead: "Bông Sen Trắng nhận thi công biển quảng cáo tại Hà Nội cho cửa hàng, nhà hàng, cafe, spa, showroom và văn phòng. Phương án được tư vấn theo ảnh mặt tiền, vị trí lắp đặt, thời gian sử dụng và ngân sách thực tế.",

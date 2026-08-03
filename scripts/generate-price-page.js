@@ -119,8 +119,8 @@ const html = `<!doctype html>
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Báo giá biển quảng cáo Hà Nội 2026 | Bông Sen Trắng</title>
-    <meta name="description" content="Báo giá biển quảng cáo Hà Nội 2026 theo vật liệu: Hiflex, alu chữ nổi, hộp đèn LED, biển vẫy. Xem chi phí và gửi ảnh qua Zalo 0989 521 881.">
+    <title>Báo giá biển quảng cáo Hà Nội 2026 | Gửi ảnh, báo giá nhanh</title>
+    <meta name="description" content="Báo giá biển quảng cáo Hà Nội 2026 theo kích thước và vật liệu: Hiflex, alu chữ nổi, hộp đèn LED, biển vẫy. Gửi ảnh qua Zalo 0989 521 881.">
     <meta name="robots" content="index,follow">
     <meta name="theme-color" content="#1d8dcc">
     <link rel="canonical" href="${pageUrl}">
@@ -134,13 +134,13 @@ const html = `<!doctype html>
     <meta property="og:type" content="website">
     <meta property="og:locale" content="vi_VN">
     <meta property="og:site_name" content="Bông Sen Trắng">
-    <meta property="og:title" content="Báo giá thi công làm biển quảng cáo tại Hà Nội 2026">
+    <meta property="og:title" content="Báo giá biển quảng cáo Hà Nội 2026 | Gửi ảnh, báo giá nhanh">
     <meta property="og:description" content="Khung giá tham khảo cho biển Hiflex, alu chữ nổi, hộp đèn LED, biển vẫy, chữ nổi và backdrop.">
     <meta property="og:url" content="${pageUrl}">
     <meta property="og:image" content="${baseUrl}/assets/images/du-an-gao-viet-bien-mat-tien-do.jpg">
     <meta property="og:image:alt" content="Biển quảng cáo mặt tiền cửa hàng tại Hà Nội">
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Báo giá thi công làm biển quảng cáo tại Hà Nội 2026">
+    <meta name="twitter:title" content="Báo giá biển quảng cáo Hà Nội 2026 | Gửi ảnh, báo giá nhanh">
     <meta name="twitter:description" content="Khung giá tham khảo và cách nhận báo giá nhanh qua Zalo 0989 521 881.">
     <meta name="twitter:image" content="${baseUrl}/assets/images/du-an-gao-viet-bien-mat-tien-do.jpg">
     <script type="application/ld+json">

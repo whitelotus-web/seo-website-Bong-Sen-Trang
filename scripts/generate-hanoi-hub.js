@@ -199,8 +199,8 @@ const html = `<!doctype html>
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Làm biển quảng cáo Hà Nội | Thi công, sửa chữa</title>
-    <meta name="description" content="Làm biển quảng cáo Hà Nội: alu chữ nổi, hộp đèn LED, Hiflex, sửa biển cũ. Bông Sen Trắng tại 92E Ô Chợ Dừa. Gửi ảnh qua Zalo 0989 521 881.">
+    <title>Làm biển quảng cáo Hà Nội | Làm nhanh, giá tốt, bảo hành</title>
+    <meta name="description" content="Nhận làm biển quảng cáo tại Hà Nội: khảo sát, sản xuất, lắp đặt alu chữ nổi, hộp đèn LED, Hiflex. Làm nhanh, chuẩn thiết kế, bảo hành.">
     <meta name="robots" content="index,follow">
     <meta name="theme-color" content="#1d8dcc">
     <link rel="canonical" href="${pageUrl}">
@@ -214,13 +214,13 @@ const html = `<!doctype html>
     <meta property="og:type" content="website">
     <meta property="og:locale" content="vi_VN">
     <meta property="og:site_name" content="Bông Sen Trắng">
-    <meta property="og:title" content="Làm biển quảng cáo Hà Nội | Bông Sen Trắng">
+    <meta property="og:title" content="Làm biển quảng cáo Hà Nội | Làm nhanh, giá tốt">
     <meta property="og:description" content="Thi công, sửa chữa biển quảng cáo tại Hà Nội. Xem phương án theo mặt bằng và gửi ảnh qua Zalo để nhận tư vấn.">
     <meta property="og:url" content="${pageUrl}">
     <meta property="og:image" content="${baseUrl}/assets/images/hero-bien-quang-cao-ha-noi.jpg">
     <meta property="og:image:alt" content="Làm biển quảng cáo tại Hà Nội">
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Làm biển quảng cáo Hà Nội | Bông Sen Trắng">
+    <meta name="twitter:title" content="Làm biển quảng cáo Hà Nội | Làm nhanh, giá tốt">
     <meta name="twitter:description" content="Thi công bảng hiệu, alu chữ nổi, hộp đèn LED, Hiflex và sửa biển cũ tại Hà Nội.">
     <meta name="twitter:image" content="${baseUrl}/assets/images/hero-bien-quang-cao-ha-noi.jpg">
     <script type="application/ld+json">
