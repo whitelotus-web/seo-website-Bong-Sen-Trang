@@ -109,6 +109,33 @@ if (!imageSitemap) {
 const knownPages = new Map(files.map((file) => [pageLabel(file), file]));
 const inboundLinks = new Map([...knownPages.keys()].map((url) => [url, 0]));
 
+if (sitemap) {
+  const sitemapUrls = [...sitemap.matchAll(/<loc>([^<]+)<\/loc>/g)].map((match) => match[1]);
+  const expectedUrls = [...knownPages.keys()].map((url) => `${baseUrl}${url}`);
+
+  if (new Set(sitemapUrls).size !== sitemapUrls.length) {
+    errors.push("sitemap.xml contains duplicate URLs");
+  }
+
+  for (const loc of sitemapUrls) {
+    if (!loc.startsWith(`${baseUrl}/`)) {
+      errors.push(`sitemap URL outside expected domain: ${loc}`);
+    }
+  }
+
+  for (const expectedUrl of expectedUrls) {
+    if (!sitemapUrls.includes(expectedUrl)) {
+      errors.push(`page is missing from sitemap: ${expectedUrl}`);
+    }
+  }
+
+  for (const loc of sitemapUrls) {
+    if (!expectedUrls.includes(loc)) {
+      errors.push(`sitemap URL has no matching page: ${loc}`);
+    }
+  }
+}
+
 for (const file of files) {
   const html = fs.readFileSync(file, "utf8");
   const sourceUrl = `${baseUrl}${pageLabel(file)}`;
@@ -176,6 +203,11 @@ for (const file of files) {
 
   if (canonical && !canonical.startsWith(baseUrl)) {
     pushError(file, `canonical is outside expected domain: ${canonical}`);
+  }
+
+  const expectedCanonical = `${baseUrl}${pageLabel(file)}`;
+  if (canonical && canonical !== expectedCanonical) {
+    pushError(file, `canonical should be ${expectedCanonical}, found ${canonical}`);
   }
 
   if (canonical && sitemap && !sitemap.includes(`<loc>${canonical}</loc>`)) {

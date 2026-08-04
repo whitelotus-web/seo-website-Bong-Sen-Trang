@@ -11,7 +11,7 @@
     "cf:oauth:finish": "node scripts/cloudflare-oauth.js finish",
     "predeploy:cloudflare": "npm run build",
     "login:cloudflare": "npx -y wrangler login",
-    "deploy:cloudflare": "npx -y wrangler pages deploy dist --project-name=lam-bien-quang-cao-bong-sen-trang --branch=main",
+    "deploy:cloudflare": "npx -y wrangler pages deploy dist --project-name=lam-bien-quang-cao-bong-sen-trang",
     "check:jsonld": "node scripts/check-jsonld.js",
     "check:seo": "node scripts/check-seo.js",
     "submit:indexnow": "node scripts/submit-indexnow.js"
