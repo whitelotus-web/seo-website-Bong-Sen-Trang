@@ -1,5 +1,6 @@
 ﻿const fs = require("fs");
 const path = require("path");
+const crypto = require("crypto");
 
 const root = process.cwd();
 const dist = path.join(root, "dist");
@@ -274,5 +275,35 @@ function rewriteBaseUrl(dir) {
 }
 
 rewriteBaseUrl(dist);
+
+function contentHash(filePath) {
+  return crypto.createHash("sha256").update(fs.readFileSync(filePath)).digest("hex").slice(0, 12);
+}
+
+function versionStaticAssets(dir) {
+  const stylesVersion = contentHash(path.join(root, "assets", "css", "styles.css"));
+  const scriptVersion = contentHash(path.join(root, "assets", "js", "main.js"));
+
+  for (const entry of fs.readdirSync(dir, { withFileTypes: true })) {
+    const filePath = path.join(dir, entry.name);
+    if (entry.isDirectory()) {
+      versionStaticAssets(filePath);
+      continue;
+    }
+
+    if (entry.name !== "index.html") continue;
+
+    const html = fs.readFileSync(filePath, "utf8");
+    const versioned = html
+      .replaceAll("assets/css/styles.css", `assets/css/styles.css?v=${stylesVersion}`)
+      .replaceAll("assets/js/main.js", `assets/js/main.js?v=${scriptVersion}`);
+
+    if (versioned !== html) {
+      fs.writeFileSync(filePath, versioned, "utf8");
+    }
+  }
+}
+
+versionStaticAssets(dist);
 
 console.log(`Built deploy output: ${dist}`);

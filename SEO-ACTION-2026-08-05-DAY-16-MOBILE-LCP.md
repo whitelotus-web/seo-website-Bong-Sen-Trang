@@ -15,6 +15,7 @@ Lighthouse mobile identified the homepage hero background as the Largest Content
 - Added a WebP version of the actual Bếp Bà Sơn Hội An project image at 224,902 bytes.
 - Preloaded WebP as the high-priority homepage image.
 - Updated the hero CSS to prefer WebP and retain JPEG as a fallback.
+- Added content-hashed query versions to the CSS and JavaScript files in deploy output so browsers do not remain stuck on a previous immutable cached stylesheet after a future release.
 
 ## Expected result
 
