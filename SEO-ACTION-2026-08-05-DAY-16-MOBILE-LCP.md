@@ -26,3 +26,14 @@ The homepage should paint its largest visual sooner on mobile connections while 
 - SEO check must remain clean for all pages.
 - JSON-LD must remain valid.
 - Live Lighthouse should no longer flag the hero image for modern-format savings.
+
+## Measured result
+
+The current Cloudflare Pages production deployment measured:
+
+- Performance score: 0.99
+- First Contentful Paint: 1.0 seconds
+- Largest Contentful Paint: 2.2 seconds
+- Cumulative Layout Shift: 0
+- Total Blocking Time: 0 ms
+- Modern image format audit: passed, with no estimated image-format savings remaining for the hero.
