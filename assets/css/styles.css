@@ -640,6 +640,48 @@ address {
   box-shadow: var(--shadow);
 }
 
+.not-found-page {
+  display: grid;
+  min-height: calc(100svh - 72px - 224px);
+  background: var(--soft);
+}
+
+.not-found-section {
+  display: grid;
+  place-items: center;
+  padding: 96px 0;
+}
+
+.not-found-content {
+  max-width: 760px;
+  text-align: center;
+}
+
+.not-found-content .section-kicker {
+  margin-bottom: 12px;
+}
+
+.not-found-content h1 {
+  margin: 0;
+  font-size: clamp(2.3rem, 5vw, 4rem);
+  line-height: 1.1;
+}
+
+.not-found-content p:not(.section-kicker) {
+  max-width: 620px;
+  margin: 22px auto 0;
+  color: var(--muted);
+  font-size: 1.08rem;
+}
+
+.not-found-actions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+  margin-top: 30px;
+}
+
 .content-layout {
   display: grid;
   grid-template-columns: minmax(0, 1fr) 340px;

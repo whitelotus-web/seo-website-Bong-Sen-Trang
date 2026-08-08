@@ -78,6 +78,20 @@ if (!prioritySitemap) {
   }
 }
 
+const notFoundPath = path.join(root, "404.html");
+if (!fs.existsSync(notFoundPath)) {
+  errors.push("Missing 404.html; Cloudflare Pages will treat unknown routes as SPA requests");
+} else {
+  const notFoundHtml = fs.readFileSync(notFoundPath, "utf8");
+  if (!/name="robots"\s+content="noindex,follow"/i.test(notFoundHtml)) {
+    errors.push("404.html must use robots noindex,follow");
+  }
+
+  if (!/Không tìm thấy trang|Khong tim thay trang/i.test(notFoundHtml)) {
+    errors.push("404.html is missing a user-facing not found message");
+  }
+}
+
 const imageSitemapPath = path.join(root, "image-sitemap.xml");
 const imageSitemap = fs.existsSync(imageSitemapPath) ? fs.readFileSync(imageSitemapPath, "utf8") : "";
 if (!imageSitemap) {

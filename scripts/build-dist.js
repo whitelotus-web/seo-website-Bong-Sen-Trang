@@ -255,6 +255,9 @@ for (const entry of fs.readdirSync(root, { withFileTypes: true })) {
 }
 
 copyFile(path.join(root, "index.html"), path.join(dist, "index.html"));
+if (fs.existsSync(path.join(root, "404.html"))) {
+  copyFile(path.join(root, "404.html"), path.join(dist, "404.html"));
+}
 
 function rewriteBaseUrl(dir) {
   if (baseUrl === defaultBaseUrl) return;
@@ -291,7 +294,7 @@ function versionStaticAssets(dir) {
       continue;
     }
 
-    if (entry.name !== "index.html") continue;
+    if (entry.name !== "index.html" && entry.name !== "404.html") continue;
 
     const html = fs.readFileSync(filePath, "utf8");
     const versioned = html
