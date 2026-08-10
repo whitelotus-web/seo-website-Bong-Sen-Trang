@@ -164,11 +164,11 @@ const jsonLd = {
     },
     {
       "@type": "Service",
-      name: "Làm biển quảng cáo tại Hà Nội",
-      description: "Sản xuất, thi công, lắp đặt, sửa chữa biển quảng cáo tại Hà Nội cho cửa hàng, nhà hàng, cafe, spa, showroom, văn phòng.",
+      name: "Tư vấn làm biển quảng cáo theo mặt bằng tại Hà Nội",
+      description: "Tư vấn phương án biển quảng cáo theo mặt tiền, khoảng cách nhìn, giờ hoạt động và điều kiện lắp đặt tại Hà Nội.",
       provider: { "@id": `${baseUrl}/#localbusiness` },
       areaServed: "Hà Nội",
-      serviceType: "Làm biển quảng cáo"
+      serviceType: "Tư vấn làm biển quảng cáo theo mặt bằng"
     },
     {
       "@type": "ItemList",
@@ -199,8 +199,8 @@ const html = `<!doctype html>
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Làm biển quảng cáo Hà Nội | Làm nhanh, giá tốt, bảo hành</title>
-    <meta name="description" content="Nhận làm biển quảng cáo tại Hà Nội: khảo sát, sản xuất, lắp đặt alu chữ nổi, hộp đèn LED, Hiflex. Làm nhanh, chuẩn thiết kế, bảo hành.">
+    <title>Tư vấn làm biển theo mặt bằng tại Hà Nội | Bông Sen Trắng</title>
+    <meta name="description" content="Tư vấn làm biển quảng cáo theo mặt tiền tại Hà Nội: chọn vật liệu, ánh sáng và phương án lắp đặt. Gửi ảnh qua Zalo 0989 521 881 để nhận báo giá.">
     <meta name="robots" content="index,follow">
     <meta name="theme-color" content="#1d8dcc">
     <link rel="canonical" href="${pageUrl}">
@@ -214,14 +214,14 @@ const html = `<!doctype html>
     <meta property="og:type" content="website">
     <meta property="og:locale" content="vi_VN">
     <meta property="og:site_name" content="Bông Sen Trắng">
-    <meta property="og:title" content="Làm biển quảng cáo Hà Nội | Làm nhanh, giá tốt">
-    <meta property="og:description" content="Thi công, sửa chữa biển quảng cáo tại Hà Nội. Xem phương án theo mặt bằng và gửi ảnh qua Zalo để nhận tư vấn.">
+    <meta property="og:title" content="Tư vấn làm biển theo mặt bằng tại Hà Nội">
+    <meta property="og:description" content="Xem phương án biển theo mặt tiền, khoảng cách nhìn và giờ hoạt động. Gửi ảnh qua Zalo để nhận tư vấn.">
     <meta property="og:url" content="${pageUrl}">
     <meta property="og:image" content="${baseUrl}/assets/images/hero-bien-quang-cao-ha-noi.jpg">
-    <meta property="og:image:alt" content="Làm biển quảng cáo tại Hà Nội">
+    <meta property="og:image:alt" content="Tư vấn phương án biển quảng cáo theo mặt bằng tại Hà Nội">
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Làm biển quảng cáo Hà Nội | Làm nhanh, giá tốt">
-    <meta name="twitter:description" content="Thi công bảng hiệu, alu chữ nổi, hộp đèn LED, Hiflex và sửa biển cũ tại Hà Nội.">
+    <meta name="twitter:title" content="Tư vấn làm biển theo mặt bằng tại Hà Nội">
+    <meta name="twitter:description" content="Tư vấn vật liệu, ánh sáng và lắp đặt biển theo mặt bằng thực tế tại Hà Nội.">
     <meta name="twitter:image" content="${baseUrl}/assets/images/hero-bien-quang-cao-ha-noi.jpg">
     <script type="application/ld+json">
 ${JSON.stringify(jsonLd, null, 2)}
@@ -258,11 +258,11 @@ ${JSON.stringify(jsonLd, null, 2)}
             <nav class="breadcrumb" aria-label="Breadcrumb">
               <a href="../">Trang chủ</a>
               <span>/</span>
-              <span>Làm biển quảng cáo Hà Nội</span>
+              <span>Tư vấn làm biển theo mặt bằng</span>
             </nav>
-            <p class="section-kicker">Dịch vụ local Hà Nội</p>
-            <h1>Làm biển quảng cáo tại Hà Nội</h1>
-            <p>Bông Sen Trắng nhận sản xuất, thi công, lắp đặt và sửa chữa biển quảng cáo tại Hà Nội: biển alu chữ nổi, biển hộp đèn LED, biển bạt Hiflex, chữ nổi mica/inox, biển nhà hàng, cafe, spa, showroom, văn phòng. Gửi ảnh mặt tiền qua Zalo để nhận tư vấn phương án và báo giá sát thực tế.</p>
+            <p class="section-kicker">Tư vấn theo mặt bằng Hà Nội</p>
+            <h1>Tư vấn làm biển theo mặt bằng tại Hà Nội</h1>
+            <p>Mỗi mặt tiền cần một phương án biển khác nhau. Bông Sen Trắng tư vấn vật liệu, tỉ lệ chữ, ánh sáng và cách lắp đặt theo vị trí thực tế tại Hà Nội. Gửi ảnh mặt tiền qua Zalo để nhận gợi ý và báo giá sát hơn trước khi thi công.</p>
             <div class="hero-actions">
               <a class="btn btn-primary" href="tel:${business.phoneHref}">Gọi ${business.phone}</a>
               <a class="btn btn-secondary" href="https://zalo.me/${business.phoneHref}" target="_blank" rel="noopener">Gửi ảnh qua Zalo</a>

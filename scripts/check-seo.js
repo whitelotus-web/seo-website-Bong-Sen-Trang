@@ -122,6 +122,7 @@ if (!imageSitemap) {
 
 const knownPages = new Map(files.map((file) => [pageLabel(file), file]));
 const inboundLinks = new Map([...knownPages.keys()].map((url) => [url, 0]));
+const h1ToPages = new Map();
 
 if (sitemap) {
   const sitemapUrls = [...sitemap.matchAll(/<loc>([^<]+)<\/loc>/g)].map((match) => match[1]);
@@ -199,6 +200,7 @@ for (const file of files) {
   const ogImage = textMatch(html, /<meta\s+property="og:image"\s+content="([^"]+)"/i);
   const twitterCard = textMatch(html, /<meta\s+name="twitter:card"\s+content="([^"]+)"/i);
   const h1Count = (html.match(/<h1[\s>]/gi) || []).length;
+  const h1Text = textMatch(html, /<h1[^>]*>([\s\S]*?)<\/h1>/i).replace(/<[^>]+>/g, " ").replace(/\s+/g, " ").trim();
   const jsonBlocks = [...html.matchAll(/<script type="application\/ld\+json">([\s\S]*?)<\/script>/g)];
 
   if (!title) pushError(file, "missing <title>");
@@ -207,6 +209,11 @@ for (const file of files) {
   if (!robots.includes("index")) pushError(file, "robots meta should allow index");
   if (robots.includes("noindex")) pushError(file, "robots meta contains noindex");
   if (h1Count !== 1) pushError(file, `has ${h1Count} h1 tags`);
+  if (h1Text) {
+    const normalizedH1 = h1Text.toLocaleLowerCase("vi-VN");
+    if (!h1ToPages.has(normalizedH1)) h1ToPages.set(normalizedH1, []);
+    h1ToPages.get(normalizedH1).push(pageLabel(file));
+  }
   if (!ogImage) pushError(file, "missing og:image");
   if (!twitterCard) pushWarning(file, "missing twitter:card");
   if (!jsonBlocks.length) pushError(file, "missing JSON-LD");
@@ -254,6 +261,12 @@ for (const file of files) {
     } catch (error) {
       pushError(file, `invalid JSON-LD: ${error.message}`);
     }
+  }
+}
+
+for (const [h1, pages] of h1ToPages) {
+  if (pages.length > 1) {
+    errors.push(`duplicate H1 "${h1}" on ${pages.join(", ")}`);
   }
 }
 

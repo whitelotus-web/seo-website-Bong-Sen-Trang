@@ -1116,11 +1116,6 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://lambienquangcaohanoi.io.vn/lam-bien-quang-cao-ha-noi/</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
     <loc>https://lambienquangcaohanoi.io.vn/lam-bien-quang-cao-hai-ba-trung/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
@@ -1464,6 +1459,11 @@
     <loc>https://lambienquangcaohanoi.io.vn/du-an-chu-noi-hoc-vien-khoa-hoc-quan-su/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://lambienquangcaohanoi.io.vn/lam-bien-quang-cao-ha-noi/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://lambienquangcaohanoi.io.vn/tu-van-thiet-ke-bien-quang-cao-ha-noi/</loc>
