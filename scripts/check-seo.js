@@ -120,6 +120,20 @@ if (!imageSitemap) {
   }
 }
 
+const headersPath = path.join(root, "_headers");
+if (!fs.existsSync(headersPath)) {
+  errors.push("Missing _headers");
+} else {
+  const headers = fs.readFileSync(headersPath, "utf8");
+  const globalHeaders = (headers.match(/^\/\*[\s\S]*?(?=^\/|$)/m) || [""])[0];
+  if (/CDN-Cache-Control/i.test(globalHeaders)) {
+    errors.push("Global HTML cache override found in _headers; let Cloudflare Pages manage document freshness");
+  }
+  if (!/\/assets\/\*[\s\S]*?Cache-Control:\s*public, max-age=31536000, immutable/i.test(headers)) {
+    errors.push("_headers must keep immutable caching for versioned assets");
+  }
+}
+
 const knownPages = new Map(files.map((file) => [pageLabel(file), file]));
 const inboundLinks = new Map([...knownPages.keys()].map((url) => [url, 0]));
 const h1ToPages = new Map();
