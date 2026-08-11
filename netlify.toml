@@ -5,6 +5,12 @@
 [build.environment]
   SITE_URL = "https://lambienquangcaohanoi.io.vn"
 
+[[redirects]]
+  from = "https://lam-bien-quang-cao-bong-sen-trang.netlify.app/*"
+  to = "https://lambienquangcaohanoi.io.vn/:splat"
+  status = 301
+  force = true
+
 [[headers]]
   for = "/*"
   [headers.values]

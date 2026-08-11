@@ -62,7 +62,7 @@ function categoryFor(page) {
       "cach-tiet-kiem-chi-phi-lam-bien-quang-cao-ha-noi"
     ].includes(page.slug)
   ) {
-    return "TÆ° váº¥n trÆ°á»›c khi lÃ m biá»ƒn";
+    return "Tư vấn trước khi làm biển";
   }
   if (page.slug.startsWith("lam-bien-quang-cao-")) return "Khu vực Hà Nội";
   if (page.slug.startsWith("du-an-") || page.slug.startsWith("hinh-anh-")) return "Hình ảnh và công trình thực tế";

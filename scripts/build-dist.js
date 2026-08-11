@@ -192,7 +192,7 @@ const prioritySlugs = [
   "lam-bien-quang-cao-ha-noi",
   "thi-cong-bien-quang-cao-ha-noi",
   "bao-gia-bien-quang-cao-ha-noi",
-  "lien-he-lam-bien-quang-cao-ha-noi",
+  "lam-bang-hieu-cua-hang-ha-noi",
   "gui-anh-bao-gia-bien-quang-cao-ha-noi",
   "lam-bien-quang-cao-gan-day-ha-noi",
   "sua-chua-bien-quang-cao-ha-noi",
