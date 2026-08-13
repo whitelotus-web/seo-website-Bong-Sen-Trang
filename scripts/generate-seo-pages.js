@@ -244,32 +244,59 @@ const pages = [
   },
   {
     slug: "lam-bang-hieu-cua-hang-ha-noi",
-    title: "Làm bảng hiệu cửa hàng Hà Nội | Bông Sen Trắng",
-    description: "Làm bảng hiệu cửa hàng tại Hà Nội: biển mặt tiền, biển alu, hộp đèn, chữ nổi, bảng hiệu khai trương. Gọi/Zalo 0989 521 881.",
+    title: "Làm bảng hiệu cửa hàng Hà Nội | Báo giá, thi công",
+    description: "Làm bảng hiệu cửa hàng tại Hà Nội: tư vấn alu chữ nổi, hộp đèn LED, biển vẫy, Hiflex theo mặt tiền thực tế. Gửi ảnh qua Zalo 0989 521 881.",
     kicker: "Bảng hiệu cửa hàng",
     h1: "Làm bảng hiệu cửa hàng tại Hà Nội",
     lead: "Bảng hiệu cửa hàng cần dễ đọc, đúng nhận diện và phù hợp tuyến phố. Bông Sen Trắng nhận tư vấn, sản xuất và lắp đặt trọn gói.",
     image: "du-an-bien-chu-noi-mo-nguyen.jpg",
     imageAlt: "Biển chữ nổi phát sáng cho mặt tiền cửa hàng tại Hà Nội",
     serviceName: "Làm bảng hiệu cửa hàng Hà Nội",
+    serviceDescription: "Tư vấn, sản xuất và thi công bảng hiệu cửa hàng tại Hà Nội theo mặt tiền thực tế: alu chữ nổi, hộp đèn LED, biển vẫy và Hiflex.",
     sections: [
-      ["Bảng hiệu cần rõ từ xa", [
-        "Tên cửa hàng, logo, ngành hàng và số điện thoại cần được bố trí đủ nổi bật, tránh quá nhiều chi tiết gây khó đọc.",
-        "Với mặt tiền hẹp, nên ưu tiên chữ lớn, tương phản tốt và vật liệu bền."
+      ["Vật liệu bảng hiệu cửa hàng thường dùng", [
+        "Biển alu chữ nổi phù hợp khi cần mặt tiền gọn, bền và thể hiện tên thương hiệu rõ ràng. Biển hộp đèn LED hợp với cửa hàng cần nổi bật vào buổi tối; biển vẫy hữu ích với mặt tiền nhỏ hoặc cần chỉ hướng từ hai chiều đường.",
+        "Không có một vật liệu tốt nhất cho mọi cửa hàng. Ảnh mặt tiền, kích thước dự kiến và vị trí lắp đặt sẽ giúp chọn đúng loại biển, tránh phát sinh và báo giá sát hơn."
       ]],
-      ["Chất liệu thường dùng", [
-        "Alu chữ nổi, bạt Hiflex, hộp đèn LED, mica, inox, formex hoặc kết hợp nhiều vật liệu theo ngân sách.",
-        "Có thể làm bảng hiệu mới, thay nội dung cũ hoặc làm biển khai trương nhanh."
-      ]],
-      ["Báo giá theo mặt bằng thực tế", [
-        "Mỗi cửa hàng có kích thước và điều kiện thi công khác nhau. Ảnh mặt tiền giúp báo giá nhanh và sát hơn.",
-        "Nếu cần, có thể khảo sát trực tiếp tại Hà Nội trước khi sản xuất."
+      ["Gửi gì để nhận báo giá bảng hiệu sát hơn?", [
+        "Chỉ cần gửi qua Zalo: ảnh chụp thẳng mặt tiền, chiều rộng x chiều cao dự kiến, địa chỉ lắp đặt tại Hà Nội và yêu cầu về việc có đèn hay không.",
+        "Nếu đã có logo hoặc mẫu tham khảo thì gửi kèm để việc tư vấn nhanh hơn. Với hạng mục cần kiểm tra độ cao, khung cũ hoặc nguồn điện, đội thi công sẽ trao đổi lịch khảo sát phù hợp."
       ]]
+    ],
+    choiceHeading: "Chọn bảng hiệu theo đúng mặt bằng cửa hàng",
+    choiceIntro: "Làm bảng hiệu cửa hàng không chỉ là chọn một mẫu đẹp. Mặt tiền rộng hay hẹp, khách đi bộ hay đi xe, biển có cần sáng buổi tối hay không đều ảnh hưởng trực tiếp tới phương án và chi phí.",
+    choiceRows: [
+      ["Cửa hàng mặt tiền hẹp, nằm trong dãy phố", "Chữ lớn, nền tương phản và thêm biển vẫy khi cần nhận diện từ hai chiều.", "Đọc được nhanh khi khách đi qua, không nhồi quá nhiều thông tin."],
+      ["Quán mở buổi tối hoặc cần nhận diện ban đêm", "Hộp đèn LED, chữ nổi phát sáng hoặc đèn hắt theo vị trí lắp đặt.", "Ánh sáng đều, chống nước và đi điện an toàn."],
+      ["Cửa hàng mới, cần tối ưu ngân sách", "Ưu tiên biển mặt tiền chính trước, hạng mục phụ có thể làm sau.", "Không cắt giảm phần khung, kết cấu và điện của biển chính."]
+    ],
+    focusHeading: "Xem phương án phù hợp với nhu cầu",
+    focusLinks: [
+      ["Biển alu chữ nổi", "../bien-alu-chu-noi-ha-noi/", "Mặt tiền gọn, bền và rõ thương hiệu."],
+      ["Biển hộp đèn LED", "../bien-hop-den-led-ha-noi/", "Nhận diện tốt khi cửa hàng hoạt động buổi tối."],
+      ["Biển vẫy cửa hàng", "../bien-vay-cua-hang-ha-noi/", "Hỗ trợ khách nhìn thấy từ hai chiều đường."],
+      ["Báo giá biển quảng cáo", "../bao-gia-bien-quang-cao-ha-noi/", "Tìm hiểu các yếu tố quyết định chi phí làm biển."]
+    ],
+    galleryHeading: "Một số hình ảnh biển mặt tiền đã thi công",
+    gallery: [
+      { image: "du-an-gao-viet-bien-mat-tien-do.jpg", alt: "Biển mặt tiền màu đỏ cho cửa hàng tại Hà Nội", caption: "Biển mặt tiền dùng mảng màu rõ, phù hợp nhận diện từ xa." },
+      { image: "du-an-xe-dien-viet-thanh-bien-mat-tien-led.jpg", alt: "Bảng hiệu mặt tiền có đèn LED tại Hà Nội", caption: "Phương án có đèn hỗ trợ cửa hàng hoạt động vào buổi tối." },
+      { image: "du-an-bien-vay-gia-long.jpg", alt: "Biển vẫy cửa hàng tại Hà Nội", caption: "Biển vẫy giúp khách nhận ra cửa hàng khi đi dọc tuyến phố." }
     ],
     faq: [
       ["Bảng hiệu cửa hàng nhỏ có làm được không?", "Có. Có thể chọn bạt, mica, alu hoặc hộp đèn nhỏ tùy ngân sách và mặt tiền."],
       ["Có làm bảng hiệu khai trương gấp không?", "Có thể hỗ trợ hạng mục gấp nếu thiết kế, kích thước và vật liệu được chốt sớm."],
-      ["Tôi chưa có thiết kế thì sao?", "Có thể tư vấn bố cục cơ bản hoặc làm theo nhận diện sẵn của cửa hàng."]
+      ["Tôi chưa có thiết kế thì sao?", "Có thể tư vấn bố cục cơ bản hoặc làm theo nhận diện sẵn của cửa hàng."],
+      ["Làm bảng hiệu cửa hàng mất bao lâu?", "Thời gian phụ thuộc vào kích thước, vật liệu và điều kiện lắp đặt. Khi có ảnh mặt tiền và kích thước dự kiến, Bông Sen Trắng sẽ tư vấn tiến độ phù hợp cho từng hạng mục."],
+      ["Nên chọn alu chữ nổi hay hộp đèn LED?", "Alu chữ nổi phù hợp khi cần mặt tiền gọn, bền và rõ thương hiệu. Hộp đèn LED phù hợp khi cần nhận diện tốt vào buổi tối. Phương án phù hợp còn tùy chiều rộng mặt tiền, ngân sách và vị trí cửa hàng."]
+    ],
+    related: [
+      ["Báo giá bảng hiệu cửa hàng", "../bao-gia-lam-bang-hieu-cua-hang-ha-noi/"],
+      ["Biển alu chữ nổi Hà Nội", "../bien-alu-chu-noi-ha-noi/"],
+      ["Biển hộp đèn LED Hà Nội", "../bien-hop-den-led-ha-noi/"],
+      ["Biển vẫy cửa hàng", "../bien-vay-cua-hang-ha-noi/"],
+      ["Làm biển quảng cáo Đống Đa", "../lam-bien-quang-cao-dong-da/"],
+      ["Hình ảnh biển quảng cáo thực tế", "../hinh-anh-bien-quang-cao-thuc-te-ha-noi/"]
     ]
   },
   {
@@ -1638,6 +1665,7 @@ function jsonLd(page) {
     graph.push({
       "@type": "Service",
       "name": page.serviceName,
+      ...(page.serviceDescription ? { "description": page.serviceDescription } : {}),
       "areaServed": businessSchema.areaServed,
       "provider": businessSchema
     });
@@ -1716,7 +1744,7 @@ ${page.focusLinks.map(([label, href, text]) => `
               </div>
             </section>` : "";
 
-  const galleryHtml = !page.gallery ? "" : page.slug === "thi-cong-bien-quang-cao-ha-noi" ? `
+  const galleryHtml = !page.gallery ? "" : page.slug === "thi-cong-bien-quang-cao-ha-noi" || page.slug === "lam-bang-hieu-cua-hang-ha-noi" ? `
             <section class="content-block">
               <h2>${escapeHtml(page.galleryHeading || "Thêm hình ảnh công trình")}</h2>
               <div class="case-gallery">
@@ -1746,7 +1774,7 @@ ${page.gallery.map((item) => `                <figure>
     .join("\n");
 
   const relatedHtml = (page.related || relatedDefault)
-    .filter(([, href]) => !href.includes(page.slug))
+    .filter(([, href]) => href.replace(/^\.\.\//, "").replace(/\/$/, "") !== page.slug)
     .map(([label, href]) => `<a href="${href}">${escapeHtml(label)}</a>`)
     .join("\n              ");
 
