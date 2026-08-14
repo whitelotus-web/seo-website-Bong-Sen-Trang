@@ -33,6 +33,7 @@ const districts = [
 
 const serviceLinks = [
   ["Thi công biển quảng cáo", "../thi-cong-bien-quang-cao-ha-noi/", "Dịch vụ chính cho khách cần làm biển mới tại Hà Nội."],
+  ["Làm bảng hiệu cửa hàng", "../lam-bang-hieu-cua-hang-ha-noi/", "Tư vấn alu chữ nổi, hộp đèn LED, biển vẫy và Hiflex theo mặt tiền thực tế."],
   ["Báo giá biển quảng cáo 2026", "../bao-gia-bien-quang-cao-ha-noi/", "Khung giá tham khảo theo vật liệu và hạng mục thi công."],
   ["Gửi ảnh mặt tiền để báo giá", "../gui-anh-bao-gia-bien-quang-cao-ha-noi/", "Bốn thông tin nên gửi qua Zalo để được tư vấn sát nhu cầu hơn."],
   ["Làm biển mặt tiền cửa hàng", "../lam-bien-mat-tien-cua-hang-ha-noi/", "Chọn bố cục, vật liệu và ánh sáng theo vị trí lắp đặt thực tế."],

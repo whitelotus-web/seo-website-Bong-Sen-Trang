@@ -47,7 +47,7 @@ const pages = [
     image: "mau-bien-alu-chu-noi-shop-ha-noi.jpg",
     intro: "Bảng hiệu cần nhìn rõ tên, ngành hàng và điểm nhận diện chính. Với mặt tiền nhỏ, bố cục gọn và ánh sáng đúng quan trọng hơn việc nhồi nhiều thông tin.",
     items: ["Bảng hiệu shop, cafe, quán ăn, spa", "Bảng hiệu công ty, văn phòng, showroom", "Bảng hiệu alu chữ nổi, hộp đèn, bạt Hiflex", "Tư vấn sửa bảng hiệu cũ nếu còn tận dụng được"],
-    related: [["Biển shop quần áo", "bien-shop-quan-ao-ha-noi"], ["Biển cafe", "bien-quan-cafe-ha-noi"], ["Biển văn phòng", "bien-van-phong-cong-ty-ha-noi"]]
+    related: [["Làm bảng hiệu cửa hàng", "lam-bang-hieu-cua-hang-ha-noi"], ["Biển shop quần áo", "bien-shop-quan-ao-ha-noi"], ["Biển cafe", "bien-quan-cafe-ha-noi"], ["Biển văn phòng", "bien-van-phong-cong-ty-ha-noi"]]
   },
   {
     slug: "lam-bien-quang-cao-cua-hang-moi-mo-ha-noi",
@@ -56,7 +56,7 @@ const pages = [
     image: "du-an-pink-fruit-flower-bien-mat-tien.jpg",
     intro: "Cửa hàng mới mở cần biển rõ ngành hàng, dễ tìm địa chỉ và đủ nổi bật trong tuần khai trương. Nên chốt phương án sớm để tránh làm gấp sát ngày.",
     items: ["Tư vấn biển chính mặt tiền", "Biển vẫy hoặc hộp đèn phụ", "Menu/bảng phụ nếu là quán ăn, đồ uống", "Ưu tiên phương án thi công nhanh khi cần khai trương"],
-    related: [["Làm biển nhanh", "lam-bien-quang-cao-nhanh-ha-noi"], ["Biển khai trương", "bien-khai-truong-ha-noi"], ["Báo giá biển quảng cáo", "bao-gia-bien-quang-cao-ha-noi"]]
+    related: [["Làm bảng hiệu cửa hàng", "lam-bang-hieu-cua-hang-ha-noi"], ["Làm biển nhanh", "lam-bien-quang-cao-nhanh-ha-noi"], ["Biển khai trương", "bien-khai-truong-ha-noi"], ["Báo giá biển quảng cáo", "bao-gia-bien-quang-cao-ha-noi"]]
   },
   {
     slug: "sua-bien-hop-den-led-ha-noi",
@@ -121,7 +121,7 @@ const pages = [
     image: "du-an-pink-fruit-flower-bien-mat-tien.jpg",
     intro: "Biển mặt tiền quyết định khách có nhìn thấy cửa hàng hay không. Khi làm biển, cần chọn kích thước, chữ, màu, đèn và vật liệu theo đúng mặt bằng, không chỉ theo mẫu có sẵn.",
     items: ["Khảo sát mặt tiền hoặc tư vấn qua ảnh Zalo", "Chọn phương án alu chữ nổi, hộp đèn, bạt Hiflex hoặc chữ mica/inox", "Tính độ sáng cho cửa hàng mở buổi tối", "Thi công gọn, hạn chế ảnh hưởng kinh doanh"],
-    related: [["Biển hiệu cửa hàng", "bien-hieu-cua-hang-ha-noi"], ["Làm biển nhanh", "lam-bien-quang-cao-nhanh-ha-noi"], ["Năng lực thi công", "nang-luc-thi-cong-bien-quang-cao-ha-noi"]]
+    related: [["Làm bảng hiệu cửa hàng", "lam-bang-hieu-cua-hang-ha-noi"], ["Biển hiệu cửa hàng", "bien-hieu-cua-hang-ha-noi"], ["Làm biển nhanh", "lam-bien-quang-cao-nhanh-ha-noi"], ["Năng lực thi công", "nang-luc-thi-cong-bien-quang-cao-ha-noi"]]
   },
   {
     slug: "bao-gia-lam-bang-hieu-cua-hang-ha-noi",
@@ -130,7 +130,7 @@ const pages = [
     image: "mau-bien-shop-quan-ao-ha-noi.jpg",
     intro: "Giá làm bảng hiệu cửa hàng phụ thuộc vào kích thước, chất liệu, kiểu chữ, đèn LED, vị trí lắp đặt và việc có tận dụng được khung cũ hay không.",
     items: ["Gửi ảnh mặt tiền để ước lượng kích thước", "Chọn vật liệu theo ngân sách: Hiflex, alu, chữ nổi, hộp đèn", "Tách riêng chi phí sản xuất và lắp đặt khi cần", "Tư vấn phương án tiết kiệm nếu cửa hàng mới mở"],
-    related: [["Báo giá biển quảng cáo 2026", "bao-gia-bien-quang-cao-ha-noi"], ["Làm bảng hiệu quảng cáo", "lam-bang-hieu-quang-cao-ha-noi"], ["Cần chuẩn bị gì để báo giá", "can-chuan-bi-gi-de-bao-gia-bien-quang-cao"]]
+    related: [["Làm bảng hiệu cửa hàng", "lam-bang-hieu-cua-hang-ha-noi"], ["Báo giá biển quảng cáo 2026", "bao-gia-bien-quang-cao-ha-noi"], ["Làm bảng hiệu quảng cáo", "lam-bang-hieu-quang-cao-ha-noi"], ["Cần chuẩn bị gì để báo giá", "can-chuan-bi-gi-de-bao-gia-bien-quang-cao"]]
   },
   {
     slug: "lam-bien-quang-cao-co-den-led-ha-noi",

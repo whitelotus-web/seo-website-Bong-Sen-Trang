@@ -221,6 +221,10 @@ ${JSON.stringify(jsonLd, null, 2)}
                   <strong>Biển quảng cáo giá rẻ</strong>
                   <span>Phương án tiết kiệm đúng cách theo ngân sách và hiện trạng mặt tiền.</span>
                 </a>
+                <a href="../lam-bang-hieu-cua-hang-ha-noi/">
+                  <strong>Làm bảng hiệu cửa hàng</strong>
+                  <span>Chọn phương án theo mặt tiền, giờ hoạt động và mức độ cần nhận diện từ xa.</span>
+                </a>
                 <a href="../bao-gia-bien-vay-led-ha-noi/">
                   <strong>Biển vẫy LED</strong>
                   <span>Giá tham khảo theo cỡ 40x40, 50x70, 60x80, 80x120 và vị trí treo.</span>
