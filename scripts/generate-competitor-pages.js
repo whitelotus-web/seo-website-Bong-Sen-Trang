@@ -21,6 +21,8 @@ const commonLinks = [
   ["Biển alu chữ nổi Hà Nội", "../bien-alu-chu-noi-ha-noi/"],
   ["Biển hộp đèn LED Hà Nội", "../bien-hop-den-led-ha-noi/"],
   ["Biển bạt Hiflex Hà Nội", "../bien-bat-hiflex-ha-noi/"],
+  ["Làm biển mặt tiền cửa hàng", "../lam-bien-mat-tien-cua-hang-ha-noi/"],
+  ["Làm biển quảng cáo cần gấp", "../lam-bien-quang-cao-can-gap-ha-noi/"],
   ["Tất cả dịch vụ", "../tat-ca-dich-vu-bien-quang-cao-ha-noi/"]
 ];
 

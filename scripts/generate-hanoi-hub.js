@@ -35,6 +35,8 @@ const serviceLinks = [
   ["Thi công biển quảng cáo", "../thi-cong-bien-quang-cao-ha-noi/", "Dịch vụ chính cho khách cần làm biển mới tại Hà Nội."],
   ["Làm bảng hiệu cửa hàng", "../lam-bang-hieu-cua-hang-ha-noi/", "Tư vấn alu chữ nổi, hộp đèn LED, biển vẫy và Hiflex theo mặt tiền thực tế."],
   ["Báo giá biển quảng cáo 2026", "../bao-gia-bien-quang-cao-ha-noi/", "Khung giá tham khảo theo vật liệu và hạng mục thi công."],
+  ["Báo giá biển alu chữ nổi", "../bao-gia-bien-alu-chu-noi-ha-noi/", "Tham khảo phần nền alu, chữ mica hoặc inox, LED, khung xương và lắp đặt."],
+  ["Làm biển vẫy LED", "../lam-bien-vay-led-ha-noi/", "Phù hợp mặt tiền hẹp hoặc vị trí cần nhận diện từ hai hướng di chuyển."],
   ["Gửi ảnh mặt tiền để báo giá", "../gui-anh-bao-gia-bien-quang-cao-ha-noi/", "Bốn thông tin nên gửi qua Zalo để được tư vấn sát nhu cầu hơn."],
   ["Làm biển mặt tiền cửa hàng", "../lam-bien-mat-tien-cua-hang-ha-noi/", "Chọn bố cục, vật liệu và ánh sáng theo vị trí lắp đặt thực tế."],
   ["Làm biển quảng cáo cần gấp", "../lam-bien-quang-cao-can-gap-ha-noi/", "Kiểm tra khả năng đáp ứng theo ngày khai trương và độ khó công trình."],
