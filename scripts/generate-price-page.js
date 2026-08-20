@@ -89,9 +89,17 @@ const jsonLd = {
         "@type": "ContactPoint",
         telephone: "+84989521881",
         contactType: "customer service",
-        areaServed: "VN",
+        areaServed: "Hà Nội",
         availableLanguage: ["vi"]
       }
+    },
+    {
+      "@type": "WebPage",
+      "@id": `${pageUrl}#webpage`,
+      name: "Báo giá biển quảng cáo Hà Nội 2026",
+      url: pageUrl,
+      dateModified: "2026-08-20",
+      about: { "@id": `${baseUrl}/#localbusiness` }
     },
     {
       "@type": "Service",
@@ -198,7 +206,7 @@ ${JSON.stringify(jsonLd, null, 2)}
           <article class="content-main">
             <section class="content-block price-note">
               <h2>Bảng giá dưới đây dùng để dự trù ngân sách</h2>
-              <p><strong>Cập nhật ngày 15/07/2026.</strong> Giá biển quảng cáo thay đổi theo kích thước, vật liệu, độ cao thi công, hệ khung, đèn LED, mặt bằng lắp đặt và mức độ hoàn thiện theo thiết kế. Bảng này giúp anh/chị ước lượng nhanh trước khi gửi thông tin để báo giá chi tiết.</p>
+              <p><strong>Cập nhật ngày 20/08/2026.</strong> Giá biển quảng cáo thay đổi theo kích thước, vật liệu, độ cao thi công, hệ khung, đèn LED, mặt bằng lắp đặt và mức độ hoàn thiện theo thiết kế. Bảng này giúp anh/chị ước lượng nhanh trước khi gửi thông tin để báo giá chi tiết.</p>
               <p>Đơn vị tại <strong>${business.address}</strong>. <a class="text-link" href="${mapUrl}" target="_blank" rel="noopener">Xem vị trí trên Google Maps</a> trước khi gửi địa chỉ mặt bằng cần thi công.</p>
             </section>
 
@@ -332,6 +340,35 @@ ${JSON.stringify(jsonLd, null, 2)}
               <p>Ví dụ, mặt tiền rộng 4m, cao 1,2m có diện tích nền 4,8m2. Khi gửi yêu cầu, anh/chị nên ghi thêm loại chữ, có cần sáng buổi tối không, biển nằm tầng mấy và có khung cũ hay chưa. Những dữ liệu này giúp tránh so sánh nhầm một báo giá chỉ có mặt biển với một báo giá đã gồm chữ, LED và lắp đặt.</p>
             </section>
 
+            <section class="content-block price-estimator" aria-labelledby="uoc-tinh-gia">
+              <div>
+                <h2 id="uoc-tinh-gia">Ước tính chi phí phần nền biển theo kích thước</h2>
+                <p>Chọn loại phần nền, nhập kích thước dự kiến để xem khoảng ngân sách tham khảo. Kết quả không bao gồm chữ nổi, logo, LED, khung gia cố, tháo biển cũ hoặc điều kiện thi công đặc biệt.</p>
+              </div>
+              <form class="price-estimator-form" data-price-estimator>
+                <label>
+                  Loại phần nền
+                  <select name="material" required>
+                    <option value="hiflex|180000|350000">Hiflex khung sắt</option>
+                    <option value="hiflex-ton|300000|450000">Hiflex lót tôn</option>
+                    <option value="alu|480000|650000">Nền alu</option>
+                    <option value="lam-ton|500000|700000">Lam tôn</option>
+                    <option value="pvc|460000|620000">PVC/Formex</option>
+                  </select>
+                </label>
+                <label>
+                  Ngang (m)
+                  <input name="width" type="number" min="0.1" step="0.1" inputmode="decimal" placeholder="Ví dụ: 4" required>
+                </label>
+                <label>
+                  Cao (m)
+                  <input name="height" type="number" min="0.1" step="0.1" inputmode="decimal" placeholder="Ví dụ: 1.2" required>
+                </label>
+                <button class="btn btn-primary" type="submit">Ước tính nhanh</button>
+              </form>
+              <div class="price-estimate-result" data-price-estimate-result hidden role="status" aria-live="polite"></div>
+            </section>
+
             <section class="content-block">
               <h2>Khi nhận báo giá cần kiểm tra những mục nào?</h2>
               <div class="price-table-wrap">
@@ -443,6 +480,40 @@ ${JSON.stringify(jsonLd, null, 2)}
     </div>
 
     <script src="../assets/js/main.js"></script>
+    <script>
+      (() => {
+        const form = document.querySelector("[data-price-estimator]");
+        const result = document.querySelector("[data-price-estimate-result]");
+
+        if (!form || !result) return;
+
+        form.addEventListener("submit", (event) => {
+          event.preventDefault();
+
+          const data = new FormData(form);
+          const width = Number(String(data.get("width")).replace(",", "."));
+          const height = Number(String(data.get("height")).replace(",", "."));
+          const values = String(data.get("material")).split("|");
+          const minimum = Number(values[1]);
+          const maximum = Number(values[2]);
+
+          if (!Number.isFinite(width) || !Number.isFinite(height) || width <= 0 || height <= 0) {
+            result.hidden = false;
+            result.textContent = "Vui lòng nhập chiều ngang và chiều cao lớn hơn 0.";
+            return;
+          }
+
+          const area = width * height;
+          const formatter = new Intl.NumberFormat("vi-VN");
+          const minimumTotal = Math.round(area * minimum / 1000) * 1000;
+          const maximumTotal = Math.round(area * maximum / 1000) * 1000;
+          const areaText = area.toLocaleString("vi-VN", { maximumFractionDigits: 2 });
+
+          result.hidden = false;
+          result.innerHTML = "<strong>Diện tích dự kiến: " + areaText + " m2</strong><p>Khoảng chi phí phần nền: <strong>" + formatter.format(minimumTotal) + " - " + formatter.format(maximumTotal) + "đ</strong>. Gửi ảnh mặt tiền, vị trí lắp và yêu cầu chữ/đèn qua <a href='https://zalo.me/${business.phoneHref}' target='_blank' rel='noopener'>Zalo ${business.phone}</a> để nhận phương án đầy đủ.</p>";
+        });
+      })();
+    </script>
   </body>
 </html>
 `;

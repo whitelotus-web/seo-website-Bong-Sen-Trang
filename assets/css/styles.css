@@ -810,6 +810,67 @@ address {
   background: linear-gradient(180deg, rgba(29, 141, 204, 0.08), #fff);
 }
 
+.price-estimator {
+  border-color: rgba(29, 141, 204, 0.38);
+  background: #f7fcff;
+}
+
+.price-estimator-form {
+  display: grid;
+  grid-template-columns: minmax(0, 1.7fr) repeat(2, minmax(120px, 0.65fr)) auto;
+  align-items: end;
+  gap: 14px;
+  margin-top: 18px;
+}
+
+.price-estimator-form label {
+  display: grid;
+  gap: 7px;
+  color: var(--ink);
+  font-size: 0.95rem;
+  font-weight: 800;
+}
+
+.price-estimator-form select,
+.price-estimator-form input {
+  width: 100%;
+  min-height: 46px;
+  padding: 10px 12px;
+  border: 1px solid rgba(29, 141, 204, 0.32);
+  border-radius: 6px;
+  background: #fff;
+  color: var(--ink);
+  font: inherit;
+}
+
+.price-estimator-form select:focus,
+.price-estimator-form input:focus {
+  outline: 3px solid rgba(29, 141, 204, 0.18);
+  border-color: var(--blue);
+}
+
+.price-estimator-form .btn {
+  min-height: 46px;
+  white-space: nowrap;
+}
+
+.price-estimate-result {
+  margin-top: 16px;
+  padding: 16px;
+  border: 1px solid rgba(29, 141, 204, 0.26);
+  border-radius: 6px;
+  background: #fff;
+}
+
+.price-estimate-result p {
+  margin: 8px 0 0;
+}
+
+.price-estimate-result a {
+  color: var(--blue-deep);
+  font-weight: 800;
+}
+
 .price-links-section {
   background: #fff;
 }
@@ -1161,6 +1222,10 @@ address {
   .price-link-grid,
   .priority-link-grid,
   .price-link-grid.compact {
+    grid-template-columns: 1fr;
+  }
+
+  .price-estimator-form {
     grid-template-columns: 1fr;
   }
 
