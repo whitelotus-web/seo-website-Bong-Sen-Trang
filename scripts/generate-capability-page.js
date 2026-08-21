@@ -217,6 +217,7 @@ ${JSON.stringify(jsonLd, null, 2)}
                 <li>Với biển lớn, vị trí treo cao hoặc cần kiểm tra khung, trao đổi phương án khảo sát trước khi chốt.</li>
               </ul>
               <p><a href="../lien-he-lam-bien-quang-cao-ha-noi/">Xem đầy đủ thông tin liên hệ</a> hoặc <a href="../gui-anh-bao-gia-bien-quang-cao-ha-noi/">xem cách chụp ảnh mặt tiền để báo giá nhanh</a>.</p>
+              <p><a href="../chinh-sach-bao-hanh-bien-quang-cao-ha-noi/">Xem quy trình khảo sát, báo giá và bảo hành theo hạng mục</a>.</p>
             </section>
 
             <section class="content-block">
@@ -277,6 +278,7 @@ ${JSON.stringify(jsonLd, null, 2)}
               <a href="../bao-gia-bien-quang-cao-ha-noi/">Báo giá biển quảng cáo</a>
               <a href="../thi-cong-bien-quang-cao-ha-noi/">Thi công biển quảng cáo</a>
               <a href="../hinh-anh-bien-quang-cao-thuc-te-ha-noi/">Hình ảnh công trình</a>
+              <a href="../chinh-sach-bao-hanh-bien-quang-cao-ha-noi/">Chính sách bảo hành</a>
               <a href="../lien-he-lam-bien-quang-cao-ha-noi/">Thông tin liên hệ</a>
               <a href="../tat-ca-dich-vu-bien-quang-cao-ha-noi/">Tất cả dịch vụ</a>
             </div>

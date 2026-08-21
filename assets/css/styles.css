@@ -796,6 +796,24 @@ address {
   border-bottom: 0;
 }
 
+.trust-table th:first-child,
+.trust-table td:first-child {
+  width: 38%;
+}
+
+@media (max-width: 600px) {
+  .trust-table {
+    min-width: 0;
+    table-layout: fixed;
+  }
+
+  .trust-table th,
+  .trust-table td {
+    padding: 12px 10px;
+    overflow-wrap: anywhere;
+  }
+}
+
 .check-list,
 .step-list {
   display: grid;

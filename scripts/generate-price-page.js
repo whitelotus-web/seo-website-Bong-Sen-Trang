@@ -400,6 +400,7 @@ ${JSON.stringify(jsonLd, null, 2)}
                 <li>Loại biển mong muốn: alu chữ nổi, hộp đèn, bạt Hiflex, biển vẫy, LED.</li>
               </ol>
               <p>Xem <a href="../gui-anh-bao-gia-bien-quang-cao-ha-noi/">hướng dẫn chụp ảnh và mẫu tin nhắn báo giá</a>, sau đó gửi qua Zalo <a href="https://zalo.me/${business.phoneHref}" target="_blank" rel="noopener">${business.phone}</a>. Bông Sen Trắng sẽ tư vấn phương án phù hợp ngân sách trước khi chốt thi công.</p>
+              <p><a href="../chinh-sach-bao-hanh-bien-quang-cao-ha-noi/">Xem các mục cần thống nhất về khảo sát, báo giá và bảo hành</a> trước khi chốt hạng mục.</p>
             </section>
 
             <section class="content-block">
