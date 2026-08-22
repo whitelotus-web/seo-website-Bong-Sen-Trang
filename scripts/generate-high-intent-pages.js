@@ -15,6 +15,37 @@ const business = {
 
 const pages = [
   {
+    slug: "bien-vay-nha-thuoc-ha-noi",
+    title: "Làm biển vẫy nhà thuốc Hà Nội",
+    kicker: "Biển vẫy hai mặt cho quầy thuốc, nhà thuốc",
+    image: "mau-bien-nha-thuoc-linh-dam-ha-noi.jpg",
+    imageAlt: "Biển nhà thuốc và biển vẫy tại Hà Nội",
+    description:
+      "Làm biển vẫy nhà thuốc tại Hà Nội: hộp đèn hai mặt, biển tròn, biển LED và vị trí treo dễ nhìn. Gửi ảnh mặt tiền qua Zalo 0989 521 881.",
+    intro:
+      "Biển vẫy nhà thuốc hỗ trợ khách nhận ra điểm bán từ hai chiều đường, nhất là khi mặt tiền hẹp hoặc nằm giữa dãy biển dày. Phần biển chính vẫn cần rõ tên và thông tin cần thiết; biển vẫy nên gọn, dễ đọc và đặt đúng vị trí quan sát.",
+    benefits: [
+      "Có thể làm biển hộp đèn hai mặt, biển tròn, biển mica hoặc biển LED tùy vị trí treo.",
+      "Ưu tiên tên ngắn, biểu tượng nhận diện rõ và độ sáng phù hợp khi nhà thuốc hoạt động buổi tối.",
+      "Kiểm tra điểm bắt khung, độ vươn, nguồn điện và khả năng chống nước trước khi lắp.",
+      "Có thể thay mặt biển, thay LED hoặc gia cố khung khi biển vẫy cũ vẫn còn tận dụng được."
+    ],
+    priceNote:
+      "Gửi ảnh chụp thẳng mặt tiền và vị trí dự kiến treo biển, kích thước mong muốn, địa chỉ lắp đặt và nhu cầu có đèn hay không. Có đủ hiện trạng thì phương án và chi phí sẽ sát hơn.",
+    faqs: [
+      ["Biển vẫy nhà thuốc nên làm một hay hai mặt?", "Nếu khách đi qua từ hai hướng, biển hai mặt thường dễ nhận ra hơn. Phương án phù hợp còn tùy vị trí treo, chiều cao, độ vươn và mặt tiền thực tế."],
+      ["Biển vẫy nhà thuốc có cần đèn không?", "Nếu nhà thuốc hoạt động buổi tối hoặc tuyến phố thiếu sáng, có thể cân nhắc hộp đèn hoặc LED. Cần chọn độ sáng vừa phải và kiểm tra đường điện trước khi thi công."],
+      ["Muốn báo giá biển vẫy nhà thuốc cần gửi gì?", "Gửi ảnh mặt tiền, ảnh vị trí treo, kích thước dự kiến, địa chỉ lắp đặt và nội dung cần thể hiện. Nếu có logo hoặc nhận diện sẵn, gửi kèm để tư vấn bố cục rõ hơn."],
+      ["Có sửa biển vẫy nhà thuốc cũ không?", "Có thể kiểm tra mặt mica hoặc bạt, LED, nguồn, dây điện và khung để đề xuất sửa từng phần hoặc thay mới khi cần."]
+    ],
+    related: [
+      ["Biển nhà thuốc Hà Nội", "bien-nha-thuoc-ha-noi"],
+      ["Làm biển vẫy LED Hà Nội", "lam-bien-vay-led-ha-noi"],
+      ["Báo giá biển vẫy LED", "bao-gia-bien-vay-led-ha-noi"],
+      ["Báo giá biển quảng cáo Hà Nội", "bao-gia-bien-quang-cao-ha-noi"]
+    ]
+  },
+  {
     slug: "lam-bien-vay-led-ha-noi",
     title: "Làm biển vẫy LED Hà Nội",
     kicker: "Biển vẫy dễ nhìn từ hai chiều đường",
@@ -125,6 +156,8 @@ const pages = [
     kicker: "Bảng menu, bảng giá và biển món cho quán ăn",
     image: "mau-bien-nha-hang-linh-dam-ha-noi.jpg",
     imageAlt: "Mẫu biển nhà hàng, quán ăn có đèn LED vào buổi tối",
+    description:
+      "Làm biển menu quán ăn tại Hà Nội: bảng menu treo tường, menu hộp đèn, bảng giá và biển món dễ đọc. Gửi ảnh mặt bằng qua Zalo 0989 521 881.",
     intro:
       "Biển menu giúp khách nhìn nhanh món chính, giá, combo và chương trình bán hàng. Hạng mục này phù hợp quán ăn, quán phở, bún, cafe, trà sữa, đồ uống take away và cửa hàng đồ ăn nhanh.",
     benefits: [
@@ -244,7 +277,7 @@ function relatedLinks(links) {
 }
 
 function renderFaq(page) {
-  const faqs = [
+  const defaultFaqs = [
     [
       `Muốn báo giá ${page.title.toLowerCase()} cần gửi gì?`,
       "Gửi ảnh mặt tiền hoặc vị trí lắp, kích thước dự kiến, địa chỉ tại Hà Nội, nội dung cần làm và thời gian mong muốn hoàn thiện."
@@ -263,6 +296,8 @@ function renderFaq(page) {
     ]
   ];
 
+  const faqs = page.faqs || defaultFaqs;
+
   return {
     faqs,
     html: faqs
@@ -280,7 +315,7 @@ function renderFaq(page) {
 function renderPage(page) {
   const pageUrl = `${baseUrl}/${page.slug}/`;
   const imageAlt = page.imageAlt || page.title;
-  const description = `${page.title}: tư vấn vật liệu, kích thước, báo giá và thi công tại Hà Nội. Gửi ảnh qua Zalo 0989 521 881 để được báo giá nhanh.`;
+  const description = page.description || `${page.title}: tư vấn vật liệu, kích thước, báo giá và thi công tại Hà Nội. Gửi ảnh qua Zalo 0989 521 881 để được báo giá nhanh.`;
   const { faqs, html: faqHtml } = renderFaq(page);
   const jsonLd = {
     "@context": "https://schema.org",

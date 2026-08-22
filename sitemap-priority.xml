@@ -26,32 +26,32 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://lambienquangcaohanoi.io.vn/gui-anh-bao-gia-bien-quang-cao-ha-noi/</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
     <loc>https://lambienquangcaohanoi.io.vn/lam-bien-quang-cao-gan-day-ha-noi/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://lambienquangcaohanoi.io.vn/sua-chua-bien-quang-cao-ha-noi/</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://lambienquangcaohanoi.io.vn/lam-bien-quang-cao-can-gap-ha-noi/</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://lambienquangcaohanoi.io.vn/lam-bien-mat-tien-cua-hang-ha-noi/</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
     <loc>https://lambienquangcaohanoi.io.vn/lam-bien-quang-cao-dong-da/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://lambienquangcaohanoi.io.vn/lam-bien-quang-cao-cau-giay/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://lambienquangcaohanoi.io.vn/bien-vay-nha-thuoc-ha-noi/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://lambienquangcaohanoi.io.vn/lam-bien-menu-quan-an-ha-noi/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://lambienquangcaohanoi.io.vn/bien-nha-thuoc-ha-noi/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>

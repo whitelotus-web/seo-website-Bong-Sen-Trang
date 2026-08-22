@@ -81,7 +81,8 @@ const niches = [
     intent: "nhà thuốc, quầy thuốc, phòng khám nhỏ, cơ sở chăm sóc sức khỏe",
     problem: "cần biển rõ, sáng, dễ đọc, tạo cảm giác tin cậy và đúng nhận diện ngành",
     recommended: ["Hộp đèn LED", "Alu chữ nổi", "Biển chữ nổi mica", "Biển vẫy", "Bảng giờ mở cửa"],
-    keywords: ["biển nhà thuốc", "bảng hiệu nhà thuốc", "biển quầy thuốc"]
+    keywords: ["biển nhà thuốc", "bảng hiệu nhà thuốc", "biển quầy thuốc"],
+    related: [["Biển vẫy nhà thuốc Hà Nội", "bien-vay-nha-thuoc-ha-noi"]]
   },
   {
     name: "gara ô tô, xe máy",
@@ -160,6 +161,10 @@ function renderNichePage(niche) {
   const { faqs, html: faqHtml } = renderFaq(niche);
   const recommendedHtml = niche.recommended.map((item) => `<li>${escapeHtml(item)}</li>`).join("\n                ");
   const keywordHtml = niche.keywords.map((item) => `<li>${escapeHtml(item)}</li>`).join("\n                ");
+  const relatedHtml = (niche.related || [])
+    .map(([label, slug]) => `<a href="../${slug}/">${escapeHtml(label)}</a>`)
+    .join("\n              ");
+  const relatedLinksHtml = relatedHtml ? `\n              ${relatedHtml}` : "";
 
   const jsonLd = {
     "@context": "https://schema.org",
@@ -323,7 +328,7 @@ ${faqHtml}
               <a href="../bien-quang-cao-theo-nganh-ha-noi/">Biển theo ngành</a>
               <a href="../bao-gia-bien-quang-cao-ha-noi/">Báo giá biển quảng cáo</a>
               <a href="../hinh-anh-bien-quang-cao-thuc-te-ha-noi/">Mẫu biển thực tế</a>
-              <a href="../lam-bien-quang-cao-ha-noi/">Làm biển quảng cáo Hà Nội</a>
+              <a href="../lam-bien-quang-cao-ha-noi/">Làm biển quảng cáo Hà Nội</a>${relatedLinksHtml}
             </div>
             <address class="sidebar-card">
               <strong>${business.name}</strong>

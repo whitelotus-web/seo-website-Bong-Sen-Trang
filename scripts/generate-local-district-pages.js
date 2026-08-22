@@ -433,8 +433,8 @@ function renderNearbyPage() {
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Làm biển quảng cáo gần đây Hà Nội | Gọi 0989 521 881</title>
-    <meta name="description" content="Tìm làm biển quảng cáo gần tôi, gần đây, quanh Đống Đa Hà Nội? Gửi ảnh mặt tiền qua Zalo 0989 521 881 để báo giá nhanh.">
+    <title>Làm bảng hiệu, biển quảng cáo gần đây Hà Nội | Báo giá nhanh</title>
+    <meta name="description" content="Tìm làm bảng hiệu, biển quảng cáo gần đây tại Hà Nội? Gửi ảnh mặt tiền và vị trí qua Zalo 0989 521 881 để tư vấn, báo giá theo hiện trạng.">
     <meta name="robots" content="index,follow">
     <meta name="theme-color" content="#1d8dcc">
     <link rel="canonical" href="${pageUrl}">
@@ -448,14 +448,14 @@ function renderNearbyPage() {
     <meta property="og:type" content="website">
     <meta property="og:locale" content="vi_VN">
     <meta property="og:site_name" content="Bông Sen Trắng">
-    <meta property="og:title" content="Làm biển quảng cáo gần đây tại Hà Nội">
-    <meta property="og:description" content="Gửi ảnh mặt tiền qua Zalo để nhận tư vấn làm biển quảng cáo gần tôi, gần đây, quanh Đống Đa và các quận Hà Nội.">
+    <meta property="og:title" content="Làm bảng hiệu, biển quảng cáo gần đây tại Hà Nội">
+    <meta property="og:description" content="Gửi ảnh mặt tiền qua Zalo để nhận tư vấn làm bảng hiệu, biển quảng cáo gần tôi, gần đây, quanh Đống Đa và các quận Hà Nội.">
     <meta property="og:url" content="${pageUrl}">
     <meta property="og:image" content="${baseUrl}/assets/images/hero-bien-quang-cao-ha-noi.jpg">
-    <meta property="og:image:alt" content="Làm biển quảng cáo gần đây tại Hà Nội">
+    <meta property="og:image:alt" content="Làm bảng hiệu và biển quảng cáo gần đây tại Hà Nội">
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Làm biển quảng cáo gần đây tại Hà Nội">
-    <meta name="twitter:description" content="Gửi ảnh mặt tiền qua Zalo để báo giá biển quảng cáo gần tôi, gần đây tại Hà Nội.">
+    <meta name="twitter:title" content="Làm bảng hiệu, biển quảng cáo gần đây tại Hà Nội">
+    <meta name="twitter:description" content="Gửi ảnh mặt tiền qua Zalo để báo giá bảng hiệu, biển quảng cáo gần tôi, gần đây tại Hà Nội.">
     <meta name="twitter:image" content="${baseUrl}/assets/images/hero-bien-quang-cao-ha-noi.jpg">
     <script type="application/ld+json">
 ${JSON.stringify(jsonLd, null, 2)}
@@ -487,15 +487,15 @@ ${JSON.stringify(jsonLd, null, 2)}
               <span>/</span>
               <span>Gần đây</span>
             </nav>
-            <p class="section-kicker">Tìm đơn vị làm biển quảng cáo gần tôi, gần đây</p>
-            <h1>Làm biển quảng cáo gần đây tại Hà Nội</h1>
-            <p>Nếu anh/chị đang tìm “làm biển quảng cáo gần tôi”, “làm biển quảng cáo gần đây” hoặc “làm biển quảng cáo quanh đây”, hãy gửi ảnh mặt tiền, địa chỉ lắp đặt và kích thước dự kiến qua Zalo. Bông Sen Trắng ở 92E Ô Chợ Dừa, Đống Đa, nhận tư vấn thi công biển alu chữ nổi, hộp đèn LED, Hiflex, chữ nổi, sửa biển cũ và thay LED tại nhiều quận Hà Nội.</p>
+            <p class="section-kicker">Tìm đơn vị làm bảng hiệu, biển quảng cáo gần tôi</p>
+            <h1>Làm bảng hiệu, biển quảng cáo gần đây tại Hà Nội</h1>
+            <p>Nếu anh/chị đang tìm “làm bảng hiệu gần đây”, “làm biển quảng cáo gần tôi” hoặc “làm biển quảng cáo quanh đây”, hãy gửi ảnh mặt tiền, địa chỉ lắp đặt và kích thước dự kiến qua Zalo. Bông Sen Trắng ở 92E Ô Chợ Dừa, Đống Đa, nhận tư vấn thi công biển alu chữ nổi, hộp đèn LED, Hiflex, chữ nổi, sửa biển cũ và thay LED tại nhiều quận Hà Nội.</p>
             <div class="hero-actions">
               <a class="btn btn-primary" href="tel:${business.phoneHref}">Gọi ${business.phone}</a>
               <a class="btn btn-secondary" href="https://zalo.me/${business.phoneHref}" target="_blank" rel="noopener">Gửi ảnh qua Zalo</a>
             </div>
           </div>
-          <img src="../assets/images/hero-bien-quang-cao-ha-noi.jpg" alt="Làm biển quảng cáo gần đây tại Hà Nội" loading="eager" fetchpriority="high" decoding="async" width="960" height="720">
+          <img src="../assets/images/hero-bien-quang-cao-ha-noi.jpg" alt="Làm bảng hiệu và biển quảng cáo gần đây tại Hà Nội" loading="eager" fetchpriority="high" decoding="async" width="960" height="720">
         </div>
       </section>
 
