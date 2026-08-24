@@ -69,17 +69,17 @@ const pages = [
   },
   {
     slug: "bien-sieu-thi-mini-me-va-be-ha-noi",
-    title: "Biển siêu thị mini, cửa hàng mẹ và bé Hà Nội | Bảng hiệu bán lẻ",
-    description: "Làm biển siêu thị mini, cửa hàng mẹ và bé tại Hà Nội: biển mặt tiền, alu chữ nổi, hộp đèn LED, biển vẫy, bảng hiệu chuỗi. Zalo 0989 521 881.",
+    title: "Làm biển siêu thị mini tại Hà Nội | Bảng hiệu cửa hàng bán lẻ",
+    description: "Làm biển siêu thị mini tại Hà Nội: biển mặt tiền, alu chữ nổi, hộp đèn LED, biển vẫy, bảng hiệu cửa hàng mẹ và bé hoặc tiện ích. Zalo 0989 521 881.",
     kicker: "Siêu thị mini, mẹ và bé",
-    h1: "Làm biển siêu thị mini, cửa hàng mẹ và bé tại Hà Nội",
-    lead: "Cửa hàng mẹ và bé, siêu thị mini, cửa hàng tiện ích cần biển sáng, dễ đọc, màu thương hiệu rõ và đủ nổi bật trên tuyến phố đông người qua lại.",
+    h1: "Làm biển siêu thị mini tại Hà Nội",
+    lead: "Biển siêu thị mini, cửa hàng mẹ và bé và cửa hàng tiện ích cần sáng, dễ đọc, màu thương hiệu rõ và đủ nổi bật trên tuyến phố đông người qua lại.",
     image: "mau-bien-cua-hang-me-va-be-ha-noi.jpg",
     imageAlt: "Mẫu biển cửa hàng mẹ và bé tại Hà Nội",
     intent: "siêu thị mini, cửa hàng mẹ và bé, cửa hàng tiện ích, cửa hàng bán lẻ theo chuỗi",
     sections: [
       ["Biển bán lẻ cần nhận diện nhanh", [
-        "Khách đi ngang thường chỉ có vài giây để nhận ra ngành hàng. Tên cửa hàng, nhóm sản phẩm và màu thương hiệu cần đặt rõ, không để biển quá rối.",
+        "Khách đi ngang thường chỉ có vài giây để nhận ra ngành hàng. Trên biển siêu thị, tên cửa hàng, nhóm sản phẩm và màu thương hiệu cần đặt rõ, không để mặt tiền quá rối.",
         "Với cửa hàng mẹ và bé hoặc siêu thị mini, nên ưu tiên mặt tiền sáng, chữ lớn, màu thân thiện và thông tin liên hệ gọn."
       ]],
       ["Hạng mục thường thi công", [

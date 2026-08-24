@@ -198,8 +198,8 @@ function renderDistrictPage(district) {
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Làm biển quảng cáo ${escapeHtml(district.name)} | Gần đây tại Hà Nội</title>
-    <meta name="description" content="Làm biển quảng cáo ${escapeHtml(district.name)} gần đây: alu chữ nổi, hộp đèn LED, Hiflex, sửa biển cũ. Gửi ảnh qua Zalo 0989 521 881 để báo giá.">
+    <title>Làm biển quảng cáo tại ${escapeHtml(district.name)} | Khảo sát, báo giá</title>
+    <meta name="description" content="Làm biển quảng cáo tại ${escapeHtml(district.name)}, Hà Nội: alu chữ nổi, hộp đèn LED, Hiflex, biển vẫy và sửa biển cũ. Gửi ảnh qua Zalo 0989 521 881 để báo giá.">
     <meta name="robots" content="index,follow">
     <meta name="theme-color" content="#1d8dcc">
     <link rel="canonical" href="${pageUrl}">
@@ -213,13 +213,13 @@ function renderDistrictPage(district) {
     <meta property="og:type" content="website">
     <meta property="og:locale" content="vi_VN">
     <meta property="og:site_name" content="Bông Sen Trắng">
-    <meta property="og:title" content="Làm biển quảng cáo ${escapeHtml(district.name)}">
+    <meta property="og:title" content="Làm biển quảng cáo tại ${escapeHtml(district.name)}">
     <meta property="og:description" content="Thi công bảng hiệu, biển alu, hộp đèn LED, Hiflex và sửa biển cũ tại ${escapeHtml(district.name)}, Hà Nội.">
     <meta property="og:url" content="${pageUrl}">
     <meta property="og:image" content="${baseUrl}/assets/images/${district.image}">
     <meta property="og:image:alt" content="Làm biển quảng cáo ${escapeHtml(district.name)} Hà Nội">
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Làm biển quảng cáo ${escapeHtml(district.name)}">
+    <meta name="twitter:title" content="Làm biển quảng cáo tại ${escapeHtml(district.name)}">
     <meta name="twitter:description" content="Gửi ảnh mặt tiền qua Zalo để báo giá biển quảng cáo tại ${escapeHtml(district.name)}.">
     <meta name="twitter:image" content="${baseUrl}/assets/images/${district.image}">
     <script type="application/ld+json">

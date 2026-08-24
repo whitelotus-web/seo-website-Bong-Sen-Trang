@@ -105,10 +105,12 @@ const pages = [
   },
   {
     slug: "bien-hieu-cua-hang-ha-noi",
-    title: "Biển hiệu cửa hàng Hà Nội",
+    title: "Biển hiệu cửa hàng tại Hà Nội",
+    metaTitle: "Làm biển hiệu cửa hàng tại Hà Nội | Khảo sát, báo giá",
+    description: "Làm biển hiệu cửa hàng tại Hà Nội theo mặt tiền thực tế: alu chữ nổi, hộp đèn LED, Hiflex, biển vẫy. Gửi ảnh qua Zalo 0989 521 881 để được tư vấn nhanh.",
     kicker: "Biển mặt tiền cho shop, quán và showroom",
     image: "du-an-gao-viet-bien-mat-tien-do.jpg",
-    intro: "Cửa hàng cần một biển hiệu rõ tên, rõ ngành hàng và dễ nhận ra từ phía đường. Bông Sen Trắng nhận tư vấn, sản xuất và lắp đặt biển hiệu cửa hàng tại Hà Nội theo mặt tiền thực tế.",
+    intro: "Cửa hàng cần một biển hiệu rõ tên, rõ ngành hàng và dễ nhận ra từ phía đường. Bông Sen Trắng nhận làm biển hiệu cửa hàng tại Hà Nội theo mặt tiền thực tế, từ tư vấn vật liệu đến sản xuất và lắp đặt.",
     items: ["Biển hiệu alu chữ nổi cho cửa hàng", "Biển hộp đèn LED cho mặt tiền cần sáng buổi tối", "Biển bạt Hiflex khi cần tiết kiệm chi phí", "Biển vẫy phù hợp tuyến phố đông người qua lại"],
     related: [["Làm bảng hiệu cửa hàng", "lam-bang-hieu-cua-hang-ha-noi"], ["Báo giá biển quảng cáo", "bao-gia-bien-quang-cao-ha-noi"], ["Biển vẫy cửa hàng", "bien-vay-cua-hang-ha-noi"]]
   },
