@@ -152,7 +152,8 @@ const pages = [
   },
   {
     slug: "lam-bien-menu-quan-an-ha-noi",
-    title: "Làm biển menu quán ăn Hà Nội",
+    title: "Làm biển menu tại Hà Nội",
+    metaTitle: "Biển menu Hà Nội | Bảng menu quán ăn, hộp đèn",
     kicker: "Bảng menu, bảng giá và biển món cho quán ăn",
     image: "mau-bien-nha-hang-linh-dam-ha-noi.jpg",
     imageAlt: "Mẫu biển nhà hàng, quán ăn có đèn LED vào buổi tối",
@@ -170,6 +171,7 @@ const pages = [
       "Cần gửi kích thước khu treo menu, danh sách món, ảnh mặt bằng và mẫu phong cách mong muốn.",
     related: [
       ["Biển quảng cáo quán ăn Hà Nội", "bien-quang-cao-quan-an-ha-noi"],
+      ["Báo giá biển menu quán ăn", "bao-gia-bien-menu-quan-an-ha-noi"],
       ["Báo giá bảng hiệu quán ăn", "bao-gia-bang-hieu-quan-an-ha-noi"],
       ["Biển quán phở bún Đống Đa", "bien-quan-pho-bun-dong-da-ha-noi"]
     ]
@@ -315,6 +317,7 @@ function renderFaq(page) {
 function renderPage(page) {
   const pageUrl = `${baseUrl}/${page.slug}/`;
   const imageAlt = page.imageAlt || page.title;
+  const metaTitle = page.metaTitle || `${page.title} | Bông Sen Trắng`;
   const description = page.description || `${page.title}: tư vấn vật liệu, kích thước, báo giá và thi công tại Hà Nội. Gửi ảnh qua Zalo 0989 521 881 để được báo giá nhanh.`;
   const { faqs, html: faqHtml } = renderFaq(page);
   const jsonLd = {
@@ -361,7 +364,7 @@ function renderPage(page) {
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>${escapeHtml(page.title)} | Bông Sen Trắng</title>
+    <title>${escapeHtml(metaTitle)}</title>
     <meta name="description" content="${escapeHtml(description)}">
     <meta name="robots" content="index,follow">
     <meta name="theme-color" content="#1d8dcc">

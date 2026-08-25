@@ -125,26 +125,30 @@ const pages = [
   },
   {
     slug: "lam-bien-quang-cao-gia-re-ha-noi",
-    title: "Làm biển quảng cáo giá rẻ tại Hà Nội | Tư vấn phương án tiết kiệm",
-    description: "Tư vấn làm biển quảng cáo giá rẻ tại Hà Nội: chọn Hiflex, alu cơ bản, hộp đèn tiết kiệm, sửa biển cũ hoặc thay mặt biển để giảm chi phí.",
+    title: "Biển quảng cáo giá rẻ Hà Nội | Từ 180.000đ/m2",
+    description: "Làm biển quảng cáo giá rẻ tại Hà Nội: biển bạt khung sắt tham khảo từ 180.000đ/m2, thay mặt bạt, tận dụng khung cũ và alu cơ bản. Zalo 0989 521 881.",
     h1: "Làm biển quảng cáo giá rẻ tại Hà Nội",
     kicker: "Phương án tiết kiệm",
     image: "du-an-gao-viet-bien-mat-tien-do.jpg",
     imageAlt: "Biển quảng cáo cửa hàng tối ưu chi phí tại Hà Nội",
     rows: [
-      ["Cần mở cửa hàng nhanh", "Biển bạt Hiflex", "Chi phí thấp, làm nhanh, dễ thay nội dung."],
-      ["Cần nhìn tốt buổi tối", "Hộp đèn Hiflex hoặc biển vẫy", "Không cần làm quá lớn nếu vị trí nhìn gần."],
-      ["Cần mặt tiền bền hơn", "Alu cơ bản + chữ nổi", "Đầu tư cao hơn nhưng dùng lâu và nhìn chuyên nghiệp hơn."],
-      ["Biển cũ còn khung", "Thay mặt biển/thay LED", "Tiết kiệm hơn làm mới toàn bộ nếu khung còn chắc."],
-      ["Ngân sách rất hạn chế", "Ưu tiên chữ dễ đọc", "Giảm chi tiết trang trí, giữ logo/tên/ngành hàng/số điện thoại rõ."]
+      ["In bạt Hiflex riêng", "40.000 - 90.000đ/m2", "Tùy độ dày bạt, chất lượng in, số lượng và thời gian lấy hàng."],
+      ["Biển bạt khung sắt", "180.000 - 350.000đ/m2", "Khoảng giá tham khảo cho khung, căng bạt và lắp đặt cơ bản tùy mặt bằng."],
+      ["Biển bạt lót tôn", "300.000 - 450.000đ/m2", "Phẳng và bền hơn bạt căng thông thường, phù hợp mặt tiền ngoài trời."],
+      ["Thay mặt bạt trên khung cũ", "Báo giá theo hiện trạng", "Tiết kiệm hơn làm mới toàn bộ nếu khung còn chắc và đúng kích thước."],
+      ["Alu cơ bản + chữ nổi", "Báo giá theo kích thước", "Chi phí cao hơn Hiflex nhưng bền và chuyên nghiệp hơn cho biển dùng dài hạn."]
     ],
     sections: [
+      ["Cách chọn phương án tiết kiệm đúng nhu cầu", [
+        "Cửa hàng mới mở hoặc cần thay nội dung nhanh có thể chọn Hiflex. Mặt tiền dùng lâu nên cân nhắc alu cơ bản kết hợp chữ nổi để giảm chi phí sửa và thay lại về sau.",
+        "Nếu biển cũ còn khung chắc, thay mặt bạt, thay chữ hoặc thay LED thường tiết kiệm hơn làm mới toàn bộ. Cần xem ảnh và kiểm tra hiện trạng trước khi chốt phương án."
+      ]],
       ["Giá rẻ nhưng không nên rẻ bằng mọi giá", [
         "Biển quá rẻ thường cắt giảm khung, LED, chống nước hoặc chất lượng in. Rủi ro là nhanh xuống màu, sáng không đều, phải sửa sớm.",
         "Cách tiết kiệm hợp lý là chọn đúng vật liệu theo thời gian sử dụng, vị trí lắp đặt và mục tiêu kinh doanh."
       ]],
       ["Bông Sen Trắng tư vấn theo ngân sách", [
-        "Bạn có thể gửi ngân sách dự kiến, ảnh mặt tiền và kích thước. Chúng tôi sẽ đề xuất phương án vừa đủ dùng, tránh làm thừa hạng mục không cần thiết.",
+        "Anh/chị có thể gửi ngân sách dự kiến, ảnh mặt tiền và kích thước. Bông Sen Trắng sẽ đề xuất phương án vừa đủ dùng, tránh làm thừa hạng mục không cần thiết.",
         "Mục tiêu là biển rõ, bền trong điều kiện sử dụng thực tế và không vượt ngân sách."
       ]]
     ]

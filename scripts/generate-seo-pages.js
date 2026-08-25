@@ -631,14 +631,14 @@ const pages = [
   },
   {
     slug: "bien-quang-cao-nha-hang-ha-noi",
-    title: "Biển quảng cáo nhà hàng Hà Nội | Bảng hiệu quán ăn, cafe",
-    description: "Nhận làm biển quảng cáo nhà hàng, quán ăn, cafe tại Hà Nội: biển mặt tiền, hộp đèn LED, biển vẫy, chữ nổi, bạt Hiflex. Gọi/Zalo 0989 521 881.",
+    title: "Làm biển nhà hàng tại Hà Nội | Mặt tiền, hộp đèn LED",
+    description: "Làm biển nhà hàng tại Hà Nội: biển mặt tiền, alu chữ nổi, hộp đèn LED, biển vẫy và bảng menu cho nhà hàng, quán ăn, cafe. Zalo 0989 521 881.",
     kicker: "Nhà hàng, quán ăn, cafe",
-    h1: "Làm biển quảng cáo nhà hàng tại Hà Nội",
+    h1: "Làm biển nhà hàng tại Hà Nội",
     lead: "Biển nhà hàng cần dễ nhận ra từ xa, rõ phong cách món ăn và đủ nổi bật vào buổi tối để kéo khách đi đường.",
     image: "du-an-bien-bep-ba-son-hoi-an.jpg",
     imageAlt: "Biển chữ nổi phát sáng cho mặt tiền nhà hàng tại Hà Nội",
-    serviceName: "Biển quảng cáo nhà hàng Hà Nội",
+    serviceName: "Làm biển nhà hàng Hà Nội",
     sections: [
       ["Biển phải kéo được khách đi đường", [
         "Với nhà hàng, quán ăn, cafe và trà sữa, biển nên làm rõ tên thương hiệu, món/chủ đề chính và ánh sáng buổi tối.",
