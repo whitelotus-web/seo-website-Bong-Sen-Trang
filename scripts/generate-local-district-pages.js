@@ -100,6 +100,7 @@ const districts = [
 ];
 
 const serviceCards = [
+  ["Làm bảng hiệu cửa hàng", "../lam-bang-hieu-cua-hang-ha-noi/", "Chọn alu chữ nổi, hộp đèn, biển vẫy hoặc Hiflex theo mặt tiền thực tế."],
   ["Biển alu chữ nổi", "../bien-alu-chu-noi-ha-noi/", "Mặt tiền bền, sạch, hợp cửa hàng, showroom, văn phòng."],
   ["Biển hộp đèn LED", "../bien-hop-den-led-ha-noi/", "Dễ nhìn buổi tối, phù hợp mặt phố và khu đông người qua lại."],
   ["Biển bạt Hiflex", "../bien-bat-hiflex-ha-noi/", "Tối ưu chi phí cho khai trương, thay nội dung hoặc biển diện tích lớn."],
@@ -411,8 +412,8 @@ function renderNearbyPage() {
       },
       {
         "@type": "Service",
-        name: "Làm biển quảng cáo gần đây tại Hà Nội",
-        description: "Tư vấn, thi công, sửa chữa biển quảng cáo gần tôi, gần đây, quanh Đống Đa và các quận Hà Nội theo ảnh mặt tiền và vị trí lắp đặt.",
+        name: "Làm bảng hiệu gần đây tại Hà Nội",
+        description: "Tư vấn làm bảng hiệu, thi công và sửa chữa biển quảng cáo gần tôi, gần đây, quanh Đống Đa và các quận Hà Nội theo ảnh mặt tiền và vị trí lắp đặt.",
         provider: { "@id": `${baseUrl}/#localbusiness` },
         areaServed: "Hà Nội",
         serviceType: "Làm biển quảng cáo"
@@ -433,8 +434,8 @@ function renderNearbyPage() {
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Làm bảng hiệu, biển quảng cáo gần đây Hà Nội | Báo giá nhanh</title>
-    <meta name="description" content="Tìm làm bảng hiệu, biển quảng cáo gần đây tại Hà Nội? Gửi ảnh mặt tiền và vị trí qua Zalo 0989 521 881 để tư vấn, báo giá theo hiện trạng.">
+    <title>Làm bảng hiệu gần đây tại Hà Nội | Khảo sát nhanh</title>
+    <meta name="description" content="Cần làm bảng hiệu hoặc biển quảng cáo gần đây tại Hà Nội? Bông Sen Trắng ở Ô Chợ Dừa, nhận khảo sát và báo giá qua Zalo 0989 521 881.">
     <meta name="robots" content="index,follow">
     <meta name="theme-color" content="#1d8dcc">
     <link rel="canonical" href="${pageUrl}">
@@ -448,13 +449,13 @@ function renderNearbyPage() {
     <meta property="og:type" content="website">
     <meta property="og:locale" content="vi_VN">
     <meta property="og:site_name" content="Bông Sen Trắng">
-    <meta property="og:title" content="Làm bảng hiệu, biển quảng cáo gần đây tại Hà Nội">
-    <meta property="og:description" content="Gửi ảnh mặt tiền qua Zalo để nhận tư vấn làm bảng hiệu, biển quảng cáo gần tôi, gần đây, quanh Đống Đa và các quận Hà Nội.">
+    <meta property="og:title" content="Làm bảng hiệu gần đây tại Hà Nội">
+    <meta property="og:description" content="Gửi ảnh mặt tiền qua Zalo để nhận tư vấn làm bảng hiệu, biển quảng cáo gần tôi và gần đây quanh Đống Đa cùng các quận Hà Nội.">
     <meta property="og:url" content="${pageUrl}">
     <meta property="og:image" content="${baseUrl}/assets/images/hero-bien-quang-cao-ha-noi.jpg">
     <meta property="og:image:alt" content="Làm bảng hiệu và biển quảng cáo gần đây tại Hà Nội">
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Làm bảng hiệu, biển quảng cáo gần đây tại Hà Nội">
+    <meta name="twitter:title" content="Làm bảng hiệu gần đây tại Hà Nội">
     <meta name="twitter:description" content="Gửi ảnh mặt tiền qua Zalo để báo giá bảng hiệu, biển quảng cáo gần tôi, gần đây tại Hà Nội.">
     <meta name="twitter:image" content="${baseUrl}/assets/images/hero-bien-quang-cao-ha-noi.jpg">
     <script type="application/ld+json">
@@ -488,7 +489,7 @@ ${JSON.stringify(jsonLd, null, 2)}
               <span>Gần đây</span>
             </nav>
             <p class="section-kicker">Tìm đơn vị làm bảng hiệu, biển quảng cáo gần tôi</p>
-            <h1>Làm bảng hiệu, biển quảng cáo gần đây tại Hà Nội</h1>
+            <h1>Làm bảng hiệu gần đây tại Hà Nội</h1>
             <p>Nếu anh/chị đang tìm “làm bảng hiệu gần đây”, “làm biển quảng cáo gần tôi” hoặc “làm biển quảng cáo quanh đây”, hãy gửi ảnh mặt tiền, địa chỉ lắp đặt và kích thước dự kiến qua Zalo. Bông Sen Trắng ở 92E Ô Chợ Dừa, Đống Đa, nhận tư vấn thi công biển alu chữ nổi, hộp đèn LED, Hiflex, chữ nổi, sửa biển cũ và thay LED tại nhiều quận Hà Nội.</p>
             <div class="hero-actions">
               <a class="btn btn-primary" href="tel:${business.phoneHref}">Gọi ${business.phone}</a>

@@ -35,7 +35,7 @@ const updates = [
   ["Biển quán nhậu Hoàng Mai Hà Nội", "lam-bien-quan-nhau-hoang-mai-ha-noi", "Biển sáng, chữ lớn, dễ nhìn cho quán ăn tối, lẩu nướng, bia hơi tại Hoàng Mai."],
   ["Biển quảng cáo theo hạng mục tại Hà Nội", "bien-quang-cao-theo-hang-muc-ha-noi", "Hub chọn hạng mục: biển vẫy LED, hộp đèn, LED ma trận, backdrop, decal kính, menu quán ăn."],
   ["Báo giá biển quảng cáo Hà Nội 2026", "bao-gia-bien-quang-cao-ha-noi", "Trang giá chính để khách xem khung giá, gửi ảnh mặt tiền, kích thước và nhận tư vấn chi phí."],
-  ["Làm biển quảng cáo gần đây Hà Nội", "lam-bien-quang-cao-gan-day-ha-noi", "Trang local intent cho khách tìm đơn vị làm biển gần khu vực lắp đặt."],
+  ["Làm bảng hiệu gần đây tại Hà Nội", "lam-bien-quang-cao-gan-day-ha-noi", "Trang local intent cho khách tìm đơn vị làm bảng hiệu hoặc biển quảng cáo gần khu vực lắp đặt."],
   ["Tất cả dịch vụ biển quảng cáo Hà Nội", "tat-ca-dich-vu-bien-quang-cao-ha-noi", "Danh mục đầy đủ dịch vụ, khu vực, ngành hàng và bài tư vấn trên website."]
 ];
 

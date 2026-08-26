@@ -41,7 +41,7 @@ const serviceLinks = [
   ["Làm biển mặt tiền cửa hàng", "../lam-bien-mat-tien-cua-hang-ha-noi/", "Chọn bố cục, vật liệu và ánh sáng theo vị trí lắp đặt thực tế."],
   ["Làm biển quảng cáo cần gấp", "../lam-bien-quang-cao-can-gap-ha-noi/", "Kiểm tra khả năng đáp ứng theo ngày khai trương và độ khó công trình."],
   ["Sửa chữa biển quảng cáo", "../sua-chua-bien-quang-cao-ha-noi/", "Thay LED, thay nguồn, thay mặt bạt, sửa hộp đèn, gia cố khung."],
-  ["Làm biển quảng cáo gần đây", "../lam-bien-quang-cao-gan-day-ha-noi/", "Tìm khu vực phục vụ gần địa chỉ lắp đặt tại Hà Nội."],
+  ["Làm bảng hiệu gần đây", "../lam-bien-quang-cao-gan-day-ha-noi/", "Tìm khu vực phục vụ gần địa chỉ lắp đặt tại Hà Nội và gửi ảnh mặt tiền để tư vấn."],
   ["Biển theo ngành hàng", "../bien-quang-cao-theo-nganh-ha-noi/", "Shop quần áo, cafe, quán ăn, trà sữa, nail spa, salon tóc, nhà thuốc, gara."],
   ["Theo tuyến đường, phường", "../lam-bien-quang-cao-theo-tuyen-duong-phuong-ha-noi/", "Các tuyến và phường như Ô Chợ Dừa, Xã Đàn, Thái Hà, Chùa Bộc, Tây Sơn."],
   ["Mẫu biển thực tế", "../hinh-anh-bien-quang-cao-thuc-te-ha-noi/", "Xem ảnh công trình theo ngành trước khi chọn vật liệu và báo giá."],
