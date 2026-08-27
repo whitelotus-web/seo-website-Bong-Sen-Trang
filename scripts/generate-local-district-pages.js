@@ -25,7 +25,19 @@ const districts = [
     slug: "lam-bien-quang-cao-cau-giay",
     streets: ["Cầu Giấy", "Xuân Thủy", "Trần Thái Tông", "Duy Tân", "Trung Kính", "Nguyễn Phong Sắc", "Hoàng Quốc Việt", "Quan Hoa", "Tô Hiệu", "Yên Hòa"],
     image: "du-an-xe-dien-viet-thanh-bien-mat-tien-led.jpg",
-    angle: "shop, showroom, spa, văn phòng, trung tâm đào tạo và cửa hàng công nghệ"
+    angle: "shop, showroom, spa, văn phòng, trung tâm đào tạo và cửa hàng công nghệ",
+    seoTitle: "Làm biển quảng cáo tại Cầu Giấy | Báo giá nhanh",
+    seoDescription: "Làm biển quảng cáo tại Cầu Giấy, Hà Nội: alu, hộp đèn LED, biển vẫy cho văn phòng, shop, cafe. Khảo sát Duy Tân, Trần Thái Tông, Xuân Thủy. Gọi 0989 521 881.",
+    focusHeading: "Hạng mục thường cần làm biển tại Cầu Giấy",
+    focusIntro: "Mặt bằng Cầu Giấy có nhiều văn phòng, showroom, shop và quán ăn nằm trên các tuyến đông người qua lại. Chọn đúng hạng mục ngay từ đầu giúp biển dễ đọc ban ngày, đủ sáng buổi tối và phù hợp với diện tích mặt tiền.",
+    focusServices: [
+      ["Biển văn phòng, showroom tại Duy Tân", "../lam-bien-quang-cao-duy-tan/", "Ưu tiên logo rõ, chữ nổi gọn và mặt biển chỉn chu cho tòa nhà, văn phòng và showroom."],
+      ["Biển mặt phố Trần Thái Tông", "../lam-bien-quang-cao-tran-thai-tong/", "Tư vấn biển nhìn rõ từ xa, phù hợp tuyến phố nhiều cửa hàng, nhà hàng và dịch vụ."],
+      ["Biển cafe, quán ăn tại Cầu Giấy", "../bien-quan-cafe-cau-giay-ha-noi/", "Kết hợp biển mặt tiền, biển vẫy và hộp đèn để khách nhận ra quán cả ngày lẫn buổi tối."],
+      ["Biển shop, cửa hàng tại Xuân Thủy", "../bien-shop-quan-ao-cau-giay-ha-noi/", "Tập trung tên shop, màu nhận diện và biển vẫy để tăng khả năng nhìn thấy từ vỉa hè."],
+      ["Biển LED vẫy tại Cầu Giấy", "../lam-bien-vay-led-cau-giay-ha-noi/", "Giải pháp gọn cho cửa hàng trong ngõ, mặt tiền hẹp hoặc cần thêm điểm nhận diện phía ngoài."],
+      ["Sửa biển quảng cáo tại Cầu Giấy", "../sua-bien-quang-cao-cau-giay/", "Nhận kiểm tra LED, nguồn, mặt bạt, hộp đèn và gia cố biển cũ khi chưa cần làm mới toàn bộ."]
+    ]
   },
   {
     name: "Hoàn Kiếm",
@@ -127,6 +139,25 @@ function serviceHtml() {
     .join("\n");
 }
 
+function focusServiceHtml(district) {
+  if (!district.focusServices) return "";
+  const cards = district.focusServices
+    .map(([label, href, text]) => `
+                <a href="${href}">
+                  <strong>${escapeHtml(label)}</strong>
+                  <span>${escapeHtml(text)}</span>
+                </a>`)
+    .join("\n");
+  return `
+            <section class="content-block">
+              <h2>${escapeHtml(district.focusHeading)}</h2>
+              <p>${escapeHtml(district.focusIntro)}</p>
+              <div class="price-link-grid compact">
+${cards}
+              </div>
+            </section>`;
+}
+
 function faqFor(district) {
   return [
     [`Có nhận làm biển quảng cáo gần đây tại ${district.name} không?`, `Có. Bông Sen Trắng nhận tư vấn, sản xuất, lắp đặt và sửa chữa biển quảng cáo tại ${district.name}, Hà Nội. Khách gửi ảnh mặt tiền qua Zalo để kiểm tra phương án trước.`],
@@ -174,7 +205,7 @@ function renderDistrictPage(district) {
       },
       {
         "@type": "Service",
-        name: `Làm biển quảng cáo ${district.name}`,
+        name: `Làm biển quảng cáo tại ${district.name}`,
         description: `Sản xuất, thi công, lắp đặt và sửa chữa biển quảng cáo tại ${district.name}, Hà Nội.`,
         provider: { "@id": `${baseUrl}/#localbusiness` },
         areaServed: `${district.name}, Hà Nội`,
@@ -199,8 +230,8 @@ function renderDistrictPage(district) {
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Làm biển quảng cáo tại ${escapeHtml(district.name)} | Khảo sát, báo giá</title>
-    <meta name="description" content="Làm biển quảng cáo tại ${escapeHtml(district.name)}, Hà Nội: alu chữ nổi, hộp đèn LED, Hiflex, biển vẫy và sửa biển cũ. Gửi ảnh qua Zalo 0989 521 881 để báo giá.">
+    <title>${escapeHtml(district.seoTitle || `Làm biển quảng cáo tại ${district.name} | Khảo sát, báo giá`)}</title>
+    <meta name="description" content="${escapeHtml(district.seoDescription || `Làm biển quảng cáo tại ${district.name}, Hà Nội: alu chữ nổi, hộp đèn LED, Hiflex, biển vẫy và sửa biển cũ. Gửi ảnh qua Zalo 0989 521 881 để báo giá.`)}">
     <meta name="robots" content="index,follow">
     <meta name="theme-color" content="#1d8dcc">
     <link rel="canonical" href="${pageUrl}">
@@ -214,7 +245,7 @@ function renderDistrictPage(district) {
     <meta property="og:type" content="website">
     <meta property="og:locale" content="vi_VN">
     <meta property="og:site_name" content="Bông Sen Trắng">
-    <meta property="og:title" content="Làm biển quảng cáo tại ${escapeHtml(district.name)}">
+    <meta property="og:title" content="${escapeHtml(district.seoTitle || `Làm biển quảng cáo tại ${district.name}`)}">
     <meta property="og:description" content="Thi công bảng hiệu, biển alu, hộp đèn LED, Hiflex và sửa biển cũ tại ${escapeHtml(district.name)}, Hà Nội.">
     <meta property="og:url" content="${pageUrl}">
     <meta property="og:image" content="${baseUrl}/assets/images/${district.image}">
@@ -294,6 +325,7 @@ ${JSON.stringify(jsonLd, null, 2)}
 ${serviceHtml()}
               </div>
             </section>
+${focusServiceHtml(district)}
 
             <section class="content-block">
               <h2>Quy trình báo giá nhanh</h2>
