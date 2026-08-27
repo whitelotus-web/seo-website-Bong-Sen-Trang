@@ -1106,11 +1106,6 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://lambienquangcaohanoi.io.vn/lam-bien-quang-cao-dong-da/</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
     <loc>https://lambienquangcaohanoi.io.vn/lam-bien-quang-cao-gia-lam/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
@@ -1142,6 +1137,11 @@
   </url>
   <url>
     <loc>https://lambienquangcaohanoi.io.vn/lam-bien-quang-cao-nam-tu-liem/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://lambienquangcaohanoi.io.vn/lam-bien-quang-cao-dong-da/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>

@@ -16,18 +16,18 @@ const business = {
 };
 
 const streets = [
-  "Ô Chợ Dừa",
-  "Xã Đàn",
-  "Nguyễn Lương Bằng",
-  "Tây Sơn",
-  "Chùa Bộc",
-  "Thái Hà",
-  "Láng Hạ",
-  "Tôn Đức Thắng",
-  "Khâm Thiên",
-  "Nguyễn Chí Thanh",
-  "Phạm Ngọc Thạch",
-  "Giảng Võ"
+  ["Ô Chợ Dừa", "lam-bien-quang-cao-o-cho-dua"],
+  ["Xã Đàn", "lam-bien-quang-cao-xa-dan"],
+  ["Nguyễn Lương Bằng", "lam-bien-quang-cao-nguyen-luong-bang"],
+  ["Tây Sơn", "lam-bien-quang-cao-tay-son"],
+  ["Chùa Bộc", "lam-bien-quang-cao-chua-boc"],
+  ["Thái Hà", "lam-bien-quang-cao-thai-ha"],
+  ["Láng Hạ", "lam-bien-quang-cao-lang-ha"],
+  ["Tôn Đức Thắng", "lam-bien-quang-cao-ton-duc-thang"],
+  ["Khâm Thiên", "lam-bien-quang-cao-kham-thien"],
+  ["Nguyễn Chí Thanh", "lam-bien-quang-cao-nguyen-chi-thanh"],
+  ["Phạm Ngọc Thạch", "lam-bien-quang-cao-pham-ngoc-thach"],
+  ["Giảng Võ", "lam-bien-quang-cao-giang-vo"]
 ];
 
 const serviceCards = [
@@ -63,7 +63,9 @@ function escapeHtml(value) {
     .replace(/"/g, "&quot;");
 }
 
-const streetHtml = streets.map((street) => `<li>${escapeHtml(street)}</li>`).join("\n                ");
+const streetHtml = streets
+  .map(([street, streetSlug]) => `<li><a href="../${streetSlug}/">${escapeHtml(street)}</a></li>`)
+  .join("\n                ");
 
 const serviceHtml = serviceCards
   .map(
@@ -134,8 +136,8 @@ const jsonLd = {
     },
     {
       "@type": "Service",
-      name: "Làm biển quảng cáo Đống Đa",
-      description: "Sản xuất, thi công, lắp đặt, sửa chữa biển quảng cáo tại Đống Đa, Hà Nội.",
+      name: "Làm biển quảng cáo tại quận Đống Đa",
+      description: "Sản xuất, thi công, lắp đặt và sửa chữa biển quảng cáo tại quận Đống Đa, Hà Nội, gần Ô Chợ Dừa.",
       provider: { "@id": `${baseUrl}/#localbusiness` },
       areaServed: "Đống Đa, Hà Nội",
       serviceType: "Làm biển quảng cáo"
@@ -159,7 +161,7 @@ const html = `<!doctype html>
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Làm biển quảng cáo tại Đống Đa | Khảo sát, báo giá</title>
+    <title>Làm biển quảng cáo tại quận Đống Đa | Gần Ô Chợ Dừa</title>
     <meta name="description" content="Làm biển quảng cáo tại quận Đống Đa, Hà Nội: alu chữ nổi, hộp đèn LED, Hiflex, biển vẫy và sửa biển cũ quanh Ô Chợ Dừa, Xã Đàn, Thái Hà. Zalo 0989 521 881.">
     <meta name="robots" content="index,follow">
     <meta name="theme-color" content="#1d8dcc">
@@ -174,13 +176,13 @@ const html = `<!doctype html>
     <meta property="og:type" content="website">
     <meta property="og:locale" content="vi_VN">
     <meta property="og:site_name" content="Bông Sen Trắng">
-    <meta property="og:title" content="Làm biển quảng cáo tại Đống Đa">
+    <meta property="og:title" content="Làm biển quảng cáo tại quận Đống Đa">
     <meta property="og:description" content="Bông Sen Trắng tại 92E Ô Chợ Dừa nhận làm biển quảng cáo, sửa biển cũ, thay LED, thay mặt biển tại Đống Đa.">
     <meta property="og:url" content="${pageUrl}">
     <meta property="og:image" content="${baseUrl}/assets/images/du-an-gao-viet-bien-mat-tien-do.jpg">
     <meta property="og:image:alt" content="Làm biển quảng cáo Đống Đa Hà Nội">
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Làm biển quảng cáo tại Đống Đa">
+    <meta name="twitter:title" content="Làm biển quảng cáo tại quận Đống Đa">
     <meta name="twitter:description" content="Thi công bảng hiệu, biển alu, hộp đèn LED, Hiflex, sửa biển cũ tại Đống Đa.">
     <meta name="twitter:image" content="${baseUrl}/assets/images/du-an-gao-viet-bien-mat-tien-do.jpg">
     <script type="application/ld+json">
@@ -222,8 +224,8 @@ ${JSON.stringify(jsonLd, null, 2)}
               <span>/</span>
               <span>Đống Đa</span>
             </nav>
-            <p class="section-kicker">Local SEO Đống Đa</p>
-            <h1>Làm biển quảng cáo tại Đống Đa</h1>
+            <p class="section-kicker">Đơn vị tại 92E Ô Chợ Dừa</p>
+            <h1>Làm biển quảng cáo tại quận Đống Đa</h1>
             <p>Bông Sen Trắng có địa chỉ tại <strong>${business.address}</strong>, nhận làm biển quảng cáo, bảng hiệu cửa hàng, biển alu chữ nổi, hộp đèn LED, biển bạt Hiflex, chữ nổi mica/inox và sửa biển cũ quanh khu vực Đống Đa. Gửi ảnh mặt tiền qua Zalo để được tư vấn nhanh theo đúng vị trí lắp đặt.</p>
             <div class="hero-actions">
               <a class="btn btn-primary" href="tel:${business.phoneHref}">Gọi ${business.phone}</a>
@@ -255,6 +257,24 @@ ${JSON.stringify(jsonLd, null, 2)}
               <div class="price-link-grid compact">
 ${serviceHtml}
               </div>
+            </section>
+
+            <section class="content-block">
+              <h2>Giá làm biển quảng cáo tại Đống Đa tham khảo</h2>
+              <div class="price-table-wrap">
+                <table class="price-table">
+                  <thead>
+                    <tr><th>Hạng mục</th><th>Giá tham khảo</th><th>Phù hợp</th></tr>
+                  </thead>
+                  <tbody>
+                    <tr><td>Biển bạt Hiflex khung sắt</td><td><strong>180.000 - 350.000đ/m2</strong></td><td>Biển tạm, khai trương hoặc mặt tiền cần tối ưu chi phí.</td></tr>
+                    <tr><td>Biển Hiflex có lót tôn</td><td><strong>300.000 - 450.000đ/m2</strong></td><td>Mặt tiền ngoài trời cần nền cứng cáp hơn.</td></tr>
+                    <tr><td>Nền alu chữ nổi</td><td><strong>Từ 480.000đ/m2</strong></td><td>Cửa hàng, showroom, văn phòng cần mặt tiền bền và gọn.</td></tr>
+                    <tr><td>Biển vẫy LED 40x40cm</td><td><strong>Từ 950.000đ/bộ</strong></td><td>Shop nhỏ, cafe, salon, nhà thuốc cần nhìn từ hai hướng.</td></tr>
+                  </tbody>
+                </table>
+              </div>
+              <p>Giá thực tế còn phụ thuộc kích thước, chữ nổi, hệ LED, khung cũ và độ cao lắp đặt. <a class="text-link" href="../bao-gia-bien-quang-cao-ha-noi/">Xem bảng giá biển quảng cáo Hà Nội 2026</a> hoặc gửi ảnh mặt tiền để nhận khoảng giá sát hơn.</p>
             </section>
 
             <section class="content-block">
