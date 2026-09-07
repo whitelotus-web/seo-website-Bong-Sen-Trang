@@ -515,6 +515,9 @@ ${JSON.stringify(jsonLd, null, 2)}
         <a class="brand" href="../" aria-label="Bông Sen Trắng">
           <img src="../assets/images/logo-whitelotus.png" alt="Bông Sen Trắng Communication" width="250" height="60">
         </a>
+        <button class="menu-toggle" type="button" aria-label="Mở menu" aria-expanded="false" data-menu-toggle>
+          <span></span><span></span><span></span>
+        </button>
         <nav class="site-nav" data-site-nav aria-label="Điều hướng chính">
           <a href="../lam-bien-quang-cao-ha-noi/">Hà Nội</a>
           <a href="../#dich-vu">Dịch vụ</a>
