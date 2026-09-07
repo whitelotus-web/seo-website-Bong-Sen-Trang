@@ -106,13 +106,24 @@ const pages = [
   {
     slug: "bien-hieu-cua-hang-ha-noi",
     title: "Biển hiệu cửa hàng tại Hà Nội",
-    metaTitle: "Làm biển hiệu cửa hàng tại Hà Nội | Khảo sát, báo giá",
-    description: "Làm biển hiệu cửa hàng tại Hà Nội theo mặt tiền thực tế: alu chữ nổi, hộp đèn LED, Hiflex, biển vẫy. Gửi ảnh qua Zalo 0989 521 881 để được tư vấn nhanh.",
+    metaTitle: "Làm biển hiệu cửa hàng tại Hà Nội | Báo giá nhanh",
+    description: "Làm biển hiệu cửa hàng tại Hà Nội: alu chữ nổi, hộp đèn LED, Hiflex, biển vẫy theo mặt tiền thực tế. Gửi ảnh Zalo 0989 521 881 để báo giá nhanh.",
     kicker: "Biển mặt tiền cho shop, quán và showroom",
     image: "du-an-gao-viet-bien-mat-tien-do.jpg",
-    intro: "Cửa hàng cần một biển hiệu rõ tên, rõ ngành hàng và dễ nhận ra từ phía đường. Bông Sen Trắng nhận làm biển hiệu cửa hàng tại Hà Nội theo mặt tiền thực tế, từ tư vấn vật liệu đến sản xuất và lắp đặt.",
-    items: ["Biển hiệu alu chữ nổi cho cửa hàng", "Biển hộp đèn LED cho mặt tiền cần sáng buổi tối", "Biển bạt Hiflex khi cần tiết kiệm chi phí", "Biển vẫy phù hợp tuyến phố đông người qua lại"],
-    related: [["Làm bảng hiệu cửa hàng", "lam-bang-hieu-cua-hang-ha-noi"], ["Báo giá biển quảng cáo", "bao-gia-bien-quang-cao-ha-noi"], ["Biển vẫy cửa hàng", "bien-vay-cua-hang-ha-noi"]]
+    imageAlt: "Biển hiệu mặt tiền cửa hàng chữ nổi tại Hà Nội",
+    intro: "Cửa hàng cần một biển hiệu rõ tên, rõ ngành hàng và dễ nhận ra từ phía đường. Bông Sen Trắng nhận làm biển hiệu cửa hàng tại Hà Nội theo mặt tiền thực tế, từ tư vấn vật liệu, dự toán chi phí đến sản xuất và lắp đặt.",
+    items: ["Biển hiệu alu chữ nổi cho shop, showroom và cửa hàng mặt phố", "Biển hộp đèn LED cho mặt tiền cần sáng rõ buổi tối", "Biển bạt Hiflex khi cần làm nhanh và tối ưu chi phí", "Biển vẫy giúp khách nhận ra cửa hàng từ hai chiều đường", "Sửa biển cũ, thay LED hoặc thay mặt biển khi khung còn sử dụng được"],
+    focusHeading: "Chọn biển hiệu theo khu vực và nhu cầu cửa hàng",
+    focusIntro: "Mặt bằng trong ngõ, mặt phố đông xe và cửa hàng mở buổi tối cần phương án khác nhau. Chọn đúng khu vực hoặc hạng mục dưới đây để xem tư vấn sát hơn trước khi gửi ảnh báo giá.",
+    focusLinks: [
+      ["Biển hiệu cửa hàng Đống Đa", "bang-hieu-cua-hang-dong-da-ha-noi", "Tư vấn cho mặt bằng quanh Ô Chợ Dừa, Xã Đàn, Thái Hà và Chùa Bộc."],
+      ["Biển hiệu cửa hàng Cầu Giấy", "bang-hieu-cua-hang-cau-giay-ha-noi", "Phù hợp shop, showroom, cafe và cửa hàng dịch vụ quanh Duy Tân, Trung Kính, Xuân Thủy."],
+      ["Biển hiệu cửa hàng Thanh Xuân", "bang-hieu-cua-hang-thanh-xuan-ha-noi", "Biển mặt tiền và biển vẫy quanh Nguyễn Trãi, Nguyễn Tuân, Khuất Duy Tiến."],
+      ["Báo giá bảng hiệu cửa hàng", "bao-gia-lam-bang-hieu-cua-hang-ha-noi", "Xem các yếu tố ảnh hưởng chi phí và thông tin cần gửi để dự toán sát hơn."],
+      ["Biển vẫy cửa hàng", "bien-vay-cua-hang-ha-noi", "Bổ sung điểm nhận diện cho mặt tiền hẹp, cửa hàng trong ngõ hoặc phố đông biển."],
+      ["Mẫu biển đã thi công", "hinh-anh-bien-quang-cao-thuc-te-ha-noi", "Xem ảnh biển thực tế để chọn chất liệu, kiểu chữ và mức ánh sáng phù hợp."]
+    ],
+    related: [["Làm bảng hiệu cửa hàng", "lam-bang-hieu-cua-hang-ha-noi"], ["Báo giá biển quảng cáo", "bao-gia-bien-quang-cao-ha-noi"], ["Biển vẫy cửa hàng", "bien-vay-cua-hang-ha-noi"], ["Làm biển quảng cáo gần đây", "lam-bien-quang-cao-gan-day-ha-noi"]]
   },
   {
     slug: "lam-bien-mat-tien-cua-hang-ha-noi",
@@ -643,6 +654,25 @@ function renderRelated(links) {
     .join("\n              ");
 }
 
+function renderFocusLinks(page) {
+  if (!page.focusLinks) return "";
+  const links = page.focusLinks
+    .map(([label, slug, text]) => `
+                <a href="../${slug}/">
+                  <strong>${escapeHtml(label)}</strong>
+                  <span>${escapeHtml(text)}</span>
+                </a>`)
+    .join("\n");
+  return `
+            <section class="content-block">
+              <h2>${escapeHtml(page.focusHeading)}</h2>
+              <p>${escapeHtml(page.focusIntro)}</p>
+              <div class="price-link-grid compact">
+${links}
+              </div>
+            </section>`;
+}
+
 function renderCommercialCluster(currentSlug) {
   const links = [
     ["Báo giá biển quảng cáo Đống Đa", "bao-gia-bien-quang-cao-dong-da", "Ước lượng chi phí cho mặt tiền quanh Ô Chợ Dừa, Xã Đàn, Thái Hà, Chùa Bộc."],
@@ -820,7 +850,7 @@ ${JSON.stringify(jsonLd, null, 2)}
               <ul class="area-list">
                 ${renderList(page.items)}
               </ul>
-            </section>
+            </section>${renderFocusLinks(page)}
             <section class="content-block price-note">
               <h2>Gửi ảnh để báo giá sát hơn</h2>
               <p>Ảnh mặt tiền, kích thước ngang x cao, địa chỉ lắp đặt và thời gian cần hoàn thiện là các thông tin quan trọng nhất. Nếu có mẫu biển thích hoặc file logo, gửi kèm để tư vấn vật liệu và bố cục nhanh hơn.</p>

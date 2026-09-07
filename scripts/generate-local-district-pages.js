@@ -415,6 +415,20 @@ function renderNearbyPage() {
                   <span>${escapeHtml(district.streets.slice(0, 5).join(", "))}</span>
                 </a>`)
     .join("\n");
+  const nearbyStreetCards = [
+    ["Làm biển quảng cáo Ô Chợ Dừa", "lam-bien-quang-cao-o-cho-dua", "Gần địa chỉ Bông Sen Trắng tại 92E Ô Chợ Dừa, thuận tiện gửi vị trí và hẹn khảo sát mặt tiền."],
+    ["Làm biển quảng cáo Đống Đa", "lam-bien-quang-cao-dong-da", "Nhận biển cửa hàng, hộp đèn, alu chữ nổi và sửa biển cũ quanh các tuyến phố Đống Đa."],
+    ["Làm biển quảng cáo Xã Đàn", "lam-bien-quang-cao-xa-dan", "Tư vấn biển dễ đọc cho shop, quán ăn, cafe và cửa hàng dịch vụ trên tuyến Xã Đàn."],
+    ["Làm biển quảng cáo Thái Hà", "lam-bien-quang-cao-thai-ha", "Phù hợp showroom, văn phòng, shop và mặt bằng kinh doanh cần biển nhìn rõ cả ngày lẫn tối."],
+    ["Làm biển quảng cáo Chùa Bộc", "lam-bien-quang-cao-chua-boc", "Biển shop thời trang, cửa hàng bán lẻ, spa và quán dịch vụ tại khu phố đông người qua lại."],
+    ["Làm biển quảng cáo Nguyễn Trãi", "lam-bien-quang-cao-nguyen-trai", "Nhận tư vấn biển mặt tiền, biển vẫy và hộp đèn cho cửa hàng dọc trục Nguyễn Trãi."]
+  ]
+    .map(([label, targetSlug, text]) => `
+                <a href="../${targetSlug}/">
+                  <strong>${escapeHtml(label)}</strong>
+                  <span>${escapeHtml(text)}</span>
+                </a>`)
+    .join("\n");
   const faqHtml = faqs
     .map(([question, answer]) => `
                 <details>
@@ -560,8 +574,11 @@ ${JSON.stringify(jsonLd, null, 2)}
             </div>
           </section>
           <section class="content-block">
-            <h2>Khách thường tìm theo cụm nào?</h2>
-            <p>Nhóm tìm kiếm local thường không chỉ gõ tên quận. Họ có thể tìm “làm biển quảng cáo gần tôi”, “làm biển quảng cáo gần đây”, “làm bảng hiệu quanh đây”, “sửa biển quảng cáo gần tôi”, hoặc thêm tên đường/phường như Ô Chợ Dừa, Xã Đàn, Thái Hà, Chùa Bộc, Cầu Giấy, Nguyễn Trãi. Trang này gom các khu vực chính để khách chọn nhanh đúng vị trí lắp biển.</p>
+            <h2>Tuyến phố gần địa chỉ Bông Sen Trắng</h2>
+            <p>Bông Sen Trắng ở 92E Ô Chợ Dừa, Đống Đa. Khách tại các tuyến dưới đây có thể gửi vị trí, ảnh mặt tiền và thời gian cần hoàn thiện qua Zalo để được kiểm tra phương án trước khi hẹn khảo sát.</p>
+            <div class="price-link-grid compact">
+${nearbyStreetCards}
+            </div>
           </section>
           <section class="content-block">
             <h2>Chọn khu vực gần bạn</h2>
