@@ -20,7 +20,7 @@ const pages = [
     kicker: "Chọn đúng tình huống cần làm biển",
     image: "hero-bien-quang-cao-ha-noi.jpg",
     intro:
-      "Khách ở Hà Nội thường không chỉ tìm theo loại biển, mà tìm theo tình huống: cần báo giá nhanh, cần khảo sát mặt tiền, cần thay biển cũ, cần làm gấp trước khai trương hoặc cần phương án cho mặt tiền nhỏ.",
+      "Bông Sen Trắng nhận tư vấn làm biển quảng cáo tại Hà Nội từ ảnh mặt tiền, kích thước dự kiến và thời điểm cần lắp đặt. Anh/chị có thể chọn gửi ảnh nhận báo giá, hẹn khảo sát, thay biển cũ hoặc kiểm tra tiến độ trước khai trương theo các nhu cầu dưới đây.",
     items: [
       "Gửi ảnh mặt tiền để được tư vấn phương án và khoảng giá sát hơn",
       "Khảo sát khi biển cao, mặt bằng khó, cần đấu điện hoặc tận dụng khung cũ",
@@ -61,7 +61,10 @@ const pages = [
     ],
     faq: [
       ["Chỉ có ảnh mặt tiền, chưa có kích thước, có báo giá được không?", "Có thể báo khoảng giá và hướng làm trước. Nếu cần chốt chính xác, nên đo ngang x cao hoặc khảo sát thực tế."],
-      ["Gửi ảnh qua Zalo có mất phí không?", "Không. Anh/chị có thể gửi ảnh để được tư vấn phương án ban đầu và khoảng giá tham khảo."]
+      ["Gửi ảnh qua Zalo có mất phí không?", "Không. Anh/chị có thể gửi ảnh để được tư vấn phương án ban đầu và khoảng giá tham khảo."],
+      ["Báo giá qua ảnh đã phải là giá chốt chưa?", "Báo giá qua ảnh là dự toán theo thông tin đã gửi. Trước khi chốt, cần xác nhận kích thước, vật liệu, nội dung thiết kế và điều kiện lắp đặt. Khung cũ, vị trí trên cao hoặc đường điện chưa rõ có thể cần khảo sát để xác định chi phí."],
+      ["Cần đối chiếu những khoản nào trong báo giá biển quảng cáo?", "Nên đối chiếu riêng mặt biển, chữ nổi, khung, đèn và nguồn điện nếu có; đồng thời hỏi rõ vận chuyển, lắp đặt, tháo biển cũ và thuế đã nằm trong báo giá chưa. So sánh báo giá trên cùng kích thước, vật liệu và phạm vi công việc để tránh bỏ sót chi phí."],
+      ["Gửi thông tin cho Bông Sen Trắng bằng cách nào?", "Gửi ảnh và địa chỉ lắp đặt qua Zalo 0989 521 881, kèm chiều ngang x chiều cao dự kiến, nội dung biển và ngày cần hoàn thành. Bông Sen Trắng có địa chỉ tại số 92E Ô Chợ Dừa, Đống Đa, Hà Nội; anh/chị nên liên hệ trước để thống nhất việc tư vấn hoặc khảo sát."]
     ]
   },
   {
