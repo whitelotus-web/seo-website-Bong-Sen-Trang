@@ -106,6 +106,10 @@ const allImages = categories.flatMap((category) =>
   category.images.map(([file, alt]) => ({ file, alt, category: category.title }))
 );
 
+function imageId(file) {
+  return `mau-${path.parse(file).name}`;
+}
+
 const jsonLd = {
   "@context": "https://schema.org",
   "@graph": [
@@ -132,6 +136,9 @@ const jsonLd = {
     },
     {
       "@type": "CollectionPage",
+      "@id": `${pageUrl}#gallery`,
+      inLanguage: "vi-VN",
+      primaryImageOfPage: { "@id": `${pageUrl}#${imageId("du-an-gao-viet-bien-mat-tien-do.jpg")}` },
       name: "Mẫu biển quảng cáo đẹp tại Hà Nội theo từng ngành",
       description: "Hình ảnh biển quảng cáo thực tế theo ngành: nhà hàng, cafe, shop, showroom, spa, clinic, chữ nổi, backdrop, hộp đèn LED.",
       url: pageUrl,
@@ -151,6 +158,10 @@ const jsonLd = {
         name: image.alt,
         item: {
           "@type": "ImageObject",
+          "@id": `${pageUrl}#${imageId(image.file)}`,
+          url: `${pageUrl}#${imageId(image.file)}`,
+          name: image.alt,
+          isPartOf: { "@id": `${pageUrl}#gallery` },
           contentUrl: `${baseUrl}/assets/images/${image.file}`,
           caption: image.alt
         }
@@ -192,8 +203,10 @@ function categoryHtml(category) {
                 ${category.images
                   .map(
                     ([file, alt]) => `
-                <figure>
-                  <img src="../assets/images/${file}" alt="${escapeHtml(alt)}" loading="lazy" decoding="async" width="900" height="675">
+                <figure id="${imageId(file)}">
+                  <a href="../assets/images/${file}" target="_blank" rel="noopener" aria-label="${escapeHtml(`Xem ảnh gốc: ${alt}`)}">
+                    <img src="../assets/images/${file}" alt="${escapeHtml(alt)}" loading="lazy" decoding="async" width="900" height="675">
+                  </a>
                   <figcaption>${escapeHtml(alt)}</figcaption>
                 </figure>`
                   )
@@ -220,7 +233,7 @@ const html = `<!doctype html>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Mẫu biển quảng cáo thực tế tại Hà Nội | Bông Sen Trắng</title>
     <meta name="description" content="Xem ảnh thi công biển quảng cáo thực tế: nhà hàng, cafe, shop, showroom, spa, clinic, chữ nổi, backdrop, hộp đèn LED. Gửi ảnh mặt tiền qua Zalo 0989 521 881.">
-    <meta name="robots" content="index,follow">
+    <meta name="robots" content="index,follow,max-image-preview:large">
     <meta name="theme-color" content="#1d8dcc">
     <link rel="canonical" href="${pageUrl}">
     <link rel="icon" href="/favicon.ico" sizes="any">
