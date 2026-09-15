@@ -40,10 +40,7 @@ function pageUrl(slug) {
 }
 
 function imageUrl(src, slug) {
-  if (src.startsWith("http://") || src.startsWith("https://")) return src;
-  const normalized = src.replace(/^\.\.\//, "").replace(/^\.\//, "").replace(/^\//, "");
-  if (normalized.startsWith("assets/")) return `${baseUrl}/${normalized}`;
-  return slug ? `${baseUrl}/${slug}/${normalized}` : `${baseUrl}/${normalized}`;
+  return new URL(src, pageUrl(slug)).href;
 }
 
 const urlEntries = [];
@@ -64,8 +61,7 @@ for (const slug of pages) {
     if (seen.has(loc)) continue;
     seen.add(loc);
 
-    const title = tag.match(/\salt="([^"]*)"/i)?.[1]?.trim() || "";
-    images.push({ loc, title });
+    images.push({ loc });
   }
 
   if (!images.length) continue;
@@ -79,8 +75,7 @@ ${urlEntries
     <loc>${escapeXml(entry.loc)}</loc>
 ${entry.images
   .map((image) => `    <image:image>
-      <image:loc>${escapeXml(image.loc)}</image:loc>${image.title ? `
-      <image:title>${escapeXml(image.title)}</image:title>` : ""}
+      <image:loc>${escapeXml(image.loc)}</image:loc>
     </image:image>`)
   .join("\n")}
   </url>`)
