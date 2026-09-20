@@ -133,6 +133,14 @@ const pages = [
         "Báo giá nên thể hiện kích thước, vật liệu nền, chất liệu và độ dày chữ, loại LED hoặc nguồn sáng, hệ khung, số lượng hạng mục và phần lắp đặt. Độ cao, đường vận chuyển, nguồn điện và thời gian thi công cũng có thể ảnh hưởng chi phí.",
         "Nếu mới có ảnh mà chưa có kích thước, anh/chị vẫn có thể gửi Zalo để nhận hướng tư vấn ban đầu. Khoảng giá chỉ chính xác hơn sau khi đã chốt kích thước, cấu tạo và điều kiện mặt bằng."
       ]],
+      ["So sánh hai báo giá thi công trên cùng một cấu hình", [
+        "Trước khi so tổng tiền, hãy đối chiếu chiều ngang và chiều cao biển, diện tích mặt dựng, số lượng chữ hoặc logo, chất liệu mặt biển và cấu tạo khung. Hai biển cùng diện tích nhưng khác số chữ, cách chiếu sáng hoặc phần khung cần thay sẽ có phạm vi công việc khác nhau.",
+        "Yêu cầu làm rõ các khoản tháo biển cũ, vận chuyển, lắp đặt trên cao, cấp điện, vệ sinh và thuế đã nằm trong giá chưa. Với phần chưa thể xác định qua ảnh, nên ghi điều kiện cần khảo sát trước khi chốt; không nên coi khoảng giá ban đầu là tổng chi phí cuối cùng."
+      ]],
+      ["Những thông tin cần chốt trước khi đưa biển vào sản xuất", [
+        "Kiểm tra bản thiết kế cuối cùng: tên cửa hàng, dấu tiếng Việt, số điện thoại, logo, kích thước, màu sắc và vị trí lắp đặt. Người đặt biển nên xác nhận cùng một phiên bản thiết kế với bên thi công để tránh sản xuất theo bản cũ.",
+        "Nếu thay nội dung, vật liệu hoặc kích thước sau khi đã chốt, cần xác nhận lại phần việc đã thực hiện, chi phí thay đổi và lịch bàn giao. Với cửa hàng đang hoạt động, thống nhất thêm thời gian tiếp cận mặt bằng và cách bố trí lối ra vào trong lúc lắp đặt."
+      ]],
       ["Kiểm tra trước khi bàn giao", [
         "Sau lắp đặt cần kiểm tra độ chắc của khung và điểm bắt, độ thẳng của mặt biển, khoảng cách chữ, màu sắc nhận diện, độ sáng và tình trạng nguồn điện. Các phần có thể quan sát nên được đối chiếu với phương án đã chốt trước khi bàn giao.",
         "Phạm vi bảo hành phụ thuộc hạng mục và vật liệu sử dụng. Nội dung này được trao đổi cùng báo giá để khách biết phần nào được bảo hành và cách liên hệ khi cần kiểm tra."
@@ -161,7 +169,9 @@ const pages = [
       ["Xem khung giá tham khảo", "../bao-gia-bien-quang-cao-ha-noi/", "So sánh các hạng mục phổ biến và những yếu tố làm thay đổi giá."],
       ["Gửi ảnh mặt tiền để báo giá", "../gui-anh-bao-gia-bien-quang-cao-ha-noi/", "Xem bốn thông tin nên gửi qua Zalo để được tư vấn nhanh hơn."],
       ["Làm biển mặt tiền cửa hàng", "../lam-bien-mat-tien-cua-hang-ha-noi/", "Chọn bố cục, vật liệu và ánh sáng theo mặt tiền thực tế."],
-      ["Cần hoàn thiện gấp", "../lam-bien-quang-cao-can-gap-ha-noi/", "Kiểm tra khả năng đáp ứng theo thiết kế, vật liệu và ngày khai trương."]
+      ["Cần hoàn thiện gấp", "../lam-bien-quang-cao-can-gap-ha-noi/", "Kiểm tra khả năng đáp ứng theo thiết kế, vật liệu và ngày khai trương."],
+      ["Kiểm tra bảo hành và bàn giao", "../chinh-sach-bao-hanh-bien-quang-cao-ha-noi/", "Đối chiếu phạm vi bảo hành và thông tin cần giữ lại sau lắp đặt."],
+      ["Xem hạng mục đã thực hiện", "../nang-luc-thi-cong-bien-quang-cao-ha-noi/", "Tham khảo hình ảnh sản xuất, lắp đặt và các hạng mục của Bông Sen Trắng."]
     ],
     gallery: realProjectGallery.slice(0, 6),
     galleryHeading: "Hình ảnh hạng mục Bông Sen Trắng đã thực hiện",
