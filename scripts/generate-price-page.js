@@ -52,6 +52,9 @@ const gallery = [
 const faq = [
   ["Báo giá trên có phải giá chốt không?", "Không. Đây là khung giá tham khảo để khách hàng dự trù ngân sách. Giá chốt cần ảnh mặt tiền, kích thước, vật liệu, độ cao lắp đặt và yêu cầu hoàn thiện."],
   ["Cần gửi gì để báo giá nhanh?", "Cần gửi ảnh mặt tiền, kích thước ngang cao dự kiến, địa chỉ lắp đặt, mẫu thiết kế nếu có, loại biển mong muốn và thời gian cần hoàn thiện."],
+  ["Tính diện tích biển quảng cáo theo m² như thế nào?", "Với mặt biển hình chữ nhật, diện tích bằng chiều ngang nhân chiều cao, cùng đo bằng mét. Ví dụ mặt biển ngang 3 m, cao 1,2 m có diện tích 3,6 m². Con số này là diện tích mặt biển, chưa tự động bao gồm chữ nổi, đèn, khung hoặc lắp đặt; cần đối chiếu phạm vi của từng đơn giá."],
+  ["Giá nền alu theo m² có phải giá trọn bộ biển chữ nổi không?", "Không nên hiểu đơn giá nền theo m² là giá trọn bộ. Chi phí chữ nổi còn phụ thuộc số lượng, chiều cao chữ, chất liệu, độ dày và cách chiếu sáng. Khi nhận báo giá cần xác nhận riêng phần nền, khung, chữ, LED, nguồn điện và lắp đặt đã bao gồm những gì."],
+  ["Vì sao bảng giá có đơn vị m², bộ và bóng LED?", "Mỗi đơn vị ứng với một hạng mục: m² dùng để dự tính phần mặt biển; bộ dùng cho cấu hình biển có kích thước xác định; bóng dùng cho số lượng LED. Đơn giá bóng LED chưa đủ để tính tổng hệ chiếu sáng nếu chưa xác định nguồn, dây dẫn và công lắp. Chỉ so sánh giá khi kích thước, cấu hình và phạm vi công việc tương đương."],
   ["Có nhận làm biển quảng cáo gấp tại Hà Nội không?", "Có thể nhận hạng mục gấp nếu vật liệu sẵn và thiết kế được chốt nhanh. Với biển phức tạp cần khảo sát trước để tránh sai kích thước hoặc lỗi kết cấu."],
   ["Có bảo hành sau thi công không?", "Có. Phạm vi bảo hành phụ thuộc vật liệu, hệ LED, nguồn điện, vị trí ngoài trời và điều kiện sử dụng thực tế."]
 ];
