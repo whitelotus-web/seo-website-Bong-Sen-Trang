@@ -2,62 +2,38 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://lambienquangcaohanoi.io.vn/</loc>
-    <changefreq>weekly</changefreq>
-    <priority>1.0</priority>
   </url>
   <url>
     <loc>https://lambienquangcaohanoi.io.vn/lam-bien-quang-cao-ha-noi/</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
   </url>
   <url>
     <loc>https://lambienquangcaohanoi.io.vn/thi-cong-bien-quang-cao-ha-noi/</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
   </url>
   <url>
     <loc>https://lambienquangcaohanoi.io.vn/bao-gia-bien-quang-cao-ha-noi/</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
   </url>
   <url>
     <loc>https://lambienquangcaohanoi.io.vn/lam-bang-hieu-cua-hang-ha-noi/</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://lambienquangcaohanoi.io.vn/lam-bien-quang-cao-gan-day-ha-noi/</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://lambienquangcaohanoi.io.vn/lam-bien-quang-cao-dong-da/</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://lambienquangcaohanoi.io.vn/lam-bien-quang-cao-cau-giay/</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://lambienquangcaohanoi.io.vn/bien-vay-nha-thuoc-ha-noi/</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://lambienquangcaohanoi.io.vn/lam-bien-menu-quan-an-ha-noi/</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://lambienquangcaohanoi.io.vn/bien-nha-thuoc-ha-noi/</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://lambienquangcaohanoi.io.vn/bao-gia-bien-alu-chu-noi-ha-noi/</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
   </url>
 </urlset>

@@ -279,11 +279,10 @@ for (const page of pages) {
 }
 
 const sitemapUrls = [
-  { loc: `${baseUrl}/`, priority: "1.0" },
-  { loc: pageUrl, priority: "0.9" },
+  { loc: `${baseUrl}/` },
+  { loc: pageUrl },
   ...pages.map((page) => ({
-    loc: `${baseUrl}/${page.slug}/`,
-    priority: page.slug.startsWith("du-an-") || page.slug.startsWith("hinh-anh-") ? "0.7" : "0.8"
+    loc: `${baseUrl}/${page.slug}/`
   }))
 ];
 
@@ -293,8 +292,6 @@ const sitemapXml = `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 ${uniqueSitemapUrls.map((url) => `  <url>
     <loc>${url.loc}</loc>
-    <changefreq>weekly</changefreq>
-    <priority>${url.priority}</priority>
   </url>`).join("\n")}
 </urlset>
 `;

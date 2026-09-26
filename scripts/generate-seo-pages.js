@@ -1947,8 +1947,8 @@ for (const page of pages) {
 }
 
 const sitemapUrls = [
-  { loc: `${baseUrl}/`, priority: "1.0" },
-  ...pages.map((page) => ({ loc: `${baseUrl}/${page.slug}/`, priority: page.type === "case" ? "0.7" : "0.8" }))
+  { loc: `${baseUrl}/` },
+  ...pages.map((page) => ({ loc: `${baseUrl}/${page.slug}/` }))
 ];
 
 const sitemap = `<?xml version="1.0" encoding="UTF-8"?>
@@ -1956,8 +1956,6 @@ const sitemap = `<?xml version="1.0" encoding="UTF-8"?>
 ${sitemapUrls
   .map((url) => `  <url>
     <loc>${url.loc}</loc>
-    <changefreq>weekly</changefreq>
-    <priority>${url.priority}</priority>
   </url>`)
   .join("\n")}
 </urlset>
