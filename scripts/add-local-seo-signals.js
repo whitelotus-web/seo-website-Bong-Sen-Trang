@@ -72,6 +72,53 @@ function addSignals(html) {
     .replace(/https:\/\/www\.google\.com\/maps\/search\/\?api=1(?:&amp;|&)query=[^"]+/gi, mapUrl)
     .replaceAll("21.0219", "21.0203158")
     .replaceAll("105.8257", "105.8272295");
+  html = html.replace(
+    /(<script type="application\/ld\+json">)([\s\S]*?)(<\/script>)/gi,
+    (script, opening, content, closing) => {
+      let schema;
+      try {
+        schema = JSON.parse(content);
+      } catch {
+        return script;
+      }
+
+      let changed = false;
+      function syncBusiness(node) {
+        if (Array.isArray(node)) {
+          node.forEach(syncBusiness);
+          return;
+        }
+        if (!node || typeof node !== "object") return;
+
+        const types = Array.isArray(node["@type"]) ? node["@type"] : [node["@type"]];
+        if (types.includes("LocalBusiness")) {
+          const geo = {
+            ...(node.geo && typeof node.geo === "object" ? node.geo : {}),
+            "@type": "GeoCoordinates",
+            latitude: 21.0203158,
+            longitude: 105.8272295
+          };
+          if (JSON.stringify(node.geo) !== JSON.stringify(geo)) {
+            node.geo = geo;
+            changed = true;
+          }
+          if (node.hasMap !== mapUrl) {
+            node.hasMap = mapUrl;
+            changed = true;
+          }
+        }
+
+        Object.values(node).forEach(syncBusiness);
+      }
+
+      syncBusiness(schema);
+      if (!changed) return script;
+
+      const leading = content.match(/^\s*/)[0];
+      const trailing = content.match(/\s*$/)[0];
+      return opening + leading + JSON.stringify(schema, null, 2) + trailing + closing;
+    }
+  );
   const canonicalMatch = html.match(/<link\s+rel="canonical"\s+href="([^"]+)">/i);
   if (!canonicalMatch) return html;
 
