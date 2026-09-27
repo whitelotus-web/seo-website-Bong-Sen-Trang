@@ -3,7 +3,7 @@ const path = require("path");
 
 const root = process.cwd();
 const baseUrl = "https://lambienquangcaohanoi.io.vn";
-const mapUrl = "https://www.google.com/maps/search/?api=1&query=92E%20%C3%94%20Ch%E1%BB%A3%20D%E1%BB%ABa%2C%20%C4%90%E1%BB%91ng%20%C4%90a%2C%20H%C3%A0%20N%E1%BB%99i";
+const mapUrl = "https://www.google.com/maps?cid=12475291796553539106";
 
 const business = {
   name: "Công ty TNHH Truyền thông Bông Sen Trắng",
@@ -330,8 +330,8 @@ function renderPage(page) {
         priceRange: "$$",
         geo: {
           "@type": "GeoCoordinates",
-          latitude: 21.0219,
-          longitude: 105.8257
+          latitude: 21.0203158,
+          longitude: 105.8272295
         },
         hasMap: mapUrl,
         sameAs: [business.facebookUrl],
