@@ -1631,3 +1631,8 @@ a, button, summary { -webkit-tap-highlight-color: transparent; }
 .section .content-block h2 { font-size: 1.5rem; line-height: 1.35; }
 .section .sidebar-card h2 { font-size: 1.25rem; line-height: 1.4; }
 .section .capability-grid h3 { font-size: 1.05rem; }
+
+.location-section .section-heading-row p:not(.section-kicker) { max-width: 620px; color: var(--muted); margin-top: 16px; }
+.location-section .btn { flex-shrink: 0; }
+.location-map { display: block; width: 100%; height: 440px; border: 0; border-radius: 4px; background: #f3f6f4; }
+@media (max-width: 600px) { .location-map { height: 340px; } }
