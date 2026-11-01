@@ -87,7 +87,7 @@ Không có analytics nghĩa là **hiện không thể biết traffic nào ra kh�
 | # | Nguyên nhân | Bằng chứng | Tác động |
 | --- | --- | --- | --- |
 | 1 | **Thiếu uy tín tên miền** — gần như không có backlink, tên miền mới | Từ khóa đầu ngành ở vị trí 96; 196/298 trang 0 hiển thị | Cao nhất, chặn mọi nỗ lực on-page |
-| 2 | **Maps/local pack chưa được khai thác** — sai danh mục, 0 đánh giá | Truy vấn "gần đây" 75 hiển thị, 1 click; GBP danh mục "Công ty truyền thông" | Cao — đây là nơi khách Hà Nội bấm gọi |
+| 2 | **Maps/local pack chưa được khai thác** — sai danh mục, mới 3 đánh giá | Truy vấn "gần đây" 75 hiển thị, 1 click; GBP danh mục "Công ty truyền thông" | Cao — đây là nơi khách Hà Nội bấm gọi |
 | 3 | **Thiếu bằng chứng tin cậy** (ảnh công trình thật, giá, review, bảo hành) trên trang tiền | CTR 1,93% trong khi vị trí 9,63 | Cao — ảnh hưởng trực tiếp click & lead |
 | 4 | **Nội dung dàn mỏng theo mẫu** — 298 trang cùng cấu trúc, khác nhau chủ yếu tên quận/đường | 196 trang không có hiển thị | Trung bình — gây loãng tín hiệu |
 | 5 | **Thiếu cụm nội dung phi-thương-mại** (quy định, chi phí, so sánh chất liệu) | Không có trang nào về thủ tục/quy định treo biển | Trung bình — mất traffic đầu phễu, mất link magnet, mất trích dẫn AI |
