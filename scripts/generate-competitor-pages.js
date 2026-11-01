@@ -21,6 +21,7 @@ const commonLinks = [
   ["Biển alu chữ nổi Hà Nội", "../bien-alu-chu-noi-ha-noi/"],
   ["Biển hộp đèn LED Hà Nội", "../bien-hop-den-led-ha-noi/"],
   ["Biển bạt Hiflex Hà Nội", "../bien-bat-hiflex-ha-noi/"],
+  ["Báo giá biển bạt theo kích thước", "../bao-gia-bien-bat-hiflex-ha-noi/"],
   ["Làm biển mặt tiền cửa hàng", "../lam-bien-mat-tien-cua-hang-ha-noi/"],
   ["Làm biển quảng cáo cần gấp", "../lam-bien-quang-cao-can-gap-ha-noi/"],
   ["Tất cả dịch vụ", "../tat-ca-dich-vu-bien-quang-cao-ha-noi/"]
@@ -30,13 +31,13 @@ const pages = [
   {
     slug: "bao-gia-bien-alu-chu-noi-ha-noi",
     title: "Báo giá biển alu chữ nổi Hà Nội 2026 | Bông Sen Trắng",
-    description: "Bảng giá tham khảo biển alu chữ nổi tại Hà Nội 2026: nền alu, chữ mica, inox, LED hắt sáng, khung xương và thi công lắp đặt.",
+    description: "Giá biển alu chữ nổi Hà Nội 2026: nền alu tham khảo 450.000–750.000đ/m²; chữ, LED, khung và lắp đặt tính theo cấu hình. Gửi ảnh để nhận tư vấn.",
     h1: "Báo giá biển alu chữ nổi tại Hà Nội 2026",
     kicker: "Bảng giá alu chữ nổi",
     image: "du-an-oppo-samsung.jpg",
     imageAlt: "Biển alu chữ nổi mặt tiền cửa hàng tại Hà Nội",
     rows: [
-      ["Tấm nền alu ngoài trời", "450.000 - 750.000đ/m2", "Phụ thuộc độ dày alu, thương hiệu vật liệu và hệ khung."],
+      ["Tấm nền alu ngoài trời (chưa gồm chữ nổi)", "450.000 - 750.000đ/m2", "Phụ thuộc độ dày alu, thương hiệu vật liệu và hệ khung."],
       ["Chữ nổi mica không đèn", "Liên hệ theo chiều cao chữ", "Tính theo kích thước chữ, độ dày mica và độ phức tạp logo."],
       ["Chữ nổi mica có LED", "Liên hệ theo mẫu", "Thêm chi phí LED, nguồn, dây điện và chống nước."],
       ["Chữ inox vàng/trắng gương", "Liên hệ theo mẫu", "Giá phụ thuộc inox 201/304, chiều cao chữ và kiểu hoàn thiện."],
@@ -99,9 +100,9 @@ const pages = [
   },
   {
     slug: "bao-gia-bien-bat-hiflex-ha-noi",
-    title: "Báo giá biển bạt Hiflex Hà Nội 2026 | Bông Sen Trắng",
-    description: "Bảng giá tham khảo biển bạt Hiflex tại Hà Nội 2026: in bạt, khung sắt, bạt lót tôn, biển khai trương và biển mặt tiền tiết kiệm.",
-    h1: "Báo giá biển bạt Hiflex tại Hà Nội 2026",
+    title: "Báo giá biển bạt khung sắt Hà Nội 2026 | Bông Sen Trắng",
+    description: "Báo giá biển bạt khung sắt Hà Nội từ 180.000đ/m², kèm bảng giá theo kích thước 2×1, 3×2, 4×3 và giá in Hiflex riêng. Gửi ảnh mặt tiền qua Zalo 0989 521 881.",
+    h1: "Báo giá biển bạt khung sắt Hà Nội 2026",
     kicker: "Bảng giá Hiflex",
     image: "bien-tam-lon-ha-noi.jpg",
     imageAlt: "Biển bạt Hiflex mặt tiền tại Hà Nội",
@@ -112,7 +113,41 @@ const pages = [
       ["Biển bạt khai trương", "Liên hệ theo kích thước", "Phù hợp cần làm nhanh, chi phí thấp, dùng ngắn hạn hoặc thay nội dung."],
       ["Thay mặt bạt trên khung cũ", "Liên hệ theo hiện trạng", "Cần kiểm tra khung còn chắc, han gỉ và kích thước thực tế."]
     ],
+    sizeTable: {
+      heading: "Giá biển bạt theo kích thước phổ biến",
+      note: "Tính bằng đơn giá tham khảo ở bảng trên, nhân với diện tích. Chưa gồm phí khảo sát, tháo dỡ biển cũ hoặc phát sinh tại mặt bằng; đơn hàng nhỏ có thể áp mức tối thiểu. Báo giá chính xác sau khi xem ảnh và kích thước thực tế.",
+      head: ["Kích thước", "Diện tích", "In bạt riêng", "Biển hoàn thiện (khung + bạt + lắp cơ bản)"],
+      rows: [
+        ["2 × 1 m", "2 m²", "80.000 – 180.000đ", "360.000 – 700.000đ"],
+        ["3 × 1,5 m", "4,5 m²", "180.000 – 400.000đ", "810.000 – 1.570.000đ"],
+        ["4 × 2 m", "8 m²", "320.000 – 720.000đ", "1.440.000 – 2.800.000đ"],
+        ["5 × 2,5 m", "12,5 m²", "500.000 – 1.100.000đ", "2.250.000 – 4.370.000đ"],
+        ["6 × 3 m", "18 m²", "720.000 – 1.600.000đ", "3.240.000 – 6.300.000đ"]
+      ]
+    },
+    faq: [
+      ["Bảng giá trên đã gồm khung và lắp đặt chưa?",
+        "Chưa. Bảng giá tách riêng in bạt Hiflex, biển bạt khung sắt, bạt lót tôn và thay mặt bạt trên khung cũ. Dòng “biển bạt khung sắt” mới là mức gồm khung, căng bạt và lắp đặt cơ bản."],
+      ["Biển bạt 3 × 2 m khoảng bao nhiêu tiền?",
+        "Theo đơn giá tham khảo đang công khai, biển 3 × 2 m (6 m²) rơi vào khoảng 240.000 – 540.000đ nếu chỉ in bạt, và khoảng 1.080.000 – 2.100.000đ nếu làm trọn bộ khung, bạt và lắp đặt cơ bản. Mức thực tế thay đổi theo mặt bằng và hiện trạng khung."],
+      ["Có tận dụng khung cũ để chỉ thay mặt bạt không?",
+        "Có, nếu khung còn chắc, chân cột không lung lay và kích thước đúng nhu cầu. Cần ảnh khung hiện tại để kiểm tra mức han gỉ trước khi chốt phương án."],
+      ["Cần gửi những gì để nhận báo giá sát?",
+        "Ảnh mặt tiền, kích thước ngang × cao, địa chỉ lắp đặt, thời gian mong muốn và cho biết có tận dụng khung cũ hay không."],
+      ["Biển bạt có phù hợp dùng lâu dài không?",
+        "Biển bạt phù hợp khi cần nhanh, tiết kiệm hoặc thay nội dung định kỳ. Nếu đây là nhận diện chính dùng nhiều năm ở mặt phố đông người, nên cân nhắc alu chữ nổi hoặc hộp đèn LED."]
+    ],
+    galleryHeading: "Ảnh biển bạt và mặt tiền đã thi công",
+    gallery: [
+      ["bien-tam-lon-ha-noi.jpg", "Biển bạt Hiflex mặt tiền tại Hà Nội"],
+      ["du-an-pink-fruit-flower-bien-mat-tien.jpg", "Mặt tiền cửa hàng Thanh Xuân Hà Nội"],
+      ["thi-cong-mat-tien-cua-hang-ha-noi.jpg", "Thi công hoàn thiện mặt tiền cửa hàng tại Hà Nội"]
+    ],
     sections: [
+      ["Giá biển bạt khung sắt được tính thế nào?", [
+        "Giá in bạt Hiflex riêng và giá biển hoàn thiện có khung là hai hạng mục khác nhau. Bảng trên tách riêng in bạt, biển khung sắt, biển lót tôn và thay bạt trên khung cũ để anh/chị dễ so sánh.",
+        "Các mức giá đang công khai là giá tham khảo. Báo giá cụ thể phụ thuộc kích thước, hiện trạng khung và điều kiện lắp đặt tại mặt bằng. Khi gửi yêu cầu, hãy kèm ảnh mặt tiền, kích thước ngang × cao, địa chỉ thi công và cho biết có tận dụng khung cũ không."
+      ]],
       ["Ưu điểm của biển bạt Hiflex", [
         "Biển bạt Hiflex có chi phí thấp, làm nhanh, dễ thay nội dung, phù hợp cửa hàng mới mở, khai trương hoặc mặt tiền lớn.",
         "Nhược điểm là độ sang và độ bền không bằng alu chữ nổi hoặc hộp đèn cao cấp."
@@ -120,6 +155,14 @@ const pages = [
       ["Khi nào nên nâng cấp khỏi Hiflex?", [
         "Nếu biển là nhận diện chính dài hạn, vị trí mặt phố đông hoặc thương hiệu cần nhìn chuyên nghiệp, nên cân nhắc alu chữ nổi hoặc hộp đèn.",
         "Có thể dùng Hiflex giai đoạn đầu để tiết kiệm, sau đó nâng cấp khi đã ổn định kinh doanh."
+      ]],
+      ["Chọn kích thước biển bạt theo bề rộng mặt tiền", [
+        "Đo phần mặt tiền trống thực tế rồi chừa mỗi bên 10–20 cm để biển không chạm góc tường, mái hiên hoặc ống thoát nước. Với mặt tiền 4 m, bề ngang biển thường chọn 3,5–4 m; mặt tiền 6–8 m có thể tách thành biển chính và biển phụ.",
+        "Tỉ lệ dễ đọc từ lòng đường thường rơi vào khoảng 3:1 đến 4:1 giữa chiều ngang và chiều cao. Chiều cao dưới 0,8 m khó đọc khi khách đi xe, nên ưu tiên tên thương hiệu và ngành hàng chính thay vì đưa nhiều dòng chữ nhỏ."
+      ]],
+      ["Khi nào chỉ cần thay bạt, khi nào nên làm mới cả khung", [
+        "Nếu khung còn chắc, chân cột không lung lay và kích thước vẫn đúng nhu cầu, thay mặt bạt thường tiết kiệm hơn làm mới toàn bộ. Cần ảnh khung hiện tại để kiểm tra mức han gỉ trước khi chốt.",
+        "Khung han gỉ nặng, chân cột yếu hoặc mặt bằng vừa đổi kích thước là lúc nên tính lại cả hệ khung, để tránh phải tháo làm lần hai."
       ]]
     ]
   },
@@ -178,6 +221,46 @@ function priceTable(rows) {
               </div>`;
 }
 
+function sizeTable({ heading, note, head, rows }) {
+  return `
+              <section class="content-block">
+                <h2>${escapeHtml(heading)}</h2>
+                <div class="price-table-wrap">
+                  <table class="price-table">
+                    <thead>
+                      <tr>
+                        ${head.map((cell) => `<th>${escapeHtml(cell)}</th>`).join("")}
+                      </tr>
+                    </thead>
+                    <tbody>
+                      ${rows.map((row) => `
+                      <tr>
+                        <td>${escapeHtml(row[0])}</td>
+                        <td>${escapeHtml(row[1])}</td>
+                        <td><strong>${escapeHtml(row[2])}</strong></td>
+                        <td><strong>${escapeHtml(row[3])}</strong></td>
+                      </tr>`).join("")}
+                    </tbody>
+                  </table>
+                </div>
+                <p><small>${escapeHtml(note)}</small></p>
+              </section>`;
+}
+
+function faqBlock(faq) {
+  return `
+              <section class="content-block">
+                <h2>Câu hỏi thường gặp về báo giá biển bạt</h2>
+                <div class="faq-list">
+                  ${faq.map(([q, a]) => `<details>
+                    <summary>${escapeHtml(q)}</summary>
+                    <p>${escapeHtml(a)}</p>
+                  </details>`).join("\n                  ")}
+                </div>
+                <p>Còn thắc mắc khác, gọi <a href="tel:${phoneHref}">${phone}</a> hoặc nhắn Zalo để được xem ảnh và tư vấn trực tiếp.</p>
+              </section>`;
+}
+
 function renderPage(page) {
   const jsonLd = {
     "@context": "https://schema.org",
@@ -208,6 +291,17 @@ function renderPage(page) {
       }
     ]
   };
+
+  if (page.faq) {
+    jsonLd["@graph"].push({
+      "@type": "FAQPage",
+      mainEntity: page.faq.map(([question, answer]) => ({
+        "@type": "Question",
+        name: question,
+        acceptedAnswer: { "@type": "Answer", text: answer }
+      }))
+    });
+  }
 
   return `<!doctype html>
 <html lang="vi">
@@ -295,14 +389,16 @@ ${JSON.stringify(jsonLd, null, 2)}
               <h2>Bảng tham khảo</h2>
 ${priceTable(page.rows)}
             </section>
+${page.sizeTable ? sizeTable(page.sizeTable) : ""}
             ${page.sections.map(([heading, paragraphs]) => `
             <section class="content-block">
               <h2>${escapeHtml(heading)}</h2>
               ${paragraphs.map((text) => `<p>${escapeHtml(text)}</p>`).join("\n              ")}
             </section>`).join("\n")}
-${page.gallery ? `
-            <section class="content-block">
-              <h2>Ảnh biển alu và chữ nổi đã thực hiện</h2>
+ ${page.faq ? faqBlock(page.faq) : ""}
+ ${page.gallery ? `
+             <section class="content-block">
+               <h2>${escapeHtml(page.galleryHeading || "Ảnh biển alu và chữ nổi đã thực hiện")}</h2>
               <div class="case-gallery">
                 ${page.gallery.map(([image, alt]) => `<figure>
                   <img src="../assets/images/${image}" alt="${escapeHtml(alt)}" loading="lazy" decoding="async" width="1200" height="900">
