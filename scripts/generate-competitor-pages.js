@@ -104,6 +104,11 @@ const pages = [
   },
   {
     slug: "bao-gia-bien-hop-den-led-ha-noi",
+    summary: [
+      "Hộp đèn Hiflex khung sắt 450.000–750.000đ/m²; hộp đèn mica 1.500.000–2.800.000đ/m²; hộp đèn 3M 2.000.000–3.800.000đ/m².",
+      "Hộp đèn sáng đều toàn mặt, phù hợp tuyến phố tối hoặc cửa hàng cần nhìn rõ buổi tối; chi phí phụ thuộc loại mặt, hệ LED và cách chống nước.",
+      "Thi công trong nội thành Hà Nội. Gửi ảnh mặt tiền và kích thước qua Zalo 0989 521 881 để nhận báo giá."
+    ],
     title: "Báo giá biển hộp đèn LED Hà Nội 2026 | Bông Sen Trắng",
     description: "Bảng giá tham khảo biển hộp đèn LED tại Hà Nội 2026: hộp đèn Hiflex, mica, 3M, biển vẫy LED và hộp đèn mặt tiền.",
     h1: "Báo giá biển hộp đèn LED tại Hà Nội 2026",
@@ -203,6 +208,11 @@ const pages = [
   },
   {
     slug: "lam-bien-quang-cao-gia-re-ha-noi",
+    summary: [
+      "Phương án tiết kiệm nhất là in bạt Hiflex 40.000–90.000đ/m² và biển bạt khung sắt 180.000–350.000đ/m².",
+      "Nếu khung cũ còn chắc, chỉ thay mặt bạt sẽ rẻ hơn làm mới toàn bộ; cần ảnh khung để kiểm tra mức han gỉ trước khi chốt.",
+      "Gửi ngân sách dự kiến kèm ảnh mặt tiền qua Zalo 0989 521 881 để được đề xuất phương án vừa đủ dùng."
+    ],
     title: "Biển quảng cáo giá rẻ Hà Nội | Từ 180.000đ/m2",
     description: "Làm biển quảng cáo giá rẻ tại Hà Nội: biển bạt khung sắt tham khảo từ 180.000đ/m2, thay mặt bạt, tận dụng khung cũ và alu cơ bản. Zalo 0989 521 881.",
     h1: "Làm biển quảng cáo giá rẻ tại Hà Nội",
