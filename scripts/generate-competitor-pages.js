@@ -16,6 +16,7 @@ function escapeHtml(value) {
 }
 
 const commonLinks = [
+  ["Quy định biển hiệu Hà Nội", "../quy-dinh-bien-hieu-ha-noi/"],
   ["Báo giá biển quảng cáo Hà Nội", "../bao-gia-bien-quang-cao-ha-noi/"],
   ["Thi công biển quảng cáo Hà Nội", "../thi-cong-bien-quang-cao-ha-noi/"],
   ["Biển alu chữ nổi Hà Nội", "../bien-alu-chu-noi-ha-noi/"],

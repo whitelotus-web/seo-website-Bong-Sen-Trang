@@ -276,6 +276,7 @@ ${JSON.stringify(jsonLd, null, 2)}
             <section class="content-block price-note">
               <h2>Gửi ảnh trước để biết nên sửa hay thay mới</h2>
               <p>Không phải biển cũ nào cũng nên làm lại từ đầu. Nếu khung còn chắc, bố cục còn dùng được và chỉ hỏng mặt bạt, LED hoặc nguồn, sửa đúng hạng mục có thể tiết kiệm hơn. Bông Sen Trắng tư vấn dựa trên hiện trạng; ảnh chỉ giúp đánh giá sơ bộ, không thay thế kiểm tra kết cấu và hệ điện tại vị trí lắp đặt.</p>
+              <p>Trường hợp biển cũ sai kích thước hoặc thiếu nội dung bắt buộc, nên đối chiếu <a href="../quy-dinh-bien-hieu-ha-noi/">quy định biển hiệu tại Hà Nội</a> trước khi sửa để tránh phải làm lại lần hai.</p>
             </section>
 
             <section class="content-block">
