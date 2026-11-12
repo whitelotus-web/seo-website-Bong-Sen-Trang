@@ -1,5 +1,6 @@
 ﻿const fs = require("fs");
 const path = require("path");
+const { renderReferenceGallery } = require("./reference-gallery");
 
 const baseUrl = "https://lambienquangcaohanoi.io.vn";
 const mapUrl = "https://www.google.com/maps?cid=12475291796553539106";
@@ -111,12 +112,101 @@ const realProjectGallery = [
 
 const pages = [
   {
+    slug: "quy-dinh-bien-hieu-ha-noi",
+    title: "Quy định biển hiệu Hà Nội 2026: kích thước, nội dung, mức phạt",
+    description: "Tổng hợp quy định biển hiệu tại Hà Nội: chiều cao tối đa 2m với biển ngang, 4m với biển dọc, nội dung bắt buộc, trường hợp phải xin phép và mức phạt.",
+    kicker: "Căn cứ pháp lý và checklist",
+    h1: "Quy định biển hiệu tại Hà Nội",
+    lead: "Biển hiệu của cửa hàng, công ty tại Hà Nội phải tuân theo Điều 34 Luật Quảng cáo 2012 (sửa đổi, bổ sung 2018): biển ngang cao tối đa 2 m và không dài quá chiều ngang mặt tiền; biển dọc rộng tối đa 1 m, cao tối đa 4 m và không vượt chiều cao tầng nhà nơi đặt biển. Biển phải có tên cơ sở kinh doanh đúng giấy chứng nhận đăng ký kinh doanh, địa chỉ và số điện thoại, không che lối thoát hiểm và không lấn ra vỉa hè, lòng đường.",
+    image: "mau-bien-shop-thoi-trang-mat-tien-ha-noi.jpg",
+    imageAlt: "Biển hiệu cửa hàng lắp tại mặt tiền phố Hà Nội",
+    serviceName: "Tư vấn thiết kế biển hiệu đúng quy định",
+    sections: [
+      ["Kích thước biển hiệu tối đa theo luật", [
+        "Điều 34 Luật Quảng cáo 2012, được sửa đổi bổ sung năm 2018, quy định hai dạng biển hiệu với giới hạn khác nhau. Biển hiệu ngang có chiều cao tối đa 2 m, chiều dài không vượt quá chiều ngang mặt tiền nhà. Biển hiệu dọc có chiều ngang tối đa 1 m, chiều cao tối đa 4 m nhưng không được vượt quá chiều cao của tầng nhà nơi đặt biển hiệu.",
+        "Điểm dễ sai nhất trên thực tế là chiều dài biển ngang. Mặt tiền 4 m thì biển không nên dài quá 4 m, kể cả phần khung nhô ra hai bên. Với biển dọc gắn trên tầng 2, giới hạn 4 m thường ít vướng, nhưng giới hạn theo chiều cao tầng nhà mới là điều kiện quyết định.",
+        "Ngoài kích thước, biển hiệu không được che chắn không gian thoát hiểm, cứu hoả và không được lấn ra vỉa hè, lòng đường gây ảnh hưởng giao thông. Đây là hai lỗi bị xử lý thường xuyên khi kiểm tra trật tự đô thị tại các tuyến phố trung tâm."
+      ]],
+      ["Nội dung bắt buộc phải có trên biển hiệu", [
+        "Khoản 1 Điều 34 quy định biển hiệu phải thể hiện tên cơ quan chủ quản trực tiếp nếu có, tên cơ sở sản xuất kinh doanh đúng với giấy chứng nhận đăng ký kinh doanh, cùng địa chỉ và số điện thoại. Tên trên biển hiệu nên khớp từng chữ với giấy phép, kể cả loại hình doanh nghiệp như Công ty TNHH hay Công ty cổ phần.",
+        "Rất nhiều cửa hàng chỉ ghi tên thương hiệu rút gọn mà bỏ phần loại hình doanh nghiệp và địa chỉ. Cách làm này tiện cho thiết kế nhưng không đúng nội dung biển hiệu theo luật. Nếu muốn giữ bố cục gọn, có thể đặt tên đầy đủ ở dòng chính cỡ lớn vừa phải, địa chỉ và điện thoại ở dòng nhỏ bên dưới.",
+        "Với hộ kinh doanh, tên trên biển nên lấy theo giấy chứng nhận đăng ký hộ kinh doanh. Với chi nhánh hoặc địa điểm kinh doanh, cần ghi rõ tên đơn vị và địa chỉ của điểm đó để tránh trùng lặp khi có nhiều điểm bán."
+      ]],
+      ["Chữ viết, tên nước ngoài và logo", [
+        "Điều 18 Luật Quảng cáo yêu cầu chữ viết trên sản phẩm quảng cáo phải thể hiện bằng tiếng Việt, trừ trường hợp nhãn hiệu, khẩu hiệu, thương hiệu hoặc tên riêng bằng tiếng nước ngoài đã được quốc tế hoá và không thể thay thế. Khi muốn thể hiện tên viết tắt, tên giao dịch quốc tế hoặc tên nước ngoài, phần đó phải ghi ở phía dưới và có kích thước nhỏ hơn chữ tiếng Việt.",
+        "Nghị định 103/2009/NĐ-CP cụ thể hoá tỉ lệ này: chữ nước ngoài không quá 3/4 khổ chữ tiếng Việt và phải đặt bên dưới. Vì vậy bố cục hai dòng — tiếng Việt lớn phía trên, tên tiếng Anh nhỏ phía dưới — vừa đúng luật vừa dễ đọc.",
+        "Logo được phép thể hiện nếu đã đăng ký với cơ quan có thẩm quyền, diện tích logo không quá 20% diện tích biển hiệu và không kèm thông tin quảng cáo cho hàng hoá, dịch vụ khác. Đây là lý do các biển có thêm khuyến mãi hoặc danh sách sản phẩm thường bị nhắc nhở."
+      ]],
+      ["Số lượng và vị trí được phép treo", [
+        "Theo Nghị định 103/2009/NĐ-CP, mỗi cơ quan, tổ chức chỉ được đặt một biển hiệu tại cổng; tại trụ sở hoặc nơi kinh doanh chỉ được một biển ngang và không quá hai biển dọc. Biển phải đặt sát cổng hoặc mặt trước của trụ sở, nơi kinh doanh và phải độc lập với tổ chức, cá nhân khác.",
+        "Quy định này ảnh hưởng trực tiếp đến các cửa hàng trong ngõ hoặc nhà chia nhiều tầng cho thuê. Nếu mặt tiền đã dùng hết một biển ngang, có thể bổ sung tối đa hai biển dọc để khách nhìn từ hướng đi ngang, thay vì gắn thêm biển ngang thứ hai.",
+        "Với biển vẫy gắn hông nhà, cần kiểm tra thêm quy định trật tự xây dựng và ý kiến của phường, vì phần nhô ra ngoài chỉ giới xây dựng thường bị xem là lấn chiếm không gian công cộng."
+      ]],
+      ["Trường hợp nào phải xin phép", [
+        "Điểm b khoản 2 Điều 31 Luật Quảng cáo 2012 nêu rõ: biển hiệu không phải xin phép, trừ trường hợp biển hiệu có diện tích một mặt trên 20 m² và kết cấu khung kim loại hoặc vật liệu xây dựng tương tự gắn vào công trình xây dựng có sẵn. Với đa số cửa hàng, biển dưới ngưỡng này chỉ cần tuân thủ kích thước và nội dung.",
+        "Biển quảng cáo ngoài trời không phải biển hiệu — như pano, billboard, màn hình LED quảng cáo — chịu quy định khác về quy hoạch quảng cáo ngoài trời do UBND cấp tỉnh phê duyệt, và thường phải thực hiện thủ tục thông báo hoặc xin phép tuỳ vị trí.",
+        "Khi thuê mặt bằng, nên hỏi chủ nhà xem tuyến phố có yêu cầu thống nhất mẫu biển trong đợt chỉnh trang hay không. Nhiều tuyến phố tại Hà Nội áp dụng mẫu biển chung về màu sắc và kích thước, làm biển xong mới biết phải thay là tình huống phổ biến."
+      ]],
+      ["Mức xử phạt khi làm sai", [
+        "Nghị định 38/2021/NĐ-CP quy định xử phạt trong lĩnh vực văn hoá và quảng cáo. Khoản 1 Điều 48 quy định phạt tiền từ 5 đến 10 triệu đồng khi biển hiệu không thể hiện đầy đủ nội dung theo quy định hoặc sai kích thước. Khoản 2 Điều 48 quy định phạt từ 10 đến 15 triệu đồng khi ghi không đúng hoặc không đầy đủ tên trên biển hiệu, hoặc chiều cao biển hiệu dọc vượt quá chiều cao tầng nhà nơi đặt biển.",
+        "Nghị định 122/2021/NĐ-CP có mức phạt riêng với việc không treo biển tên doanh nghiệp tại trụ sở, chi nhánh, văn phòng đại diện và địa điểm kinh doanh — mức từ 30 đến 50 triệu đồng. Đây là lý do doanh nghiệp mới thành lập nên làm biển tên sớm thay vì chờ ổn định.",
+        "Hành vi treo, đặt, dán, vẽ sản phẩm quảng cáo trên cột điện, trụ điện, cột tín hiệu giao thông và cây xanh nơi công cộng bị cấm theo khoản 16 Điều 8 Luật Quảng cáo. Mức phạt tham khảo từ 1 đến 2 triệu đồng với người treo và 5 đến 10 triệu đồng với người có sản phẩm, hàng hoá được quảng cáo.",
+        "Các mức phạt trên có thể được sửa đổi, bổ sung theo văn bản mới. Trước khi triển khai công trình lớn hoặc biển có kết cấu đặc biệt, nên tra cứu văn bản hiện hành và hỏi trực tiếp bộ phận tiếp nhận của phường hoặc quận."
+      ]]
+    ],
+    choiceHeading: "Giới hạn cần nhớ theo từng loại biển",
+    choiceIntro: "Bảng tóm tắt các giới hạn thường gặp. Căn cứ chi tiết nêu ở phần trên và cần đối chiếu văn bản hiện hành khi triển khai.",
+    choiceRows: [
+      ["Biển hiệu ngang", "Cao tối đa 2 m, dài không quá chiều ngang mặt tiền", "Mỗi điểm kinh doanh chỉ một biển ngang"],
+      ["Biển hiệu dọc", "Ngang tối đa 1 m, cao tối đa 4 m", "Không vượt chiều cao tầng nhà nơi đặt biển; tối đa hai biển"],
+      ["Nội dung trên biển", "Tên đúng giấy đăng ký kinh doanh, địa chỉ, điện thoại", "Chữ nước ngoài ở dưới, không quá 3/4 chữ tiếng Việt"],
+      ["Logo", "Chỉ dùng logo đã đăng ký", "Diện tích không quá 20% diện tích biển"],
+      ["Biển một mặt trên 20 m²", "Khung kim loại gắn vào công trình có sẵn", "Thuộc trường hợp phải xin phép"],
+      ["Treo trên cột điện, cây xanh", "Không được phép", "Bị xử phạt theo quy định về quảng cáo"]
+    ],
+    stepsHeading: "Checklist trước khi đặt biển",
+    steps: [
+      "Đo chiều ngang mặt tiền thực tế và trừ phần khung nhô ra hai bên trước khi chốt chiều dài biển.",
+      "Đối chiếu tên trên biển với giấy chứng nhận đăng ký kinh doanh, gồm cả loại hình doanh nghiệp.",
+      "Kiểm tra vị trí biển có che lối thoát hiểm, cửa cuốn, hộp kỹ thuật hoặc lấn vỉa hè hay không.",
+      "Xác định biển có diện tích một mặt trên 20 m² và gắn vào công trình có sẵn hay không để biết có phải xin phép.",
+      "Hỏi phường hoặc chủ nhà về mẫu biển chung của tuyến phố nếu đang trong đợt chỉnh trang.",
+      "Lưu lại ảnh biển sau khi lắp và hồ sơ thiết kế để đối chiếu khi cơ quan chức năng kiểm tra."
+    ],
+    focusHeading: "Bước tiếp theo cho cửa hàng của bạn",
+    focusLinks: [
+      ["Xem khung giá biển quảng cáo", "../bao-gia-bien-quang-cao-ha-noi/", "Đối chiếu chi phí theo từng hạng mục trước khi chọn vật liệu."],
+      ["Báo giá biển alu chữ nổi", "../bao-gia-bien-alu-chu-noi-ha-noi/", "Phương án phổ biến cho mặt tiền cần nhận diện dài hạn."],
+      ["Báo giá biển bạt theo kích thước", "../bao-gia-bien-bat-hiflex-ha-noi/", "Phương án tiết kiệm, phù hợp khai trương và thay nội dung."],
+      ["Gửi ảnh mặt tiền để báo giá", "../gui-anh-bao-gia-bien-quang-cao-ha-noi/", "Bốn thông tin nên gửi để được tư vấn nhanh."],
+      ["Sửa chữa biển quảng cáo", "../sua-chua-bien-quang-cao-ha-noi/", "Xử lý biển sai kích thước, bong tróc hoặc mất sáng."],
+      ["Chính sách bảo hành", "../chinh-sach-bao-hanh-bien-quang-cao-ha-noi/", "Phạm vi bảo hành theo từng hạng mục."]
+    ],
+    gallery: realProjectGallery.slice(0, 3),
+    galleryHeading: "Biển hiệu đã thi công tại Hà Nội",
+    related: [
+      ["Làm biển quảng cáo tại Hà Nội", "../lam-bien-quang-cao-ha-noi/"],
+      ["Báo giá biển quảng cáo Hà Nội", "../bao-gia-bien-quang-cao-ha-noi/"],
+      ["Làm biển mặt tiền cửa hàng", "../lam-bien-mat-tien-cua-hang-ha-noi/"],
+      ["Biển alu chữ nổi", "../bien-alu-chu-noi-ha-noi/"],
+      ["Biển hộp đèn LED", "../bien-hop-den-led-ha-noi/"],
+      ["Sửa chữa biển quảng cáo", "../sua-chua-bien-quang-cao-ha-noi/"]
+    ],
+    faq: [
+      ["Biển hiệu ngang được cao tối đa bao nhiêu mét?", "Theo khoản 3 Điều 34 Luật Quảng cáo 2012, biển hiệu ngang có chiều cao tối đa 2 m và chiều dài không vượt quá chiều ngang mặt tiền nhà."],
+      ["Một cửa hàng được treo mấy biển hiệu?", "Theo Nghị định 103/2009/NĐ-CP, mỗi điểm kinh doanh được một biển ngang và không quá hai biển dọc, đặt sát cổng hoặc mặt trước nơi kinh doanh."],
+      ["Treo biển hiệu có phải xin phép không?", "Không phải xin phép, trừ trường hợp biển có diện tích một mặt trên 20 m² và kết cấu khung kim loại gắn vào công trình xây dựng có sẵn."],
+      ["Có được ghi tên tiếng Anh trên biển không?", "Được, nhưng phải đặt bên dưới chữ tiếng Việt và có kích thước không quá 3/4 khổ chữ tiếng Việt, trừ tên riêng hoặc nhãn hiệu đã được quốc tế hoá."],
+      ["Làm biển sai kích thước bị phạt bao nhiêu?", "Theo Nghị định 38/2021/NĐ-CP, mức phạt tham khảo 5 đến 10 triệu đồng nếu biển không đủ nội dung hoặc sai kích thước; 10 đến 15 triệu đồng nếu tên không đúng hoặc chiều cao biển dọc vượt chiều cao tầng nhà."]
+    ]
+  },
+  {
     slug: "thi-cong-bien-quang-cao-ha-noi",
     title: "Thi công biển quảng cáo Hà Nội | Lắp đặt trọn gói",
-    description: "Thi công biển quảng cáo Hà Nội trọn gói: khảo sát, sản xuất, lắp đặt alu, hộp đèn LED, Hiflex và sửa biển cũ. Gửi ảnh để báo giá nhanh.",
+    description: "Thi công biển quảng cáo Hà Nội: mặt dựng alu, chữ nổi LED, hộp đèn cho cửa hàng, showroom và công trình. Gửi ảnh, kích thước để tư vấn báo giá.",
     kicker: "Khảo sát, sản xuất và lắp đặt",
     h1: "Thi công biển quảng cáo Hà Nội",
-    lead: "Bông Sen Trắng nhận thi công biển quảng cáo tại Hà Nội cho cửa hàng, nhà hàng, cafe, spa, showroom và văn phòng. Phương án được tư vấn theo ảnh mặt tiền, vị trí lắp đặt, thời gian sử dụng và ngân sách thực tế.",
+    lead: "Bông Sen Trắng tư vấn, sản xuất và lắp đặt biển quảng cáo mới tại Hà Nội cho cửa hàng, nhà hàng, showroom và văn phòng. Với mặt dựng lớn hoặc vị trí lắp đặt trên cao, phương án được trao đổi theo kích thước, kết cấu, điều kiện tiếp cận và ngân sách thực tế.",
     image: "hero-bien-quang-cao-ha-noi.jpg",
     imageAlt: "Thi công biển quảng cáo chữ nổi tại Hà Nội",
     serviceName: "Thi công biển quảng cáo Hà Nội",
@@ -126,7 +216,7 @@ const pages = [
         "Bông Sen Trắng tiếp nhận ảnh mặt tiền, địa chỉ và mẫu nhận diện trước; trường hợp biển lớn, vị trí cao, cần tận dụng khung cũ hoặc khó đo kích thước sẽ được đề xuất khảo sát trực tiếp tại Hà Nội."
       ]],
       ["Hạng mục có thể triển khai", [
-        "Các hạng mục phổ biến gồm mặt dựng alu, chữ nổi mica hoặc inox, hộp đèn LED, biển bạt Hiflex, biển vẫy, biển công ty, logo và backdrop lễ tân. Có thể làm mới trọn bộ hoặc thay mặt biển, thay chữ, thay LED và gia cố phần khung còn sử dụng được.",
+        "Các hạng mục làm mới gồm mặt dựng alu, chữ nổi mica hoặc inox, chữ phát sáng LED, hộp đèn, biển vẫy, biển công ty, logo và backdrop lễ tân. Với công trình nhiều hạng mục, cần thống nhất bản vẽ, vật liệu, khung, hệ điện và phạm vi lắp đặt trước khi sản xuất.",
         "Với cửa hàng mới, nên xác định đồng thời biển chính, biển vẫy, decal kính và vị trí cấp điện để tránh làm từng phần thiếu đồng bộ. Với biển cũ, cần kiểm tra kết cấu trước khi quyết định tận dụng hay thay mới."
       ]],
       ["Một báo giá thi công cần làm rõ những gì?", [
@@ -180,7 +270,7 @@ const pages = [
       ["Báo giá biển quảng cáo Hà Nội", "../bao-gia-bien-quang-cao-ha-noi/"],
       ["Gửi ảnh báo giá qua Zalo", "../gui-anh-bao-gia-bien-quang-cao-ha-noi/"],
       ["Làm biển mặt tiền cửa hàng", "../lam-bien-mat-tien-cua-hang-ha-noi/"],
-      ["Sửa chữa biển quảng cáo", "../sua-chua-bien-quang-cao-ha-noi/"],
+      ["Biển hộp đèn LED", "../bien-hop-den-led-ha-noi/"],
       ["Làm biển quảng cáo Đống Đa", "../lam-bien-quang-cao-dong-da/"],
       ["Báo giá biển alu chữ nổi", "../bao-gia-bien-alu-chu-noi-ha-noi/"],
       ["Xem hình ảnh biển thực tế", "../hinh-anh-bien-quang-cao-thuc-te-ha-noi/"]
@@ -195,61 +285,131 @@ const pages = [
   },
   {
     slug: "bien-alu-chu-noi-ha-noi",
-    title: "Biển alu chữ nổi Hà Nội | Làm biển quảng cáo Bông Sen Trắng",
-    description: "Sản xuất, thi công biển alu chữ nổi tại Hà Nội: chữ mica, inox, đồng, LED hắt sáng, đúng thiết kế và bảo hành.",
-    kicker: "Biển mặt tiền bền đẹp",
-    h1: "Biển alu chữ nổi tại Hà Nội",
-    lead: "Biển alu chữ nổi phù hợp cửa hàng, văn phòng, showroom và thương hiệu cần mặt tiền gọn, chắc, dễ nhận diện.",
+    title: "Làm biển alu chữ nổi Hà Nội | Thi công & báo giá",
+    description: "Làm biển alu chữ nổi tại Hà Nội: chữ mica, inox, chữ LED cho cửa hàng, showroom và mặt dựng. Gửi ảnh, kích thước để tư vấn báo giá.",
+    kicker: "Biển mặt tiền và mặt dựng alu",
+    h1: "Làm biển alu chữ nổi tại Hà Nội",
+    lead: "Bông Sen Trắng tư vấn, sản xuất và lắp đặt biển nền alu kết hợp chữ mica, inox hoặc chữ nổi LED cho cửa hàng, showroom và công trình tại Hà Nội. Gửi ảnh mặt tiền và nhu cầu sử dụng để trao đổi cấu tạo và báo giá.",
     image: "du-an-oppo-samsung.jpg",
     imageAlt: "Biển alu chữ nổi cho mặt tiền cửa hàng",
     serviceName: "Biển alu chữ nổi Hà Nội",
+    serviceDescription: "Tư vấn, sản xuất và lắp đặt biển nền alu kết hợp chữ nổi mica, inox hoặc chữ LED cho cửa hàng, showroom và công trình tại Hà Nội.",
     sections: [
-      ["Ưu điểm của biển alu chữ nổi", [
-        "Mặt alu phẳng, màu sắc ổn định, dễ vệ sinh và phù hợp nhiều kiểu mặt tiền.",
-        "Chữ nổi có thể làm bằng mica, inox, đồng hoặc kết hợp LED để tăng độ nổi bật vào buổi tối."
+      ["Biển alu chữ nổi gồm những phần nào?", [
+        "Một bộ biển thường có mặt nền alu, hệ khung và điểm liên kết, chữ hoặc logo nổi; nếu cần sáng sẽ có thêm LED, nguồn điện và dây dẫn. Từng phần cần được chọn theo kích thước, vị trí lắp đặt và cách thể hiện thương hiệu.",
+        "Biển alu phù hợp khi muốn thể hiện tên cửa hàng hoặc nhận diện doanh nghiệp trên một mặt nền riêng. Với mặt dựng lớn, cần trao đổi cả phương án chia tấm, vị trí mối nối, kết cấu và điều kiện tiếp cận để lắp đặt."
       ]],
-      ["Quy trình sản xuất", [
-        "Chốt kích thước, vật liệu, màu sắc và file thiết kế trước khi gia công.",
-        "Sản xuất chữ, khung, mặt dựng, kiểm tra tỉ lệ rồi lắp đặt tại công trình."
+      ["Chọn chữ mica, inox hay chữ nổi LED?", [
+        "Chữ mica có nhiều lựa chọn màu sắc và có thể kết hợp LED sáng mặt. Chữ inox tạo bề mặt kim loại; có thể cân nhắc phương án không đèn hoặc hắt sáng theo thiết kế. Chọn loại nào còn phụ thuộc khoảng cách nhìn, mặt bằng, ngân sách và điều kiện ngoài trời.",
+        "Với chữ LED sáng mặt, khách nhìn thấy phần mặt chữ phát sáng. Với chữ hắt chân, ánh sáng tạo quầng phía sau chữ. Hai cách tạo hiệu ứng khác nhau, nên thống nhất mẫu, màu sáng và cách đi điện trước khi gia công."
       ]],
-      ["Lưu ý khi báo giá", [
-        "Giá phụ thuộc vào độ dày alu, chất liệu chữ nổi, hệ khung, LED, độ cao lắp đặt và điều kiện thi công.",
-        "Gửi ảnh mặt tiền qua Zalo để được tư vấn phương án phù hợp ngân sách."
+      ["Giá biển alu chữ nổi được tính theo những hạng mục nào?", [
+        "Đơn giá mặt nền theo diện tích không đồng nghĩa với giá hoàn thiện cả biển. Chữ, logo, LED, nguồn, khung, vận chuyển và lắp đặt có thể được tính riêng; kích thước, chất liệu, độ cao và hiện trạng mặt bằng cũng ảnh hưởng báo giá.",
+        "Để so sánh hai phương án, hãy yêu cầu ghi rõ diện tích nền, vật liệu và kích thước chữ, kiểu chiếu sáng, hệ khung, phạm vi điện, công lắp đặt và bảo hành. Khi chưa đủ thông tin, mức dự tính ban đầu cần được xác nhận lại sau khảo sát."
+      ]],
+      ["Mặt dựng lớn và biển đồng bộ nhiều điểm bán", [
+        "Với công trình lớn hoặc nhiều cửa hàng, gửi danh sách địa chỉ, ảnh toàn cảnh, kích thước dự kiến và số lượng từng hạng mục. Nếu có bộ nhận diện hoặc bản vẽ sẵn, gửi kèm file để trao đổi cách đồng bộ màu sắc, chữ và ánh sáng.",
+        "Mỗi mặt bằng có thể khác về độ cao, khả năng chịu tải, điểm bắt, đường vận chuyển và nguồn điện. Phương án khảo sát, thiết kế, sản xuất và tiến độ cần được thống nhất theo từng vị trí."
+      ]],
+      ["Cần gửi gì để nhận tư vấn báo giá?", [
+        "Chụp thẳng mặt tiền và thêm một ảnh rộng thấy lối tiếp cận; ghi chiều ngang × chiều cao dự kiến, địa chỉ và loại chữ muốn làm. Nếu cần đèn, cho biết muốn sáng mặt hay hắt chân, có nguồn điện gần vị trí lắp hay không.",
+        "Kèm mẫu logo, số lượng điểm bán và thời gian mong muốn nếu có. Chưa có kích thước vẫn có thể gửi ảnh để trao đổi ban đầu, sau đó xác nhận lại kích thước và điều kiện thi công trước khi chốt."
       ]]
+    ],
+    choiceHeading: "Chọn cấu hình theo nhu cầu mặt tiền",
+    choiceIntro: "Các phương án dưới đây giúp bắt đầu trao đổi. Cấu tạo thực tế cần được thống nhất sau khi xem mặt bằng và thiết kế.",
+    choiceRows: [
+      ["Cần nhận diện rõ ban ngày", "Nền alu kết hợp chữ mica hoặc inox không đèn", "Tập trung vào độ tương phản, kích thước chữ và bố cục mặt biển."],
+      ["Cửa hàng hoạt động buổi tối", "Nền alu kết hợp chữ nổi LED sáng mặt hoặc hắt chân", "Chọn kiểu sáng, vị trí nguồn và phương án đi dây theo mặt bằng."],
+      ["Mặt dựng rộng hoặc nhiều điểm bán", "Mặt alu, logo và chữ theo bộ nhận diện", "Cần đối chiếu kích thước, kết cấu và lịch lắp đặt cho từng địa điểm."]
+    ],
+    focusHeading: "Xem mẫu và báo giá theo hạng mục",
+    focusLinks: [
+      ["Báo giá biển alu chữ nổi", "../bao-gia-bien-alu-chu-noi-ha-noi/", "Xem các phần nền, chữ, LED và khung cần đối chiếu khi báo giá."],
+      ["Chữ nổi mica, inox và LED", "../chu-noi-mica-inox-ha-noi/", "Chọn vật liệu và cách chiếu sáng cho chữ hoặc logo."],
+      ["Biển hộp đèn LED", "../bien-hop-den-led-ha-noi/", "Xem phương án mặt biển phát sáng và biển vẫy."],
+      ["Thi công biển quảng cáo", "../thi-cong-bien-quang-cao-ha-noi/", "Tìm hiểu quy trình khảo sát, sản xuất và lắp đặt."]
+    ],
+    galleryHeading: "Hình ảnh tham khảo mặt biển và chữ phát sáng",
+    gallery: [
+      { image: "du-an-may-skin-bien-chu-noi-sang.jpg", alt: "Chữ May Skin hắt sáng trên mặt tiền cửa hàng", caption: "Chữ hắt sáng trên mặt tiền cửa hàng." },
+      { image: "du-an-bien-chu-noi-mo-nguyen.jpg", alt: "Chữ nổi Mơ Nguyễn có ánh sáng trên mặt biển", caption: "Chữ nổi kết hợp ánh sáng trên mặt biển." },
+      { image: "du-an-hisuhi-wet-brush-mat-dung-led.jpg", alt: "Mặt tiền cửa hàng có chữ và logo phát sáng", caption: "Mặt dựng với chữ và logo phát sáng để tham khảo cách bố trí." }
     ],
     faq: [
       ["Biển alu chữ nổi có dùng ngoài trời được không?", "Có. Cần chọn vật liệu, khung và cách chống nước phù hợp vị trí lắp đặt."],
-      ["Có thể làm chữ nổi có đèn không?", "Có thể dùng LED hắt chân chữ, LED âm chữ hoặc hộp chữ tùy thiết kế."],
-      ["Có nhận làm theo mẫu thiết kế sẵn không?", "Có. Có thể gia công theo file thiết kế đã duyệt hoặc hỗ trợ căn chỉnh lại cho đúng kích thước thi công."]
+      ["Biển alu chữ nổi LED sáng mặt và hắt chân khác nhau thế nào?", "Sáng mặt làm phần mặt chữ phát sáng; hắt chân tạo quầng sáng phía sau chữ. Phương án phù hợp tùy mẫu chữ, nền và vị trí lắp đặt."],
+      ["Giá nền alu đã gồm chữ nổi và lắp đặt chưa?", "Không nên mặc định đã bao gồm. Hãy đối chiếu từng hạng mục nền, chữ, khung, LED, vận chuyển và lắp đặt trong báo giá cụ thể."],
+      ["Có nhận làm theo mẫu thiết kế sẵn không?", "Có. Có thể gia công theo file thiết kế đã duyệt hoặc hỗ trợ căn chỉnh lại cho đúng kích thước thi công."],
+      ["Làm biển cho nhiều cửa hàng cần chuẩn bị gì?", "Nên gửi danh sách địa chỉ, số lượng, ảnh mặt tiền, kích thước dự kiến, logo và thời gian cần bàn giao để thống nhất phương án cho từng điểm."]
     ]
   },
   {
     slug: "bien-hop-den-led-ha-noi",
-    title: "Biển hộp đèn LED Hà Nội | Bông Sen Trắng",
-    description: "Thi công biển hộp đèn LED tại Hà Nội cho cửa hàng, spa, nhà hàng, đại lý. Tư vấn vật liệu, sản xuất và lắp đặt nhanh.",
-    kicker: "Nổi bật buổi tối",
-    h1: "Biển hộp đèn LED tại Hà Nội",
-    lead: "Biển hộp đèn LED giúp mặt tiền dễ nhận biết vào buổi tối, phù hợp cửa hàng cần thu hút khách đi đường.",
-    image: "du-an-bien-the-fox-fitness.jpg",
-    imageAlt: "Biển phát sáng ngoài trời cho thương hiệu tại Hà Nội",
+    title: "Làm biển hộp đèn LED Hà Nội | Tư vấn, thi công",
+    description: "Làm biển hộp đèn LED tại Hà Nội cho cửa hàng, showroom và chuỗi điểm bán. Gửi ảnh mặt tiền, kích thước và số lượng để tư vấn báo giá.",
+    kicker: "Tư vấn và thi công biển có đèn",
+    h1: "Làm biển hộp đèn LED tại Hà Nội",
+    lead: "Bông Sen Trắng nhận tư vấn, sản xuất và lắp đặt biển hộp đèn LED cho cửa hàng, showroom và điểm bán tại Hà Nội. Với mặt tiền lớn hoặc nhiều điểm lắp đặt, hãy gửi số lượng, ảnh và kích thước từng vị trí để trao đổi phương án phù hợp.",
+    image: "bien-vay-cafe-hop-den-tron-ha-noi.jpg",
+    imageAlt: "Biển vẫy hộp đèn tròn có chữ Coffee trước cửa hàng",
     serviceName: "Biển hộp đèn LED Hà Nội",
+    serviceDescription: "Tư vấn, sản xuất và lắp đặt biển hộp đèn LED cho cửa hàng, showroom và điểm bán tại Hà Nội theo kích thước và vị trí thực tế.",
     sections: [
-      ["Các loại hộp đèn phổ biến", [
-        "Hộp đèn mica, hộp đèn bạt xuyên sáng, hộp đèn alu, hộp đèn tròn, hộp đèn vẫy và biển LED module.",
-        "Tùy vị trí lắp đặt có thể chọn ánh sáng trắng, vàng hoặc màu theo nhận diện thương hiệu."
+      ["Nên chọn hộp đèn mặt tiền hay biển vẫy?", [
+        "Hộp đèn mặt tiền giúp khách nhìn tên và nội dung chính khi đi đối diện cửa hàng. Biển vẫy nhô vuông góc mặt tiền hỗ trợ nhận diện từ hai hướng dọc tuyến phố. Nhiều mặt bằng có thể kết hợp cả hai nếu vị trí và kết cấu cho phép.",
+        "Mặt hộp có thể dùng mica hoặc bạt xuyên sáng tùy kích thước, thiết kế và yêu cầu sử dụng. Nếu cần chữ nổi phát sáng thay vì toàn bộ mặt biển sáng, hãy trao đổi thêm phương án chữ mica hoặc inox kết hợp LED."
       ]],
-      ["Yếu tố ảnh hưởng độ bền", [
-        "Nguồn LED, cách đi dây, chống nước, kết cấu khung và độ thoáng nhiệt đều ảnh hưởng tuổi thọ biển.",
-        "Thi công đúng kỹ thuật giúp biển sáng đều, ít lỗi vặt và dễ bảo trì."
+      ["Báo giá hộp đèn LED phụ thuộc vào những gì?", [
+        "Chi phí phụ thuộc kích thước, số mặt phát sáng, vật liệu mặt và khung, cấu hình LED, bộ nguồn và vị trí lắp đặt. Cùng một diện tích nhưng hộp hai mặt hoặc vị trí cao, khó tiếp cận có thể cần cấu tạo và phương án thi công khác.",
+        "Trước khi so sánh báo giá, nên hỏi rõ giá gồm thiết kế, khung, mặt biển, LED, nguồn, dây điện, vận chuyển và lắp đặt hay chưa. Nếu cần tháo biển cũ, dùng xe nâng hoặc cấp điện thêm, hãy trao đổi phạm vi riêng sau khi xem mặt bằng."
       ]],
-      ["Phù hợp với ai?", [
-        "Cửa hàng bán lẻ, quán ăn, spa, salon, hiệu thuốc, showroom, đại lý và điểm bán cần nhận diện cả ngày lẫn đêm."
+      ["Biển ngoài trời và vị trí lắp đặt trên cao", [
+        "Với biển ngoài trời, cần khảo sát điểm liên kết, hướng gió, đường đi dây, vị trí nguồn điện và khả năng tiếp cận bảo trì. Kết cấu, phương án điện và chống nước cần được lựa chọn theo công trình thực tế; không nên chốt phương án an toàn chỉ từ một tấm ảnh.",
+        "Khi nghiệm thu, hãy kiểm tra độ chắc của điểm treo, khả năng đọc ban ngày và độ sáng đồng đều khi bật đèn; hỏi rõ vị trí bộ nguồn và nội dung bảo hành của từng hạng mục."
+      ]],
+      ["Làm nhiều hộp đèn cho chuỗi cửa hàng", [
+        "Với nhiều điểm bán, nên gửi bảng số lượng, địa chỉ, ảnh mặt tiền và kích thước dự kiến của từng điểm. Có thể dùng chung nhận diện, màu sắc và mẫu thiết kế, nhưng mỗi vị trí vẫn cần xem lại chiều cao, điểm bắt, nguồn điện và khả năng vận chuyển.",
+        "Nếu có hạn bàn giao theo từng cửa hàng, hãy gửi lịch dự kiến cùng bộ logo và quy chuẩn thương hiệu. Phạm vi sản xuất, khảo sát, lắp đặt và tiến độ sẽ được trao đổi theo từng đợt."
+      ]],
+      ["Cần gửi gì để được tư vấn?", [
+        "Gửi qua Zalo ảnh chụp chính diện và ảnh rộng thấy đường vào, kích thước ngang × cao dự kiến, địa chỉ, số lượng và thời điểm cần lắp đặt. Kèm file logo hoặc mẫu tham khảo nếu có; chưa biết kích thước vẫn có thể gửi ảnh để trao đổi ban đầu.",
+        "Nếu đã có biển cũ, cho biết có cần tháo dỡ hay tận dụng khung không. Phương án và báo giá cụ thể cần xác nhận sau khi đã thống nhất cấu hình và điều kiện mặt bằng."
       ]]
+    ],
+    choiceHeading: "Chọn loại biển có đèn theo vị trí",
+    choiceIntro: "Đây là các phương án để bắt đầu trao đổi; vật liệu và cấu tạo cuối cùng cần phù hợp với thiết kế và mặt bằng.",
+    choiceRows: [
+      ["Cửa hàng nằm dọc tuyến phố", "Biển vẫy hộp đèn một hoặc hai mặt", "Hỗ trợ nhận biết từ hướng đi ngang; cần kiểm tra điểm treo và khoảng không."],
+      ["Mặt tiền cần hiển thị tên, logo", "Hộp đèn mặt tiền hoặc chữ nổi LED", "Chọn theo nội dung cần sáng, khoảng cách nhìn và bố cục mặt dựng."],
+      ["Showroom hoặc nhiều điểm bán", "Hộp đèn, chữ sáng theo bộ nhận diện", "Thống nhất thiết kế và vật liệu, đồng thời kiểm tra điều kiện mỗi vị trí."]
+    ],
+    focusHeading: "Xem thêm phương án và báo giá",
+    focusLinks: [
+      ["Báo giá biển hộp đèn LED", "../bao-gia-bien-hop-den-led-ha-noi/", "Tìm hiểu các hạng mục và yếu tố ảnh hưởng đến chi phí."],
+      ["Biển alu chữ nổi", "../bien-alu-chu-noi-ha-noi/", "So sánh mặt dựng alu kết hợp chữ không đèn hoặc chữ phát sáng."],
+      ["Thi công biển quảng cáo", "../thi-cong-bien-quang-cao-ha-noi/", "Xem quy trình khảo sát, sản xuất và lắp đặt nhiều hạng mục."],
+      ["Gửi thông tin để báo giá", "../gui-anh-bao-gia-bien-quang-cao-ha-noi/", "Chuẩn bị ảnh, kích thước và địa chỉ lắp đặt."]
+    ],
+    galleryHeading: "Hình ảnh tham khảo biển có đèn",
+    gallery: [
+      { image: "san-xuat-khung-bien-vay-led-ha-noi.jpg", alt: "Khung biển vẫy tròn và các bóng LED bên trong", caption: "Khung biển vẫy tròn với hệ LED trước khi lắp mặt biển." },
+      { image: "du-an-sct-clinic-chu-noi-led.jpg", alt: "Logo và chữ nổi hắt sáng trên mặt biển", caption: "Chữ nổi hắt sáng là một phương án khác với hộp đèn sáng toàn mặt." },
+      { image: "du-an-bien-the-fox-fitness.jpg", alt: "Biển chữ và logo phát sáng trên mặt tiền tòa nhà", caption: "Biển chữ và logo phát sáng trên mặt tiền, để tham khảo cách nhận diện buổi tối." }
+    ],
+    related: [
+      ["Báo giá biển hộp đèn LED", "../bao-gia-bien-hop-den-led-ha-noi/"],
+      ["Biển alu chữ nổi", "../bien-alu-chu-noi-ha-noi/"],
+      ["Báo giá biển alu chữ nổi", "../bao-gia-bien-alu-chu-noi-ha-noi/"],
+      ["Thi công biển quảng cáo Hà Nội", "../thi-cong-bien-quang-cao-ha-noi/"],
+      ["Hình ảnh biển quảng cáo", "../hinh-anh-bien-quang-cao-thuc-te-ha-noi/"]
     ],
     faq: [
       ["Biển hộp đèn LED có tốn điện không?", "Mức điện phụ thuộc kích thước, số lượng LED và thời gian bật. Có thể tư vấn phương án tiết kiệm hơn khi biết kích thước biển."],
-      ["Có sửa hộp đèn cũ không sáng không?", "Có. Có thể kiểm tra nguồn, LED, dây điện và mặt biển để đề xuất sửa hoặc thay mới."],
-      ["Hộp đèn có bị nước vào không?", "Thi công ngoài trời cần xử lý chống nước và thoát nước đúng cách để giảm rủi ro hỏng LED."]
+      ["Làm hộp đèn LED giá bao nhiêu?", "Giá phụ thuộc kích thước, vật liệu, số mặt sáng, cấu hình LED và điều kiện lắp đặt. Gửi ảnh mặt bằng cùng số lượng và kích thước dự kiến để được tư vấn báo giá."],
+      ["Có thể đặt nhiều hộp đèn cùng thiết kế không?", "Có thể trao đổi phương án chung theo số lượng và quy chuẩn nhận diện. Mỗi điểm lắp đặt cần được kiểm tra riêng về kích thước, điểm treo và nguồn điện."],
+      ["Hộp đèn ngoài trời cần lưu ý gì?", "Cần kiểm tra kết cấu, điểm treo, nguồn điện, chống nước và khả năng bảo trì theo vị trí thực tế trước khi chốt phương án."],
+      ["Có sửa hộp đèn cũ không sáng không?", "Có. Có thể kiểm tra nguồn, LED, dây điện và mặt biển để đề xuất sửa hoặc thay mới."]
     ]
   },
   {
@@ -258,9 +418,9 @@ const pages = [
     description: "Làm bảng hiệu cửa hàng tại Hà Nội: tư vấn alu chữ nổi, hộp đèn LED, biển vẫy, Hiflex theo mặt tiền thực tế. Gửi ảnh qua Zalo 0989 521 881.",
     kicker: "Bảng hiệu cửa hàng",
     h1: "Làm bảng hiệu cửa hàng tại Hà Nội",
-    lead: "Bảng hiệu cửa hàng cần dễ đọc, đúng nhận diện và phù hợp tuyến phố. Bông Sen Trắng nhận tư vấn, sản xuất và lắp đặt trọn gói.",
+    lead: "Bông Sen Trắng nhận tư vấn, sản xuất và lắp đặt bảng hiệu cửa hàng tại Hà Nội: biển alu chữ nổi, chữ LED và hộp đèn theo mặt bằng. Gửi ảnh và địa chỉ để trao đổi phương án cho một hoặc nhiều điểm bán.",
     image: "du-an-bien-chu-noi-mo-nguyen.jpg",
-    imageAlt: "Biển chữ nổi phát sáng cho mặt tiền cửa hàng tại Hà Nội",
+    imageAlt: "Biển chữ nổi Mơ Nguyễn có ánh sáng trên mặt tiền, ảnh tham khảo",
     serviceName: "Làm bảng hiệu cửa hàng Hà Nội",
     serviceDescription: "Tư vấn, sản xuất và thi công bảng hiệu cửa hàng tại Hà Nội theo mặt tiền thực tế: alu chữ nổi, hộp đèn LED, biển vẫy và Hiflex.",
     sections: [
@@ -271,6 +431,14 @@ const pages = [
       ["Gửi gì để nhận báo giá bảng hiệu sát hơn?", [
         "Chỉ cần gửi qua Zalo: ảnh chụp thẳng mặt tiền, chiều rộng x chiều cao dự kiến, địa chỉ lắp đặt tại Hà Nội và yêu cầu về việc có đèn hay không.",
         "Nếu đã có logo hoặc mẫu tham khảo thì gửi kèm để việc tư vấn nhanh hơn. Với hạng mục cần kiểm tra độ cao, khung cũ hoặc nguồn điện, đội thi công sẽ trao đổi lịch khảo sát phù hợp."
+      ]],
+      ["Làm biển cho showroom, mặt tiền lớn hoặc nhiều cửa hàng", [
+        "Nếu cần đồng bộ nhận diện, gửi logo, màu sắc, số lượng và danh sách địa điểm cùng ảnh từng mặt tiền. Kích thước có thể khác giữa các cửa hàng; cần đối chiếu phần nền, chữ, ánh sáng và vị trí lắp trước khi sản xuất.",
+        "Với biển lớn hoặc trên cao, ảnh chỉ hỗ trợ trao đổi ban đầu. Phương án khung, điểm bắt, nguồn điện, vận chuyển và thời gian lắp cần được xem xét theo hiện trạng từng công trình."
+      ]],
+      ["Làm mới hay sửa bảng hiệu cũ?", [
+        "Nếu biển chỉ hỏng một phần đèn, nguồn hoặc mặt biển, bạn có thể gửi ảnh toàn cảnh và ảnh cận chỗ hỏng để trao đổi phương án sửa. Việc tận dụng khung cũ phụ thuộc kết quả kiểm tra thực tế.",
+        "Khi cần đổi nhận diện hoặc làm thêm biển cho cửa hàng mới, hãy gửi mẫu logo và kích thước dự kiến để so sánh phương án làm mới. Chi phí và phạm vi công việc cần được xác nhận trước khi thi công."
       ]]
     ],
     choiceHeading: "Chọn bảng hiệu theo đúng mặt bằng cửa hàng",
@@ -283,21 +451,26 @@ const pages = [
     focusHeading: "Xem phương án phù hợp với nhu cầu",
     focusLinks: [
       ["Biển alu chữ nổi", "../bien-alu-chu-noi-ha-noi/", "Mặt tiền gọn, bền và rõ thương hiệu."],
+      ["Chữ nổi mica, inox và LED", "../chu-noi-mica-inox-ha-noi/", "Chọn chữ không đèn, sáng mặt hoặc hắt chân theo nhận diện."],
       ["Biển hộp đèn LED", "../bien-hop-den-led-ha-noi/", "Nhận diện tốt khi cửa hàng hoạt động buổi tối."],
       ["Biển vẫy cửa hàng", "../bien-vay-cua-hang-ha-noi/", "Hỗ trợ khách nhìn thấy từ hai chiều đường."],
+      ["Sửa biển quảng cáo", "../sua-chua-bien-quang-cao-ha-noi/", "Gửi ảnh biển cũ để trao đổi sửa đèn, mặt biển hoặc khung."],
+      ["Làm biển khu vực nội thành", "../lam-bien-quang-cao-gan-day-ha-noi/", "Xem địa chỉ tiếp khách và các khu vực nhận thi công."],
       ["Báo giá biển quảng cáo", "../bao-gia-bien-quang-cao-ha-noi/", "Tìm hiểu các yếu tố quyết định chi phí làm biển."]
     ],
-    galleryHeading: "Một số hình ảnh biển mặt tiền đã thi công",
+    galleryHeading: "Hình ảnh biển mặt tiền tham khảo",
     gallery: [
       { image: "du-an-gao-viet-bien-mat-tien-do.jpg", alt: "Biển mặt tiền màu đỏ cho cửa hàng tại Hà Nội", caption: "Biển mặt tiền dùng mảng màu rõ, phù hợp nhận diện từ xa." },
-      { image: "du-an-xe-dien-viet-thanh-bien-mat-tien-led.jpg", alt: "Bảng hiệu mặt tiền có đèn LED tại Hà Nội", caption: "Phương án có đèn hỗ trợ cửa hàng hoạt động vào buổi tối." },
-      { image: "du-an-bien-vay-gia-long.jpg", alt: "Biển vẫy cửa hàng tại Hà Nội", caption: "Biển vẫy giúp khách nhận ra cửa hàng khi đi dọc tuyến phố." }
+      { image: "du-an-xe-dien-viet-thanh-bien-mat-tien-led.jpg", alt: "Biển Xe điện Việt Thanh với chữ phát sáng trên mặt tiền", caption: "Mẫu chữ phát sáng trên mặt tiền để tham khảo bố cục." },
+      { image: "du-an-bien-vay-gia-long.jpg", alt: "Biển vẫy Gia Long Luxury có mặt sáng", caption: "Mẫu biển vẫy để tham khảo khi chọn biển phụ." }
     ],
     faq: [
       ["Bảng hiệu cửa hàng nhỏ có làm được không?", "Có. Có thể chọn bạt, mica, alu hoặc hộp đèn nhỏ tùy ngân sách và mặt tiền."],
       ["Có làm bảng hiệu khai trương gấp không?", "Có thể hỗ trợ hạng mục gấp nếu thiết kế, kích thước và vật liệu được chốt sớm."],
       ["Tôi chưa có thiết kế thì sao?", "Có thể tư vấn bố cục cơ bản hoặc làm theo nhận diện sẵn của cửa hàng."],
       ["Làm bảng hiệu cửa hàng mất bao lâu?", "Thời gian phụ thuộc vào kích thước, vật liệu và điều kiện lắp đặt. Khi có ảnh mặt tiền và kích thước dự kiến, Bông Sen Trắng sẽ tư vấn tiến độ phù hợp cho từng hạng mục."],
+      ["Có nhận làm bảng hiệu cho nhiều điểm bán không?", "Có thể trao đổi phương án theo số lượng và danh sách địa điểm. Gửi logo, ảnh từng mặt tiền, kích thước dự kiến và thời gian mong muốn để xác định phạm vi khảo sát."],
+      ["Có sửa bảng hiệu cửa hàng đang sử dụng không?", "Có. Hãy gửi ảnh toàn cảnh, ảnh cận phần hỏng và địa chỉ lắp đặt để trao đổi về LED, mặt biển hoặc khung. Phương án cụ thể phụ thuộc hiện trạng."],
       ["Nên chọn alu chữ nổi hay hộp đèn LED?", "Alu chữ nổi phù hợp khi cần mặt tiền gọn, bền và rõ thương hiệu. Hộp đèn LED phù hợp khi cần nhận diện tốt vào buổi tối. Phương án phù hợp còn tùy chiều rộng mặt tiền, ngân sách và vị trí cửa hàng."]
     ],
     related: [
@@ -401,31 +574,63 @@ const pages = [
   },
   {
     slug: "chu-noi-mica-inox-ha-noi",
-    title: "Chữ nổi mica inox Hà Nội | Bông Sen Trắng",
-    description: "Gia công, lắp đặt chữ nổi mica inox tại Hà Nội cho biển công ty, showroom, cửa hàng, lễ tân và mặt tiền thương hiệu.",
-    kicker: "Chữ nổi nhận diện",
-    h1: "Làm chữ nổi mica inox tại Hà Nội",
-    lead: "Chữ nổi mica, inox, đồng hoặc formex giúp tên thương hiệu rõ ràng, sang hơn và phù hợp cả mặt tiền ngoài trời lẫn không gian trong nhà.",
+    title: "Làm chữ nổi mica, inox, LED Hà Nội | Báo giá",
+    description: "Gia công chữ nổi mica, inox, chữ LED tại Hà Nội cho mặt tiền, showroom, cửa hàng và văn phòng. Gửi logo, kích thước để tư vấn báo giá.",
+    kicker: "Gia công chữ và logo nhận diện",
+    h1: "Làm chữ nổi mica, inox và chữ LED tại Hà Nội",
+    lead: "Bông Sen Trắng nhận gia công, lắp đặt chữ nổi và logo cho biển mặt tiền, showroom, cửa hàng, văn phòng tại Hà Nội. Có thể trao đổi chữ không đèn, chữ LED sáng mặt hoặc hắt chân theo thiết kế và vị trí lắp đặt.",
     image: "du-an-chu-noi-khoa-kinh-te.jpg",
-    imageAlt: "Chữ nổi logo gắn tường tại Hà Nội",
-    serviceName: "Chữ nổi mica inox Hà Nội",
+    imageAlt: "Logo và chữ nổi Khoa Kinh tế Học viện Ngân hàng trên tường",
+    serviceName: "Gia công chữ nổi mica, inox và chữ LED tại Hà Nội",
+    serviceDescription: "Gia công và lắp đặt chữ nổi mica, inox, chữ LED và logo theo thiết kế cho mặt tiền, cửa hàng, showroom và văn phòng tại Hà Nội.",
     sections: [
-      ["Chữ nổi dùng cho vị trí nào?", [
-        "Mặt tiền cửa hàng, bảng tên công ty, quầy lễ tân, showroom, văn phòng, trường học và các mảng tường cần nhận diện thương hiệu.",
-        "Chữ có thể làm không đèn, hắt chân LED hoặc phát sáng tùy thiết kế và vị trí lắp."
+      ["Chữ nổi phù hợp những vị trí nào?", [
+        "Chữ và logo có thể gắn trên mặt dựng alu, nền tường, quầy lễ tân hoặc mảng nhận diện trong showroom và văn phòng. Tại mặt tiền, cần cân nhắc kích thước chữ, độ tương phản và khoảng cách nhìn; trong nhà nên chú ý vật liệu và bề mặt gắn.",
+        "Nếu chỉ đặt gia công chữ theo thiết kế có sẵn, hãy gửi file logo và kích thước. Nếu làm cả biển mặt tiền, cần trao đổi thêm về nền, khung, điện và lắp đặt."
       ]],
-      ["Chọn mica hay inox?", [
-        "Mica phù hợp màu sắc đa dạng, trẻ trung và dễ kết hợp LED. Inox phù hợp cảm giác chắc, sang, bền và chuyên nghiệp.",
-        "Có thể phối mica với inox hoặc dùng vật liệu khác theo ngân sách và phong cách thương hiệu."
+      ["Chữ mica, chữ inox và chữ nổi LED khác nhau thế nào?", [
+        "Chữ mica có nhiều màu sắc và có thể làm mặt phát sáng. Chữ inox tạo bề mặt kim loại, có thể kết hợp các vật liệu khác hoặc chọn cách chiếu sáng phù hợp. Chữ nổi LED là cách gọi chữ có hệ đèn, không phải một loại vật liệu duy nhất.",
+        "Chữ sáng mặt cho ánh sáng đi qua mặt chữ; chữ hắt chân tạo quầng sáng lên nền phía sau. Lựa chọn phụ thuộc mẫu nhận diện, bề mặt gắn, vị trí nguồn điện và hiệu ứng mong muốn."
       ]],
-      ["Dữ liệu cần để gia công", [
-        "File logo/vector, kích thước chữ, vị trí lắp đặt, ảnh mặt bằng và yêu cầu màu sắc hoặc ánh sáng.",
-        "Nếu chưa có file chuẩn, có thể gửi ảnh/logo hiện có để kiểm tra khả năng dựng lại trước khi sản xuất."
+      ["Những yếu tố ảnh hưởng báo giá chữ nổi", [
+        "Báo giá phụ thuộc chiều cao và số lượng chữ, kiểu chữ và chi tiết logo, vật liệu mặt và thành chữ, yêu cầu có đèn hay không, số lượng bộ và công lắp đặt. Chữ nhỏ, nét mảnh hoặc logo nhiều chi tiết cần kiểm tra khả năng gia công theo kích thước thực tế.",
+        "Với chữ LED, nên đối chiếu thêm đèn, bộ nguồn, dây điện và vị trí tiếp cận khi bảo trì. Nếu giá chỉ tính riêng bộ chữ thì cần hỏi phần nền, vận chuyển, lắp đặt và cấp điện đã bao gồm chưa."
+      ]],
+      ["Làm chữ LED ngoài trời cần lưu ý gì?", [
+        "Vị trí ngoài trời cần khảo sát điểm liên kết, điều kiện nắng mưa, phương án chống nước và đi dây. Cách gắn, vật liệu, nguồn và thiết bị thi công cần chọn theo công trình thay vì mặc định dùng chung một cấu hình.",
+        "Trước khi bàn giao nên kiểm tra nội dung, dấu tiếng Việt, tỉ lệ logo, độ chắc, ánh sáng và phạm vi bảo hành đã thống nhất. Với công trình trên cao, cần khảo sát điều kiện tiếp cận và phương án thi công phù hợp."
+      ]],
+      ["Gửi thông tin để gia công hoặc làm nhiều bộ", [
+        "Gửi file logo hoặc chữ dạng vector nếu có, chiều cao chữ dự kiến, số lượng bộ, màu sắc, yêu cầu đèn và ảnh vị trí gắn qua Zalo. Nếu chưa có file chuẩn, có thể gửi ảnh hiện có để kiểm tra khả năng dựng lại.",
+        "Với chuỗi điểm bán, nên gửi danh sách địa chỉ và lịch lắp đặt từng nơi. Có thể thống nhất một mẫu nhận diện chung, sau đó kiểm tra kích thước và điều kiện lắp thực tế của từng mặt bằng."
       ]]
+    ],
+    choiceHeading: "Chọn kiểu chữ theo vị trí và hiệu ứng",
+    choiceIntro: "Chất liệu và kiểu sáng cần được đối chiếu với thiết kế, vị trí gắn và ngân sách của từng hạng mục.",
+    choiceRows: [
+      ["Logo lễ tân, văn phòng", "Chữ mica hoặc inox không đèn", "Kiểm tra màu sắc, kích thước và bề mặt gắn trong nhà."],
+      ["Mặt tiền cần nhìn rõ buổi tối", "Chữ mica LED sáng mặt", "Trao đổi màu sáng, nguồn điện và khả năng bảo trì."],
+      ["Thương hiệu cần hiệu ứng quầng sáng", "Chữ nổi LED hắt chân", "Cần bố trí khoảng cách chữ với nền theo phương án thiết kế."],
+      ["Nhiều cửa hàng cùng nhận diện", "Chữ và logo theo mẫu thống nhất", "Kiểm tra riêng kích thước và điều kiện lắp của từng điểm."]
+    ],
+    focusHeading: "Xem thêm phương án cho biển mặt tiền",
+    focusLinks: [
+      ["Biển alu chữ nổi", "../bien-alu-chu-noi-ha-noi/", "Kết hợp nền alu, chữ hoặc logo theo thiết kế."],
+      ["Báo giá biển alu chữ nổi", "../bao-gia-bien-alu-chu-noi-ha-noi/", "Đối chiếu chi phí nền, chữ, khung và lắp đặt."],
+      ["Biển hộp đèn LED", "../bien-hop-den-led-ha-noi/", "So sánh phương án chữ phát sáng với hộp đèn."],
+      ["Gửi ảnh để nhận báo giá", "../gui-anh-bao-gia-bien-quang-cao-ha-noi/", "Chuẩn bị file chữ, ảnh vị trí lắp và số lượng."]
+    ],
+    galleryHeading: "Hình ảnh tham khảo chữ nổi và chữ có đèn",
+    gallery: [
+      { image: "du-an-may-skin-bien-chu-noi-sang.jpg", alt: "Chữ May Skin hắt sáng trên mặt tiền cửa hàng", caption: "Chữ hắt sáng trên mặt tiền cửa hàng." },
+      { image: "du-an-sct-clinic-chu-noi-led.jpg", alt: "Logo và chữ SCT Clinic nổi có ánh sáng phía sau", caption: "Logo và chữ nổi kết hợp ánh sáng." },
+      { image: "du-an-chu-noi-khoa-kinh-te.jpg", alt: "Chữ và logo Khoa Kinh tế Học viện Ngân hàng gắn tường", caption: "Chữ và logo nổi gắn trên tường trong nhà." }
     ],
     faq: [
       ["Chữ nổi mica inox có dùng ngoài trời được không?", "Có, nhưng cần chọn độ dày, keo, khung và phương án chống nước phù hợp."],
-      ["Có làm chữ nổi có đèn không?", "Có thể làm hắt chân LED, mặt phát sáng hoặc kết hợp với biển hộp đèn."],
+      ["Có làm chữ nổi LED sáng mặt hoặc hắt chân không?", "Có thể trao đổi hai phương án theo mẫu chữ, nền và vị trí lắp đặt. Cấu tạo và nguồn điện cần được thống nhất trước khi sản xuất."],
+      ["Giá gia công chữ nổi được tính thế nào?", "Chi phí phụ thuộc kích thước, số lượng chữ, vật liệu, độ phức tạp, yêu cầu LED và phạm vi lắp đặt. Gửi logo, kích thước và số lượng để được tư vấn báo giá."],
+      ["Có thể làm nhiều bộ chữ cho chuỗi cửa hàng không?", "Có thể trao đổi mẫu nhận diện chung theo số lượng. Mỗi cửa hàng cần được đối chiếu kích thước, vị trí gắn và điều kiện lắp đặt."],
       ["Có lắp chữ nổi trong văn phòng không?", "Có. Chữ nổi trong nhà thường dùng cho lễ tân, phòng họp, showroom và mảng nhận diện thương hiệu."]
     ]
   },
@@ -1241,23 +1446,33 @@ const pages = [
   },
   {
     slug: "du-an-chu-noi-hoc-vien-khoa-hoc-quan-su",
-    title: "Dự án chữ nổi ngoài trời | Bông Sen Trắng",
-    description: "Hình ảnh thi công chữ nổi ngoài trời trong hồ sơ công trình Bông Sen Trắng. Tham khảo chất lượng hoàn thiện biển quảng cáo.",
-    kicker: "Dự án tham khảo",
-    h1: "Thi công chữ nổi ngoài trời",
-    lead: "Công trình chữ nổi yêu cầu cân chữ, chắc chân chữ và hoàn thiện tốt để bảo đảm tính trang trọng của mặt dựng.",
+    title: "Chữ nổi mặt dựng Học viện Khoa học Quân sự | Bông Sen Trắng",
+    description: "Tham khảo công trình lắp chữ nổi trên mặt dựng Học viện Khoa học Quân sự. Xem ảnh thực tế và gửi kích thước vị trí để Bông Sen Trắng tư vấn hạng mục tương tự.",
+    kicker: "Hồ sơ công trình",
+    h1: "Chữ nổi mặt dựng Học viện Khoa học Quân sự",
+    lead: "Ảnh ghi lại hạng mục chữ nổi sáng màu đang được lắp trên mặt dựng tối của Học viện Khoa học Quân sự. Tương phản màu giúp tên công trình dễ đọc trên nền kiến trúc.",
     image: "hero-bien-quang-cao-ha-noi.jpg",
-    imageAlt: "Dự án thi công chữ nổi ngoài trời",
+    imageAlt: "Chữ nổi sáng màu đang được lắp trên mặt dựng Học viện Khoa học Quân sự",
     type: "case",
     sections: [
-      ["Yêu cầu công trình", [
-        "Chữ nổi lắp trên mặt dựng lớn cần đảm bảo tỉ lệ chữ, khoảng cách đều, độ chắc và khả năng chịu điều kiện ngoài trời.",
-        "Quá trình thi công cần căn chỉnh kỹ để chữ nhìn thẳng hàng từ khoảng cách xa."
+      ["Hạng mục trong ảnh", [
+        "Hồ sơ ảnh thể hiện chữ nổi sáng màu gắn trên mặt dựng tối của Học viện Khoa học Quân sự, cùng công đoạn lắp đặt tại công trình. Đây là hạng mục chữ nhận diện ngoài trời."
       ]],
-      ["Bài học áp dụng cho biển quảng cáo", [
-        "Với biển công ty, trường học, showroom hoặc văn phòng, phần chữ nổi nên ưu tiên sự rõ ràng, độ bền và độ tương phản.",
-        "Khi gửi yêu cầu, khách hàng nên cung cấp kích thước mặt dựng và ảnh chụp vị trí lắp đặt."
+      ["Điều cần tính khi làm chữ nổi mặt dựng", [
+        "Đo diện tích mặt dựng và xác định khoảng cách người xem thường đứng.",
+        "Chọn màu chữ có độ tương phản rõ với nền phía sau.",
+        "Cân đối chiều cao chữ, khoảng cách giữa các ký tự và chiều dài tổng thể.",
+        "Kiểm tra vị trí lắp đặt, cách tiếp cận và phương án an toàn trước khi thi công trên cao.",
+        "Muốn được tư vấn hạng mục tương tự, gửi ảnh mặt dựng, kích thước dự kiến, địa chỉ và khoảng cách nhìn chính qua Zalo."
       ]]
+    ],
+    related: [
+      ["Thi công biển quảng cáo Hà Nội", "../thi-cong-bien-quang-cao-ha-noi/"],
+      ["Biển alu chữ nổi", "../bien-alu-chu-noi-ha-noi/"],
+      ["Chữ nổi mica, inox", "../chu-noi-mica-inox-ha-noi/"],
+      ["Báo giá biển quảng cáo", "../bao-gia-bien-quang-cao-ha-noi/"],
+      ["Hình ảnh biển quảng cáo thực tế", "../hinh-anh-bien-quang-cao-thuc-te-ha-noi/"],
+      ["Liên hệ tư vấn công trình", "../lien-he-lam-bien-quang-cao-ha-noi/"]
     ],
     faq: [
       ["Chữ nổi ngoài trời làm bằng vật liệu gì?", "Có thể dùng inox, mica, đồng, formex hoặc vật liệu khác tùy thiết kế và ngân sách."],
@@ -1451,6 +1666,18 @@ const guidePages = [
       ["3. Địa chỉ và thời gian cần hoàn thiện", [
         "Địa chỉ lắp đặt giúp đánh giá khoảng cách khảo sát, điều kiện thi công, độ cao và khả năng vận chuyển vật tư.",
         "Nếu cần làm gấp, hãy báo trước thời gian mong muốn để đội sản xuất tư vấn phương án vật liệu phù hợp tiến độ."
+      ]],
+      ["4. Logo, hướng nhìn và điều kiện tiếp cận", [
+        "Ngoài ảnh chính diện, chụp từ hai hướng khách đi tới để trao đổi cỡ chữ, vị trí biển chính và khả năng đặt biển vẫy. Gửi tên thương hiệu có dấu, logo, màu chủ đạo và mẫu biển yêu thích nếu đã có.",
+        "Với tòa nhà hoặc mặt tiền dùng chung, cho biết tầng lắp đặt và thời gian có thể tiếp cận. Nếu cần tháo biển cũ, chụp điểm hỏng, khung và nguồn điện từ vị trí an toàn; không tự trèo lên kiểm tra."
+      ]],
+      ["5. Đơn hàng cho nhiều cửa hàng", [
+        "Gửi danh sách địa điểm, ảnh từng mặt tiền, kích thước ước lượng, số lượng biển và thời gian mong muốn. Nếu có bộ nhận diện, gửi file để trao đổi cách thống nhất màu, chữ và ánh sáng giữa các điểm bán.",
+        "Kích thước, kết cấu và điều kiện tiếp cận mỗi nơi có thể khác nhau. Với biển lớn, treo cao hoặc khung cũ, cần xác nhận hiện trạng trước khi chốt phạm vi và giá."
+      ]],
+      ["Mẫu nội dung gửi qua Zalo", [
+        "Tôi cần làm biển cho [loại cửa hàng] tại [địa chỉ]. Mặt tiền dự kiến ngang [ ] m, cao [ ] m. Tôi muốn [loại biển hoặc mục tiêu], cần hoàn thiện trước [ngày]. Tôi gửi kèm ảnh và logo; nhờ tư vấn các phương án và phần việc đã hoặc chưa gồm trong báo giá.",
+        "Khi so phương án, hỏi rõ nền, chữ, LED và nguồn, khung, vận chuyển, tháo lắp biển cũ, thuế và phạm vi bảo hành. Nội dung tin nhắn là mẫu tham khảo, không phải báo giá."
       ]]
     ],
     faq: [
@@ -1467,7 +1694,7 @@ const guidePages = [
     h1: "Nên chọn biển alu chữ nổi hay biển bạt Hiflex?",
     lead: "Alu chữ nổi và bạt Hiflex đều phổ biến, nhưng phù hợp với nhu cầu khác nhau về ngân sách, độ bền, thẩm mỹ và thời gian sử dụng.",
     image: "du-an-oppo-samsung.jpg",
-    imageAlt: "So sánh biển alu chữ nổi và biển bạt Hiflex cho cửa hàng",
+    imageAlt: "Mặt tiền cửa hàng điện thoại với biển nhận diện OPPO và Samsung, ảnh tham khảo",
     type: "guide",
     articleSection: "Tư vấn vật liệu biển quảng cáo",
     sections: [
@@ -1482,7 +1709,24 @@ const guidePages = [
       ["Cách chọn nhanh", [
         "Nếu ưu tiên bền, sang, đúng nhận diện và dùng lâu: nên cân nhắc alu chữ nổi.",
         "Nếu ưu tiên chi phí thấp, cần làm nhanh hoặc thay nội dung thường xuyên: bạt Hiflex là lựa chọn thực tế hơn."
+      ]],
+      ["So báo giá theo cùng một cấu hình", [
+        "Biển alu chữ nổi thường gồm khung, tấm nền và chữ hoặc logo riêng; nếu cần sáng có thêm LED và nguồn. Biển Hiflex có mặt bạt in căng trên khung, có thể kết hợp chiếu sáng hoặc vật liệu xuyên sáng theo cấu tạo.",
+        "Để so đúng, gửi cùng kích thước, địa chỉ và yêu cầu lắp cho cả hai phương án. Đề nghị ghi rõ khung mới hay dùng lại, chữ, đèn, vận chuyển, tháo biển cũ và bảo hành; giá nền alu không mặc định là giá hoàn thiện cả biển."
       ]]
+    ],
+    choiceHeading: "Chọn theo nhu cầu của cửa hàng",
+    choiceIntro: "Đây là các phương án để trao đổi, không phải bảng giá; cấu hình cuối cùng phụ thuộc mặt bằng và ngân sách.",
+    choiceRows: [
+      ["Cần nhận diện đồng bộ lâu dài", "Nền alu kết hợp chữ nổi", "Chọn vật liệu chữ, màu, hệ khung và phương án chiếu sáng theo thiết kế."],
+      ["Cần thay nội dung in", "Mặt bạt Hiflex trên khung phù hợp", "Làm rõ in bạt riêng hay gồm khung, căng bạt và lắp đặt."],
+      ["Hoạt động buổi tối", "Cân nhắc chữ LED, hộp đèn hoặc đèn rọi", "Thống nhất điểm cấp điện và cách bảo trì theo cấu tạo thực tế."]
+    ],
+    focusHeading: "Xem thêm theo hạng mục",
+    focusLinks: [
+      ["Biển alu chữ nổi", "../bien-alu-chu-noi-ha-noi/", "Xem cấu tạo nền, chữ và các lựa chọn ánh sáng."],
+      ["Biển bạt Hiflex", "../bien-bat-hiflex-ha-noi/", "Tìm hiểu mặt bạt in, khung và điều kiện lắp đặt."],
+      ["Gửi thông tin để báo giá", "../can-chuan-bi-gi-de-bao-gia-bien-quang-cao/", "Chuẩn bị cùng thông tin để so phương án."]
     ],
     faq: [
       ["Biển alu chữ nổi có đắt hơn bạt Hiflex không?", "Thường cao hơn vì có mặt dựng, chữ nổi, khung và công hoàn thiện nhiều hơn, nhưng đổi lại mặt tiền nhìn bền và chuyên nghiệp hơn."],
@@ -1496,9 +1740,9 @@ const guidePages = [
     description: "Tư vấn khi nào nên làm biển hộp đèn LED cho cửa hàng tại Hà Nội, các loại hộp đèn phổ biến, lưu ý độ sáng, chống nước và bảo trì.",
     kicker: "Tư vấn biển phát sáng",
     h1: "Biển hộp đèn LED có phù hợp cửa hàng của bạn không?",
-    lead: "Biển hộp đèn LED phù hợp với cửa hàng cần khách nhìn thấy vào buổi tối, mặt tiền nhỏ hoặc vị trí cạnh tranh nhiều biển hiệu.",
+    lead: "Hộp đèn LED đáng cân nhắc khi cửa hàng cần nhận diện vào buổi tối hoặc muốn một mặt biển phát sáng. Nếu chỉ hoạt động ban ngày hoặc ưu tiên chữ nổi không đèn, cần so với các phương án khác theo mặt tiền thực tế.",
     image: "du-an-bien-the-fox-fitness.jpg",
-    imageAlt: "Biển hộp đèn LED phát sáng cho cửa hàng buổi tối",
+    imageAlt: "Biển chữ và logo The Fox Fitness phát sáng trên mặt tiền, ảnh tham khảo",
     type: "guide",
     articleSection: "Tư vấn biển hộp đèn LED",
     sections: [
@@ -1513,7 +1757,25 @@ const guidePages = [
       ["Lưu ý để biển bền hơn", [
         "Cần chú ý nguồn LED, cách đi dây, chống nước, thoát nhiệt và vị trí bảo trì sau lắp đặt.",
         "Biển sáng đều, ít hỏng vặt phụ thuộc nhiều vào chất lượng LED và cách thi công, không chỉ riêng phần mặt biển."
+      ]],
+      ["Ước tính điện năng sử dụng", [
+        "Điện năng ước tính mỗi tháng bằng công suất thực tế (W) nhân số giờ bật mỗi ngày và số ngày, sau đó chia 1.000 để ra kWh. Chi phí còn phụ thuộc đơn giá điện áp dụng và mức tiêu thụ thực tế.",
+        "Ví dụ giả định: một hệ đèn dùng 100 W, bật 8 giờ mỗi ngày trong 30 ngày tiêu thụ khoảng 24 kWh. Đây là phép tính minh họa, không phải công suất hay chi phí của một mẫu biển cụ thể."
       ]]
+    ],
+    choiceHeading: "So sánh các phương án có đèn",
+    choiceIntro: "Hộp đèn và chữ nổi LED là các cấu tạo khác nhau. Cần đối chiếu thiết kế, vị trí lắp và khả năng bảo trì trước khi chọn.",
+    choiceRows: [
+      ["Mặt biển phẳng, thể hiện logo và nội dung", "Hộp đèn mặt mica", "Kiểm tra cách ghép mặt, độ sâu hộp và điểm mở để bảo trì."],
+      ["Mặt biển rộng, cần thay nội dung in", "Hộp đèn bạt xuyên sáng", "Trao đổi độ căng bạt, khung và cách bố trí ánh sáng."],
+      ["Nhìn từ hướng đi dọc phố", "Biển vẫy có đèn", "Xác định vị trí được lắp, điểm treo và tải trọng."],
+      ["Muốn làm nổi từng chữ hoặc logo", "Chữ nổi LED trên nền biển", "Chọn kiểu sáng mặt hoặc hắt chân và vị trí nguồn điện."]
+    ],
+    focusHeading: "Tư vấn làm mới hoặc sửa biển có đèn",
+    focusLinks: [
+      ["Làm biển hộp đèn LED", "../bien-hop-den-led-ha-noi/", "Xem phương án cho mặt tiền và nhiều điểm bán."],
+      ["Làm biển chữ LED", "../lam-bien-quang-cao-co-den-led-ha-noi/", "So sánh chữ nổi sáng mặt, hắt chân và hộp đèn."],
+      ["Sửa biển hộp đèn LED", "../sua-bien-hop-den-led-ha-noi/", "Gửi ảnh hiện trạng để trao đổi khi biển không sáng hoặc sáng không đều."]
     ],
     faq: [
       ["Biển hộp đèn LED có tốn điện không?", "Mức điện phụ thuộc kích thước biển, số lượng LED và thời gian bật. Có thể tư vấn phương án tiết kiệm khi biết kích thước cụ thể."],
@@ -1702,11 +1964,11 @@ function renderPage(page) {
   const pageUrl = `${baseUrl}/${page.slug}/`;
   const imageUrl = `${baseUrl}/assets/images/${page.image}`;
   const sectionHtml = page.sections
-    .map(([heading, paragraphs]) => `
+    .map(([heading, paragraphs], index) => `
             <section class="content-block">
               <h2>${escapeHtml(heading)}</h2>
               ${paragraphs.map((text) => `<p>${escapeHtml(text)}</p>`).join("\n              ")}
-            </section>`)
+            </section>${index === 0 && !page.gallery ? renderReferenceGallery(page.image) : ""}`)
     .join("\n");
 
   const choiceHtml = Array.isArray(page.choiceRows) ? `

@@ -1,0 +1,325 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Xem trước giao diện mới | Bông Sen Trắng</title>
+<meta name="robots" content="noindex,nofollow">
+<meta name="theme-color" content="#0f5c8c">
+<link rel="icon" href="favicon.ico" sizes="any">
+<style>
+  :root{
+    --brand:#0f5c8c;
+    --brand-dark:#0b4a71;
+    --brand-light:#e8f3fa;
+    --ink:#15202b;
+    --ink-soft:#52606d;
+    --line:#e3e9ee;
+    --bg:#ffffff;
+    --bg-soft:#f7fafc;
+    --accent:#f2a53a;
+    --radius:14px;
+    --shadow:0 10px 30px rgba(16,42,67,.08);
+    --max:1160px;
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{
+    margin:0;background:var(--bg);color:var(--ink);
+    font-family:"Be Vietnam Pro",-apple-system,"Segoe UI",Roboto,Arial,sans-serif;
+    font-size:17px;line-height:1.65;-webkit-font-smoothing:antialiased;
+  }
+  img{max-width:100%;display:block}
+  a{color:inherit}
+  .wrap{max-width:var(--max);margin:0 auto;padding:0 22px}
+  .preview-bar{
+    background:#122a3d;color:#cfe3f1;font-size:13.5px;text-align:center;padding:9px 16px;
+  }
+  .preview-bar strong{color:#fff}
+  header.site{position:sticky;top:0;z-index:40;background:rgba(255,255,255,.94);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+  .nav{display:flex;align-items:center;justify-content:space-between;height:74px;gap:20px}
+  .logo{display:flex;align-items:center;gap:10px;font-weight:700;letter-spacing:-.01em;font-size:19px;text-decoration:none;white-space:nowrap}
+  .logo span{color:var(--brand)}
+  .nav-links{display:flex;gap:26px;font-size:15.5px}
+  .nav-links a{text-decoration:none;color:var(--ink-soft)}
+  .nav-links a:hover{color:var(--brand)}
+  .nav-cta{display:flex;gap:10px;align-items:center}
+  .btn{
+    display:inline-flex;align-items:center;justify-content:center;gap:8px;
+    padding:13px 22px;border-radius:999px;font-weight:600;text-decoration:none;font-size:15.5px;
+    border:1.5px solid transparent;transition:transform .15s ease,box-shadow .15s ease;
+    white-space:nowrap;
+  }
+  .btn:hover{transform:translateY(-1px)}
+  .btn-primary{background:var(--brand);color:#fff;box-shadow:0 8px 20px rgba(15,92,140,.22)}
+  .btn-primary:hover{background:var(--brand-dark)}
+  .btn-ghost{border-color:var(--line);color:var(--ink)}
+  .btn-ghost:hover{border-color:var(--brand);color:var(--brand)}
+  .btn-zalo{background:#0068ff;color:#fff}
+
+  .hero{padding:64px 0 48px;background:linear-gradient(180deg,var(--brand-light) 0%,#fff 78%)}
+  .hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:52px;align-items:center}
+  .eyebrow{display:inline-flex;align-items:center;gap:8px;background:#fff;border:1px solid #cfe4f2;color:var(--brand);font-size:13.5px;font-weight:600;padding:7px 14px;border-radius:999px}
+  h1{font-size:clamp(31px,4.1vw,47px);line-height:1.14;letter-spacing:-.02em;margin:18px 0 16px}
+  h1 em{font-style:normal;color:var(--brand)}
+  .lead{font-size:18.5px;color:var(--ink-soft);margin:0 0 26px;max-width:33em}
+  .hero-actions{display:flex;gap:12px;flex-wrap:wrap;margin-bottom:26px}
+  .trust{display:flex;gap:26px;flex-wrap:wrap;font-size:14.5px;color:var(--ink-soft)}
+  .trust div{display:flex;align-items:center;gap:8px}
+  .tick{width:18px;height:18px;border-radius:50%;background:#dff0e3;color:#1f7a3d;display:grid;place-items:center;font-size:11px;font-weight:700;flex:none}
+  .hero-media{position:relative}
+  .hero-media img{border-radius:var(--radius);box-shadow:var(--shadow);aspect-ratio:4/3;object-fit:cover;width:100%}
+  .price-chip{
+    position:absolute;left:-14px;bottom:26px;background:#fff;border-radius:12px;padding:13px 18px;
+    box-shadow:0 12px 28px rgba(16,42,67,.16);font-size:14px;line-height:1.35
+  }
+  .price-chip small{display:block;color:var(--ink-soft);font-size:12.5px;margin-bottom:2px}
+  .price-chip strong{font-size:19px;color:var(--brand)}
+
+  section{padding:62px 0}
+  .section-head{max-width:44em;margin-bottom:34px}
+  h2{font-size:clamp(24px,2.6vw,32px);line-height:1.22;letter-spacing:-.015em;margin:0 0 12px}
+  .section-head p{margin:0;color:var(--ink-soft);font-size:16.5px}
+
+  .cards{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+  .card{
+    border:1px solid var(--line);border-radius:var(--radius);background:#fff;padding:24px;
+    transition:box-shadow .18s ease,transform .18s ease,border-color .18s ease;display:flex;flex-direction:column;gap:10px
+  }
+  .card:hover{box-shadow:var(--shadow);transform:translateY(-2px);border-color:#cfe4f2}
+  .card .k{font-size:12.5px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--brand)}
+  .card h3{margin:0;font-size:18.5px;line-height:1.35}
+  .card p{margin:0;color:var(--ink-soft);font-size:14.8px}
+  .card .price{margin-top:auto;font-weight:700;color:var(--ink);font-size:15px}
+  .card .price span{display:block;font-weight:400;color:var(--ink-soft);font-size:12.8px}
+
+  .steps{display:grid;grid-template-columns:repeat(4,1fr);gap:22px;counter-reset:step}
+  .step{position:relative;padding-top:14px;border-top:3px solid var(--brand-light)}
+  .step::before{
+    counter-increment:step;content:counter(step);
+    display:grid;place-items:center;width:30px;height:30px;border-radius:50%;
+    background:var(--brand);color:#fff;font-size:14px;font-weight:700;margin-bottom:12px
+  }
+  .step h3{margin:0 0 6px;font-size:17px}
+  .step p{margin:0;color:var(--ink-soft);font-size:14.8px}
+
+  .gal{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+  .gal figure{margin:0;border-radius:var(--radius);overflow:hidden;background:var(--bg-soft);border:1px solid var(--line)}
+  .gal img{aspect-ratio:4/3;object-fit:cover;width:100%}
+  .gal figcaption{padding:12px 14px;font-size:13.8px;color:var(--ink-soft)}
+
+  .faq{max-width:820px}
+  .faq details{border:1px solid var(--line);border-radius:12px;padding:16px 20px;margin-bottom:12px;background:#fff}
+  .faq summary{cursor:pointer;font-weight:600;font-size:16.5px;list-style:none;display:flex;justify-content:space-between;gap:16px;align-items:center}
+  .faq summary::-webkit-details-marker{display:none}
+  .faq summary::after{content:"+";color:var(--brand);font-size:22px;line-height:1}
+  .faq details[open] summary::after{content:"–"}
+  .faq p{margin:12px 0 0;color:var(--ink-soft);font-size:15.5px}
+
+  .cta-band{background:#0f2c42;color:#fff;border-radius:18px;padding:44px;display:flex;justify-content:space-between;gap:28px;align-items:center;flex-wrap:wrap}
+  .cta-band h2{margin:0 0 8px;color:#fff}
+  .cta-band p{margin:0;color:#a9c6da;font-size:16px}
+  .cta-actions{display:flex;gap:12px;flex-wrap:wrap}
+
+  footer{padding:44px 0 90px;border-top:1px solid var(--line);color:var(--ink-soft);font-size:14.5px}
+  .foot-grid{display:flex;justify-content:space-between;gap:24px;flex-wrap:wrap}
+
+  .sticky-cta{position:fixed;left:0;right:0;bottom:0;display:none;gap:10px;padding:10px 14px;background:#fff;border-top:1px solid var(--line);z-index:60}
+  .sticky-cta a{flex:1;text-align:center;padding:13px;border-radius:10px;font-weight:600;text-decoration:none}
+  .sticky-cta .call{background:var(--brand);color:#fff}
+  .sticky-cta .zalo{background:#0068ff;color:#fff}
+
+  @media (max-width:960px){
+    .hero-grid{grid-template-columns:1fr;gap:34px}
+    .cards{grid-template-columns:repeat(2,1fr)}
+    .steps{grid-template-columns:repeat(2,1fr)}
+    .gal{grid-template-columns:1fr 1fr}
+    .nav-links{display:none}
+    .nav-cta .btn-ghost{display:none}
+    .nav-cta .btn-primary{padding:11px 18px;font-size:14.5px}
+    .logo{font-size:17px}
+    .logo img{width:38px;height:38px}
+    .sticky-cta{display:flex}
+    .cta-band{padding:30px}
+    footer{padding-bottom:110px}
+  }
+  @media (max-width:560px){
+    body{font-size:16.5px}
+    .cards,.steps{grid-template-columns:1fr}
+    .gal{grid-template-columns:1fr}
+    .hero{padding:40px 0 34px}
+    .price-chip{left:10px;bottom:12px}
+  }
+</style>
+    <link rel="preconnect" href="https://www.googletagmanager.com">
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-60J96QF4YV"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-60J96QF4YV', { anonymize_ip: true });
+    </script>
+  </head>
+<body>
+
+<div class="preview-bar">
+  <strong>Bản xem trước giao diện</strong> — chưa áp dụng cho website thật. Trang này không được Google lập chỉ mục.
+</div>
+
+<header class="site">
+  <div class="wrap nav">
+    <a class="logo" href="./"><img src="assets/images/logo-whitelotus.png" alt="Bông Sen Trắng" width="46" height="46">Bông Sen <span>Trắng</span></a>
+    <nav class="nav-links" aria-label="Điều hướng chính">
+      <a href="#dich-vu">Dịch vụ</a>
+      <a href="#quy-trinh">Quy trình</a>
+      <a href="#du-an">Công trình</a>
+      <a href="#hoi-dap">Hỏi đáp</a>
+    </nav>
+    <div class="nav-cta">
+      <a class="btn btn-ghost" href="tel:0989521881">0989 521 881</a>
+      <a class="btn btn-primary" href="https://zalo.me/0989521881" target="_blank" rel="noopener">Nhắn Zalo</a>
+    </div>
+  </div>
+</header>
+
+<main>
+
+  <section class="hero">
+    <div class="wrap hero-grid">
+      <div>
+        <span class="eyebrow">Xưởng sản xuất tại 92E Ô Chợ Dừa, Đống Đa</span>
+        <h1>Biển quảng cáo <em>đúng vật liệu</em>, đúng ngân sách, thi công tại Hà Nội</h1>
+        <p class="lead">Alu chữ nổi, hộp đèn LED, biển bạt Hiflex và sửa chữa biển cũ. Báo giá tách riêng từng hạng mục để anh/chị biết mình đang trả tiền cho phần nào.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="https://zalo.me/0989521881" target="_blank" rel="noopener">Gửi ảnh mặt tiền, nhận báo giá</a>
+          <a class="btn btn-ghost" href="tel:0989521881">Gọi 0989 521 881</a>
+        </div>
+        <div class="trust">
+          <div><span class="tick">✓</span> Khảo sát tận nơi trong nội thành</div>
+          <div><span class="tick">✓</span> Báo giá theo từng hạng mục</div>
+          <div><span class="tick">✓</span> Bảo hành theo vật liệu</div>
+        </div>
+      </div>
+      <div class="hero-media">
+        <img src="assets/images/hero-bien-quang-cao-ha-noi.jpg" alt="Biển quảng cáo chữ nổi lắp tại mặt tiền cửa hàng Hà Nội" width="960" height="720">
+        <div class="price-chip">
+          <small>Biển bạt khung sắt từ</small>
+          <strong>180.000đ/m²</strong>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="dich-vu" class="wrap">
+    <div class="section-head">
+      <h2>Bốn nhóm hạng mục khách hỏi nhiều nhất</h2>
+      <p>Mỗi nhóm có mức giá tham khảo riêng. Giá cuối cùng phụ thuộc kích thước, vật liệu và điều kiện lắp đặt tại mặt bằng.</p>
+    </div>
+    <div class="cards">
+      <a class="card" href="bien-alu-chu-noi-ha-noi/">
+        <span class="k">Mặt dựng</span>
+        <h3>Biển alu chữ nổi</h3>
+        <p>Nền alu kết hợp chữ mica hoặc inox, có thể thêm LED hắt sáng.</p>
+        <span class="price">450.000 – 750.000đ/m²<span>giá nền alu tham khảo</span></span>
+      </a>
+      <a class="card" href="bien-hop-den-led-ha-noi/">
+        <span class="k">Phát sáng</span>
+        <h3>Hộp đèn LED</h3>
+        <p>Sáng đều toàn mặt, phù hợp tuyến phố cần nhìn rõ buổi tối.</p>
+        <span class="price">450.000 – 750.000đ/m²<span>hộp đèn Hiflex tham khảo</span></span>
+      </a>
+      <a class="card" href="bao-gia-bien-bat-hiflex-ha-noi/">
+        <span class="k">Tiết kiệm</span>
+        <h3>Biển bạt Hiflex</h3>
+        <p>Làm nhanh, chi phí thấp, dễ thay nội dung khi cần.</p>
+        <span class="price">180.000 – 350.000đ/m²<span>gồm khung và bạt</span></span>
+      </a>
+      <a class="card" href="sua-chua-bien-quang-cao-ha-noi/">
+        <span class="k">Bảo trì</span>
+        <h3>Sửa chữa biển cũ</h3>
+        <p>Cháy LED, mất nguồn, thấm nước, bong chữ hoặc khung rung.</p>
+        <span class="price">Báo giá theo hiện trạng<span>gửi ảnh để kiểm tra</span></span>
+      </a>
+    </div>
+  </section>
+
+  <section id="quy-trinh" style="background:var(--bg-soft)">
+    <div class="wrap">
+      <div class="section-head">
+        <h2>Từ ảnh mặt tiền đến lúc bàn giao</h2>
+        <p>Bốn bước, không phát sinh hạng mục ngoài báo giá đã chốt.</p>
+      </div>
+      <div class="steps">
+        <div class="step"><h3>Gửi ảnh và kích thước</h3><p>Ảnh chụp thẳng mặt tiền, chiều ngang × cao, địa chỉ lắp đặt.</p></div>
+        <div class="step"><h3>Tư vấn vật liệu</h3><p>Chọn phương án theo ngân sách và thời gian sử dụng thực tế.</p></div>
+        <div class="step"><h3>Chốt báo giá</h3><p>Tách rõ nền, chữ, LED, khung, lắp đặt và bảo hành.</p></div>
+        <div class="step"><h3>Sản xuất và lắp</h3><p>Thử sáng trước khi đưa tới công trình, nghiệm thu tại chỗ.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="du-an" class="wrap">
+    <div class="section-head">
+      <h2>Công trình đã thi công</h2>
+      <p>Ảnh thực tế tại mặt bằng khách hàng, không dùng ảnh phối cảnh.</p>
+    </div>
+    <div class="gal">
+      <figure><img src="assets/images/du-an-oppo-samsung.jpg" alt="Biển nền alu chữ nổi cho cửa hàng điện thoại" loading="lazy"><figcaption>Alu chữ nổi — cửa hàng điện thoại</figcaption></figure>
+      <figure><img src="assets/images/du-an-xe-dien-viet-thanh-bien-mat-tien-led.jpg" alt="Biển hộp đèn LED mặt tiền cửa hàng" loading="lazy"><figcaption>Hộp đèn LED — mặt tiền cửa hàng</figcaption></figure>
+      <figure><img src="assets/images/bien-vay-cafe-hop-den-tron-ha-noi.jpg" alt="Biển vẫy hộp đèn tròn cho quán cafe" loading="lazy"><figcaption>Biển vẫy hộp đèn — quán cafe</figcaption></figure>
+      <figure><img src="assets/images/du-an-sct-clinic-chu-noi-led.jpg" alt="Chữ nổi LED cho phòng khám" loading="lazy"><figcaption>Chữ nổi LED — phòng khám</figcaption></figure>
+      <figure><img src="assets/images/du-an-gao-viet-bien-mat-tien-do.jpg" alt="Biển mặt tiền màu đỏ cho cửa hàng" loading="lazy"><figcaption>Mặt tiền màu thương hiệu</figcaption></figure>
+      <figure><img src="assets/images/du-an-bien-bep-ba-son-hoi-an.jpg" alt="Biển nhà hàng chữ nổi phát sáng" loading="lazy"><figcaption>Chữ nổi phát sáng — nhà hàng</figcaption></figure>
+    </div>
+  </section>
+
+  <section id="hoi-dap" style="background:var(--bg-soft)">
+    <div class="wrap faq">
+      <div class="section-head">
+        <h2>Câu hỏi trước khi đặt biển</h2>
+      </div>
+      <details open>
+        <summary>Chưa có kích thước chính xác thì có báo giá được không?</summary>
+        <p>Được. Gửi ảnh mặt tiền và cho biết chiều ngang ước lượng là có thể tư vấn cấu hình cùng khoảng giá. Con số chính xác cần kích thước thật và điều kiện lắp đặt.</p>
+      </details>
+      <details>
+        <summary>Nên chọn alu chữ nổi hay hộp đèn LED?</summary>
+        <p>Hộp đèn sáng toàn mặt, phù hợp tuyến phố tối. Alu chữ nổi cho cảm giác có chiều sâu và bền mặt nền hơn, chỉ sáng ở phần chữ nếu thêm LED.</p>
+      </details>
+      <details>
+        <summary>Báo giá có gồm tháo biển cũ và lắp đặt không?</summary>
+        <p>Báo giá được tách theo hạng mục: nền, chữ, hệ LED, khung, tháo dỡ và lắp đặt. Anh/chị nhìn được từng phần thay vì một con số tổng.</p>
+      </details>
+    </div>
+  </section>
+
+  <section class="wrap">
+    <div class="cta-band">
+      <div>
+        <h2>Gửi ảnh mặt tiền, nhận báo giá theo hạng mục</h2>
+        <p>Zalo 0989 521 881 — xưởng tại 92E Ô Chợ Dừa, Đống Đa, Hà Nội.</p>
+      </div>
+      <div class="cta-actions">
+        <a class="btn btn-zalo" href="https://zalo.me/0989521881" target="_blank" rel="noopener">Nhắn Zalo ngay</a>
+        <a class="btn btn-ghost" style="background:#fff" href="tel:0989521881">Gọi 0989 521 881</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap foot-grid">
+    <div>Công ty TNHH Truyền thông Bông Sen Trắng · 92E Ô Chợ Dừa, Đống Đa, Hà Nội</div>
+    <div>Bản xem trước giao diện — chưa đưa vào website chính thức</div>
+  </div>
+</footer>
+
+<div class="sticky-cta">
+  <a class="call" href="tel:0989521881">Gọi ngay</a>
+  <a class="zalo" href="https://zalo.me/0989521881" target="_blank" rel="noopener">Zalo</a>
+</div>
+
+    <script src="assets/js/analytics.js?v=20261112" defer></script>
+  </body>
+</html>

@@ -159,7 +159,7 @@ const html = `<!doctype html>
     <meta property="og:description" content="Thay LED, thay nguồn, thay mặt bạt, sửa hộp đèn và gia cố khung biển quảng cáo tại Hà Nội.">
     <meta property="og:url" content="${pageUrl}">
     <meta property="og:image" content="${baseUrl}/assets/images/du-an-xe-dien-viet-thanh-bien-mat-tien-led.jpg">
-    <meta property="og:image:alt" content="Sửa chữa biển quảng cáo có LED tại Hà Nội">
+    <meta property="og:image:alt" content="Biển mặt tiền LED Xe điện Việt Thanh, ảnh công trình tham khảo">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Sửa chữa biển quảng cáo Hà Nội">
     <meta name="twitter:description" content="Gửi ảnh biển cũ qua Zalo để nhận tư vấn sửa hoặc thay mới.">
@@ -209,16 +209,93 @@ ${JSON.stringify(jsonLd, null, 2)}
               <a class="btn btn-secondary" href="https://zalo.me/${business.phoneHref}" target="_blank" rel="noopener">Gửi ảnh biển qua Zalo</a>
             </div>
           </div>
-          <img src="../assets/images/du-an-xe-dien-viet-thanh-bien-mat-tien-led.jpg" alt="Sửa chữa biển quảng cáo có LED tại Hà Nội" loading="eager" fetchpriority="high" decoding="async" width="960" height="720">
+          <img src="../assets/images/du-an-xe-dien-viet-thanh-bien-mat-tien-led.jpg" alt="Biển mặt tiền LED Xe điện Việt Thanh, ảnh công trình tham khảo" loading="eager" fetchpriority="high" decoding="async" width="960" height="720">
         </div>
       </section>
 
       <section class="section page-content">
         <div class="container content-layout">
           <article class="content-main">
+            <aside class="quick-answer">
+              <h2>Tóm tắt nhanh</h2>
+              <ul>
+                <li>Sửa thường rẻ hơn làm mới khi khung còn chắc, kích thước phù hợp và hệ điện chưa hỏng nặng.</li>
+                <li>Cần ảnh toàn cảnh, ảnh cận chỗ hỏng, kích thước ước lượng và địa chỉ để xác định đúng hạng mục.</li>
+                <li>Gửi ảnh qua Zalo 0989 521 881 để được xem hiện trạng và đề xuất phương án trước khi chốt.</li>
+              </ul>
+            </aside>
+
+            <section class="content-block">
+              <h2>Chẩn đoán nhanh theo triệu chứng</h2>
+              <div class="price-table-wrap">
+                <table class="price-table">
+                  <thead>
+                    <tr>
+                      <th>Triệu chứng</th>
+                      <th>Nguyên nhân thường gặp</th>
+                      <th>Hướng xử lý</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td><strong>Sáng chập chờn, lúc sáng lúc tắt</strong></td>
+                      <td>Nguồn yếu, điểm nối lỏng hoặc một dây LED đã chết</td>
+                      <td>Kiểm tra nguồn và mối nối trước, thay dây LED hỏng</td>
+                    </tr>
+                    <tr>
+                      <td><strong>Chỉ sáng một phần mặt biển</strong></td>
+                      <td>Chết một nhánh LED hoặc hỏng một bộ nguồn</td>
+                      <td>Thay đúng nhánh hoặc bộ nguồn, không cần thay cả biển</td>
+                    </tr>
+                    <tr>
+                      <td><strong>Hộp đèn loang sáng, có vệt nước</strong></td>
+                      <td>Mép hở, keo lão hoá, nước vào mặt biển</td>
+                      <td>Xử lý chống nước và thay phần mặt bị ố</td>
+                    </tr>
+                    <tr>
+                      <td><strong>Mặt bạt bạc màu, rách mép</strong></td>
+                      <td>Bạt lão hoá sau thời gian ngoài trời</td>
+                      <td>Thay mặt bạt, kiểm tra khung khi tháo</td>
+                    </tr>
+                    <tr>
+                      <td><strong>Chữ nổi bong, nứt hoặc rơi</strong></td>
+                      <td>Keo và vít bắt lão hoá theo thời gian</td>
+                      <td>Thay chữ hỏng và kiểm tra độ bám của các chữ còn lại</td>
+                    </tr>
+                    <tr>
+                      <td><strong>Khung rung, nghiêng, han gỉ</strong></td>
+                      <td>Vít bắt yếu, chân cột hoặc thanh khung gỉ</td>
+                      <td>Gia cố hoặc thay khung, kiểm tra toàn bộ điểm bắt</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <p><small>Bảng chỉ mang tính định hướng. Cần ảnh và kiểm tra thực tế để xác định đúng hạng mục và chi phí.</small></p>
+            </section>
+
             <section class="content-block price-note">
               <h2>Gửi ảnh trước để biết nên sửa hay thay mới</h2>
-              <p>Không phải biển cũ nào cũng nên làm lại từ đầu. Nếu khung còn chắc, bố cục còn dùng được và chỉ hỏng mặt bạt, LED hoặc nguồn, sửa đúng hạng mục sẽ tiết kiệm hơn. Nếu biển đã xuống cấp toàn bộ, tôi sẽ nói rõ để tránh mất tiền sửa nhiều lần.</p>
+              <p>Không phải biển cũ nào cũng nên làm lại từ đầu. Nếu khung còn chắc, bố cục còn dùng được và chỉ hỏng mặt bạt, LED hoặc nguồn, sửa đúng hạng mục có thể tiết kiệm hơn. Bông Sen Trắng tư vấn dựa trên hiện trạng; ảnh chỉ giúp đánh giá sơ bộ, không thay thế kiểm tra kết cấu và hệ điện tại vị trí lắp đặt.</p>
+            </section>
+
+            <section class="content-block">
+              <h2>Gửi yêu cầu báo giá sửa biển</h2>
+              <p>Gửi các thông tin dưới đây qua Zalo để trao đổi đúng hạng mục, hạn chế phải hỏi lại nhiều lần:</p>
+              <ul class="check-list">
+                <li>Ảnh toàn cảnh mặt tiền và ảnh cận phần hỏng, chụp từ vị trí an toàn.</li>
+                <li>Địa chỉ lắp đặt, chiều ngang và chiều cao ước lượng của biển.</li>
+                <li>Lỗi đang gặp: mất sáng toàn bộ, sáng từng phần, rách mặt bạt, bong chữ hoặc khung rung.</li>
+                <li>Độ cao lắp đặt, lối tiếp cận và thời gian cửa hàng có thể bố trí thi công.</li>
+                <li>Mong muốn giữ nguyên biển, đổi nội dung hay so sánh với phương án làm mới.</li>
+              </ul>
+              <p><strong>Mẫu tin nhắn:</strong> Tôi cần sửa biển tại [địa chỉ]. Biển khoảng [ngang × cao], lắp ở độ cao [ước lượng], đang bị [mô tả lỗi]. Tôi gửi kèm ảnh và muốn được tư vấn phương án, vật tư thay thế và chi phí.</p>
+              <a class="btn btn-primary" href="https://zalo.me/${business.phoneHref}" target="_blank" rel="noopener">Gửi hiện trạng để tư vấn sửa biển</a>
+            </section>
+
+            <section class="content-block">
+              <h2>Biển chập điện hoặc có nguy cơ rơi: ưu tiên an toàn</h2>
+              <p>Nếu biển có mùi khét, tia lửa, dây điện hở hoặc khung rung mạnh, tránh đứng bên dưới và không tự trèo lên tháo biển. Ngừng sử dụng biển; chỉ ngắt nguồn khi có thể thao tác an toàn. Nhờ người có chuyên môn kiểm tra trước khi cấp điện lại hoặc thi công.</p>
+              <p>Khi thống nhất báo giá, cần làm rõ phần vật tư thay, công tháo lắp, thiết bị tiếp cận trên cao, xử lý khung và điều kiện bảo hành áp dụng cho từng hạng mục. Không có một mức giá cố định phù hợp mọi biển cũ.</p>
             </section>
 
             <section class="content-block">
@@ -260,19 +337,28 @@ ${priceRowsHtml}
             <section class="content-block">
               <h2>Khi nào nên sửa, khi nào nên làm mới?</h2>
               <div class="price-link-grid compact">
-                <a href="../sua-chua-bien-quang-cao-ha-noi/">
-                  <strong>Nên sửa</strong>
-                  <span>Khung còn chắc, chỉ hỏng LED/nguồn, mặt bạt bạc màu, chữ nổi cần thay một phần hoặc nội dung cần cập nhật.</span>
+                <a href="../sua-bien-hop-den-led-ha-noi/">
+                  <strong>Sửa hộp đèn hoặc LED</strong>
+                  <span>Xem phương án kiểm tra LED, nguồn và mặt biển khi hộp đèn không sáng hoặc sáng không đều.</span>
                 </a>
-                <a href="../bao-gia-bien-quang-cao-ha-noi/">
-                  <strong>Nên làm mới</strong>
-                  <span>Khung yếu, hệ điện hỏng nhiều, biển cũ sai nhận diện, mặt tiền cần nâng cấp rõ rệt hoặc chi phí sửa gần bằng làm mới.</span>
+                <a href="../thay-mat-bat-bien-quang-cao-ha-noi/">
+                  <strong>Thay mặt bạt biển cũ</strong>
+                  <span>Tìm hiểu phương án thay mặt bạt khi biển bạc màu hoặc nội dung cần cập nhật, sau khi kiểm tra khung.</span>
+                </a>
+                <a href="../bien-alu-chu-noi-ha-noi/">
+                  <strong>Làm mới biển alu chữ nổi</strong>
+                  <span>Tham khảo biển mặt tiền kết hợp chữ mica, inox hoặc chữ LED khi cần thay đổi nhận diện.</span>
+                </a>
+                <a href="../lam-bien-quang-cao-co-den-led-ha-noi/">
+                  <strong>Làm mới biển LED</strong>
+                  <span>Chọn phương án chữ sáng mặt, chữ hắt chân hoặc hộp đèn theo mặt bằng và nhu cầu.</span>
                 </a>
               </div>
             </section>
 
             <section class="content-block">
               <h2>Ảnh tham khảo biển có LED, mặt tiền, hộp đèn</h2>
+              <p>Đây là ảnh công trình biển quảng cáo để tham khảo cấu tạo và hình thức hoàn thiện, không phải ảnh trước và sau sửa chữa. Phương án sửa biển của anh/chị được đánh giá theo ảnh hiện trạng và kiểm tra thực tế khi cần.</p>
               <div class="case-gallery">
 ${galleryHtml}
               </div>
@@ -281,6 +367,7 @@ ${galleryHtml}
             <section class="content-block">
               <h2>Khu vực nhận sửa biển tại Hà Nội</h2>
               <p>Ưu tiên nội thành và các khu vực lân cận: Đống Đa, Ba Đình, Hoàn Kiếm, Hai Bà Trưng, Cầu Giấy, Thanh Xuân, Tây Hồ, Hoàng Mai, Long Biên, Nam Từ Liêm, Bắc Từ Liêm, Hà Đông. Với hạng mục gấp, gửi ảnh trước để kiểm tra khả năng xử lý trong ngày.</p>
+              <p>Xem thêm thông tin <a href="../sua-bien-quang-cao-dong-da/">sửa biển tại Đống Đa</a>, <a href="../sua-bien-quang-cao-ba-dinh/">sửa biển tại Ba Đình</a> và <a href="../sua-bien-quang-cao-cau-giay/">sửa biển tại Cầu Giấy</a>. Bông Sen Trắng tiếp khách tại 92E Ô Chợ Dừa; việc khảo sát, thi công tại địa chỉ của khách được trao đổi theo từng hạng mục.</p>
             </section>
 
             <section class="content-block">
