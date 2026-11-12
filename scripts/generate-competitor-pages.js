@@ -43,6 +43,23 @@ const pages = [
       ["Chữ inox vàng/trắng gương", "Liên hệ theo mẫu", "Giá phụ thuộc inox 201/304, chiều cao chữ và kiểu hoàn thiện."],
       ["Khung xương, gia cố", "150.000 - 300.000đ/m2", "Tùy mặt bằng, độ cao, vị trí bắt vít và tải trọng biển."]
     ],
+    summary: [
+      "Nền alu ngoài trời tham khảo 450.000–750.000đ/m²; chữ nổi, hệ LED, khung và lắp đặt tính riêng theo cấu hình thực tế.",
+      "Phù hợp mặt tiền cửa hàng, showroom, văn phòng cần nhận diện bền, sạch và có chiều sâu; có thể thêm LED hắt chữ để sáng buổi tối.",
+      "Nhận khảo sát và thi công trong nội thành Hà Nội. Gửi ảnh mặt tiền, kích thước và logo qua Zalo 0989 521 881 để nhận báo giá."
+    ],
+    compare: {
+      heading: "So sánh alu chữ nổi, hộp đèn LED và bạt Hiflex",
+      note: "Mức giá là giá tham khảo đang công khai trên website, chưa gồm khảo sát và phát sinh tại mặt bằng.",
+      head: ["Tiêu chí", "Alu chữ nổi", "Hộp đèn LED", "Bạt Hiflex"],
+      rows: [
+        ["Chi phí tham khảo", "Nền alu 450.000–750.000đ/m²", "Hộp đèn 450.000–750.000đ/m² (Hiflex); 1.500.000–2.800.000đ/m² (mica)", "180.000–350.000đ/m² cả khung và bạt"],
+        ["Khả năng phát sáng", "Sáng ở phần chữ nếu thêm LED hắt hoặc LED âm chữ", "Sáng toàn mặt, đều hơn về đêm", "Không tự phát sáng"],
+        ["Cảm giác bề mặt", "Chữ nổi có chiều sâu, nền phẳng và sạch", "Mặt phẳng, sáng đều", "Phẳng, phụ thuộc chất lượng in"],
+        ["Phù hợp nhất", "Nhận diện dài hạn, showroom, văn phòng, đại lý", "Tuyến phố tối, cần nhìn rõ buổi tối", "Ngân sách thấp, khai trương, thay nội dung định kỳ"],
+        ["Bảo trì thường gặp", "Thay LED hoặc nguồn khi hỏng", "Thay LED, kiểm tra chống nước và tản nhiệt", "Thay mặt bạt khi bạc màu hoặc rách"]
+      ]
+    },
     sections: [
       ["Khi nào nên chọn alu chữ nổi?", [
         "Biển alu chữ nổi phù hợp cửa hàng, showroom, văn phòng, đại lý và mặt tiền cần nhận diện bền, sạch, dễ nhìn.",
@@ -60,10 +77,22 @@ const pages = [
         "Gửi ảnh mặt tiền, kích thước ngang x cao, file logo, yêu cầu có đèn hay không, địa chỉ lắp đặt và thời gian mong muốn.",
         "Với biển cao hoặc mặt dựng cũ, nên khảo sát trước để kiểm tra điểm bắt, khung xương và phương án chống nước."
       ]],
+      ["Báo giá mặt dựng lớn hoặc nhiều điểm bán", [
+        "Với mặt dựng lớn, hãy gửi ảnh toàn cảnh, kích thước dự kiến, độ cao lắp đặt, vị trí điểm bắt và lối tiếp cận. Sau khi xem mặt bằng có thể cần khảo sát để thống nhất phương án kết cấu, vận chuyển và lắp đặt trước khi chốt giá.",
+        "Nếu làm cho nhiều cửa hàng hoặc nhiều hạng mục, gửi thêm danh sách địa chỉ, số lượng từng loại biển, quy chuẩn logo, vật liệu mong muốn và lịch bàn giao. Báo giá cần tách rõ phần sản xuất, vận chuyển, lắp đặt và các điều kiện riêng của từng vị trí."
+      ]],
       ["Nghiệm thu và bảo hành nên ghi rõ", [
         "Trước khi bàn giao nên kiểm tra độ phẳng của nền, mép alu, độ chắc của chữ, ánh sáng LED, bộ nguồn và đường dây. Ban đêm cần nhìn lại độ đều sáng và khả năng đọc từ hướng khách thường đi tới.",
         "Phạm vi bảo hành phụ thuộc vật liệu, hệ LED, nguồn điện và điều kiện ngoài trời. Nội dung này nên được ghi trong báo giá thay vì chỉ trao đổi miệng."
       ]]
+    ],
+    faqHeading: "Câu hỏi thường gặp về biển alu chữ nổi",
+    faq: [
+      ["Giá nền alu có phải giá trọn bộ biển chữ nổi không?", "Không nên hiểu đơn giá nền là giá hoàn thiện. Cần đối chiếu riêng phần nền, khung, chữ, LED, nguồn điện, vận chuyển và lắp đặt trong báo giá."],
+      ["Biển alu chữ nổi có thể lắp đèn LED không?", "Có thể trao đổi phương án chữ mica phát sáng mặt hoặc chữ hắt sáng, tùy mẫu thiết kế, vị trí lắp đặt và yêu cầu nhận diện."],
+      ["Có thể báo giá cho nhiều cửa hàng cùng lúc không?", "Có thể gửi danh sách địa chỉ, số lượng, ảnh, kích thước dự kiến và bộ nhận diện để trao đổi phương án chung. Điều kiện lắp đặt từng điểm cần được kiểm tra riêng."],
+      ["Biển alu 3 × 1 m khoảng bao nhiêu tiền?", "Phần nền 3 m² rơi vào khoảng 1.350.000–2.250.000đ theo đơn giá tham khảo 450.000–750.000đ/m². Cộng thêm chữ nổi, khung và lắp đặt tuỳ cấu hình, nên tổng chi phí thường cao hơn biển bạt cùng kích thước."],
+      ["Chưa có kích thước chính xác thì nên gửi gì?", "Gửi ảnh toàn cảnh mặt tiền, địa chỉ và mẫu biển mong muốn để được tư vấn ban đầu. Kích thước và điều kiện lắp đặt cần được xác nhận trước khi chốt báo giá."]
     ],
     gallery: [
       ["du-an-oppo-samsung.jpg", "Biển nền alu kết hợp chữ nổi cho cửa hàng điện thoại"],
@@ -112,6 +141,11 @@ const pages = [
       ["Biển bạt lót tôn", "300.000 - 450.000đ/m2", "Bền và phẳng hơn bạt căng thường, phù hợp mặt tiền ngoài trời."],
       ["Biển bạt khai trương", "Liên hệ theo kích thước", "Phù hợp cần làm nhanh, chi phí thấp, dùng ngắn hạn hoặc thay nội dung."],
       ["Thay mặt bạt trên khung cũ", "Liên hệ theo hiện trạng", "Cần kiểm tra khung còn chắc, han gỉ và kích thước thực tế."]
+    ],
+    summary: [
+      "In bạt Hiflex 40.000–90.000đ/m²; biển bạt khung sắt 180.000–350.000đ/m²; bạt lót tôn 300.000–450.000đ/m².",
+      "Biển 3 × 2 m làm trọn bộ khoảng 1.080.000–2.100.000đ. Nếu khung cũ còn chắc, chỉ thay mặt bạt sẽ tiết kiệm hơn làm mới.",
+      "Thi công trong nội thành Hà Nội. Gửi ảnh mặt tiền kèm kích thước ngang × cao qua Zalo 0989 521 881 để nhận báo giá."
     ],
     sizeTable: {
       heading: "Giá biển bạt theo kích thước phổ biến",
@@ -247,10 +281,43 @@ function sizeTable({ heading, note, head, rows }) {
               </section>`;
 }
 
-function faqBlock(faq) {
+function summaryBox(summary, heading = "Tóm tắt nhanh") {
+  return `
+              <aside class="quick-answer">
+                <h2>${escapeHtml(heading)}</h2>
+                <ul>
+                  ${summary.map((item) => `<li>${escapeHtml(item)}</li>`).join("\n                  ")}
+                </ul>
+              </aside>`;
+}
+
+function compareTable({ heading, note, head, rows }) {
   return `
               <section class="content-block">
-                <h2>Câu hỏi thường gặp về báo giá biển bạt</h2>
+                <h2>${escapeHtml(heading)}</h2>
+                <div class="price-table-wrap">
+                  <table class="price-table">
+                    <thead>
+                      <tr>
+                        ${head.map((cell) => `<th>${escapeHtml(cell)}</th>`).join("")}
+                      </tr>
+                    </thead>
+                    <tbody>
+                      ${rows.map((row) => `
+                      <tr>
+                        ${row.map((cell, index) => `<td>${index === 0 ? `<strong>${escapeHtml(cell)}</strong>` : escapeHtml(cell)}</td>`).join("")}
+                      </tr>`).join("")}
+                    </tbody>
+                  </table>
+                </div>
+                ${note ? `<p><small>${escapeHtml(note)}</small></p>` : ""}
+              </section>`;
+}
+
+function faqBlock(faq, heading = "Câu hỏi thường gặp về báo giá biển bạt") {
+  return `
+              <section class="content-block">
+                <h2>${escapeHtml(heading)}</h2>
                 <div class="faq-list">
                   ${faq.map(([q, a]) => `<details>
                     <summary>${escapeHtml(q)}</summary>
@@ -385,17 +452,19 @@ ${JSON.stringify(jsonLd, null, 2)}
       <section class="section page-content">
         <div class="container content-layout">
           <article class="content-main">
+${page.summary ? summaryBox(page.summary) : ""}
             <section class="content-block">
               <h2>Bảng tham khảo</h2>
 ${priceTable(page.rows)}
             </section>
 ${page.sizeTable ? sizeTable(page.sizeTable) : ""}
+${page.compare ? compareTable(page.compare) : ""}
             ${page.sections.map(([heading, paragraphs]) => `
             <section class="content-block">
               <h2>${escapeHtml(heading)}</h2>
               ${paragraphs.map((text) => `<p>${escapeHtml(text)}</p>`).join("\n              ")}
             </section>`).join("\n")}
- ${page.faq ? faqBlock(page.faq) : ""}
+ ${page.faq ? faqBlock(page.faq, page.faqHeading) : ""}
  ${page.gallery ? `
              <section class="content-block">
                <h2>${escapeHtml(page.galleryHeading || "Ảnh biển alu và chữ nổi đã thực hiện")}</h2>
